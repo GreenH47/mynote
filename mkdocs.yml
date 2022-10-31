@@ -1,0 +1,15 @@
+site_name: greenh47
+site_url: https://example.com/
+repo_url: https://github.com/GreenH47?tab=repositories
+site_description: greenh47 personal website
+site_author: greenh47
+nav:
+    - Home: index.md
+    - About: about.md
+    - 'Contact':
+        - 'contact me': 'contact.md'
+    - 'Study Note':
+        - 'FIT5032 Asp .net develop': '5032.md'
+        - 'FIT5057 project management': '5057.md'
+theme:
+  name: material
