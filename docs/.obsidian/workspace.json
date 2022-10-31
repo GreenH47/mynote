@@ -1,0 +1,168 @@
+{
+  "main": {
+    "id": "1373099e68191f08",
+    "type": "split",
+    "children": [
+      {
+        "id": "cd443d10579faf3f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "00289bd3ed11e0c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "4ab133fb9d2a5405",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d133dd4d87512110",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4296cf10474ab741",
+    "type": "split",
+    "children": [
+      {
+        "id": "cba1e4c95369dbd5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d6b9588278305d45",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "2b4724871940cd97",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4d565521d6fe818d",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "bb6e2c06669023ce",
+    "type": "split",
+    "children": [
+      {
+        "id": "a5c0e9f187bd3efe",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dc06837fc0f05a98",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9deaeb137a41214a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "cd96aa95aa2f01c5",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "cbc2d0fb2d26ace9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "index.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "00289bd3ed11e0c6",
+  "lastOpenFiles": [
+    "5032.md",
+    "index.md",
+    "about.md",
+    "5057.md",
+    "img/Pasted image 20221031121606.png",
+    "img/Pasted image 20221031121453.png",
+    "img/index.png",
+    "img/1-index.png"
+  ]
+}

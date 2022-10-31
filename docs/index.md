@@ -7,8 +7,14 @@ blank-value:
 some_url: https://example.com
 
 # Welcome to MkLorum
-
+![](img/index.png)
+![](img/index-20221031.png)
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+https://www.mkdocs.org/getting-started/
+
+Please see the [project license](5032.md) for further details.
+
+Please see the [project license](5032.md#contact) for further details.
 
 ## Commands
 
