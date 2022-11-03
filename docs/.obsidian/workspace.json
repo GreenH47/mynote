@@ -4,40 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "cd443d10579faf3f",
+        "id": "4b664d49675048cb",
         "type": "tabs",
         "children": [
           {
-            "id": "00289bd3ed11e0c6",
+            "id": "5deeff9c04c7f5cd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "index.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "ea8308e9f16d9c36",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "about_site_building.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "ac06b6b07fa23e37",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "about_copyright.md",
                 "mode": "source",
                 "source": true
               }
             }
           }
-        ]
-      },
-      {
-        "id": "4ab133fb9d2a5405",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "d133dd4d87512110",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "index.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -87,7 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "bb6e2c06669023ce",
@@ -103,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "about_copyright.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "about_copyright.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "about_copyright.md"
               }
             }
           }
@@ -154,15 +161,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "00289bd3ed11e0c6",
+  "active": "ac06b6b07fa23e37",
   "lastOpenFiles": [
-    "5032.md",
-    "index.md",
+    "about_site_building.md",
+    "about_copyright.md",
+    "about_me.md",
     "about.md",
-    "5057.md",
-    "img/Pasted image 20221031121606.png",
-    "img/Pasted image 20221031121453.png",
-    "img/index.png",
-    "img/1-index.png"
+    "index.md",
+    "fit5032.md",
+    "fit5057.md",
+    "1.png",
+    "anchor.md",
+    "img/Pasted image 20221031121606.png"
   ]
 }

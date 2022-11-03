@@ -5,5 +5,8 @@
   "obsidian-mind-map",
   "obsidian-git",
   "obsidian-paste-image-rename",
-  "obsidian-plugin-toc"
+  "obsidian-plugin-toc",
+  "obsidian-admonition",
+  "table-editor-obsidian",
+  "oz-clear-unused-images"
 ]

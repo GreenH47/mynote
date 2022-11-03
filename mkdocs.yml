@@ -1,15 +1,22 @@
 site_name: greenh47
 site_url: https://example.com/
-repo_url: https://github.com/GreenH47?tab=repositories
+repo_url: https://github.com/GreenH47/mynote
 site_description: greenh47 personal website
 site_author: greenh47
 nav:
     - Home: index.md
-    - About: about.md
-    - 'Contact':
-        - 'contact me': 'contact.md'
-    - 'Study Note':
-        - 'FIT5032 Asp .net develop': '5032.md'
-        - 'FIT5057 project management': '5057.md'
+    - 'About': 
+        - 'about me': 'about_me.md'
+        - 'How to build this site': 'about_site_building.md'
+        - 'Power by and copyright': 'about_copyright.md'
+        
+    - 'FIT Study Note':
+        - 'FIT5032 Asp .net develop 2022 s2': 'fit5032.md'
+        - 'FIT5057 project management 2022 s2': 'fit5057.md'
 theme:
   name: material
+
+markdown_extensions:
+    - toc:
+        permalink: "#"
+        baselevel: 2
