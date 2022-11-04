@@ -5,6 +5,8 @@ Date:    2022-11-03
 blank-value:  
 some_url: https://example.com  
 
+Create time: 2022.10.31  
+Last update: {{ git_revision_date }}
 # Welcome to GreenH47 personal site
 
 [![image alt text](https://git-scm.com/images/logos/2color-lightbg@2x.png)](https://github.com/GreenH47/mynote)

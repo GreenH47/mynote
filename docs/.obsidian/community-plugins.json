@@ -8,5 +8,9 @@
   "obsidian-plugin-toc",
   "obsidian-admonition",
   "table-editor-obsidian",
-  "oz-clear-unused-images"
+  "oz-clear-unused-images",
+  "obsidian-excalidraw-plugin",
+  "obsidian-pandoc",
+  "obsidian-text-format",
+  "highlightr-plugin"
 ]
