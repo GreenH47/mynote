@@ -6,28 +6,17 @@ Last update: {{ git_revision_date }}
   
 
 ```python
-
-  
-
 class Me:
-
-    def __init__(self):
-
-        self.name = 'GreenH47'
-
-        self.languages = ['Chinese','English','Mongolian']
-
-        self.direction = ['fullstack','forntend','backend','aws']
-
-        self.status= 'Monash Uni Master of IT'
-
-        self.email = 'greenhuang47@gmail.com'
-
-        self.website = 'https://greenh47.github.io/mynote/'
-
+  def __init__(self):
+	self.name = 'GreenH47'
+	self.languages = ['Chinese','English','Mongolian']
+	self.direction = ['fullstack','forntend','backend','aws']
+	self.status= 'Monash Uni Master of IT'
+	self.email = 'greenhuang47@gmail.com'
+	self.website = 'https://greenh47.github.io/mynote/'
 ```
 
-[![image alt text](https://www.vectorlogo.zone/logos/linkedin/linkedin-ar21.svg)](https://www.linkedin.com/in/shixinhuang47/)[![image alt text](https://www.vectorlogo.zone/logos/gmail/gmail-ar21.svg)](greenhuang47@gmail.com)[![image alt text](https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg)](https://github.com/GreenH47/mynote)
+[![image alt text](https://www.vectorlogo.zone/logos/linkedin/linkedin-ar21.svg)](https://www.linkedin.com/in/shixinhuang47/)[![image alt text](https://www.vectorlogo.zone/logos/gmail/gmail-ar21.svg)](mailto:greenhuang47@gmail.com)[![image alt text](https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg)](https://github.com/GreenH47/mynote)
 
 My programming language stack  
 
