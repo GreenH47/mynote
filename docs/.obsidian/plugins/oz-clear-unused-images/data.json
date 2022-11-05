@@ -1,6 +1,6 @@
 {
   "deleteOption": "system-trash",
-  "logsModal": false,
+  "logsModal": true,
   "excludedFolders": "",
   "ribbonIcon": true,
   "excludeSubfolders": false
