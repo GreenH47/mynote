@@ -12,5 +12,6 @@
   "obsidian-excalidraw-plugin",
   "obsidian-pandoc",
   "obsidian-text-format",
-  "highlightr-plugin"
+  "highlightr-plugin",
+  "cm-editor-syntax-highlight-obsidian"
 ]
