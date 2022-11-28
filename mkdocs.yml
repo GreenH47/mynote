@@ -13,6 +13,7 @@ nav:
     - 'FIT Study Note':
         - 'FIT5032 Asp .net develop 2022 s2': 'fit5032.md'
         - 'FIT5057 project management 2022 s2': 'fit5057.md'
+        - 'FIT5136 software engineering 2022 s2': 'fit5136.md'
 theme:
   name: material
 
@@ -26,3 +27,13 @@ plugins:
         indexing: 'full'
         separator: '[\s\-,:!=\[\]()"/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - git-revision-date
+
+extra:
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/GreenH47
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:greenhuang47@gmail.com
+      
+copyright: Copyright &copy; 2021 - present GreenH47
+

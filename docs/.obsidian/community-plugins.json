@@ -13,5 +13,6 @@
   "obsidian-pandoc",
   "obsidian-text-format",
   "highlightr-plugin",
-  "cm-editor-syntax-highlight-obsidian"
+  "cm-editor-syntax-highlight-obsidian",
+  "copy-url-in-preview"
 ]

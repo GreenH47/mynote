@@ -1792,6 +1792,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fit5136/" class="md-nav__link">
+        FIT5136 software engineering 2022 s2
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -3254,8 +3268,7 @@
 
   <h1>FIT5032 Asp .net develop 2022 s2</h1>
 
-<p>Create time: 2022-10-29<br />
-Last update: 2022-11-08</p>
+<p>Create time: 2022-10-29  Last update: 2022-11-09</p>
 <h2 id="how-to-use-the-fit-study-note-document">How to use the FIT study Note document<a class="headerlink" href="#how-to-use-the-fit-study-note-document" title="Permanent link">#</a></h2>
 <ol>
 <li>download the <a href="https://github.com/GreenH47/mynote">markdown file repository</a> and  navigate to the <code>docs</code> folder</li>
@@ -3439,7 +3452,7 @@ Visibility<br />
 + 同级目录/button/link 样式要类似，例如，按 Link 通向相关页面，Button 提交 Action
 + Consistency refers to having similar operations and similar elements for achieving similar tasks.  By leveraging consistent elements throughout your entire experience, you make your experience  far easier to use</p>
 <h4 id="web-usability-guidelines-from-flow-bohl">★★ Web Usability Guidelines (from Flow Bohl)<a class="headerlink" href="#web-usability-guidelines-from-flow-bohl" title="Permanent link">#</a></h4>
-<p><a href="http://www.79er.com/blog/articles/Usability-best-practice-for-UX-design.php"><img alt="image alt text" src="http://www.79er.com/images/Usability.jpg" /></a></p>
+<p><a href="http://www.79er.com/blog/articles/Usability-best-practice-for-UX-design.php"><img alt="image alt text" src="https://i.imgur.com/X4arWge.jpg" /></a></p>
 <h4 id="how-to-handle-request-in-aspnet-mvc">★★★ How to handle request in ASP.Net MVC?<a class="headerlink" href="#how-to-handle-request-in-aspnet-mvc" title="Permanent link">#</a></h4>
 <ul>
 <li>The default route table consists of one route.</li>
@@ -3719,7 +3732,7 @@ It is used in lambda  expressions to separate the input variables on the left si
 <li>import the bundle in <code>layout.cshtml</code>  or other page <code>@Styles.Render("~/Content/css")</code> <code>@Scripts.Render("~/bundles/modernizr")</code></li>
 </ul>
 <h5 id="stylesrender-and-scriptsrender">Styles.Render() and Scripts.Render()<a class="headerlink" href="#stylesrender-and-scriptsrender" title="Permanent link">#</a></h5>
-<p><a href="#How%20to%20render%20css/js%20in%20view/cshtml?%20(Defer%20JS)">How to render css/js in view/cshtml? (Defer JS)</a>
+<p><a href="#How%20to%20render%20css/js%20in%20view/cshtml?%20(Defer%20JS)">link to section How to render css/js in view/cshtml? (Defer JS)</a>
 + Style.Render is used to render a bundle of CSS files defined within BundleConfig.cs files. Styles.Render create style tag(s) for the CSS bundle
 + Scripts.Render is also used to render a bundle of Script files by rendering script tag(s) for the Script bundle.</p>
 <h4 id="html-defer">★★ HTML defer<a class="headerlink" href="#html-defer" title="Permanent link">#</a></h4>
@@ -4104,7 +4117,10 @@ What is:<br />
 <p><img alt="" src="../img/fit5032-20221108-14.png" />
 <img alt="" src="../img/fit5032-20221108-15.png" />
 <img alt="" src="../img/fit5032-20221108-18.png" />
-+ Modern applications are developed using Continuous  Integration &amp; Continuous Development
++ Modern applications are developed using Continuous  Integration &amp; Continuous Development <a href="https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment">CI/CD reference</a><br />
++ CI merge their changes back to the main branch as often as possible.<br />
++ CD automatically deploys all code changes to a testing and/or production environment after the build stage.<br />
++ CD  every change that passes all stages of your production pipeline is released to your customers
 + Integration, merge commit into develop  在“集成”期间很少且经常执行的步骤的实践，而不是等到代码完成后再将所有代码组合在一起并进行测试。
 + Delivery, release after a mount of time or amount of requirement branch merged into dev branch  Decide which requirements or function can be release at this version.  持续交付建立在通过持续集成建立的构建和测试自动化的基础之上。
 + Deployment, upload the app package like apk to Google app store or web server.  Install new app in the web server, replace the old version.持续部署将持续集成和交付的实践得出其合乎逻辑的结论：</p>
@@ -4277,8 +4293,8 @@ Install new app in the web server, replace the old version</p>
 <a href="#Separation%20of%20Concerns%20(SOC)%20依据功能分成独立几个模块开发">link to section Separation of Concerns (SOC) 依据功能分成独立几个模块开发</a><br />
 <a href="#Single%20Responsibility%20Principle%20(SRP)%20每个模块如何划分%20class，%20reuse">link to section Single Responsibility Principle (SRP) 每个模块如何划分 class， reuse</a> <br />
 (前端可使用逻辑) (职能可分开)(以method为单位 容易写test)(容易集成js框架)<br />
-each section addresses a separate concern; simplifying development and maintenance; individual sections can be reused, as well as developed and updated<br />
-very module, class or function in a computer program should have responsibility over a single part of that program's functionality,</p>
+SOC: each section addresses a separate concern; simplifying development and maintenance; individual sections can be reused, as well as developed and updated<br />
+SRP: very module, class or function in a computer program should have responsibility over a single part of that program's functionality,</p>
 <h3 id="2-why-use-layout-file-what-differ-in-using-layout-file-differ-between-other-html">2. Why use layout file, what differ in using layout file? Differ between other html?<a class="headerlink" href="#2-why-use-layout-file-what-differ-in-using-layout-file-differ-between-other-html" title="Permanent link">#</a></h3>
 <p><a href="#★★★%20What%20is%20the%20role%20of%20the%20layout%20file%20in%20an%20ASP.Net%20MVC%20application?%20/%20How%20to%20design%20a%20website%20application%20in%20the%20same%20UI%20component,%20same%20heading%20image,%20same%20navigation%20bar?">link to section ★★★ What is the role of the layout file in an ASP.Net MVC application? / How to design a website application in the same UI component, same heading image, same navigation bar?</a><br />
 -   Razor views use a layout to determine their look and feel
@@ -4295,9 +4311,12 @@ very module, class or function in a computer program should have responsibility 
 <h3 id="5-how-to-use-regular-expression-validation">5. How to use regular expression validation?<a class="headerlink" href="#5-how-to-use-regular-expression-validation" title="Permanent link">#</a></h3>
 <p><a href="#Regular%20Expressions">link to section Regular Expressions</a>  </p>
 <h3 id="6-what-is-jquery-why-use-it">6. What is jQuery? Why use it?<a class="headerlink" href="#6-what-is-jquery-why-use-it" title="Permanent link">#</a></h3>
-<p><a href="#jQuery%20Unobtrusive%20Validation">link to section jQuery Unobtrusive Validation</a>  </p>
+<p><a href="#jQuery%20Unobtrusive%20Validation">link to section jQuery Unobtrusive Validation</a><br />
+add validation to our MVC views<br />
+pnce you have included server side validation via validation attribute, the client side scripts to validate the forms will be automatically generated</p>
 <h3 id="7-demo-how-is-sql-injection-and-how-to-prevent-it">7. Demo how is SQL injection and how to prevent it.<a class="headerlink" href="#7-demo-how-is-sql-injection-and-how-to-prevent-it" title="Permanent link">#</a></h3>
-<p><a href="#Cross%20Site%20Scripting%20(XSS)">link to section Cross Site Scripting (XSS)</a>  </p>
+<p><a href="#Cross%20Site%20Scripting%20(XSS)">link to section Cross Site Scripting (XSS)</a><br />
+-   ASP.Net MVC has built in checks to ensure scripts are not submitted via user input <code>[ValidateInput(true)]</code></p>
 <h3 id="8-what-does-controller-action-method-do">8. What does controller action method do?<a class="headerlink" href="#8-what-does-controller-action-method-do" title="Permanent link">#</a></h3>
 <p><a href="#How%20to%20combine%20controller%20and%20view/url%20together?%20/%20How%20to%20add%20new%20view%20binding%20with%20controller?">link to section How to combine controller and view/url together? / How to add new view binding with controller?</a>  </p>
 <p>An action (or action method) is a method on a controller that handles incoming requests. Controllers provide a logical means of grouping similar actions together, allowing common sets of rules (e.g. routing, caching, authorization) to be applied collectively. Incoming requests are mapped to actions through routing</p>
@@ -4306,7 +4325,10 @@ very module, class or function in a computer program should have responsibility 
 <a href="#User%20Account%20Tables">link to section User Account Tables</a>  </p>
 <h3 id="10-how-to-convert-net-mvc-to-net-web-api">10. How to convert .Net MVC to .Net Web API?<a class="headerlink" href="#10-how-to-convert-net-mvc-to-net-web-api" title="Permanent link">#</a></h3>
 <h3 id="11-what-is-continuous-integrationcontinuous-deliverycontinuous-deployment">11. What is Continuous Integration/Continuous Delivery/Continuous Deployment?<a class="headerlink" href="#11-what-is-continuous-integrationcontinuous-deliverycontinuous-deployment" title="Permanent link">#</a></h3>
-<p><a href="#Modern%20Development%20Practices">link to section Modern Development Practices</a></p>
+<p><a href="#Modern%20Development%20Practices">link to section Modern Development Practices</a><br />
+CI merge their changes back to the main branch as often as possible.<br />
+CD automatically deploys all code changes to a testing and/or production environment after the build stage.<br />
+CD  every change that passes all stages of your production pipeline is released to your customers</p>
 <h3 id="12-cons-and-pros-of-angular-js">12. Cons and pros of Angular JS<a class="headerlink" href="#12-cons-and-pros-of-angular-js" title="Permanent link">#</a></h3>
 <p><a href="#Why%20use%20Angular%20JS?%20Features?">link to section Why use Angular JS? Features?</a><br />
 <a href="https://devm.io/javascript/the-pros-and-cons-of-choosing-angularjs-124850">The pros and cons of choosing AngularJS</a><br />
@@ -4315,9 +4337,15 @@ very module, class or function in a computer program should have responsibility 
 必须支持 JavaScript<br />
 学习困难</p>
 <h3 id="13-demo-example-of-signalr-and-explain-what-is-subscriber">13. Demo example of SignalR and explain what is subscriber?<a class="headerlink" href="#13-demo-example-of-signalr-and-explain-what-is-subscriber" title="Permanent link">#</a></h3>
-<p><a href="#SignalR">link to section SignalR</a>  </p>
+<p><a href="#SignalR">link to section SignalR</a> <br />
+Chat room.<br />
+One user send a message and server push this message to all clients who has subscribed. </p>
 <h3 id="14-web-optimized-manners-list-3">14. Web Optimized manners, list 3<a class="headerlink" href="#14-web-optimized-manners-list-3" title="Permanent link">#</a></h3>
-<p><a href="#How%20to%20implement%20web%20optimization">link to section How to implement web optimization</a>  </p>
+<p><a href="#How%20to%20implement%20web%20optimization">link to section How to implement web optimization</a>   <br />
+-   Reducing HTTP Connections Each connection and request is time consuming and takes resources
+-   Reducing File sizes Larger file sizes take more bandwidth (and time) to down load
+-   Caching Can reduce the need to request a resource that has already been down loaded
+-   Perceived Improvements Some changes can be made that does not improve absolute performance, but makes the user believe there is an improvement (due to lower latencies and quicker perceived response time)</p>
 <h3 id="15-why-use-aspnet-core">15. Why use ASP.NET Core?<a class="headerlink" href="#15-why-use-aspnet-core" title="Permanent link">#</a></h3>
 <p><a href="#★★★%20What%20is%20differ%20between%20APS.Net%20Framework%20and%20ASP.NET%20Core?">link to section ★★★ What is differ between APS.Net Framework and ASP.NET Core?</a><br />
 用于构建 Web UI 和 Web API 的统一故事。 
@@ -4331,7 +4359,7 @@ very module, class or function in a computer program should have responsibility 
   <small>
     
       Last update:
-      2022-11-08
+      2022-11-09
     
   </small>
 </div>
@@ -4391,10 +4419,33 @@ very module, class or function in a computer program should have responsibility 
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
   
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2021 - present GreenH47
+    </div>
+  
   
     Made with
     <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
       Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://github.com/GreenH47" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    <a href="mailto:greenhuang47@gmail.com" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6l-126.3-52.5-40.1 74.5c-5.2 9.7-16.3 14.6-27 11.9S192 499 192 488v-96c0-5.3 1.8-10.5 5.1-14.7l165.3-212.6c2.5-7.1-6.5-14.3-13-8.4l-179 161.9-32 28.9c-9.2 8.3-22.3 10.6-33.8 5.8l-85-35.4C8.4 312.8.8 302.2.1 290s5.5-23.7 16.1-29.8l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
     </a>
   
 </div>

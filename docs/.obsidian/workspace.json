@@ -4,60 +4,59 @@
     "type": "split",
     "children": [
       {
-        "id": "c66cba95149594b5",
+        "id": "4eec8e39bb1940d3",
         "type": "tabs",
-        "dimension": 19.569471624266143,
+        "dimension": 19.550342130987296,
         "children": [
           {
-            "id": "3bb888b3ff17d587",
+            "id": "e9d0e87a8d0b8a96",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "fit5032.md"
+                "file": "about_copyright.md"
               }
-            },
-            "group": "7acda8fe12d615dd"
+            }
           }
         ]
       },
       {
-        "id": "4b664d49675048cb",
+        "id": "b5b457d33fa371af",
         "type": "tabs",
-        "dimension": 38.64970645792564,
+        "dimension": 40.224828934506355,
         "children": [
           {
-            "id": "ac06b6b07fa23e37",
+            "id": "249041366d31a9dc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fit5032.md",
+                "file": "about_copyright.md",
                 "mode": "source",
                 "source": true
               }
             },
-            "group": "7acda8fe12d615dd"
+            "group": "d31346c431ed5cec"
           }
         ]
       },
       {
-        "id": "e4f978d3ba962eaa",
+        "id": "d77cf8da63d82f36",
         "type": "tabs",
-        "dimension": 41.78082191780822,
+        "dimension": 40.224828934506355,
         "children": [
           {
-            "id": "73a0eb6cdc7f961d",
+            "id": "ef56176670854c0e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fit5032.md",
+                "file": "about_copyright.md",
                 "mode": "preview",
                 "source": true
               }
             },
-            "group": "7acda8fe12d615dd"
+            "group": "d31346c431ed5cec"
           }
         ]
       }
@@ -109,8 +108,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "bb6e2c06669023ce",
@@ -126,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fit5032.md",
+                "file": "about_copyright.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fit5032.md",
+                "file": "about_copyright.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -167,17 +165,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "ac06b6b07fa23e37",
+  "active": "249041366d31a9dc",
   "lastOpenFiles": [
-    "index.md",
-    "fit5032.md",
-    "about_tags.md",
-    "fit5057.md",
     "about_me.md",
-    "about_copyright.md",
     "about_site_building.md",
-    "about.md",
-    "1.png",
-    "anchor.md"
+    "index.md",
+    "fit5136.md",
+    "about_copyright.md",
+    "fit5032.md",
+    "pic/Pasted image 20221028173503.png.md",
+    "fit5057.md",
+    "about_tags.md",
+    "about.md"
   ]
 }
