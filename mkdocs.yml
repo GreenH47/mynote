@@ -6,16 +6,23 @@ site_author: greenh47
 nav:
     - Home: index.md
     - 'About': 
-        - 'about me': 'about_me.md'
-        - 'How to build this site': 'about_site_building.md'
-        - 'Power by and copyright': 'about_copyright.md'
+        - 'about me': 'about/about_me.md'
+        - 'How to build this site': 'about/about_site_building.md'
+        - 'Power by and copyright': 'about/about_copyright.md'
         
     - 'FIT Study Note':
-        - 'FIT5032 Asp .net develop 2022 s2': 'fit5032.md'
-        - 'FIT5057 project management 2022 s2': 'fit5057.md'
-        - 'FIT5136 software engineering 2022 s2': 'fit5136.md'
+        - 'FIT5032 Asp .net develop 2022 s2': 'fitnotes/fit5032.md'
+        - 'FIT5057 project management 2022 s2': 'fitnotes/fit5057.md'
+        - 'FIT5136 software engineering 2022 s2': 'fitnotes/fit5136.md'
+
 theme:
   name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.top
+    - toc.follow
 
 
 markdown_extensions:

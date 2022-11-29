@@ -6,7 +6,7 @@
       {
         "id": "4eec8e39bb1940d3",
         "type": "tabs",
-        "dimension": 19.550342130987296,
+        "dimension": 22.22222222222222,
         "children": [
           {
             "id": "e9d0e87a8d0b8a96",
@@ -14,7 +14,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "about_copyright.md"
+                "file": "about/about_site_building.md"
               }
             }
           }
@@ -23,7 +23,7 @@
       {
         "id": "b5b457d33fa371af",
         "type": "tabs",
-        "dimension": 40.224828934506355,
+        "dimension": 49.66666666666666,
         "children": [
           {
             "id": "249041366d31a9dc",
@@ -31,7 +31,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "about_copyright.md",
+                "file": "about/about_site_building.md",
                 "mode": "source",
                 "source": true
               }
@@ -43,7 +43,7 @@
       {
         "id": "d77cf8da63d82f36",
         "type": "tabs",
-        "dimension": 40.224828934506355,
+        "dimension": 28.111111111111107,
         "children": [
           {
             "id": "ef56176670854c0e",
@@ -51,7 +51,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "about_copyright.md",
+                "file": "about/about_site_building.md",
                 "mode": "preview",
                 "source": true
               }
@@ -124,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "about_copyright.md",
+                "file": "about/about_site_building.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "about_copyright.md",
+                "file": "about/about_site_building.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -167,15 +167,15 @@
   },
   "active": "249041366d31a9dc",
   "lastOpenFiles": [
-    "about_me.md",
-    "about_site_building.md",
     "index.md",
-    "fit5136.md",
-    "about_copyright.md",
-    "fit5032.md",
-    "pic/Pasted image 20221028173503.png.md",
+    "fitnotes/fit5032.md",
+    "about/about_me.md",
+    "about/about_site_building.md",
+    "about/about_copyright.md",
+    "fitnotes/fit5136.md",
+    "fitnotes/fit5057.md",
     "fit5057.md",
-    "about_tags.md",
-    "about.md"
+    "about_me.md",
+    "fit5136.md"
   ]
 }

@@ -1,9 +1,14 @@
+---
 Title:   GreenH47's website  
 Summary: A brief description of my document.  
 Authors: GreenH47  
 Date:    2022-11-03  
 blank-value:  
 some_url: https://example.com  
+hide:
+  - navigation
+---
+
 
 
 Create time: 2022.10.31  
