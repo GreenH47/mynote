@@ -4,61 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "4eec8e39bb1940d3",
+        "id": "e90fc44c7abebd35",
         "type": "tabs",
-        "dimension": 22.22222222222222,
         "children": [
           {
-            "id": "e9d0e87a8d0b8a96",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "about/about_site_building.md"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "b5b457d33fa371af",
-        "type": "tabs",
-        "dimension": 49.66666666666666,
-        "children": [
-          {
-            "id": "249041366d31a9dc",
+            "id": "60ba25ed044bbca8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "about/about_site_building.md",
+                "file": "fitnotes/fit_note_menu.md",
                 "mode": "source",
                 "source": true
               }
-            },
-            "group": "d31346c431ed5cec"
-          }
-        ]
-      },
-      {
-        "id": "d77cf8da63d82f36",
-        "type": "tabs",
-        "dimension": 28.111111111111107,
-        "children": [
+            }
+          },
           {
-            "id": "ef56176670854c0e",
+            "id": "9130374d7965d8f2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "about/about_site_building.md",
-                "mode": "preview",
+                "file": "reactJS/react_note_menu.md",
+                "mode": "source",
                 "source": true
               }
-            },
-            "group": "d31346c431ed5cec"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -124,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "about/about_site_building.md",
+                "file": "reactJS/react_note_menu.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "about/about_site_building.md",
+                "file": "reactJS/react_note_menu.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,17 +139,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "249041366d31a9dc",
+  "active": "9130374d7965d8f2",
   "lastOpenFiles": [
-    "index.md",
-    "fitnotes/fit5032.md",
-    "about/about_me.md",
-    "about/about_site_building.md",
+    "LeetCode/LeetCode_note_menu.md",
+    "fitnotes/fit_note_menu.md",
+    "career/career_note_menu.md",
+    "about/about_index.md",
     "about/about_copyright.md",
-    "fitnotes/fit5136.md",
-    "fitnotes/fit5057.md",
-    "fit5057.md",
-    "about_me.md",
-    "fit5136.md"
+    "fitnotes/fit5032.md",
+    "reactJS/react_note_menu.md",
+    "index.md",
+    "about/about_site_building.md",
+    "about/about_me.md"
   ]
 }
