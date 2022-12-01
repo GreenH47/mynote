@@ -13,11 +13,15 @@ nav:
         
     - 'FIT Study Note':
         - 'FIT study note navigation': 'fitnotes/fit_note_menu.md'
+        - 'FIT9132 - Introduction to databases 2022 s1': 'fitnotes/fit9132.md'
         - 'FIT5032 Asp .net develop 2022 s2': 'fitnotes/fit5032.md'
         - 'FIT5057 project management 2022 s2': 'fitnotes/fit5057.md'
+        - 'FIT5125 - IT research methods 2022 s2': 'fitnotes/fit5125.md'
         - 'FIT5136 software engineering 2022 s2': 'fitnotes/fit5136.md'
         
-    - 'Study Note':
+        
+    - 'Programming Note':
+        - ' Git branching learning': 'Git/Git.md'
         - 'LeetCode':
             - 'LeetCode note navigation': "LeetCode/LeetCode_note_menu.md"
         - 'reactJS':
