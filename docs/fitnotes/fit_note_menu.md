@@ -1,5 +1,8 @@
 Create time: 2022-11-29  Last update: 2022-11-30
 # Navigation of all FIT note page
+## 2022 semester 1
+### FIT 9132
+click [FIT9132 - Introduction to databases 2022 s1](fit9132.md) for further details.  
 
 ## 2022 semester 2
 ### FIT 5032

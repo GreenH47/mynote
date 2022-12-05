@@ -20,7 +20,7 @@
     
     
       
-        <title>FIT9132 - Introduction to databases 2022 s1 - greenh47</title>
+        <title>FIT9132 Introduction to databases 2022 s1 - greenh47</title>
       
     
     
@@ -43,6 +43,8 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../../overjs/extra.js">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -67,6 +69,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#how-to-use-the-fit-study-note-document" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -109,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              FIT9132 - Introduction to databases 2022 s1
+              FIT9132 Introduction to databases 2022 s1
             
           </span>
         </div>
@@ -462,9 +469,931 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          FIT9132 Introduction to databases 2022 s1
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
-        FIT9132 - Introduction to databases 2022 s1
+        FIT9132 Introduction to databases 2022 s1
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-use-the-fit-study-note-document" class="md-nav__link">
+    How to use the FIT study Note document
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fit9132-course-brief-introduction" class="md-nav__link">
+    FIT9132 Course Brief introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-1" class="md-nav__link">
+    WEEK 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-2-conceptual-modelling" class="md-nav__link">
+    week 2 Conceptual Modelling
+  </a>
+  
+    <nav class="md-nav" aria-label="week 2 Conceptual Modelling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#er-diagram" class="md-nav__link">
+    ER diagram
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entities" class="md-nav__link">
+    Entities
+  </a>
+  
+    <nav class="md-nav" aria-label="Entities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#strong-entity" class="md-nav__link">
+    Strong Entity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weak-entity" class="md-nav__link">
+    Weak Entity
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relationship" class="md-nav__link">
+    Relationship
+  </a>
+  
+    <nav class="md-nav" aria-label="Relationship">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#identifying" class="md-nav__link">
+    Identifying
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-identifying" class="md-nav__link">
+    Non-identifying
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    Attributes
+  </a>
+  
+    <nav class="md-nav" aria-label="Attributes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#simple" class="md-nav__link">
+    Simple
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#composite" class="md-nav__link">
+    Composite
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#single-valued" class="md-nav__link">
+    Single-valued
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-valued" class="md-nav__link">
+    Multi-valued
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#derived" class="md-nav__link">
+    Derived
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multivalued-attribute" class="md-nav__link">
+    Multivalued Attribute
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erd" class="md-nav__link">
+    ERD
+  </a>
+  
+    <nav class="md-nav" aria-label="ERD">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-identify-main-entities" class="md-nav__link">
+    Step 1 Identify Main Entities
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-identify-the-relationships-which-exist-between-these-entities" class="md-nav__link">
+    STEP 2: Identify the relationships which exist between these entities
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-add-non-key-attributes" class="md-nav__link">
+    Step 3 Add Non-Key Attributes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-3-relational-database-model" class="md-nav__link">
+    WEEK 3 Relational Database Model
+  </a>
+  
+    <nav class="md-nav" aria-label="WEEK 3 Relational Database Model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-relation" class="md-nav__link">
+    A Relation
+  </a>
+  
+    <nav class="md-nav" aria-label="A Relation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#relation-heading-column-headings" class="md-nav__link">
+    Relation Heading ⇨ column headings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relation-body-set-of-data-rows" class="md-nav__link">
+    Relation Body ⇨ set of data rows
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relation-properties" class="md-nav__link">
+    Relation Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Relation Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-duplicate-tuples" class="md-nav__link">
+    No duplicate tuples
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tuples-are-unordered-within-a-relation" class="md-nav__link">
+    Tuples are unordered within a relation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no-ordering-of-attributes-within-a-tuple" class="md-nav__link">
+    No ordering of attributes within a tuple
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tuple-values-are-atomic-cannot-be-divided" class="md-nav__link">
+    Tuple values are atomic - cannot be divided
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functional-dependency" class="md-nav__link">
+    Functional Dependency
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relational-model-keys" class="md-nav__link">
+    Relational Model Keys
+  </a>
+  
+    <nav class="md-nav" aria-label="Relational Model Keys">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#superkey" class="md-nav__link">
+    superkey
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#candidate-key-ck" class="md-nav__link">
+    candidate key (CK)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#primary-key" class="md-nav__link">
+    Primary key
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#null" class="md-nav__link">
+    Null
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#writing-relations" class="md-nav__link">
+    Writing Relations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#foreign-key-fk" class="md-nav__link">
+    Foreign Key (FK)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-integrity" class="md-nav__link">
+    Data Integrity
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relational-algebra" class="md-nav__link">
+    Relational Algebra
+  </a>
+  
+    <nav class="md-nav" aria-label="Relational Algebra">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#project" class="md-nav__link">
+    PROJECT 𝝿
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#select" class="md-nav__link">
+    SELECT 𝝈
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple-actions" class="md-nav__link">
+    Multiple Actions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#natural-join" class="md-nav__link">
+    NATURAL JOIN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#union-intersect-difference" class="md-nav__link">
+    UNION, INTERSECT, DIFFERENCE
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quiz-and-exercise" class="md-nav__link">
+    quiz and exercise
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-4-normalisation" class="md-nav__link">
+    week 4 Normalisation
+  </a>
+  
+    <nav class="md-nav" aria-label="week 4 Normalisation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-normalisation-process-goals" class="md-nav__link">
+    The Normalisation Process Goals
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#representing-a-form-as-a-relation" class="md-nav__link">
+    Representing a form as a relation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependency" class="md-nav__link">
+    Dependency
+  </a>
+  
+    <nav class="md-nav" aria-label="Dependency">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#functional-dependency-revisited" class="md-nav__link">
+    Functional Dependency Revisited
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functional-dependency_1" class="md-nav__link">
+    Functional Dependency
+  </a>
+  
+    <nav class="md-nav" aria-label="Functional Dependency">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#total-dependency" class="md-nav__link">
+    TOTAL DEPENDENCY
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-dependency" class="md-nav__link">
+    FULL DEPENDENCY
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#partial-dependency" class="md-nav__link">
+    PARTIAL  DEPENDENCY
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transitive-dependency" class="md-nav__link">
+    TRANSITIVE DEPENDENCY
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#normal-form" class="md-nav__link">
+    Normal Form
+  </a>
+  
+    <nav class="md-nav" aria-label="Normal Form">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unf" class="md-nav__link">
+    UNF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1nf" class="md-nav__link">
+    1NF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unf-to-1nf" class="md-nav__link">
+    UNF to 1NF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1nf-to-2nf" class="md-nav__link">
+    1NF to 2NF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2nf-to-3nf" class="md-nav__link">
+    2NF to 3NF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    summary
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-5-logical-modelling" class="md-nav__link">
+    week 5 Logical Modelling
+  </a>
+  
+    <nav class="md-nav" aria-label="week 5 Logical Modelling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#relational-model-characteristics" class="md-nav__link">
+    Relational Model Characteristics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transforming-er-diagrams-into-relations" class="md-nav__link">
+    Transforming ER diagrams into relations
+  </a>
+  
+    <nav class="md-nav" aria-label="Transforming ER diagrams into relations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mapping-a-composite-attribute" class="md-nav__link">
+    Mapping a Composite Attribute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-a-multi-valued-attribute" class="md-nav__link">
+    Mapping a Multi valued Attribute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-a-weak-entity" class="md-nav__link">
+    Mapping a Weak Entity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-a-1m-binary-relationship" class="md-nav__link">
+    Mapping a 1:M Binary Relationship
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-a-mn-binary-relationship" class="md-nav__link">
+    Mapping a M:N Binary Relationship
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-an-associative-entity-with-an-identifier" class="md-nav__link">
+    Mapping an associative entity with an Identifier
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-a-1m-unary-relationship" class="md-nav__link">
+    Mapping a 1:M Unary Relationship
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-a-mn-unary-relationship" class="md-nav__link">
+    Mapping a M:N Unary Relationship
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week6-creating-populating-the-database" class="md-nav__link">
+    week6 Creating &amp; Populating the Database
+  </a>
+  
+    <nav class="md-nav" aria-label="week6 Creating &amp; Populating the Database">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-table-ddl" class="md-nav__link">
+    CREATE A TABLE (DDL)
+  </a>
+  
+    <nav class="md-nav" aria-label="CREATE A TABLE (DDL)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alternative-better-method-of-defining-fks" class="md-nav__link">
+    Alternative (BETTER) method of defining FKs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alter-table" class="md-nav__link">
+    ALTER TABLE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alter-table_manipulate-constraints" class="md-nav__link">
+    ALTER TABLE_Manipulate Constraints
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drop_deleting-a-table" class="md-nav__link">
+    DROP_DELETING A TABLE
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-tuplesrows-to-a-table-dml" class="md-nav__link">
+    ADDING TUPLES/ROWS TO A TABLE (DML)
+  </a>
+  
+    <nav class="md-nav" aria-label="ADDING TUPLES/ROWS TO A TABLE (DML)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#insert_adding-data-to-table" class="md-nav__link">
+    INSERT_Adding data to table
+  </a>
+  
+    <nav class="md-nav" aria-label="INSERT_Adding data to table">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#to_dateinserting-dates-into-a-table" class="md-nav__link">
+    (TO_DATE)Inserting DATES into a table
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commit-and-rollback" class="md-nav__link">
+    COMMIT and ROLLBACK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sequence-auto-increment-of-a-numeric" class="md-nav__link">
+    (SEQUENCE) auto-increment of a numeric
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-7-structured-query-language-sql" class="md-nav__link">
+    WEEK 7 Structured Query Language (SQL)
+  </a>
+  
+    <nav class="md-nav" aria-label="WEEK 7 Structured Query Language (SQL)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#select_1" class="md-nav__link">
+    SELECT
+  </a>
+  
+    <nav class="md-nav" aria-label="SELECT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anatomy-of-an-sql-select-statement" class="md-nav__link">
+    Anatomy of an SQL SELECT Statement
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparison" class="md-nav__link">
+    Comparison
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#between_range" class="md-nav__link">
+    BETWEEN_Range
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in_set-membership" class="md-nav__link">
+    IN_Set Membership
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#like_pattern-match" class="md-nav__link">
+    LIKE_Pattern Match
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#and-or-not" class="md-nav__link">
+    AND, OR, NOT
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nvl_replace-a-null-with-a-value" class="md-nav__link">
+    NVL_replace a NULL with a value
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#as_renaming-column" class="md-nav__link">
+    AS_Renaming Column
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#order-bysorting-query-result" class="md-nav__link">
+    (ORDER BY)Sorting Query Result
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distinctremoving-duplicate-rows-in-the-query-result" class="md-nav__link">
+    (DISTINCT)removing Duplicate Rows in the Query Result
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to_char" class="md-nav__link">
+    TO_CHAR
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#join" class="md-nav__link">
+    JOIN
+  </a>
+  
+    <nav class="md-nav" aria-label="JOIN">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#join-on" class="md-nav__link">
+    JOIN ON
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#join-using" class="md-nav__link">
+    JOIN USING
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#natural-join_1" class="md-nav__link">
+    NATURAL JOIN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#different-types-of-sql-joins" class="md-nav__link">
+    Different Types of SQL JOINs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week8-dml-update-delete-and-transaction-management" class="md-nav__link">
+    week8 DML Update, Delete and Transaction  Management
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final" class="md-nav__link">
+    FINAL
+  </a>
+  
+    <nav class="md-nav" aria-label="FINAL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sql" class="md-nav__link">
+    SQL
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sql-final" class="md-nav__link">
+    SQL FINAL
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -506,7 +1435,7 @@
   
     <li class="md-nav__item">
       <a href="../fit5125/" class="md-nav__link">
-        FIT5125 - IT research methods 2022 s2
+        FIT5125 IT research methods 2022 s2
       </a>
     </li>
   
@@ -741,6 +1670,914 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-use-the-fit-study-note-document" class="md-nav__link">
+    How to use the FIT study Note document
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fit9132-course-brief-introduction" class="md-nav__link">
+    FIT9132 Course Brief introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-1" class="md-nav__link">
+    WEEK 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-2-conceptual-modelling" class="md-nav__link">
+    week 2 Conceptual Modelling
+  </a>
+  
+    <nav class="md-nav" aria-label="week 2 Conceptual Modelling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#er-diagram" class="md-nav__link">
+    ER diagram
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entities" class="md-nav__link">
+    Entities
+  </a>
+  
+    <nav class="md-nav" aria-label="Entities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#strong-entity" class="md-nav__link">
+    Strong Entity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weak-entity" class="md-nav__link">
+    Weak Entity
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relationship" class="md-nav__link">
+    Relationship
+  </a>
+  
+    <nav class="md-nav" aria-label="Relationship">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#identifying" class="md-nav__link">
+    Identifying
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-identifying" class="md-nav__link">
+    Non-identifying
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    Attributes
+  </a>
+  
+    <nav class="md-nav" aria-label="Attributes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#simple" class="md-nav__link">
+    Simple
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#composite" class="md-nav__link">
+    Composite
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#single-valued" class="md-nav__link">
+    Single-valued
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-valued" class="md-nav__link">
+    Multi-valued
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#derived" class="md-nav__link">
+    Derived
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multivalued-attribute" class="md-nav__link">
+    Multivalued Attribute
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erd" class="md-nav__link">
+    ERD
+  </a>
+  
+    <nav class="md-nav" aria-label="ERD">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-identify-main-entities" class="md-nav__link">
+    Step 1 Identify Main Entities
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-identify-the-relationships-which-exist-between-these-entities" class="md-nav__link">
+    STEP 2: Identify the relationships which exist between these entities
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-add-non-key-attributes" class="md-nav__link">
+    Step 3 Add Non-Key Attributes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-3-relational-database-model" class="md-nav__link">
+    WEEK 3 Relational Database Model
+  </a>
+  
+    <nav class="md-nav" aria-label="WEEK 3 Relational Database Model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-relation" class="md-nav__link">
+    A Relation
+  </a>
+  
+    <nav class="md-nav" aria-label="A Relation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#relation-heading-column-headings" class="md-nav__link">
+    Relation Heading ⇨ column headings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relation-body-set-of-data-rows" class="md-nav__link">
+    Relation Body ⇨ set of data rows
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relation-properties" class="md-nav__link">
+    Relation Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Relation Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-duplicate-tuples" class="md-nav__link">
+    No duplicate tuples
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tuples-are-unordered-within-a-relation" class="md-nav__link">
+    Tuples are unordered within a relation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no-ordering-of-attributes-within-a-tuple" class="md-nav__link">
+    No ordering of attributes within a tuple
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tuple-values-are-atomic-cannot-be-divided" class="md-nav__link">
+    Tuple values are atomic - cannot be divided
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functional-dependency" class="md-nav__link">
+    Functional Dependency
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relational-model-keys" class="md-nav__link">
+    Relational Model Keys
+  </a>
+  
+    <nav class="md-nav" aria-label="Relational Model Keys">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#superkey" class="md-nav__link">
+    superkey
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#candidate-key-ck" class="md-nav__link">
+    candidate key (CK)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#primary-key" class="md-nav__link">
+    Primary key
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#null" class="md-nav__link">
+    Null
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#writing-relations" class="md-nav__link">
+    Writing Relations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#foreign-key-fk" class="md-nav__link">
+    Foreign Key (FK)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-integrity" class="md-nav__link">
+    Data Integrity
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relational-algebra" class="md-nav__link">
+    Relational Algebra
+  </a>
+  
+    <nav class="md-nav" aria-label="Relational Algebra">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#project" class="md-nav__link">
+    PROJECT 𝝿
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#select" class="md-nav__link">
+    SELECT 𝝈
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple-actions" class="md-nav__link">
+    Multiple Actions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#natural-join" class="md-nav__link">
+    NATURAL JOIN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#union-intersect-difference" class="md-nav__link">
+    UNION, INTERSECT, DIFFERENCE
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quiz-and-exercise" class="md-nav__link">
+    quiz and exercise
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-4-normalisation" class="md-nav__link">
+    week 4 Normalisation
+  </a>
+  
+    <nav class="md-nav" aria-label="week 4 Normalisation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-normalisation-process-goals" class="md-nav__link">
+    The Normalisation Process Goals
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#representing-a-form-as-a-relation" class="md-nav__link">
+    Representing a form as a relation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependency" class="md-nav__link">
+    Dependency
+  </a>
+  
+    <nav class="md-nav" aria-label="Dependency">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#functional-dependency-revisited" class="md-nav__link">
+    Functional Dependency Revisited
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functional-dependency_1" class="md-nav__link">
+    Functional Dependency
+  </a>
+  
+    <nav class="md-nav" aria-label="Functional Dependency">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#total-dependency" class="md-nav__link">
+    TOTAL DEPENDENCY
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-dependency" class="md-nav__link">
+    FULL DEPENDENCY
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#partial-dependency" class="md-nav__link">
+    PARTIAL  DEPENDENCY
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transitive-dependency" class="md-nav__link">
+    TRANSITIVE DEPENDENCY
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#normal-form" class="md-nav__link">
+    Normal Form
+  </a>
+  
+    <nav class="md-nav" aria-label="Normal Form">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unf" class="md-nav__link">
+    UNF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1nf" class="md-nav__link">
+    1NF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unf-to-1nf" class="md-nav__link">
+    UNF to 1NF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1nf-to-2nf" class="md-nav__link">
+    1NF to 2NF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2nf-to-3nf" class="md-nav__link">
+    2NF to 3NF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    summary
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-5-logical-modelling" class="md-nav__link">
+    week 5 Logical Modelling
+  </a>
+  
+    <nav class="md-nav" aria-label="week 5 Logical Modelling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#relational-model-characteristics" class="md-nav__link">
+    Relational Model Characteristics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transforming-er-diagrams-into-relations" class="md-nav__link">
+    Transforming ER diagrams into relations
+  </a>
+  
+    <nav class="md-nav" aria-label="Transforming ER diagrams into relations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mapping-a-composite-attribute" class="md-nav__link">
+    Mapping a Composite Attribute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-a-multi-valued-attribute" class="md-nav__link">
+    Mapping a Multi valued Attribute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-a-weak-entity" class="md-nav__link">
+    Mapping a Weak Entity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-a-1m-binary-relationship" class="md-nav__link">
+    Mapping a 1:M Binary Relationship
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-a-mn-binary-relationship" class="md-nav__link">
+    Mapping a M:N Binary Relationship
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-an-associative-entity-with-an-identifier" class="md-nav__link">
+    Mapping an associative entity with an Identifier
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-a-1m-unary-relationship" class="md-nav__link">
+    Mapping a 1:M Unary Relationship
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-a-mn-unary-relationship" class="md-nav__link">
+    Mapping a M:N Unary Relationship
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week6-creating-populating-the-database" class="md-nav__link">
+    week6 Creating &amp; Populating the Database
+  </a>
+  
+    <nav class="md-nav" aria-label="week6 Creating &amp; Populating the Database">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-table-ddl" class="md-nav__link">
+    CREATE A TABLE (DDL)
+  </a>
+  
+    <nav class="md-nav" aria-label="CREATE A TABLE (DDL)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alternative-better-method-of-defining-fks" class="md-nav__link">
+    Alternative (BETTER) method of defining FKs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alter-table" class="md-nav__link">
+    ALTER TABLE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alter-table_manipulate-constraints" class="md-nav__link">
+    ALTER TABLE_Manipulate Constraints
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drop_deleting-a-table" class="md-nav__link">
+    DROP_DELETING A TABLE
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-tuplesrows-to-a-table-dml" class="md-nav__link">
+    ADDING TUPLES/ROWS TO A TABLE (DML)
+  </a>
+  
+    <nav class="md-nav" aria-label="ADDING TUPLES/ROWS TO A TABLE (DML)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#insert_adding-data-to-table" class="md-nav__link">
+    INSERT_Adding data to table
+  </a>
+  
+    <nav class="md-nav" aria-label="INSERT_Adding data to table">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#to_dateinserting-dates-into-a-table" class="md-nav__link">
+    (TO_DATE)Inserting DATES into a table
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commit-and-rollback" class="md-nav__link">
+    COMMIT and ROLLBACK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sequence-auto-increment-of-a-numeric" class="md-nav__link">
+    (SEQUENCE) auto-increment of a numeric
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-7-structured-query-language-sql" class="md-nav__link">
+    WEEK 7 Structured Query Language (SQL)
+  </a>
+  
+    <nav class="md-nav" aria-label="WEEK 7 Structured Query Language (SQL)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#select_1" class="md-nav__link">
+    SELECT
+  </a>
+  
+    <nav class="md-nav" aria-label="SELECT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anatomy-of-an-sql-select-statement" class="md-nav__link">
+    Anatomy of an SQL SELECT Statement
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparison" class="md-nav__link">
+    Comparison
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#between_range" class="md-nav__link">
+    BETWEEN_Range
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in_set-membership" class="md-nav__link">
+    IN_Set Membership
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#like_pattern-match" class="md-nav__link">
+    LIKE_Pattern Match
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#and-or-not" class="md-nav__link">
+    AND, OR, NOT
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nvl_replace-a-null-with-a-value" class="md-nav__link">
+    NVL_replace a NULL with a value
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#as_renaming-column" class="md-nav__link">
+    AS_Renaming Column
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#order-bysorting-query-result" class="md-nav__link">
+    (ORDER BY)Sorting Query Result
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distinctremoving-duplicate-rows-in-the-query-result" class="md-nav__link">
+    (DISTINCT)removing Duplicate Rows in the Query Result
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to_char" class="md-nav__link">
+    TO_CHAR
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#join" class="md-nav__link">
+    JOIN
+  </a>
+  
+    <nav class="md-nav" aria-label="JOIN">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#join-on" class="md-nav__link">
+    JOIN ON
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#join-using" class="md-nav__link">
+    JOIN USING
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#natural-join_1" class="md-nav__link">
+    NATURAL JOIN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#different-types-of-sql-joins" class="md-nav__link">
+    Different Types of SQL JOINs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week8-dml-update-delete-and-transaction-management" class="md-nav__link">
+    week8 DML Update, Delete and Transaction  Management
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final" class="md-nav__link">
+    FINAL
+  </a>
+  
+    <nav class="md-nav" aria-label="FINAL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sql" class="md-nav__link">
+    SQL
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sql-final" class="md-nav__link">
+    SQL FINAL
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -759,9 +2596,1270 @@
   </a>
 
 
-  <h1>FIT9132 - Introduction to databases 2022 s1</h1>
+  <h1>FIT9132 Introduction to databases 2022 s1</h1>
+
+<p>Create time: 2022-05-05  Last update: 2022-12-05</p>
+<h2 id="how-to-use-the-fit-study-note-document">How to use the FIT study Note document<a class="headerlink" href="#how-to-use-the-fit-study-note-document" title="Permanent link">#</a></h2>
+<ol>
+<li>download the <a href="https://github.com/GreenH47/mynote">markdown file repository</a> and  navigate to the <code>docs</code> folder</li>
+<li>view all the markdown files via <a href="https://help.obsidian.md/How+to/Working+with+multiple+vaults">Obsidian vault</a> that can show the linked section in the note document  <img alt="" src="../../img/5032-20221103.png" />  </li>
+<li>
+<p>You may find some extra material or program template  repository in the Course Brief introduction for the FIT Note markdown Document (some course don't have )</p>
+</li>
+<li>
+<p>you can view <a href="https://greenh47.github.io/mynote/">the web page</a> which transfer from MD file online but will lose the extra information or wrong    markdown display</p>
+</li>
+</ol>
+<h2 id="fit9132-course-brief-introduction">FIT9132 Course Brief introduction<a class="headerlink" href="#fit9132-course-brief-introduction" title="Permanent link">#</a></h2>
+<p><a href="https://handbook.monash.edu/2022/units/FIT9132?year=2022">FIT9132 - Introduction to databases</a> done for the year 2022. (Semester 1)  </p>
+<h2 id="week-1">WEEK 1<a class="headerlink" href="#week-1" title="Permanent link">#</a></h2>
+<p>ER Modeling
+<img alt="" src="../../img/fit9132-20221205.png" /></p>
+<p>Logical Model<br />
+<img alt="" src="../../img/fit9132-20221205-1.png" /></p>
+<p>Physical Model
+<img alt="" src="../../img/fit9132-20221205-3.png" /></p>
+<h2 id="week-2-conceptual-modelling">week 2 Conceptual Modelling<a class="headerlink" href="#week-2-conceptual-modelling" title="Permanent link">#</a></h2>
+<p>理解数据库设计的各个阶段
+理解ANSI/SPARC结构在数据库设计中的⻆⾊
+认识实体关系图当中的各个组成部分
+理解strong/weak entity之间的不同
+学习绘制概念模型图</p>
+<h4 id="er-diagram">ER diagram<a class="headerlink" href="#er-diagram" title="Permanent link">#</a></h4>
+<h4 id="entities">Entities<a class="headerlink" href="#entities" title="Permanent link">#</a></h4>
+<p><img alt="" src="../../img/fit9132-20221205-4.png" />
+<img alt="" src="../../img/fit9132-20221205-5.png" /></p>
+<h5 id="strong-entity">Strong Entity<a class="headerlink" href="#strong-entity" title="Permanent link">#</a></h5>
+<p>Has a key which may be defined without reference to other entities<br />
+<img alt="" src="../../img/fit9132-20221205-6.png" /></p>
+<h5 id="weak-entity">Weak Entity<a class="headerlink" href="#weak-entity" title="Permanent link">#</a></h5>
+<p>Has a key which requires the existence of one or more other entities.<br />
+For example FAMILY entity - need to include the key of employee to create a suitable key for family
+<img alt="" src="../../img/fit9132-20221205-7.png" /></p>
+<h4 id="relationship">Relationship<a class="headerlink" href="#relationship" title="Permanent link">#</a></h4>
+<h5 id="identifying">Identifying<a class="headerlink" href="#identifying" title="Permanent link">#</a></h5>
+<p>▪  Identifier of A is part of identifier of B
+▪  Shown with solid line
+▪  ENROLMENT - STUDENT Enrolment key includes student id,which is an identifier of student.<br />
+<img alt="" src="../../img/fit9132-20221205-9.png" /></p>
+<h5 id="non-identifying">Non-identifying<a class="headerlink" href="#non-identifying" title="Permanent link">#</a></h5>
+<p>▪ Identifier of A is NOT part of identifier of B.
+▪ Shown with broken line
+▪ Department no (identifier of department) is not part of Employee’s identifier
+<img alt="" src="../../img/fit9132-20221205-10.png" /></p>
+<h4 id="attributes">Attributes<a class="headerlink" href="#attributes" title="Permanent link">#</a></h4>
+<h5 id="simple">Simple<a class="headerlink" href="#simple" title="Permanent link">#</a></h5>
+<p>Cannot be subdivided 
+Age, sex, marital status</p>
+<h5 id="composite">Composite<a class="headerlink" href="#composite" title="Permanent link">#</a></h5>
+<p>Can be subdivided into additional attributes
+Address into street, city</p>
+<h5 id="single-valued">Single-valued<a class="headerlink" href="#single-valued" title="Permanent link">#</a></h5>
+<p>Can have only a single value
+ Person has one social security number</p>
+<h5 id="multi-valued">Multi-valued<a class="headerlink" href="#multi-valued" title="Permanent link">#</a></h5>
+<p>Can have many values
+Person may have several college degrees</p>
+<h5 id="derived">Derived<a class="headerlink" href="#derived" title="Permanent link">#</a></h5>
+<p>Can be derived with algorithm
+ Age can be derived from date of birth</p>
+<h5 id="multivalued-attribute">Multivalued Attribute<a class="headerlink" href="#multivalued-attribute" title="Permanent link">#</a></h5>
+<p>An attribute that has a list of values.
+Car colour may consist of body colour, trim colour, bumper colour.
+<img alt="" src="../../img/fit9132-20221205-12.png" /></p>
+<h4 id="erd">ERD<a class="headerlink" href="#erd" title="Permanent link">#</a></h4>
+<h5 id="step-1-identify-main-entities">Step 1 Identify Main Entities<a class="headerlink" href="#step-1-identify-main-entities" title="Permanent link">#</a></h5>
+<p><img alt="" src="../../img/fit9132-20221205-13.png" /></p>
+<h5 id="step-2-identify-the-relationships-which-exist-between-these-entities">STEP 2: Identify the relationships which exist between these entities<a class="headerlink" href="#step-2-identify-the-relationships-which-exist-between-these-entities" title="Permanent link">#</a></h5>
+<p>(remember to add an appropriate verb)
+<img alt="" src="../../img/fit9132-20221205-14.png" /></p>
+<h5 id="step-3-add-non-key-attributes">Step 3 Add Non-Key Attributes<a class="headerlink" href="#step-3-add-non-key-attributes" title="Permanent link">#</a></h5>
+<p><img alt="" src="../../img/fit9132-20221205-16.png" /></p>
+<h2 id="week-3-relational-database-model">WEEK 3 Relational Database Model<a class="headerlink" href="#week-3-relational-database-model" title="Permanent link">#</a></h2>
+<p>• Explain the relational model and its components
+• Identify and evaluate the issues of insert, update and delete anomalies
+• Define entity and referential integrity
+• Differentiate the types of keys and distinguish their roles in the relational model
+• Formulate and write relational algebra to solve query scenarios</p>
+<p>Basic structure is the mathematical concept of a RELATION mapped to the  'concept' of a table (tabular representation of relation)<br />
+– Relation - abstract object<br />
+– Table - pictorial representation<br />
+– Storage structure - "real thing" - eg. isam file of 1's and 0's</p>
+<h3 id="a-relation">A Relation<a class="headerlink" href="#a-relation" title="Permanent link">#</a></h3>
+<p>A relation consists of two parts<br />
+– heading  – body
+Relation heading ⇨ column headings<br />
+Relation body ⇨ set of data rows</p>
+<h4 id="relation-heading-column-headings">Relation Heading ⇨ column headings<a class="headerlink" href="#relation-heading-column-headings" title="Permanent link">#</a></h4>
+<p>Also called Relational Schema consists of a fixed set of attributes  </p>
+<p><code>R (A1,A2,.......An)</code>R = relation name, Ai = attribute i` </p>
+<p>Each attribute corresponds to one underlying domain:<br />
+ Customer relation heading:<br />
+     CUSTOMER (custno, custname, custadd, custcredlimit)
+        dom(custno) = customer_number</p>
+<h4 id="relation-body-set-of-data-rows">Relation Body ⇨ set of data rows<a class="headerlink" href="#relation-body-set-of-data-rows" title="Permanent link">#</a></h4>
+<h4 id="relation-properties">Relation Properties<a class="headerlink" href="#relation-properties" title="Permanent link">#</a></h4>
+<h5 id="no-duplicate-tuples">No duplicate tuples<a class="headerlink" href="#no-duplicate-tuples" title="Permanent link">#</a></h5>
+<p>sets do not contain duplicate elements   hence tuples must be unique</p>
+<h5 id="tuples-are-unordered-within-a-relation">Tuples are unordered within a relation<a class="headerlink" href="#tuples-are-unordered-within-a-relation" title="Permanent link">#</a></h5>
+<p>sets are not ordered   hence tuples can only be accessed by content</p>
+<h5 id="no-ordering-of-attributes-within-a-tuple">No ordering of attributes within a tuple<a class="headerlink" href="#no-ordering-of-attributes-within-a-tuple" title="Permanent link">#</a></h5>
+<h5 id="tuple-values-are-atomic-cannot-be-divided">Tuple values are atomic - cannot be divided<a class="headerlink" href="#tuple-values-are-atomic-cannot-be-divided" title="Permanent link">#</a></h5>
+<p><code>EMPLOYEE (eid, ename, departno, dependants)</code>
+     not allowed: <code>dependants (dep_name, dep_age)</code>multivalued hence no multivalued (repeating) attributes allowed, called the first  normal form rule</p>
+<h4 id="functional-dependency">Functional Dependency<a class="headerlink" href="#functional-dependency" title="Permanent link">#</a></h4>
+<p>A set of attributes A functionally determines an attribute B if, and only if, for  each A value, there is exactly one value of B in the relation. It is denoted as </p>
+<p><mark style="background: #0000CD;">A  → B (A determines B, or B depends on A)</mark></p>
+<h3 id="relational-model-keys">Relational Model Keys<a class="headerlink" href="#relational-model-keys" title="Permanent link">#</a></h3>
+<h4 id="superkey">superkey<a class="headerlink" href="#superkey" title="Permanent link">#</a></h4>
+<p>A superkey of a relation R is an attribute or set of attributes which exhibits only  the uniqueness property<br />
+– No two tuples of R have the same value for the superkey (Uniqueness  property)<br />
+– t1[superkey] ≠ t2[superkey]</p>
+<h4 id="candidate-key-ck">candidate key (CK)<a class="headerlink" href="#candidate-key-ck" title="Permanent link">#</a></h4>
+<p>A candidate key (CK) of a relation R is an attribute or set of attributes which  exhibits the following properties:<br />
+– <mark style="background: #ff0000;">Uniqueness property (as above)</mark>, and<br />
+– No proper subset of CK has the uniqueness property  (Minimality or Irreducibility property) ie. a minimal superkey
+–<mark style="background: #3CB371;"></mark>One candidate key is chosen to be the primary key (PK) of a relation</p>
+<h4 id="primary-key">Primary key<a class="headerlink" href="#primary-key" title="Permanent link">#</a></h4>
+<p><mark style="background: #D2691E;">One candidate key is chosen to be the primary key (PK) of a relation
+preferably a single attribute, preferably numeric</mark></p>
+<p><img alt="" src="../../img/fit9132-20221205-17.png" /></p>
+<h4 id="null">Null<a class="headerlink" href="#null" title="Permanent link">#</a></h4>
+<p>NULL is NOT a value - is a representation of the fact that there is NO VALUE
+VALUE NOT APPLICABLE
+VALUE UNKNOWN
+VALUE DOES NOT EXIST
+VALUE UNDEFINED</p>
+<h4 id="writing-relations">Writing Relations<a class="headerlink" href="#writing-relations" title="Permanent link">#</a></h4>
+<p>Relations may be represented using the following notation:<br />
+– RELATION_NAME (attribute1, attribute2,...)<br />
+▪ Relation_name must not be pluralised (is a set name)<br />
+▪ The primary key is underlined.<br />
+<code>STAFF (staff_id, staff_surname, staff_initials, staff_address,  staff_phone)</code></p>
+<h4 id="foreign-key-fk">Foreign Key (FK)<a class="headerlink" href="#foreign-key-fk" title="Permanent link">#</a></h4>
+<p>An attribute/s in a relation that exists in the same, or another relation  as a Primary Key  </p>
+<h4 id="data-integrity">Data Integrity<a class="headerlink" href="#data-integrity" title="Permanent link">#</a></h4>
+<p>==Entity integrity==
+Primary key value must not be NULL.<br />
+• No duplicate tuple property then ensures that each primary key  must be unique<br />
+• Implemented in the RDBMS via a unique index on the PK</p>
+<p>==Referential integrity==
+– The values of FK must either match a value of a full PK in the  related relation or be NULL.  </p>
+<p>==Column/Domain integrity==
+– All values in a given column must come from the same domain  (the same data type and range)</p>
+<h3 id="relational-algebra">Relational Algebra<a class="headerlink" href="#relational-algebra" title="Permanent link">#</a></h3>
+<p>8 basic operations:<br />
+– single relation: 
+• selection,•  projection  </p>
+<p>– two relations:<br />
+• cartesian product, join  • union<br />
+• intersection  • difference  • division</p>
+<h4 id="project">PROJECT 𝝿<a class="headerlink" href="#project" title="Permanent link">#</a></h4>
+<p><img alt="" src="../../img/fit9132-20221205-18.png" /></p>
+<h4 id="select">SELECT 𝝈<a class="headerlink" href="#select" title="Permanent link">#</a></h4>
+<p><img alt="" src="../../img/fit9132-20221205-19.png" /></p>
+<h4 id="multiple-actions">Multiple Actions<a class="headerlink" href="#multiple-actions" title="Permanent link">#</a></h4>
+<p><img alt="" src="../../img/fit9132-20221205-21.png" /></p>
+<h4 id="natural-join">NATURAL JOIN<a class="headerlink" href="#natural-join" title="Permanent link">#</a></h4>
+<p>Step 1: STUDENT X MARK
+<img alt="" src="../../img/fit9132-20221205-22.png" /></p>
+<p>Step 2: delete rows where IDs do not match (select =)
+<img alt="" src="../../img/fit9132-20221205-23.png" /></p>
+<p>Step 3: delete duplicate columns (project away)
+<img alt="" src="../../img/fit9132-20221205-24.png" /></p>
+<h4 id="union-intersect-difference">UNION, INTERSECT, DIFFERENCE<a class="headerlink" href="#union-intersect-difference" title="Permanent link">#</a></h4>
+<p><img alt="" src="../../img/fit9132-20221205-26.png" /></p>
+<h3 id="quiz-and-exercise">quiz and exercise<a class="headerlink" href="#quiz-and-exercise" title="Permanent link">#</a></h3>
+<p><img alt="" src="../../img/fit9132-20221205-27.png" />
+<img alt="" src="../../img/fit9132-20221205-30.png" />
+<img alt="" src="../../img/fit9132-20221205-31.png" />
+<img alt="" src="../../img/fit9132-20221205-32.png" /></p>
+<h2 id="week-4-normalisation">week 4 Normalisation<a class="headerlink" href="#week-4-normalisation" title="Permanent link">#</a></h2>
+<p>•理解在数据库设计中进⾏数据规范化的原因
+•理解在数据规范化中各种不同类型的dependency的定义
+•理解在数据规范化中从UNF到3NF的各个步骤
+•注意到更⾼阶的数据规范化（Boyce Codd, 4NF和5NF）
+•可以通过给定的relation画出dependency图
+•可以对给出的数据库描述进⾏数据规范化的操作
+•可以通过给定的逻辑等级的图标进⾏快速数据规范化</p>
+<p>Data Normalisation<br />
+▪ Relations MUST be normalised in order to avoid anomalies which may  occur when inserting, updating and deleting data.<br />
+▪ Normalisation is a systematic series of steps for progressively refining the  data model.<br />
+▪ A formal approach to analysing relations based on their primary key /  candidate keys and functional dependencies</p>
+<p>Used:<br />
+▪ as a design technique=="bottom up design"==, and<br />
+▪ as a way of validating structures produced via =="top down design" (ER model  converted to a logical model - see next week)==<br />
+▪ for this unit only concerned with conversion to third normal form </p>
+<h3 id="the-normalisation-process-goals">The Normalisation Process Goals<a class="headerlink" href="#the-normalisation-process-goals" title="Permanent link">#</a></h3>
+<p>Creating valid relations, i.e. each relation meets the properties of the  relational model. In particular:<br />
+– Entity integrity  – Referential integrity<br />
+– No many-to-many relationship<br />
+– Each cell contains a single value (is atomic)
+创建有效关系，即每个关系都满足关系模型的属性。特别是： – 实体完整性 – 参照完整性 – 没有多对多关系 – 每个单元格包含一个值（是原子的）</p>
+<p>In practical terms when implemented in an RDBMS:<br />
+– Each table represents a single subject<br />
+– No data item will be unnecessarily stored in more than one table (remember  some redundancy still exists - minimal redundancy).<br />
+– The relationship between tables can be established (via PK and FK pairs).<br />
+– Each table is void of insert, update and delete anomalies.<br />
+实际上，当在 RDBMS 中实现时： – 每个表代表一个主题 – 没有数据项将不必要地存储在多个表中（记住一些冗余仍然存在 - 最小冗余）。 – 可以建立表之间的关系（通过 PK 和 FK 对）。 – 每个表都没有插入、更新和删除异常。 </p>
+<h3 id="representing-a-form-as-a-relation">Representing a form as a relation<a class="headerlink" href="#representing-a-form-as-a-relation" title="Permanent link">#</a></h3>
+<p>This process follows a standard approach:<br />
+– arrive at a name for the form which indicates what it represents (its subject)<br />
+– determine if any attribute is multivalued (repeating) for a given entity  instance of the forms subject if an attribute (or set of attributes) appears multiple times then the group  of related attributes need to be shown enclosed in brackets to indicate  there are multiple sets of these values for each instance
+此过程遵循标准方法： – 为表单指定一个名称，表明其代表什么（其主题） – 确定表单主题的给定实体实例的任何属性是否是多值（重复）如果一个属性（或一组属性）出现多次，则需要将相关属性组显示在括号中，以指示每个实例有多组这些值</p>
+<p>example
+<code>DRUG_SLSREP (drug_code, drug_name, slsrep_id, slsrep_name,  slsrep_mobile)</code>
+该表格由分配给销售代表数据的重复药品行（实例）组成 </p>
+<h3 id="dependency">Dependency<a class="headerlink" href="#dependency" title="Permanent link">#</a></h3>
+<h4 id="functional-dependency-revisited">Functional Dependency Revisited<a class="headerlink" href="#functional-dependency-revisited" title="Permanent link">#</a></h4>
+<p>▪ An attribute B is FUNCTIONALLY DEPENDENT on another attribute A, if a  value of A determines a single value of B at any one time.
+<code>CUSTNUMB ➔ CUSTNAME  ORDERNO ➔ ORDERDATE</code></p>
+<h4 id="functional-dependency_1">Functional Dependency<a class="headerlink" href="#functional-dependency_1" title="Permanent link">#</a></h4>
+<h5 id="total-dependency">TOTAL DEPENDENCY<a class="headerlink" href="#total-dependency" title="Permanent link">#</a></h5>
+<p>– attribute A determines B AND attribute B determines A<br />
+<code>• EMPLOYEE-NUMBER ➔ TAX-FILE-NUMBER  • TAX-FILE-NUMBER ➔ EMPLOYEE-NUMBER</code></p>
+<h5 id="full-dependency">FULL DEPENDENCY<a class="headerlink" href="#full-dependency" title="Permanent link">#</a></h5>
+<p>occurs when an attribute is always dependent on all attributes in the  composite PK<br />
+<code>ORDERNO, PRODNO ➔ QTYORDERED</code></p>
+<h5 id="partial-dependency">PARTIAL  DEPENDENCY<a class="headerlink" href="#partial-dependency" title="Permanent link">#</a></h5>
+<p>Lack of full dependency for multiple attribute key 
+<code>ORDERNO, PRODNO  ➔ PRODDESC, QTYORDERED</code>
+– here although qtyordered is fully dependent on orderno and prodno, only  prodno is required to determine proddesc<br />
+– proddesc is said to be partially dependent on orderno and prodno</p>
+<h5 id="transitive-dependency">TRANSITIVE DEPENDENCY<a class="headerlink" href="#transitive-dependency" title="Permanent link">#</a></h5>
+<p>occurs when Y depends on X, and Z depends on Y - thus Z also depends on  X ie. X ➔ Y ➔ Z<br />
+– and Y is not a candidate key (or part of a candidate key)<br />
+<code>ORDERNO ➔ CUSTNUMB ➔ CUSTNAME</code></p>
+<p>当 Y 依赖于 X 并且 Z 依赖于 Y 时发生 - 因此 Z 也依赖于 X 即。 X ➔ Y ➔ Z – Y 不是候选键（或候选键的一部分）</p>
+<h3 id="normal-form">Normal Form<a class="headerlink" href="#normal-form" title="Permanent link">#</a></h3>
+<h4 id="unf">UNF<a class="headerlink" href="#unf" title="Permanent link">#</a></h4>
+<p><img alt="" src="../../img/fit9132-20221205-34.png" /></p>
+<h4 id="1nf">1NF<a class="headerlink" href="#1nf" title="Permanent link">#</a></h4>
+<p>A RELATION IS IN FIRST NORMAL FORM (1NF)  IF:<br />
+• a unique primary key has been identified for each tuple/row.<br />
+• it is a valid relation<br />
+– Entity integrity (no part of PK is null)<br />
+– Single value for each cell ie. no repeating group  (multivalued attribute).<br />
+• all attributes are functionally dependent on all or part of the  primary key</p>
+<p>如果： • 已为每个元组/行标识了唯一的主键，则关系为第一范式 (1NF)。 • 这是一个有效的关系 – 实体完整性（PK 的任何部分都不为空） – 每个单元格的单个值，即。没有重复组（多值属性）。 • 所有属性在功能上都依赖于全部或部分主键</p>
+<h4 id="unf-to-1nf">UNF to 1NF<a class="headerlink" href="#unf-to-1nf" title="Permanent link">#</a></h4>
+<p>–  identifying a unique identifier for the repeating group.<br />
+– remove any repeating group along with the PK of the main relation.<br />
+– The PK of the new relation resulting from the removal of repeating  group will normally have a composite PK made up of the PK of the  main relation and the unique identifier chosen in 1. above, but this  must be checked
+标识重复组的唯一标识符。 
+删除任何重复组以及主要关系的 PK。 
+删除重复组产生的新关系的 PK 通常会有一个复合 PK，由主关系的 PK 和上面 1. 中选择的唯一标识符组成，
+<img alt="" src="../../img/fit9132-20221205-37.png" />
+<img alt="" src="../../img/fit9132-20221205-38.png" /></p>
+<h4 id="1nf-to-2nf">1NF to 2NF<a class="headerlink" href="#1nf-to-2nf" title="Permanent link">#</a></h4>
+<p>all non key attributes are functionally dependent on the primary key<br />
+– all non key attributes are functionally dependent on any candidate  key 
+所有非键属性在功能上依赖于主键
+所有非键属性在功能上依赖于任何候选键
+<img alt="" src="../../img/fit9132-20221205-40.png" /></p>
+<h4 id="2nf-to-3nf">2NF to 3NF<a class="headerlink" href="#2nf-to-3nf" title="Permanent link">#</a></h4>
+<p>Move from 2NF to 3NF by removing transitive dependencies<br />
+– Remove the attributes with transitive dependency into a new relation.<br />
+– The determinant will be an attribute in both the original and new  relations (it will become a PK / FK relationship)<br />
+– Assign the determinant to be the PK of the new relation
+删除传递依赖从 2NF 移动到 3NF——将具有传递依赖的属性删除到新关系中。 – 行列式将是原始关系和新关系中的属性（它将成为 PK / FK 关系） – 将行列式分配为新关系的 PK
+<img alt="" src="../../img/fit9132-20221205-41.png" /></p>
+<h4 id="summary">summary<a class="headerlink" href="#summary" title="Permanent link">#</a></h4>
+<p><mark style="background: #3CB371;">UNF to 1NF define PK &amp; remove repeating group.<br />
+1NF to 2NF remove partial dependency.<br />
+2NF to 3NF remove transitive dependency.<br />
+UNF 到 1NF 定义 PK 并删除重复组。 
+1NF 到 2NF 消除部分依赖。
+2NF 到 3NF 消除了传递依赖。</mark></p>
+<p><img alt="" src="../../img/fit9132-20221205-42.png" />
+<img alt="" src="../../img/fit9132-20221205-43.png" />
+<img alt="" src="../../img/fit9132-20221205-44.png" />
+<img alt="" src="../../img/fit9132-20221205-45.png" />
+<img alt="" src="../../img/fit9132-20221205-46.png" /></p>
+<h2 id="week-5-logical-modelling">week 5 Logical Modelling<a class="headerlink" href="#week-5-logical-modelling" title="Permanent link">#</a></h2>
+<p>Define the steps taken to map an ER diagram to a relational model
+ Map an ER diagram to a relational model
+Use SQL Developer - Data Modeler to draw a logical level ER diagram</p>
+<h3 id="relational-model-characteristics">Relational Model Characteristics<a class="headerlink" href="#relational-model-characteristics" title="Permanent link">#</a></h3>
+<p>Each relation must have a unique name<br />
+▪ Each attribute of a relation must have a distinct name within the relation<br />
+▪ An attribute cannot be multivalued (consist of repeating values)<br />
+▪ All values of an attribute need to be from the same domain<br />
+▪ The order of attributes and tuples in a relation is immaterial<br />
+▪ Each relation must have a primary key<br />
+▪ Logical (not physical) connections are made between relations by virtue<br />
+of primary/foreign key pairing</p>
+<h3 id="transforming-er-diagrams-into-relations">Transforming ER diagrams into relations<a class="headerlink" href="#transforming-er-diagrams-into-relations" title="Permanent link">#</a></h3>
+<p>Essentially<br />
+– KEY to PK<br />
+– Represent relationships with PK/FK pairs</p>
+<p>▪ The steps are:<br />
+– Map strong (regular) entities<br />
+– Map weak entities<br />
+– Map binary relationships<br />
+– Map associative entities<br />
+– Map unary relationships<br />
+– Map ternary relationships</p>
+<h4 id="mapping-a-composite-attribute">Mapping a Composite Attribute<a class="headerlink" href="#mapping-a-composite-attribute" title="Permanent link">#</a></h4>
+<p><img alt="" src="../../img/fit9132-20221205-49.png" /></p>
+<h4 id="mapping-a-multi-valued-attribute">Mapping a Multi valued Attribute<a class="headerlink" href="#mapping-a-multi-valued-attribute" title="Permanent link">#</a></h4>
+<p><img alt="" src="../../img/fit9132-20221205-50.png" /></p>
+<h4 id="mapping-a-weak-entity">Mapping a Weak Entity<a class="headerlink" href="#mapping-a-weak-entity" title="Permanent link">#</a></h4>
+<p>For each weak entity type, create a new relation and include all of the simple  attributes as attributes of this relation. The PK of the identifying relation is  also included as the FK in this new relation</p>
+<p><img alt="" src="../../img/fit9132-20221205-51.png" /></p>
+<h4 id="mapping-a-1m-binary-relationship">Mapping a 1:M Binary Relationship<a class="headerlink" href="#mapping-a-1m-binary-relationship" title="Permanent link">#</a></h4>
+<p>For each 1:M binary relationship, first create a relation for each of the  two entity types participating in the relationship. Then include the PK  attribute (or attributes) of the entity on the one-side of the relationship  as the FK on the many-side of the relationship
+对于每个 1:M 二元关系，首先为参与该关系的两个实体类型中的每一个创建一个关系。然后将实体的PK属性（或属性）包含在关系的一侧作为关系的多侧的FK
+<img alt="" src="../../img/fit9132-20221205-52.png" /></p>
+<h4 id="mapping-a-mn-binary-relationship">Mapping a M:N Binary Relationship<a class="headerlink" href="#mapping-a-mn-binary-relationship" title="Permanent link">#</a></h4>
+<p>First create a relation for each of the two entity types participating in the relationship.<br />
+– Then create a new relation and include as foreign key attributes, the PK  attribute (or attributes) for each of the two participating entity types. These  attributes become the PK of the new relation.<br />
+– If there are any nonkey attributes associated with the M:N relationship, they  are also included in the new relation.<br />
+首先为参与关系的两个实体类型中的每一个创建一个关系。 – 然后创建一个新关系，并将两个参与实体类型中的每一个的 PK 属性（或多个属性）作为外键属性包括在内。这些属性成为新关系的PK。 – 如果有任何与 M:N 关系关联的非关键属性，它们也包含在新关系中。 </p>
+<p><img alt="" src="../../img/fit9132-20221205-53.png" />
+<img alt="" src="../../img/fit9132-20221205-54.png" /></p>
+<h4 id="mapping-an-associative-entity-with-an-identifier">Mapping an associative entity with an Identifier<a class="headerlink" href="#mapping-an-associative-entity-with-an-identifier" title="Permanent link">#</a></h4>
+<p><img alt="" src="../../img/fit9132-20221205-55.png" /></p>
+<h4 id="mapping-a-1m-unary-relationship">Mapping a 1:M Unary Relationship<a class="headerlink" href="#mapping-a-1m-unary-relationship" title="Permanent link">#</a></h4>
+<p><img alt="" src="../../img/fit9132-20221205-56.png" /></p>
+<h4 id="mapping-a-mn-unary-relationship">Mapping a M:N Unary Relationship<a class="headerlink" href="#mapping-a-mn-unary-relationship" title="Permanent link">#</a></h4>
+<p><img alt="" src="../../img/fit9132-20221205-58.png" /></p>
+<h2 id="week6-creating-populating-the-database">week6 Creating &amp; Populating the Database<a class="headerlink" href="#week6-creating-populating-the-database" title="Permanent link">#</a></h2>
+<p>Map an ER diagram to a relational model  </p>
+<p>Use SQL Developer - Data Modeler to draw a logical level ER diagram, map it to the  relational model and generate a schema file</p>
+<h3 id="create-a-table-ddl">CREATE A TABLE (DDL)<a class="headerlink" href="#create-a-table-ddl" title="Permanent link">#</a></h3>
+<p><img alt="" src="../../img/fit9132-20221205-59.png" /></p>
+<h4 id="alternative-better-method-of-defining-fks">Alternative (BETTER) method of defining FKs<a class="headerlink" href="#alternative-better-method-of-defining-fks" title="Permanent link">#</a></h4>
+<p><img alt="" src="../../img/fit9132-20221205-61.png" /></p>
+<h4 id="alter-table">ALTER TABLE<a class="headerlink" href="#alter-table" title="Permanent link">#</a></h4>
+<p>Used to change a tables structure.<br />
+▪ For example:<br />
+– Adding column(s).<br />
+– Removing column(s).<br />
+– Adding constraint(s) - used previously for FK's, but can be any constraint<br />
+– Removing constraint(s)
+<img alt="" src="../../img/fit9132-20221205-62.png" /></p>
+<h4 id="alter-table_manipulate-constraints">ALTER TABLE_Manipulate Constraints<a class="headerlink" href="#alter-table_manipulate-constraints" title="Permanent link">#</a></h4>
+<p>Turn constraint ON or OFF to temporarily disable
+<img alt="" src="../../img/fit9132-20221205-65.png" /></p>
+<p>Remove/re add constraint to modify constraint
+<img alt="" src="../../img/fit9132-20221205-67.png" /></p>
+<h4 id="drop_deleting-a-table">DROP_DELETING A TABLE<a class="headerlink" href="#drop_deleting-a-table" title="Permanent link">#</a></h4>
+<p><code>DROP TABLE training_course PURGE</code>
+<code>DROP TABLE trainer CASCADE CONSTRAINTS PURGE;</code></p>
+<h3 id="adding-tuplesrows-to-a-table-dml">ADDING TUPLES/ROWS TO A TABLE (DML)<a class="headerlink" href="#adding-tuplesrows-to-a-table-dml" title="Permanent link">#</a></h3>
+<h4 id="insert_adding-data-to-table">INSERT_Adding data to table<a class="headerlink" href="#insert_adding-data-to-table" title="Permanent link">#</a></h4>
+<p><img alt="" src="../../img/fit9132-20221205-68.png" /></p>
+<h5 id="to_dateinserting-dates-into-a-table">(TO_DATE)Inserting DATES into a table<a class="headerlink" href="#to_dateinserting-dates-into-a-table" title="Permanent link">#</a></h5>
+<p>convert a date
+<code>to_date('06 Apr 2022','dd Mon yyyy')</code>
+convert a date and time
+<code>to_date('06/04/2022 17:00','dd/mm/yyyy hh:mi')</code>
+convert a time
+<code>to_date('17:00','hh:mi')</code>
+Insert a rental into the RENTAL table
+<code>insert into RENTAL (rent_no, rent_bond, rent_out, rent_in,drone_id, ct_id) values (123, 250,to_date('06 Apr 2022 10:00','dd Mon yyyy hh:mi'), null,234, 2345);</code></p>
+<h4 id="commit-and-rollback">COMMIT and ROLLBACK<a class="headerlink" href="#commit-and-rollback" title="Permanent link">#</a></h4>
+<p>COMMIT makes the changes to the database permanent.  ROLLBACK will undo the changes.  COMMIT/ROLLBACK only applicable to INSERT/UPDATE and DELETE</p>
+<h4 id="sequence-auto-increment-of-a-numeric">(SEQUENCE) auto-increment of a numeric<a class="headerlink" href="#sequence-auto-increment-of-a-numeric" title="Permanent link">#</a></h4>
+<p>Create sequence
+<code>CREATE SEQUENCE manuf_seq</code> 
+<code>INCREMENT BY 1;</code></p>
+<p>Access the sequence using two built-in variables
+<code>INSERT INTO manufacturer</code>
+<code>VALUES(manuf_seq.nextval,'DJI');</code></p>
+<h2 id="week-7-structured-query-language-sql">WEEK 7 Structured Query Language (SQL)<a class="headerlink" href="#week-7-structured-query-language-sql" title="Permanent link">#</a></h2>
+<p>Create tables in a database<br />
+Add new records to a table<br />
+Use ORACLE's sequences to generate keys<br />
+Remove tables from a database</p>
+<h3 id="select_1">SELECT<a class="headerlink" href="#select_1" title="Permanent link">#</a></h3>
+<h4 id="anatomy-of-an-sql-select-statement">Anatomy of an SQL SELECT Statement<a class="headerlink" href="#anatomy-of-an-sql-select-statement" title="Permanent link">#</a></h4>
+<p><img alt="" src="../../img/fit9132-20221205-69.png" />
+<img alt="" src="../../img/fit9132-20221205-70.png" /></p>
+<h4 id="comparison">Comparison<a class="headerlink" href="#comparison" title="Permanent link">#</a></h4>
+<p>Compare the value of one expression to the value of another expression
+<code>=, !=,&lt; &gt;, &lt;, &gt;, &lt;=, &gt;=</code>
+<code>drone_pur_price &gt; 2000</code></p>
+<h4 id="between_range">BETWEEN_Range<a class="headerlink" href="#between_range" title="Permanent link">#</a></h4>
+<p>test whether the value of an expression falls within a specified range of  values
+<code>drone_pur_price BETWEEN 3000 AND 5300</code>
+(both are inclusive)</p>
+<h4 id="in_set-membership">IN_Set Membership<a class="headerlink" href="#in_set-membership" title="Permanent link">#</a></h4>
+<p>test whether the value of expression equals one of a set of value
+<code>dt_code in ('DMA2','DSPA')</code></p>
+<h4 id="like_pattern-match">LIKE_Pattern Match<a class="headerlink" href="#like_pattern-match" title="Permanent link">#</a></h4>
+<p>whether a string (text) matches a specified pattern</p>
+<p>% character represents any sequence of zero or more character
+<code>WHERE dt_model LIKE 'DJI%'</code>(drone type models starting with DJI)</p>
+<p>_ character represents any single character
+<code>WHERE train_code LIKE '__I__'</code>(drone types with a train_code with  an I in the middle)</p>
+<h4 id="and-or-not">AND, OR, NOT<a class="headerlink" href="#and-or-not" title="Permanent link">#</a></h4>
+<p>An expression is evaluated LEFT to RIGHT<br />
+Sub-expression in brackets are evaluated first<br />
+NOTs are evaluated before AND and OR<br />
+ANDs are evaluated before OR<br />
+Use of BRACKETS better alternative  </p>
+<p>AND is evaluated to be TRUE if and only if both conditions are TRUE<br />
+• OR is evaluated to be TRUE if and only if at least one of the conditions  is TRUE
+<img alt="" src="../../img/fit9132-20221205-71.png" /></p>
+<h4 id="nvl_replace-a-null-with-a-value">NVL_replace a NULL with a value<a class="headerlink" href="#nvl_replace-a-null-with-a-value" title="Permanent link">#</a></h4>
+<p>It is used to replace a NULL with a value (numeric OR character/string)
+<code>SELECT stu_nbr</code>
+    <code>NVL(enrol_mark,0),</code>
+    <code>NVL(enrol_grade,'WH')</code>
+<code>FROM enrolment;</code>
+<img alt="" src="../../img/fit9132-20221205-72.png" />
+<code>select rent_no, drone_id,</code>
+<code>to_char(rent_out,'dd-Mon-yyyy') as dateout,</code>
+<code>nvl(to_char(rent_in,'dd-Mon-yyyy'),'Still out')  as datein</code>
+<code>from rental;</code></p>
+<p><code>select rent_no, drone_id, rent_out,</code>
+<code>nvl(rent_in,'Still out') from rental;</code>
+<img alt="" src="../../img/fit9132-20221205-73.png" /></p>
+<h4 id="as_renaming-column">AS_Renaming Column<a class="headerlink" href="#as_renaming-column" title="Permanent link">#</a></h4>
+<p><code>select drone_id, drone_cost_hr/60 as costpermin  from drone;</code></p>
+<h4 id="order-bysorting-query-result">(ORDER BY)Sorting Query Result<a class="headerlink" href="#order-bysorting-query-result" title="Permanent link">#</a></h4>
+<p>==Must be used if more than one row may be returned==
+Order can be ASCending or DESCending. The default is ASCending
+<code>select drone_id, drone_flight_time</code>
+<code>from drone</code>
+<code>order by</code>
+<code>drone_flight_time desc, drone_id;</code>
+<img alt="" src="../../img/fit9132-20221205-74.png" /></p>
+<h4 id="distinctremoving-duplicate-rows-in-the-query-result">(DISTINCT)removing Duplicate Rows in the Query Result<a class="headerlink" href="#distinctremoving-duplicate-rows-in-the-query-result" title="Permanent link">#</a></h4>
+<p><code>select distinct drone_id</code>
+<code>from rental</code>
+<code>order by drone_id;</code>
+<img alt="" src="../../img/fit9132-20221205-75.png" /></p>
+<h4 id="to_char">TO_CHAR<a class="headerlink" href="#to_char" title="Permanent link">#</a></h4>
+<p>Text representing date must be formatted  with TO_DATE when comparing or  inserting/updating
+<code>select to_char(sysdate,'dd-Mon-yyyy') from dual; = 20-Apr-2021</code>
+<code>select  to_char(sysdate,'dd-Mon-yyyy hh:mi:ss AM')  from dual; = 0-Apr-2020 02:51:24 PM</code>
+<img alt="" src="../../img/fit9132-20221205-77.png" /></p>
+<h3 id="join">JOIN<a class="headerlink" href="#join" title="Permanent link">#</a></h3>
+<p>placing the join in the where clause is not acceptable</p>
+<h4 id="join-on">JOIN ON<a class="headerlink" href="#join-on" title="Permanent link">#</a></h4>
+<p>the general form which always works
+<code>from aaa JOIN bbb ON aaa.a = bbb.b</code>
+<code>from aaa JOIN bbb ON aaa.key = bbb.key</code>
+<img alt="" src="../../img/fit9132-20221205-78.png" /></p>
+<h4 id="join-using">JOIN USING<a class="headerlink" href="#join-using" title="Permanent link">#</a></h4>
+<p>requires matching attribute/s in the two tables
+<code>FROM trainer JOIN training_course USING (trainer_id)</code></p>
+<h4 id="natural-join_1">NATURAL JOIN<a class="headerlink" href="#natural-join_1" title="Permanent link">#</a></h4>
+<p>requires matching attribute/s in the two tables
+<code>FROM trainer NATURAL JOIN training_course</code>
+<img alt="" src="../../img/fit9132-20221205-80.png" /></p>
+<h4 id="different-types-of-sql-joins">Different Types of SQL JOINs<a class="headerlink" href="#different-types-of-sql-joins" title="Permanent link">#</a></h4>
+<p><code>(INNER) JOIN</code>: Returns records that have matching values in both tables
+  <code>LEFT (OUTER) JOIN</code>: Returns all records from the left table, and the matched records from the right table
+  <code>RIGHT (OUTER) JOIN</code>: Returns all records from the right table, and the matched records from the left table
+  <code>FULL (OUTER) JOIN</code>: Returns all records when there is a match in either left or right table
+<img alt="" src="../../img/fit9132-20221205-81.png" /></p>
+<h2 id="week8-dml-update-delete-and-transaction-management">week8 DML Update, Delete and Transaction  Management<a class="headerlink" href="#week8-dml-update-delete-and-transaction-management" title="Permanent link">#</a></h2>
+<p>interpret a graphical representation of a relational database<br />
+● code simple SQL statements on a single table<br />
+● code SQL statements that use rows from more than a single table using different types of<br />
+ANSI standard JOIN operations<br />
+● code SQL SELECT statements to select rows based on different conditions<br />
+● use ORACLE's date data type in SQL statements correctly<br />
+● define an alias for tables and columns<br />
+● sort the retrieved data into different orders via SQL ORDER BY
+解释关系数据库的图形表示 ● 在单个表上编写简单的 SQL 语句 ● 使用不同类型的 ANSI 标准 JOIN 操作使用多个表中的行编写 SQL 语句 ● 编写 SQL SELECT 语句以根据不同条件选择行● 在 SQL 语句中正确使用 ORACLE 的日期数据类型 ● 为表和列定义别名 ● 通过 SQL ORDER BY 将检索到的数据排序为不同的顺序</p>
+<h2 id="final">FINAL<a class="headerlink" href="#final" title="Permanent link">#</a></h2>
+<h3 id="sql">SQL<a class="headerlink" href="#sql" title="Permanent link">#</a></h3>
+<h2 id="sql-final">SQL FINAL<a class="headerlink" href="#sql-final" title="Permanent link">#</a></h2>
+<p><img alt="" src="../../img/fit9132-20221205-82.png" /></p>
+<pre><code class="language-sql">/*
+1. Display the full details of employees who earn less than $1000, order the output  by  the employee number.
+*/
+
+SELECT
+    empno,
+    empname,
+    empinit,
+    empjob,
+    to_char(empbdate,'dd Mon yyyy'),
+    empmsal,
+    empcomm,
+    deptno,
+    mgrno
+FROM
+    payroll.employee
+WHERE
+    empmsal &lt; 1000
+ORDER BY
+    empno;
+
+</code></pre>
+<pre><code class="language-sql">/*
+2. List the department number of departments that have employees, order the output by the department number .
+*/
+
+SELECT DISTINCT
+    deptno
+FROM
+    payroll.employee
+ORDER BY deptno;
+</code></pre>
+<pre><code class="language-sql">/*
+3. Display the full details of trainers (employee job is TRAINER) who earn less than 2500 each month and are working in department 20. Order the output by  employee number.
+*/
+
+SELECT
+    empno,
+    empname,
+    empinit,
+    empjob,
+    to_char(empbdate,'dd Mon yyyy'),
+    empmsal,
+    empcomm,
+    deptno,
+    mgrno
+FROM
+    payroll.employee
+WHERE
+    upper(empjob) = 'TRAINER'
+    AND empmsal &lt; 2500
+    AND deptno = 20
+ORDER BY
+    empno;
+</code></pre>
+<pre><code class="language-sql">/*
+4. Display the name, job, monthly salary and commission of employees whose monthly salary is higher than their commission. Rename the columns: Name, Job, Monthly Salary and Commission. Order the output by name and within name by descending monthly salary.
+*/
+
+SELECT
+    empname  AS &quot;Name&quot;,
+    empjob   AS &quot;Job&quot;,
+    empmsal  AS &quot;Monthly Salary&quot;,
+    empcomm  AS &quot;Commission&quot;
+FROM
+    payroll.employee
+WHERE
+    empmsal &gt; empcomm
+ORDER BY
+    empname,
+    empmsal DESC;
+</code></pre>
+<pre><code class="language-sql">/*
+5. Display the name and job of employees whose job ends with the letter R. Order the output by name and within name by job.
+*/
+
+SELECT
+    empname,
+    empjob
+FROM
+    payroll.employee
+WHERE
+    upper(empjob) LIKE '%R'
+ORDER BY
+    empname,
+    empjob;
+</code></pre>
+<pre><code class="language-sql">/*
+6. Display the name and job of employees that have a name starting with “J”, “K” or “M”. Order the output by name and within name by job.
+*/
+
+SELECT
+    empname,
+    empjob
+FROM
+    payroll.employee
+WHERE
+        upper(empname) LIKE 'J%'
+    OR
+        upper(empname) LIKE 'K%'
+    OR
+        upper(empname) LIKE 'M%'
+ORDER BY
+    empname,
+    empjob;
+</code></pre>
+<pre><code class="language-sql">/*
+7. Display the name, job, date of birth and monthly salary of employees who were born before 1990 and earn more than 1500 each month. Order the output by name and within name by monthly salary.
+*/
+
+SELECT
+    empname,
+    empjob,
+    to_char(empbdate, 'Dd-Mon-YYYY') AS birthdate,
+    empmsal
+FROM
+    payroll.employee
+WHERE
+        empbdate &lt; TO_DATE('01-JAN-1990', 'dd-MON-YYYY')
+    AND empmsal &gt; 1500
+ORDER BY
+    empname,
+    empmsal;
+</code></pre>
+<pre><code class="language-sql">/*
+8. Display the name, job, date of birth and salary of employees that don't have a commission. Order the output by name, and within name by date of birth.
+*/
+
+SELECT
+    empname,
+    empjob,
+    to_char(empbdate, 'Dd-Mon-YYYY') AS birthdate,
+    empmsal
+FROM
+    payroll.employee
+WHERE
+    empcomm IS NULL
+ORDER BY
+    empname,
+    empbdate;
+</code></pre>
+<pre><code class="language-sql">/*
+9. Display the employee name, job, department name, location and monthly salary of employees that work in NEW YORK. Order the output by name, and within name by job.
+*/
+
+SELECT
+    e.empname,
+    e.empjob,
+    d.deptname,
+    d.deptlocation,
+    e.empmsal
+FROM
+    payroll.employee e join payroll.department d on e.deptno = d.deptno
+WHERE
+    upper(d.deptlocation) = 'NEW YORK'
+ORDER BY e.empname;
+</code></pre>
+<pre><code class="language-sql">/*
+10. Display the name and job of employees who do not work in NEW YORK or CHICAGO. Order the output by name, and within name by job.
+*/
+
+SELECT
+    e.empname,
+    e.empjob,
+    d.deptname,
+    d.deptlocation
+FROM
+         payroll.employee e
+    JOIN payroll.department d
+    ON e.deptno = d.deptno
+WHERE
+    upper(d.deptlocation) NOT IN ( 'NEW YORK', 'CHICAGO' )
+ORDER BY
+    e.empname,
+    empjob;
+</code></pre>
+<pre><code class="language-sql">/*
+11. Display the name, job, date of birth and salary of employees who were born in the first half of the 70s. Display the output in birth date order and within birthdate by name.
+*/
+
+SELECT
+    empname,
+    empjob,
+    to_char(empbdate, 'Dd-Mon-YYYY') AS birthdate,
+    empmsal
+FROM
+    payroll.employee
+WHERE
+    empbdate BETWEEN TO_DATE('01-JAN-1970', 'DD-MON-YYYY') AND TO_DATE('31-DEC-1974',
+    'DD-MON-YYYY')
+ORDER BY
+    empbdate,
+    empname;
+</code></pre>
+<pre><code class="language-sql">/* 
+12.  Display the name, job and salary of employees who earn less than 1500 or greater than 3000 per month. Order the output by name, and within name by monthly salary.
+*/
+
+SELECT
+    empname,
+    empjob,
+    empmsal
+FROM
+    payroll.employee
+WHERE
+    empmsal NOT BETWEEN 1500 AND 3000
+ORDER BY
+    empname,
+    empmsal;
+</code></pre>
+<pre><code class="language-sql">/* 
+13. Display the name, job and manager number of employees who have a manager. 
+Order the output by manager number and within a given manager by employee name.
+*/
+
+SELECT
+    empname,
+    empjob,
+    mgrno
+FROM
+    payroll.employee
+WHERE
+    mgrno IS NOT NULL
+ORDER BY
+    mgrno,
+    empname;
+</code></pre>
+<pre><code class="language-sql">/*
+14. Display the name, job, department name, department location and monthly salary of employees who either work in DALLAS or as a MANAGER, and earn more than 2500. Order the output by name and within name by monthly salary.
+*/
+
+SELECT
+    e.empname,
+    e.empjob,
+    d.deptname,
+    d.deptlocation,
+    e.empmsal
+FROM
+         payroll.employee e
+    JOIN payroll.department d
+    ON ( e.deptno = d.deptno )
+WHERE
+    ( upper(d.deptlocation) = 'DALLAS'
+      OR upper(e.empjob) = 'MANAGER' )
+    AND e.empmsal &gt; 2500
+ORDER BY
+    e.empname,
+    empmsal;
+</code></pre>
+<pre><code class="language-sql">/*
+15. Display the name, job, monthly salary and salary grade of all employees. Display the list in monthly salary order within salary grade order.
+*/
+
+SELECT
+    e.empname,
+    e.empjob,
+    e.empmsal,
+    s.salgrade
+FROM
+    payroll.employee e
+    JOIN payroll.salgrade s ON (
+        e.empmsal BETWEEN s.sallower AND s.salupper
+    )
+ORDER BY
+    s.salgrade,
+    e.empmsal;
+</code></pre>
+<pre><code class="language-sql">/*
+16. Display the name and location of ALL departments, and the name of their employees. Display the output in employee name order within department name order.
+*/
+
+SELECT
+    d.deptname,
+    d.deptlocation,
+    e.empname
+FROM
+    payroll.employee e
+    RIGHT OUTER JOIN payroll.department d ON (
+        e.deptno = d.deptno
+    )
+ORDER BY
+    d.deptname,
+    e.empname;
+</code></pre>
+<pre><code class="language-sql">/*
+17. Display the name of ALL employees, their job and the name of their manager. List the output in employee name order within manager name order.
+*/
+
+SELECT
+    e.empname &quot;Employee&quot;,
+    e.empjob AS &quot;Emp Job&quot;,
+    m.empname AS &quot;Manager&quot;
+FROM
+    payroll.employee e
+    LEFT OUTER JOIN payroll.employee m ON (
+        e.mgrno = m.empno
+    )
+ORDER BY
+    m.empname,
+    e.empname;
+/*
+-- here NVL(m.empname,'NA') could be used to display a value rather than leave the managers name null for the director
+*/
+</code></pre>
+<pre><code class="language-sql">/*
+18. For each employee display their employment history. In the listing include the employees’ name, the name of the department they worked for, the begin and end date and their monthly salary. Display the output in begin date order (most recent at the top of the list) within employee name order.
+*/
+
+SELECT
+    e.empname,
+    d.deptname,
+    to_char(histbegindate,'DD-Mon-YYY') as HISTBEGIN,
+    to_char(histenddate,'Dd-Mon-YYYY') as HISTEND,
+    h.histmsal
+FROM
+    payroll.employee e
+    JOIN payroll.history h ON (
+        e.empno = h.empno
+    )
+    JOIN payroll.department d ON (
+        d.deptno = h.deptno
+    )
+ORDER BY
+    e.empname,
+    h.histbegindate DESC;
+</code></pre>
+<pre><code class="language-sql">/*
+19. Display the employee name, empjob, monthly salary and annual salary of all employees (annual salary is monthly salary x 12). Order the output by annual salary with the highest value shown first and within annual salary by name.
+*/
+
+SELECT
+    empname,
+    empjob,
+    empmsal,
+    empmsal * 12 AS &quot;Annual Salary&quot;
+FROM
+    payroll.employee
+ORDER BY
+    &quot;Annual Salary&quot; DESC,
+    empname;
+</code></pre>
+<pre><code class="language-sql">/*
+20. Display the employee name, empjob, monthly salary, empcommission and annual income (salary and empcommission) of all employees. Commission is paid on a monthly basis. Order the output by name,and within by annual income.
+*/
+
+SELECT
+    empname,
+    empjob,
+    empmsal,
+    empcomm,
+    12 * ( empmsal + nvl(empcomm, 0) ) AS &quot;Annual Income&quot;
+FROM
+    payroll.employee
+ORDER BY
+    empname,
+    &quot;Annual Income&quot;;
+</code></pre>
+<pre><code class="language-sql">/*
+1. Display for all employees their number, name, job, monthly salary, their current annual salary (not including commission) and what their annual salary would be if they were given a 10% pay rise. Order the output by employee number.
+*/
+
+SELECT
+    empno,
+    empname,
+    empjob,
+    empmsal,
+    empmsal * 12          AS annual_salary,
+    empmsal * 12 * 1.1    AS ann_sal_with_rise
+FROM
+    payroll.employee
+ORDER BY
+    empno;
+</code></pre>
+<pre><code class="language-sql">/*
+2. Display the name of all employees, their birthdate and their age in years. Order the output by birthdate, within birthdate order the output by name.
+*/
+
+SELECT
+    empname,
+    to_char(empbdate, 'DD-Mon-YYYY')                       AS birthdate,
+    floor(months_between(sysdate, empbdate) / 12)          AS &quot;Age in Yrs&quot;
+FROM
+    payroll.employee
+ORDER BY
+    empbdate,
+    empname;
+</code></pre>
+<pre><code class="language-sql">/*
+3. Display for all employees, their number, name, job, monthly salary, commission (which is paid monthly) and their current annual salary (including commission). Order the output by  employee number.
+*/
+
+SELECT
+    empno,
+    empname,
+    empjob,
+    empmsal,
+    empcomm,
+    ( empmsal + nvl(empcomm, 0) ) * 12 AS total_salary
+FROM
+    payroll.employee
+ORDER BY
+    empno;
+</code></pre>
+<pre><code class="language-sql">/*
+4. Display all employees details in the following format: EMPLOYEE N. Smith IS A Trainer AND WORKS IN THE Training DEPARTMENT.
+
+INITCAP() 函数将每个单词的第一个字母设置为大写，所有其他字母设置为小写。单词由空格或非字母数字字符分隔。
+
+SELECT INITCAP('steven king') &quot;Emp. Name&quot;  
+FROM DUAL;
+
+&gt;&gt; Emp. Name
+-----------
+Steven King
+*/
+SELECT
+    'EMPLOYEE '
+     || empinit
+     || '. '
+     || initcap(empname)
+     || ' IS A '
+     || initcap(empjob)
+     || ' AND WORKS IN THE '
+     || initcap(deptname)
+     || ' DEPARTMENT.' as empdetails
+FROM
+    payroll.employee e
+    JOIN payroll.department d ON (
+        e.deptno = d.deptno
+    )
+ORDER BY empname;
+
+SELECT
+    'EMPLOYEE '
+     || empinit
+     || '. '
+     || initcap(empname)
+     || ' IS A '
+     || initcap(nvl(empjob,'----'))
+     || ' AND WORKS IN THE '
+     || initcap(nvl(deptname,'----'))
+     || ' DEPARTMENT.' as empdetails
+FROM
+    payroll.employee e
+    left outer JOIN payroll.department d ON (
+        e.deptno = d.deptno
+    )
+ORDER BY e.empno;
+</code></pre>
+<pre><code class="language-sql">/*
+5. Display the name of all employees, their birthdate and their age in months. Order the output by age in months (with the oldest employee first), within age in months order the output by name. The age in months must be shown with one decimal point and right aligned.
+*/
+
+SELECT
+    empname,
+    to_char(empbdate, 'dd-Mon-yyyy')                                     AS birthdate,
+    lpad(to_char(months_between(sysdate, empbdate), '990.0'), 10)        AS age_in_months
+FROM
+    payroll.employee
+ORDER BY
+    age_in_months DESC,
+    empname;
+
+/*
+LPAD() 函数用另一个字符串向左填充一个字符串，达到一定的长度。
+SELECT LPAD(&quot;SQL Tutorial&quot;, 20, &quot;ABC&quot;);
+&gt;&gt; ABCABCABSQL Tutorial
+*/
+</code></pre>
+<pre><code class="language-sql">/*
+6. Display the employees who were born in February. Order the output by employeename.
 
 
+EXTRACT() Extract the month from a date:
+
+SELECT EXTRACT(MONTH FROM &quot;2017-06-15&quot;);
+&gt;&gt; 6
+*/
+
+SELECT
+    empname,
+    to_char(empbdate, 'dd-Mon-yyyy') AS birthdate
+FROM
+    payroll.employee
+WHERE
+    EXTRACT(MONTH FROM empbdate) = 2
+ORDER BY
+    empname;
+</code></pre>
+<pre><code class="language-sql">
+/*
+7. Display the employee name, salary and commission (using the GREATEST function) for those employees who earn more commission than their monthly salary. Order the output by employee name and within name by monthly take home pay (salary plus commission).
+
+GREATEST() Return the greatest value of the list of arguments:
+*/
+
+SELECT
+    empname,
+    empmsal,
+    empcomm
+FROM
+    payroll.employee
+WHERE
+    empcomm = greatest(empcomm, empmsal)
+ORDER BY
+    empname,
+    ( empmsal + empcomm );
+
+</code></pre>
+<pre><code class="language-sql">/*
+8. Display the name of all employees and their birthdate in the following format: EMPLOYEE N. Smith was born on FRIDAY the 17 of DECEMBER , 1982. Order the output by employee name.
+
+ INITCAP() 函数将每个单词的第一个字母设置为大写，所有其他字母设置为小写。单词由空格或非字母数字字符分隔
+
+RTRIM() 从字符串中删除尾随空格：
+
+SELECT RTRIM('SQL Tutorial    ') AS RightTrimmedString;
+&gt;&gt;SQL Tutorial
+*/
+
+SELECT
+    'EMPLOYEE '
+     || empinit
+     || '. '
+     || initcap(empname)
+     || ' was born on '
+     || rtrim(TO_CHAR(empbdate,'DAY') )
+     || ' the '
+     || EXTRACT(DAY FROM empbdate)
+     || ' of '
+     || rtrim(TO_CHAR(empbdate,'MONTH') )
+     || ','
+     || EXTRACT(YEAR FROM empbdate) as &quot;EMP DOB Details&quot;
+FROM
+    payroll.employee
+ORDER BY 
+    empname;
+</code></pre>
+<pre><code class="language-sql">/*
+9. Display the name of the employees who have registered for a course and the
+number of times they have registered. Order the output by employee number.
+
+`GROUP BY`语句将具有相同值的行分组到汇总行中，例如“查找每个国家/地区的客户数量”。
+
+`GROUP BY`语句通常与聚合函数 ( `COUNT()`, `MAX()`, `MIN()`, `SUM()`, `AVG()`) 一起使用，以按一列或多列对结果集进行分组
+SELECT _column_name(s)_  
+FROM _table_name_  
+WHERE _condition_  
+GROUP BY _column_name(s)  
+ORDER BY _column_name(s);_
+
+SELECT COUNT(CustomerID), Country
+FROM Customers
+GROUP BY Country
+ORDER BY COUNT(CustomerID) DESC;
+
+&gt;&gt;COUNT(CustomerID) Country
+13USA
+
+11Germany
+
+11France
+
+*/
+
+SELECT
+    e.empno,
+    e.empname,
+    COUNT(*) AS nbr_registrations
+FROM
+         payroll.employee e
+    JOIN payroll.registration r
+    ON ( e.empno = r.empno )
+GROUP BY
+    e.empno,
+    e.empname
+ORDER BY
+    empno;
+</code></pre>
+<pre><code class="language-sql">/*
+10. Who is the oldest employee? Show the employee number, name and date of birth. Order the output by employee number.
+*/
+
+SELECT
+    empno,
+    empname,
+    to_char(empbdate, 'DD-Mon-YYYY')
+FROM
+    payroll.employee
+WHERE
+    empbdate = (
+        SELECT
+            MIN(empbdate)
+        FROM
+            payroll.employee
+    )
+ORDER BY
+    empno;
+</code></pre>
+<pre><code class="language-sql">/*
+11. For each department, list the department number and name, the number of employees, the minimum and maximum monthly salary, the total monthly salary and the average salary paid to their employees. Name the columns: NbrOfEmployees, MinSalary, MaxSalary, TotalSalary, AvgSalary. Order the output by department number.
+*/
+
+SELECT
+    d.deptno,
+    d.deptname,
+    COUNT(e.empno)                           &quot;NbrOfEmployees&quot;,
+    MIN(empmsal)                             &quot;MinSalary&quot;,
+    MAX(empmsal)                             &quot;MaxSalary&quot;,
+    SUM(empmsal)                             &quot;TotalSalary&quot;,
+    to_char(AVG(empmsal), '9999.99')          &quot;AvgSalary&quot;
+FROM
+    payroll.employee      e
+    RIGHT OUTER JOIN payroll.department    d
+    ON ( e.deptno = d.deptno )
+GROUP BY
+    d.deptno,
+    d.deptname
+ORDER BY
+    deptno;
+</code></pre>
+<pre><code class="language-sql">/*
+12. Display the department number, jobs available in that department and the total monthly salary paid for each job. Order the output by department number and within a department by job.
+*/
+
+SELECT
+    deptno,
+    empjob,
+    SUM(empmsal)
+FROM
+    payroll.employee
+GROUP BY
+    deptno,
+    empjob
+ORDER BY deptno,empjob;
+</code></pre>
+<pre><code class="language-sql">/*
+13. Which employee earns more than the average salary? Show the employee number, name and monthly salary. Order the output by employee number.
+*/
+
+SELECT
+    empno,
+    empname,
+    empmsal
+FROM
+    payroll.employee
+WHERE
+    empmsal &gt; (
+        SELECT
+            AVG(empmsal)
+        FROM
+            payroll.employee
+    )
+ORDER BY 
+    empno;
+</code></pre>
+<pre><code class="language-sql">/*
+14. Which department has the greatest average monthly salary? Show the department no, name and average monthly salary. Order the output by department number.
+
+ROUND() 函数将数字四舍五入到指定的小数位数
+SELECT ROUND(235.415, 2) AS RoundValue;
+&gt;&gt;RoundValue
+235.420
+*/
+
+SELECT
+    d.deptno,
+    d.deptname,
+    round(AVG(empmsal),2) &quot;AvgSalary&quot;
+FROM
+    payroll.employee e
+    JOIN payroll.department d ON (
+        e.deptno = d.deptno
+    )
+GROUP BY
+    d.deptno,
+    d.deptname
+HAVING
+    AVG(empmsal) = (
+        SELECT
+            MAX(AVG(empmsal) )
+        FROM
+            payroll.employee
+        GROUP BY
+            deptno
+    )
+ORDER BY 
+    deptno;
+</code></pre>
+<pre><code class="language-sql">/*
+15. Which course has the most offerings? Show the course code, description and number of offerings. Order the output by the number of offerings in descending order and within the number of offerings by the course code.
+*/
+
+SELECT
+    c.crscode,
+    c.crsdesc,
+    COUNT(*) &quot;NbrOfferings&quot;
+FROM
+         payroll.course c
+    JOIN payroll.offering o
+    ON ( c.crscode = o.crscode )
+GROUP BY
+    c.crscode,
+    c.crsdesc
+HAVING
+    COUNT(*) = (
+        SELECT
+            MAX(COUNT(*))
+        FROM
+            payroll.offering
+        GROUP BY
+            crscode
+    )
+ORDER BY
+    COUNT(*) DESC,
+    crscode;
+</code></pre>
+<pre><code class="language-sql">/*
+16. Display the name, job and date of birth of employees who perform the same job as SCOTT and were born in the same year. Do not include SCOTT in the output. Order the output by employee name. 
+*/
+
+SELECT
+    e.empname,
+    e.empjob,
+    to_char(empbdate, 'dd-Mon-yyyy')
+FROM
+    payroll.employee e
+WHERE
+        ( e.empjob,
+          EXTRACT(YEAR FROM empbdate) ) = (
+            SELECT
+                e.empjob,
+                EXTRACT(YEAR FROM empbdate)
+            FROM
+                payroll.employee e
+            WHERE
+                upper(empname) = 'SCOTT'
+        )
+    AND upper(e.empname) &lt;&gt; 'SCOTT'
+ORDER BY
+    empname;
+</code></pre>
+<pre><code class="language-sql">/*
+17. Using the MINUS statement, which employees have never registered in a course. Show their employee number and name. Order the output by employee number.
+
+`SELECT DISTINCT`语句用于仅返回不同（不同）的值。
+在表中，一列通常包含许多重复值；有时您只想列出不同的（不同的）值。
+SELECT DISTINCT _column1_, _column2, ..._  
+FROM _table_name_;
+*/
+
+SELECT
+    empno,
+    empname
+FROM
+    payroll.employee
+MINUS
+SELECT DISTINCT
+    e.empno,
+    empname
+FROM
+         payroll.registration r
+    JOIN payroll.employee e
+    ON ( r.empno = e.empno )
+ORDER BY
+    empno;
+</code></pre>
+<pre><code class="language-sql">/*
+18. Using the INTERSECT statement, which employees have both registered for and conducted courses. Show the employee number and name. Order the output by employee number.
+*/
+
+SELECT DISTINCT
+    e.empno AS &quot;TrainerAndStudent&quot;,
+    empname
+FROM
+         payroll.offering o
+    JOIN payroll.employee e
+    ON ( o.empno = e.empno )
+INTERSECT
+SELECT DISTINCT
+    e.empno,
+    empname
+FROM
+         payroll.registration r
+    JOIN payroll.employee e
+    ON ( r.empno = e.empno )
+ORDER BY
+    &quot;TrainerAndStudent&quot;;
+</code></pre>
 
   <hr>
 <div class="md-source-file">

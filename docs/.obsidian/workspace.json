@@ -6,22 +6,10 @@
       {
         "id": "e90fc44c7abebd35",
         "type": "tabs",
+        "dimension": 57.26141078838176,
         "children": [
           {
-            "id": "9130374d7965d8f2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fitnotes/fit5032.md",
-                "mode": "source",
-                "source": true
-              }
-            },
-            "group": "f8d5dedf031cf391"
-          },
-          {
-            "id": "713cf04362f84108",
+            "id": "010b45395be870bc",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -30,39 +18,28 @@
                 "mode": "source",
                 "source": true
               }
-            }
-          },
-          {
-            "id": "010b45395be870bc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fitnotes/fit5125.md",
-                "mode": "source",
-                "source": true
-              }
-            }
+            },
+            "group": "825802b1291ae7cb"
           }
-        ],
-        "currentTab": 2
+        ]
       },
       {
-        "id": "eaf4dc5aef616f99",
+        "id": "5605a0bf714c1938",
         "type": "tabs",
+        "dimension": 42.738589211618255,
         "children": [
           {
-            "id": "21fb6b15d1672716",
+            "id": "d2694f5feb7ed2e6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fitnotes/fit5032.md",
+                "file": "fitnotes/fit9132.md",
                 "mode": "preview",
                 "source": true
               }
             },
-            "group": "f8d5dedf031cf391"
+            "group": "825802b1291ae7cb"
           }
         ]
       }
@@ -130,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fitnotes/fit5125.md",
+                "file": "fitnotes/fit9132.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fitnotes/fit5125.md",
+                "file": "fitnotes/fit9132.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fitnotes/fit5125.md"
+                "file": "fitnotes/fit9132.md"
               }
             }
           }
@@ -183,15 +160,15 @@
   },
   "active": "010b45395be870bc",
   "lastOpenFiles": [
+    "fitnotes/fit5125.md",
     "fitnotes/fit9132.md",
+    "fitnotes/fit_note_menu.md",
+    "fitnotes/fit5136.md",
     "fitnotes/fit5032.md",
     "fitnotes/fit5057.md",
-    "fitnotes/fit5136.md",
     "about/about_index.md",
     "Git/Git.md",
     "about/about_me.md",
-    "about/about_site_building.md",
-    "index.md",
-    "LeetCode/LeetCode_note_menu.md"
+    "about/about_site_building.md"
   ]
 }
