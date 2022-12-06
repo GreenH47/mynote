@@ -6,40 +6,42 @@
       {
         "id": "e90fc44c7abebd35",
         "type": "tabs",
-        "dimension": 57.26141078838176,
         "children": [
           {
-            "id": "010b45395be870bc",
+            "id": "d1a4aaf1eb05b623",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fitnotes/fit9132.md",
+                "file": "Git/Git.md",
                 "mode": "source",
                 "source": true
-              }
+              },
+              "pinned": true
             },
-            "group": "825802b1291ae7cb"
+            "group": "3af2f2be8bd0253f"
           }
         ]
       },
       {
-        "id": "5605a0bf714c1938",
+        "id": "cbe20516d5c41c4b",
         "type": "tabs",
-        "dimension": 42.738589211618255,
         "children": [
           {
-            "id": "d2694f5feb7ed2e6",
+            "id": "b05ad820d918d561",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fitnotes/fit9132.md",
+                "file": "Git/Git.md",
                 "mode": "preview",
                 "source": true
-              }
+              },
+              "pinned": true
             },
-            "group": "825802b1291ae7cb"
+            "group": "3af2f2be8bd0253f"
           }
         ]
       }
@@ -107,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fitnotes/fit9132.md",
+                "file": "Git/Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fitnotes/fit9132.md",
+                "file": "Git/Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fitnotes/fit9132.md"
+                "file": "Git/Git.md"
               }
             }
           }
@@ -158,17 +160,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "010b45395be870bc",
+  "active": "b05ad820d918d561",
   "lastOpenFiles": [
-    "fitnotes/fit5125.md",
-    "fitnotes/fit9132.md",
-    "fitnotes/fit_note_menu.md",
-    "fitnotes/fit5136.md",
-    "fitnotes/fit5032.md",
-    "fitnotes/fit5057.md",
-    "about/about_index.md",
+    "HTML/HTML_started.md",
     "Git/Git.md",
+    "fitnotes/fit9132.md",
+    "CSS/CSS_note_menu.md",
+    "HTML/HTML_note_menu.md",
+    "fitnotes/fit_note_menu.md",
+    "about/about_index.md",
     "about/about_me.md",
-    "about/about_site_building.md"
+    "about/about_site_building.md",
+    "career/career_note_menu.md"
   ]
 }

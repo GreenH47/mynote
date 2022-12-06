@@ -21,14 +21,25 @@ nav:
         
         
     - 'Programming Note':
+        - 'CSS':
+            - 'CSS  note navigation': "CSS/CSS_note_menu.md"
+        - 'HTML':
+            - 'HTML note navigation': "HTML/HTML_note_menu.md"
+            - 'HTML get started': "HTML/HTML_started.md"
         - ' Git branching learning': 'Git/Git.md'
         - 'LeetCode':
             - 'LeetCode note navigation': "LeetCode/LeetCode_note_menu.md"
+        - 'Javascript ':
+            - 'javascript  note navigation': "Javascript/Javascript_note_menu.md"
         - 'reactJS':
             - 'reactJS note navigation': "reactJS/react_note_menu.md"
             
     - 'Career Note':
         - 'career note navigation': 'career/career_note_menu.md'
+        
+    - 'Green chat':
+        - 'Green chat navigation': 'chat/chat_index.md'
+        - '221206_ChatGPT': 'chat/221206_ChatGPT.md'
         
 theme:
   name: material
@@ -40,8 +51,7 @@ theme:
     - navigation.top
     - toc.follow
 
-extra_css:
-  - overjs/extra.js
+
   
 markdown_extensions:
     - toc:
