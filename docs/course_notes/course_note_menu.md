@@ -1,4 +1,4 @@
-Create time: 2022-11-29  Last update: 2022-11-30
+Create time: 2022-11-29  Last update: 2023-01-11
 # Navigation of all FIT note page
 ## 2022 semester 1
 ### FIT 9132
@@ -13,3 +13,5 @@ click [FIT5057 - Project management](fit5057.md) for further details.
 click [FIT5125 - IT research methods](fit5032.md) for further details.  
 ### FIT 5136
 click [FIT5136 - Software engineering](fit5136.md) for further details.  
+### cs 61a
+click [CS 61A: Structure and Interpretation of Computer Programs](cs61a.md) for further details.  

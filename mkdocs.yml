@@ -11,13 +11,14 @@ nav:
         - 'How to build this site': 'about/about_site_building.md'
         - 'Power by and copyright': 'about/about_copyright.md'
         
-    - 'FIT Study Note':
-        - 'FIT study note navigation': 'fitnotes/fit_note_menu.md'
-        - 'FIT9132 Introduction to databases 2022 s1': 'fitnotes/fit9132.md'
-        - 'FIT5032 Asp .net develop 2022 s2': 'fitnotes/fit5032.md'
-        - 'FIT5057 project management 2022 s2': 'fitnotes/fit5057.md'
-        - 'FIT5125 IT research methods 2022 s2': 'fitnotes/fit5125.md'
-        - 'FIT5136 software engineering 2022 s2': 'fitnotes/fit5136.md'
+    - 'Course Study Note':
+        - 'Course study note navigation': 'course_notes/course_note_menu.md'
+        - 'FIT9132 Introduction to databases 2022 s1': 'course_notes/fit9132.md'
+        - 'FIT5032 Asp .net develop 2022 s2': 'course_notes/fit5032.md'
+        - 'FIT5057 project management 2022 s2': 'course_notes/fit5057.md'
+        - 'FIT5125 IT research methods 2022 s2': 'course_notes/fit5125.md'
+        - 'FIT5136 software engineering 2022 s2': 'course_notes/fit5136.md'
+        - 'CS 61A: Structure and Interpretation of Computer Programs': 'course_notes/cs61a.md'
         
         
     - 'Programming Note':
@@ -36,6 +37,7 @@ nav:
             
     - 'Career Note':
         - 'career note navigation': 'career/career_note_menu.md'
+        - '2023 summer casual': 'career/career_23summer.md'
         
     - 'Green chat':
         - 'Green chat navigation': 'chat/chat_index.md'
