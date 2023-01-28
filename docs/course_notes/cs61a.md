@@ -362,4 +362,158 @@ def unique_digits(n):
 # print(unique_digits(13173131))
 ```
 # Project 1: The Game of Hog
-https://cs61a.org/proj/hog/
+https://inst.eecs.berkeley.edu/~cs61a/fa22/proj/hog/
+## Problem 1 roll_dice()
+```py
+def roll_dice(num_rolls, dice=six_sided):  
+    """Simulate rolling the DICE exactly NUM_ROLLS > 0 times. Return the sum of  
+    the outcomes unless any of the outcomes is 1. In that case, return 1.  
+    num_rolls:  The number of dice rolls that will be made.    dice:       A function that simulates a single dice roll outcome.    """    # These assert statements ensure that num_rolls is a positive integer.  
+    assert type(num_rolls) == int, 'num_rolls must be an integer.'  
+    assert num_rolls > 0, 'Must roll at least once.'  
+    # BEGIN PROBLEM 1  
+    "*** YOUR CODE HERE ***"  
+    sow_sad = False  
+    sum_pts = 0  
+    for i in range(num_rolls):  
+        roll_pts = dice()  
+        if roll_pts == 1:  
+            sow_sad = True  
+        sum_pts = sum_pts + roll_pts  
+    if sow_sad:  
+        sum_pts = 1  
+    return sum_pts  
+    # print(num_rolls)  
+    # END PROBLEM 1
+```
+## problem 2 tail_points()
+```py
+def tail_points(opponent_score):  
+    """Return the points scored by rolling 0 dice according to Pig Tail.  
+  
+    opponent_score:   The total score of the other player.  
+    """    # BEGIN PROBLEM 2  
+    "*** YOUR CODE HERE ***"  
+    a = opponent_score % 10  
+    b = (opponent_score//10) % 10  
+    pts = 0  
+    if a > b:  
+        pts = 2 * (a - b) + 1  
+    else:  
+        pts = 2 * (b - a) + 1  
+    return pts  
+    # END PROBLEM 2
+```
+## problem 3 take_turn()
+```py
+def take_turn(num_rolls, opponent_score, dice=six_sided):  
+    """Return the points scored on a turn rolling NUM_ROLLS dice when the  
+    opponent has OPPONENT_SCORE points.  
+    num_rolls:       The number of dice rolls that will be made.    opponent_score:  The total score of the other player.    dice:            A function that simulates a single dice roll outcome.    """    # Leave these assert statements here; they help check for errors.  
+    assert type(num_rolls) == int, 'num_rolls must be an integer.'  
+    assert num_rolls >= 0, 'Cannot roll a negative number of dice in take_turn.'  
+    assert num_rolls <= 10, 'Cannot roll more than 10 dice.'  
+    # BEGIN PROBLEM 3  
+    "*** YOUR CODE HERE ***"  
+    if num_rolls == 0:  
+        return tail_points(opponent_score)  
+    else:  
+        return roll_dice(num_rolls,dice)  
+    # END PROBLEM 3
+```
+## problem 4
+```py
+def perfect_square(score):  
+    n = 0  
+    for n in range(1,score):  
+        if n * n == score:  
+            return True  
+    return False  
+  
+def next_perfect_square(score):  
+    n = 0  
+    for n in range(1, score):  
+        if n * n == score:  
+            break  
+    return (n + 1) * (n + 1)
+```
+ ## problem 5  
+ 
+```py
+ def play(strategy0, strategy1, update,  
+         score0=0, score1=0, dice=six_sided, goal=GOAL):  
+    """Simulate a game and return the final scores of both players, with  
+    Player 0's score first and Player 1's score second.  
+    E.g., play(always_roll_5, always_roll_5, square_update) simulates a game in    which both players always choose to roll 5 dice on every turn and the Square    Swine rule is in effect.  
+    A strategy function, such as always_roll_5, takes the current player's    score and their opponent's score and returns the number of dice the current    player chooses to roll.  
+    An update function, such as square_update or simple_update, takes the number    of dice to roll, the current player's score, the opponent's score, and the    dice function used to simulate rolling dice. It returns the updated score    of the current player after they take their turn.  
+    strategy0: The strategy for player0.    strategy1: The strategy for player1.    update:    The update function (used for both players).    score0:    Starting score for Player 0    score1:    Starting score for Player 1    dice:      A function of zero arguments that simulates a dice roll.    goal:      The game ends and someone wins when this score is reached.    """    
+    who = 0  # Who is about to take a turn, 0 (first) or 1 (second)  
+    # BEGIN PROBLEM 5    
+    "*** YOUR CODE HERE ***"  
+    while score0 < goal and score1 < goal:  # check if someone win  
+        if who == 0:  # player 0 turn  
+            num_dice = strategy0(score0, score1)  
+            score0 = update(num_dice, score0, score1)  
+        else:  
+            num_dice = strategy0(score1, score0)  
+            score1 = update(num_dice, score1, score0)  
+  
+    # END PROBLEM 5  
+    return score0, score1
+```
+## assert()
+The `assert` keyword lets you test if a condition in your code returns True, if not, the program will raise an AssertionError.
+```py
+x = "hello"
+
+#if condition returns True, then nothing happens:
+assert x == "hello"
+
+#if condition returns False, AssertionError is raised:
+assert x == "goodbye"
+```
+
+##  problem 6
+```py
+def always_roll(n):  
+    """Return a player strategy that always rolls N dice.  
+  
+    A player strategy is a function that takes two total scores as arguments    (the current player's score, and the opponent's score), and returns a    number of dice that the current player will roll this turn.  
+    # >>> strategy = always_roll(3)    # >>> strategy(0, 0)    # 3    # >>> strategy(99, 99)    # 3    """    assert n >= 0 and n <= 10  
+    # BEGIN PROBLEM 6  
+    "*** YOUR CODE HERE ***"  
+    return n  
+    # END PROBLEM 6
+```
+
+##  problem 7
+```py
+def is_always_roll(strategy, goal=GOAL):  
+    """Return whether strategy always chooses the same number of dice to roll.  
+  
+    # >>> is_always_roll(always_roll_5)    # True    # >>> is_always_roll(always_roll(3))    # True    # >>> is_always_roll(catch_up)    # False    """    # BEGIN PROBLEM 7  
+    "*** YOUR CODE HERE ***"  
+    dice_num = strategy(0, 0)  
+    for score in range(goal):  
+        for oppo_score in range(goal):  
+            curr_num = strategy(score, oppo_score)  
+            if curr_num != dice_num:  
+                return False  
+    return True    # END PROBLEM 7
+```
+## *args
+https://realpython.com/python-kwargs-and-args/
+it allows you to pass a varying number of positional arguments.
+```py
+# sum_integers_args.py
+def my_sum(*args):
+    result = 0
+    # Iterating over the Python args tuple
+    for x in args:
+        result += x
+    return result
+
+print(my_sum(1, 2, 3))
+```
+## problem 8

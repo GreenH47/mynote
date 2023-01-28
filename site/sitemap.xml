@@ -2,107 +2,122 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://example.com/</loc>
-         <lastmod>2022-12-06</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/CSS/CSS_note_menu/</loc>
-         <lastmod>2022-12-06</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/Git/Git/</loc>
-         <lastmod>2022-12-06</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/HTML/HTML_note_menu/</loc>
-         <lastmod>2022-12-06</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/HTML/HTML_started/</loc>
-         <lastmod>2022-12-06</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/Javascript/Javascript_note_menu/</loc>
-         <lastmod>2022-12-06</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/LeetCode/LeetCode_note_menu/</loc>
-         <lastmod>2022-12-06</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/about/about_copyright/</loc>
-         <lastmod>2022-12-06</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/about/about_index/</loc>
-         <lastmod>2022-12-06</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/about/about_me/</loc>
-         <lastmod>2022-12-06</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/about/about_site_building/</loc>
-         <lastmod>2022-12-06</lastmod>
+         <lastmod>2023-01-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/career/career_23summer/</loc>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/career/career_note_menu/</loc>
-         <lastmod>2022-12-06</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/chat/221206_ChatGPT/</loc>
-         <lastmod>2022-12-06</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/chat/chat_index/</loc>
-         <lastmod>2022-12-06</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/fitnotes/fit5032/</loc>
-         <lastmod>2022-12-06</lastmod>
+         <loc>https://example.com/course_notes/course_note_menu/</loc>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/fitnotes/fit5057/</loc>
-         <lastmod>2022-12-06</lastmod>
+         <loc>https://example.com/course_notes/cs61a/</loc>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/fitnotes/fit5125/</loc>
-         <lastmod>2022-12-06</lastmod>
+         <loc>https://example.com/course_notes/fit5032/</loc>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/fitnotes/fit5136/</loc>
-         <lastmod>2022-12-06</lastmod>
+         <loc>https://example.com/course_notes/fit5057/</loc>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/fitnotes/fit9132/</loc>
-         <lastmod>2022-12-06</lastmod>
+         <loc>https://example.com/course_notes/fit5125/</loc>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/fitnotes/fit_note_menu/</loc>
-         <lastmod>2022-12-06</lastmod>
+         <loc>https://example.com/course_notes/fit5136/</loc>
+         <lastmod>2023-01-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/course_notes/fit9132/</loc>
+         <lastmod>2023-01-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/img/readme/</loc>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/reactJS/react_note_menu/</loc>
-         <lastmod>2022-12-06</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

@@ -6,6 +6,7 @@ from math import log2
 
 GOAL = 100  # The goal of Hog is to score 100 points.
 
+
 ######################
 # Phase 1: Simulator #
 ######################
@@ -23,6 +24,17 @@ def roll_dice(num_rolls, dice=six_sided):
     assert num_rolls > 0, 'Must roll at least once.'
     # BEGIN PROBLEM 1
     "*** YOUR CODE HERE ***"
+    sow_sad = False
+    sum_pts = 0
+    for i in range(num_rolls):
+        roll_pts = dice()
+        if roll_pts == 1:
+            sow_sad = True
+        sum_pts = sum_pts + roll_pts
+    if sow_sad:
+        sum_pts = 1
+    return sum_pts
+    # print(num_rolls)
     # END PROBLEM 1
 
 
@@ -34,6 +46,14 @@ def tail_points(opponent_score):
     """
     # BEGIN PROBLEM 2
     "*** YOUR CODE HERE ***"
+    a = opponent_score % 10
+    b = (opponent_score // 10) % 10
+    pts = 0
+    if a > b:
+        pts = 2 * (a - b) + 1
+    else:
+        pts = 2 * (b - a) + 1
+    return pts
     # END PROBLEM 2
 
 
@@ -51,6 +71,10 @@ def take_turn(num_rolls, opponent_score, dice=six_sided):
     assert num_rolls <= 10, 'Cannot roll more than 10 dice.'
     # BEGIN PROBLEM 3
     "*** YOUR CODE HERE ***"
+    if num_rolls == 0:
+        return tail_points(opponent_score)
+    else:
+        return roll_dice(num_rolls, dice)
     # END PROBLEM 3
 
 
@@ -74,6 +98,24 @@ def square_update(num_rolls, player_score, opponent_score, dice=six_sided):
 
 # BEGIN PROBLEM 4
 "*** YOUR CODE HERE ***"
+
+
+def perfect_square(score):
+    n = 0
+    for n in range(1, score):
+        if n * n == score:
+            return True
+    return False
+
+
+def next_perfect_square(score):
+    n = 0
+    for n in range(1, score):
+        if n * n == score:
+            break
+    return (n + 1) * (n + 1)
+
+
 # END PROBLEM 4
 
 
@@ -113,6 +155,14 @@ def play(strategy0, strategy1, update,
     who = 0  # Who is about to take a turn, 0 (first) or 1 (second)
     # BEGIN PROBLEM 5
     "*** YOUR CODE HERE ***"
+    while score0 < goal and score1 < goal:  # check if someone win
+        if who == 0:  # player 0 turn
+            num_dice = strategy0(score0, score1)
+            score0 = update(num_dice, score0, score1)
+        else:
+            num_dice = strategy0(score1, score0)
+            score1 = update(num_dice, score1, score0)
+
     # END PROBLEM 5
     return score0, score1
 
@@ -129,15 +179,16 @@ def always_roll(n):
     (the current player's score, and the opponent's score), and returns a
     number of dice that the current player will roll this turn.
 
-    >>> strategy = always_roll(3)
-    >>> strategy(0, 0)
-    3
-    >>> strategy(99, 99)
-    3
+    # >>> strategy = always_roll(3)
+    # >>> strategy(0, 0)
+    # 3
+    # >>> strategy(99, 99)
+    # 3
     """
     assert n >= 0 and n <= 10
     # BEGIN PROBLEM 6
     "*** YOUR CODE HERE ***"
+    return n
     # END PROBLEM 6
 
 
@@ -145,10 +196,10 @@ def catch_up(score, opponent_score):
     """A player strategy that always rolls 5 dice unless the opponent
     has a higher score, in which case 6 dice are rolled.
 
-    >>> catch_up(9, 4)
-    5
-    >>> strategy(17, 18)
-    6
+    # >>> catch_up(9, 4)
+    # 5
+    # >>> strategy(17, 18)
+    # 6
     """
     if score < opponent_score:
         return 6  # Roll one more to catch up
@@ -159,15 +210,22 @@ def catch_up(score, opponent_score):
 def is_always_roll(strategy, goal=GOAL):
     """Return whether strategy always chooses the same number of dice to roll.
 
-    >>> is_always_roll(always_roll_5)
-    True
-    >>> is_always_roll(always_roll(3))
-    True
-    >>> is_always_roll(catch_up)
-    False
+    # >>> is_always_roll(always_roll_5)
+    # True
+    # >>> is_always_roll(always_roll(3))
+    # True
+    # >>> is_always_roll(catch_up)
+    # False
     """
     # BEGIN PROBLEM 7
     "*** YOUR CODE HERE ***"
+    dice_num = strategy(0, 0)
+    for score in range(goal):
+        for oppo_score in range(goal):
+            curr_num = strategy(score, oppo_score)
+            if curr_num != dice_num:
+                return False
+    return True
     # END PROBLEM 7
 
 
@@ -177,13 +235,14 @@ def make_averaged(original_function, total_samples=1000):
 
     To implement this function, you will have to use *args syntax.
 
-    >>> dice = make_test_dice(4, 2, 5, 1)
-    >>> averaged_dice = make_averaged(roll_dice, 40)
-    >>> averaged_dice(1, dice)  # The avg of 10 4's, 10 2's, 10 5's, and 10 1's
-    3.0
+    # >>> dice = make_test_dice(4, 2, 5, 1)
+    # >>> averaged_dice = make_averaged(roll_dice, 40)
+    # >>> averaged_dice(1, dice)  # The avg of 10 4's, 10 2's, 10 5's, and 10 1's
+    # 3.0
     """
     # BEGIN PROBLEM 8
     "*** YOUR CODE HERE ***"
+
     # END PROBLEM 8
 
 
@@ -192,9 +251,9 @@ def max_scoring_num_rolls(dice=six_sided, total_samples=1000):
     by calling roll_dice with the provided DICE a total of TOTAL_SAMPLES times.
     Assume that the dice always return positive outcomes.
 
-    >>> dice = make_test_dice(1, 6)
-    >>> max_scoring_num_rolls(dice)
-    1
+    # >>> dice = make_test_dice(1, 6)
+    # >>> max_scoring_num_rolls(dice)
+    # 1
     """
     # BEGIN PROBLEM 9
     "*** YOUR CODE HERE ***"

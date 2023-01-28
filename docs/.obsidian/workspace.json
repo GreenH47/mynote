@@ -24,7 +24,7 @@
       {
         "id": "637516cde87f5a98",
         "type": "tabs",
-        "dimension": 44.66019417475729,
+        "dimension": 48.05825242718447,
         "children": [
           {
             "id": "9e15d557fb7ea3e7",
@@ -44,7 +44,7 @@
       {
         "id": "467232199ff49359",
         "type": "tabs",
-        "dimension": 39.15857605177994,
+        "dimension": 35.760517799352755,
         "children": [
           {
             "id": "0256a2fed9793e47",
@@ -190,7 +190,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "d6b9588278305d45",
+  "active": "0256a2fed9793e47",
   "lastOpenFiles": [
     "course_notes/fit5057.md",
     "course_notes/cs61a.md",

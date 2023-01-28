@@ -1,0 +1,2093 @@
+<!-- Elements added to main will be displayed on all pages -->
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="greenh47 personal website">
+      
+      
+        <meta name="author" content="greenh47">
+      
+      
+        <link rel="canonical" href="https://example.com/course_notes/cs61a/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>CS 61A: Structure and Interpretation of Computer Programs - greenh47</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.472b142f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.08040f6c.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#reference" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+  <style>.md-announce a,.md-announce a:focus,.md-announce a:hover{color:currentColor}.md-announce strong{white-space:nowrap}.md-announce .twitter{margin-left:.2em;color:#00acee}</style>
+    <a href="mailto:greenhuang47@gmail.com"><strong>Email me for more detail greenhuang47@gmail.com</strong>
+    </a>
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="greenh47" class="md-header__button md-logo" aria-label="greenh47" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            greenh47
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              CS 61A: Structure and Interpretation of Computer Programs
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/GreenH47/mynote" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/about_index/" class="md-tabs__link">
+        About
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../course_note_menu/" class="md-tabs__link md-tabs__link--active">
+        Course Study Note
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../CSS/CSS_note_menu/" class="md-tabs__link">
+        Programming Note
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../career/career_note_menu/" class="md-tabs__link">
+        Career Note
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../chat/chat_index/" class="md-tabs__link">
+        Green chat
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="greenh47" class="md-nav__button md-logo" aria-label="greenh47" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    greenh47
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/GreenH47/mynote" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          About
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="About" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          About
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/about_index/" class="md-nav__link">
+        blog index
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/about_me/" class="md-nav__link">
+        about me
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/about_site_building/" class="md-nav__link">
+        How to build this site
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/about_copyright/" class="md-nav__link">
+        Power by and copyright
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Course Study Note
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Course Study Note" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Course Study Note
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../course_note_menu/" class="md-nav__link">
+        Course study note navigation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fit9132/" class="md-nav__link">
+        FIT9132 Introduction to databases 2022 s1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fit5032/" class="md-nav__link">
+        FIT5032 Asp .net develop 2022 s2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fit5057/" class="md-nav__link">
+        FIT5057 project management 2022 s2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fit5125/" class="md-nav__link">
+        FIT5125 IT research methods 2022 s2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fit5136/" class="md-nav__link">
+        FIT5136 software engineering 2022 s2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          CS 61A: Structure and Interpretation of Computer Programs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        CS 61A: Structure and Interpretation of Computer Programs
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    Reference
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-1-function" class="md-nav__link">
+    Week 1  function
+  </a>
+  
+    <nav class="md-nav" aria-label="Week 1  function">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hw01" class="md-nav__link">
+    hw01
+  </a>
+  
+    <nav class="md-nav" aria-label="hw01">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#q1-a-plus-abs-b" class="md-nav__link">
+    Q1 A Plus Abs B
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q2-two-of-three" class="md-nav__link">
+    Q2: Two of Three
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q3-largest-factor" class="md-nav__link">
+    Q3: Largest Factor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q4-hailstone" class="md-nav__link">
+    Q4: Hailstone
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week2-control-environment" class="md-nav__link">
+    Week2  control environment
+  </a>
+  
+    <nav class="md-nav" aria-label="Week2  control environment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#different-between-break-return-continue" class="md-nav__link">
+    different between break return continue
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lab001" class="md-nav__link">
+    lab001
+  </a>
+  
+    <nav class="md-nav" aria-label="lab001">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#q5-falling-factorial" class="md-nav__link">
+    Q5: Falling Factorial
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q6-sum-digits" class="md-nav__link">
+    Q6: Sum Digits
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q8" class="md-nav__link">
+    Q8
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteration-the-fibonacci-sequence" class="md-nav__link">
+    Iteration The Fibonacci Sequence
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conditional-statements" class="md-nav__link">
+    Conditional statements
+  </a>
+  
+    <nav class="md-nav" aria-label="Conditional statements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#q4-is-prime" class="md-nav__link">
+    Q4: Is Prime?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q5-fizzbuzz" class="md-nav__link">
+    Q5: Fizzbuzz
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q6-unique-digits" class="md-nav__link">
+    Q6: Unique Digits
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-1-the-game-of-hog" class="md-nav__link">
+    Project 1: The Game of Hog
+  </a>
+  
+    <nav class="md-nav" aria-label="Project 1: The Game of Hog">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem-1-roll_dice" class="md-nav__link">
+    Problem 1 roll_dice()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-2-tail_points" class="md-nav__link">
+    problem 2 tail_points()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-3-take_turn" class="md-nav__link">
+    problem 3 take_turn()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-4" class="md-nav__link">
+    problem 4
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assert" class="md-nav__link">
+    assert()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-6" class="md-nav__link">
+    problem 6
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-7" class="md-nav__link">
+    problem 7
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#args" class="md-nav__link">
+    *args
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-8" class="md-nav__link">
+    problem 8
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Programming Note
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Programming Note" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Programming Note
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_1">
+          CSS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="CSS" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          CSS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/CSS_note_menu/" class="md-nav__link">
+        CSS  note navigation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_2">
+          HTML
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="HTML" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          HTML
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../HTML/HTML_note_menu/" class="md-nav__link">
+        HTML note navigation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../HTML/HTML_started/" class="md-nav__link">
+        HTML get started
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Git/Git/" class="md-nav__link">
+         Git branching learning
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_4">
+          LeetCode
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="LeetCode" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_4">
+          <span class="md-nav__icon md-icon"></span>
+          LeetCode
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LeetCode/LeetCode_note_menu/" class="md-nav__link">
+        LeetCode note navigation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" type="checkbox" id="__nav_4_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_5">
+          Javascript 
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Javascript " data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_5">
+          <span class="md-nav__icon md-icon"></span>
+          Javascript 
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Javascript/Javascript_note_menu/" class="md-nav__link">
+        javascript  note navigation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" type="checkbox" id="__nav_4_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_6">
+          reactJS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="reactJS" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_6">
+          <span class="md-nav__icon md-icon"></span>
+          reactJS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reactJS/react_note_menu/" class="md-nav__link">
+        reactJS note navigation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Career Note
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Career Note" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Career Note
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../career/career_note_menu/" class="md-nav__link">
+        career note navigation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../career/career_23summer/" class="md-nav__link">
+        2023 summer casual
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Green chat
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Green chat" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Green chat
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chat/chat_index/" class="md-nav__link">
+        Green chat navigation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chat/221206_ChatGPT/" class="md-nav__link">
+        221206_ChatGPT
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    Reference
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-1-function" class="md-nav__link">
+    Week 1  function
+  </a>
+  
+    <nav class="md-nav" aria-label="Week 1  function">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hw01" class="md-nav__link">
+    hw01
+  </a>
+  
+    <nav class="md-nav" aria-label="hw01">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#q1-a-plus-abs-b" class="md-nav__link">
+    Q1 A Plus Abs B
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q2-two-of-three" class="md-nav__link">
+    Q2: Two of Three
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q3-largest-factor" class="md-nav__link">
+    Q3: Largest Factor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q4-hailstone" class="md-nav__link">
+    Q4: Hailstone
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week2-control-environment" class="md-nav__link">
+    Week2  control environment
+  </a>
+  
+    <nav class="md-nav" aria-label="Week2  control environment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#different-between-break-return-continue" class="md-nav__link">
+    different between break return continue
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lab001" class="md-nav__link">
+    lab001
+  </a>
+  
+    <nav class="md-nav" aria-label="lab001">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#q5-falling-factorial" class="md-nav__link">
+    Q5: Falling Factorial
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q6-sum-digits" class="md-nav__link">
+    Q6: Sum Digits
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q8" class="md-nav__link">
+    Q8
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteration-the-fibonacci-sequence" class="md-nav__link">
+    Iteration The Fibonacci Sequence
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conditional-statements" class="md-nav__link">
+    Conditional statements
+  </a>
+  
+    <nav class="md-nav" aria-label="Conditional statements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#q4-is-prime" class="md-nav__link">
+    Q4: Is Prime?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q5-fizzbuzz" class="md-nav__link">
+    Q5: Fizzbuzz
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q6-unique-digits" class="md-nav__link">
+    Q6: Unique Digits
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-1-the-game-of-hog" class="md-nav__link">
+    Project 1: The Game of Hog
+  </a>
+  
+    <nav class="md-nav" aria-label="Project 1: The Game of Hog">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem-1-roll_dice" class="md-nav__link">
+    Problem 1 roll_dice()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-2-tail_points" class="md-nav__link">
+    problem 2 tail_points()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-3-take_turn" class="md-nav__link">
+    problem 3 take_turn()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-4" class="md-nav__link">
+    problem 4
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assert" class="md-nav__link">
+    assert()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-6" class="md-nav__link">
+    problem 6
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-7" class="md-nav__link">
+    problem 7
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#args" class="md-nav__link">
+    *args
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-8" class="md-nav__link">
+    problem 8
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <a href="https://github.com/GreenH47/mynote/edit/master/docs/course_notes/cs61a.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+  <h1>CS 61A: Structure and Interpretation of Computer Programs</h1>
+
+<p>Create time: 2023-01-05  Last update: 2023-01-11</p>
+<h2 id="reference">Reference<a class="headerlink" href="#reference" title="Permanent link">#</a></h2>
+<p><a href="https://cs61a.org/">Courese material</a>  <br />
+<a href="https://github.com/xuyanshi/cs61a">solution</a><br />
+<a href="https://pythontutor.com/cp/composingprograms.html#mode=display">python code visualization</a></p>
+<h2 id="week-1-function">Week 1  function<a class="headerlink" href="#week-1-function" title="Permanent link">#</a></h2>
+<h3 id="hw01">hw01<a class="headerlink" href="#hw01" title="Permanent link">#</a></h3>
+<h4 id="q1-a-plus-abs-b">Q1 A Plus Abs B<a class="headerlink" href="#q1-a-plus-abs-b" title="Permanent link">#</a></h4>
+<blockquote>
+<p>Fill in the blanks in the following function for adding <code>a</code> to the absolute value of <code>b</code>, without calling <code>abs</code>. You may <strong>not</strong> modify any of the provided code other than the two blanks.  </p>
+</blockquote>
+<pre><code class="language-py">from operator import add, sub
+def a_plus_abs_b(a, b):
+    &quot;&quot;&quot;Return a+abs(b), but without calling abs.
+    &gt;&gt;&gt; a_plus_abs_b(2, 3)
+    5
+    &gt;&gt;&gt; a_plus_abs_b(-1, -4)
+    3
+    &quot;&quot;&quot;
+    if b &lt; 0:
+        f = sub
+    else:
+        f = add
+    return f(a, b)
+</code></pre>
+<h4 id="q2-two-of-three">Q2: Two of Three<a class="headerlink" href="#q2-two-of-three" title="Permanent link">#</a></h4>
+<blockquote>
+<p>Write a function that takes three <em>positive</em> numbers as arguments and returns the sum of the squares of the two smallest numbers. <strong>Use only a single line for the body of the function.</strong>  </p>
+</blockquote>
+<pre><code class="language-py">def two_of_three(i, j, k):
+&quot;&quot;&quot;
+Return m*m + n*n, where m and n are the two smallest members of the positive numbers i, j, and k.
+&gt;&gt;&gt; two_of_three(1, 2, 3)
+5
+&gt;&gt;&gt; two_of_three(5, 5, 5)
+50
+&quot;&quot;&quot;
+    return i**2+j**2+k**2-max(i,j,k)**2
+</code></pre>
+<h4 id="q3-largest-factor">Q3: Largest Factor<a class="headerlink" href="#q3-largest-factor" title="Permanent link">#</a></h4>
+<blockquote>
+<p>Write a function that takes an integer <code>n</code> that is <strong>greater than 1</strong> and returns the largest integer that is smaller than <code>n</code> and evenly divides <code>n</code>.</p>
+</blockquote>
+<pre><code class="language-py">def largest_factor(n):
+    &quot;&quot;&quot;
+    Return the largest factor of n that is smaller than n.
+    &gt;&gt;&gt; largest_factor(15) 
+    &gt;&gt;&gt; # factors are 1, 3, 5
+    5
+    &gt;&gt;&gt; largest_factor(80) # factors are 1, 2, 4, 5, 8, 10, 16, 20, 40
+    40
+    &gt;&gt;&gt; largest_factor(13) # factor is 1 since 13 is prime
+    1
+    &quot;&quot;&quot;
+    factor=0
+    for i in range(1,n):
+        if n%i==0:
+            factor=i
+    return factor
+</code></pre>
+<h4 id="q4-hailstone">Q4: Hailstone<a class="headerlink" href="#q4-hailstone" title="Permanent link">#</a></h4>
+<p>Douglas Hofstadter's Pulitzer-prize-winning book, <em>Gödel, Escher, Bach</em>, poses the following mathematical puzzle.</p>
+<ol>
+<li>Pick a positive integer <code>n</code> as the start.</li>
+<li>If <code>n</code> is even, divide it by 2.</li>
+<li>If <code>n</code> is odd, multiply it by 3 and add 1.</li>
+<li>Continue this process until <code>n</code> is 1.</li>
+</ol>
+<p>The number <code>n</code> will travel up and down but eventually end at 1 (at least for all numbers that have ever been tried -- nobody has ever proved that the sequence will terminate). Analogously, a hailstone travels up and down in the atmosphere before eventually landing on earth.</p>
+<p>This sequence of values of <code>n</code> is often called a Hailstone sequence. Write a function that takes a single argument with formal parameter name <code>n</code>, prints out the hailstone sequence starting at <code>n</code>, and returns the number of steps in the sequence:</p>
+<pre><code class="language-py">def hailstone(n):
+    &quot;&quot;&quot;
+    Print the hailstone sequence starting at n and return its length.
+    &gt;&gt;&gt; a = hailstone(10)
+    10
+    5
+    16
+    8
+    4
+    2
+    1
+
+    &gt;&gt;&gt; a
+    7
+    &quot;&quot;&quot;
+
+    length = 1
+    while n != 1:
+        print(n)
+        if n % 2 == 0:
+            n = n // 2      # Integer division prevents &quot;1.0&quot; output
+        else:
+            n = 3 * n + 1
+        length = length + 1
+    print(n)   # n is now 1
+    return length
+</code></pre>
+<h2 id="week2-control-environment">Week2  control environment<a class="headerlink" href="#week2-control-environment" title="Permanent link">#</a></h2>
+<h3 id="different-between-break-return-continue">different between break return continue<a class="headerlink" href="#different-between-break-return-continue" title="Permanent link">#</a></h3>
+<p><img alt="" src="../../img/cs61a-20230110.png" />  </p>
+<pre><code class="language-py">def name_length(names):
+    i = 0
+    for name in names:
+            i = i+1
+            print(name)
+            print(i)
+            if name == &quot;Nina&quot;:
+                    break
+                    # continue
+                    # return &quot;Found the special name&quot;
+    print(i)
+names = [&quot;Max&quot;, &quot;Nina&quot;, &quot;Rose&quot;]
+name_length(names)
+
+</code></pre>
+<h3 id="lab001">lab001<a class="headerlink" href="#lab001" title="Permanent link">#</a></h3>
+<h4 id="q5-falling-factorial">Q5: Falling Factorial<a class="headerlink" href="#q5-falling-factorial" title="Permanent link">#</a></h4>
+<p>Let's write a function <code>falling</code>, which is a "falling" factorial that takes two arguments, <code>n</code> and <code>k</code>, and returns the product of <code>k</code> consecutive numbers, starting from <code>n</code> and working downwards. When <code>k</code> is 0, the function should return 1.   </p>
+<pre><code class="language-py">def falling(n, k):
+&quot;&quot;&quot;Compute the falling factorial of n to depth k.
+&gt;&gt;&gt; falling(6, 3) # 6 * 5 * 4
+120
+&gt;&gt;&gt; falling(4, 3) # 4 * 3 * 2
+24
+&gt;&gt;&gt; falling(4, 1) # 4
+4
+&gt;&gt;&gt; falling(4, 0)
+1
+&quot;&quot;&quot;
+&quot;*** YOUR CODE HERE ***&quot;
+ans = 1
+for i in range(n,n-k,-1):
+    ans *= i
+    return ans
+</code></pre>
+<h4 id="q6-sum-digits">Q6: Sum Digits<a class="headerlink" href="#q6-sum-digits" title="Permanent link">#</a></h4>
+<p>Write a function that takes in a nonnegative integer and sums its digits. (Using floor division and modulo might be helpful here!)</p>
+<pre><code class="language-py">def sum_digits(y):
+&quot;&quot;&quot;Sum all the digits of y.
+&gt;&gt;&gt; sum_digits(10) # 1 + 0 = 1
+1
+&gt;&gt;&gt; sum_digits(4224) # 4 + 2 + 2 + 4 = 12
+12
+&gt;&gt;&gt; sum_digits(1234567890)
+45
+&gt;&gt;&gt; a = sum_digits(123) # make sure that you are using return rather than print
+&gt;&gt;&gt; a
+6
+&quot;&quot;&quot;
+&quot;*** YOUR CODE HERE ***&quot;
+    ans=0
+    while y&gt;0:
+        ans = ans + y%10
+        y = y // 10
+    return ans
+</code></pre>
+<h4 id="q8">Q8<a class="headerlink" href="#q8" title="Permanent link">#</a></h4>
+<pre><code class="language-py">def double_eights(n):  
+    &quot;&quot;&quot;
+    Return true if n has two eights in a row.  
+    &gt;&gt;&gt; double_eights(8)  
+    False    
+    &gt;&gt;&gt; double_eights(88)  
+    True    
+    &gt;&gt;&gt; double_eights(2882)  
+    True    
+    &gt;&gt;&gt; double_eights(880088)  
+    True    
+    &gt;&gt;&gt; double_eights(12345)  
+    False    
+    &gt;&gt;&gt; double_eights(80808080)  
+    False    
+    &quot;&quot;&quot;    
+    &quot;*** YOUR CODE HERE ***&quot;  
+    first8 = False  
+    second8 = False  
+    while n &gt; 0:  
+        if n % 10 == 8:  
+            first8 = True  
+        else:  
+            first8 = False  
+        n = n //10  
+        if n % 10 == 8:  
+            return True  
+    return False
+</code></pre>
+<h3 id="iteration-the-fibonacci-sequence">Iteration The Fibonacci Sequence<a class="headerlink" href="#iteration-the-fibonacci-sequence" title="Permanent link">#</a></h3>
+<pre><code class="language-py">def fib(n):
+    &quot;&quot;&quot;Compute the nth Fibonacci number, for N &gt;= 1.&quot;&quot;&quot;
+    pred, curr = 0, 1 # 0th and 1st Fibonacci numbers
+    k = 1 # curr is the kth Fibonacci number
+    while k &lt; n:
+        pred, curr = curr, pred + curr # The next Fibonacci number is the sum of the current one and its predecessor
+        k = k + 1
+    return curr
+#print(fib(6))
+</code></pre>
+<h3 id="conditional-statements">Conditional statements<a class="headerlink" href="#conditional-statements" title="Permanent link">#</a></h3>
+<ul>
+<li>The <code>elif</code> and <code>else</code> clauses are optional, and you can have any number of <code>elif</code> clauses.</li>
+<li>A <strong>conditional expression</strong> is an expression that evaluates to either a truthy value (<code>True</code>, a non-zero integer, etc.) or a falsy value (<code>False</code>, <code>0</code>, <code>None</code>, <code>""</code>, <code>[]</code>, etc.).</li>
+<li>Only the first <code>if</code>/<code>elif</code> expression that evaluates to a <strong>truthy</strong> value will have its corresponding indented suite be executed.</li>
+<li>If none of the conditional expressions evaluate to a true value, then the <code>else</code> suite is executed. There can only be one <code>else</code> clause in a conditional statement.</li>
+</ul>
+<pre><code class="language-py">if &lt;conditional expression&gt;: &lt;suite of statements&gt; 
+elif &lt;conditional expression&gt;: &lt;suite of statements&gt; 
+else: &lt;suite of statements&gt;
+</code></pre>
+<pre><code class="language-py">def special_case():
+    x = 10
+    if x &gt; 0:
+        x += 2
+    elif x &lt; 13:
+        x += 3
+    elif x % 2 == 1:
+        x += 4
+    return x
+
+print(special_case()) # 12
+</code></pre>
+<pre><code class="language-py">def special_case():
+    x = 10
+    if x &gt; 0:
+        x += 2
+    if x &lt; 13:
+        x += 3
+    if x % 2 == 1:
+        x += 4
+    return x
+
+print(special_case()) # 19
+</code></pre>
+<pre><code class="language-py">def special_case():
+    x = 10
+    if x &gt; 0:
+        return x + 2
+    if x &lt; 13:
+        return x + 3
+    if x % 2 == 1:
+        return x + 4
+    return x
+
+print(special_case())  # 12
+</code></pre>
+<h4 id="q4-is-prime">Q4: Is Prime?<a class="headerlink" href="#q4-is-prime" title="Permanent link">#</a></h4>
+<p>Write a function that returns <code>True</code> if a positive integer <code>n</code> is a prime number and <code>False</code> otherwise.</p>
+<p>A prime number n is a number that is not divisible by any numbers other than 1 and n itself. For example, 13 is prime, since it is only divisible by 1 and 13, but 14 is not, since it is divisible by 1, 2, 7, and 14.</p>
+<p><strong>Hint:</strong> Use the <code>%</code> operator: <code>x % y</code> returns the remainder of <code>x</code> when divided by <code>y</code>.</p>
+<pre><code class="language-py">def is_prime(n):
+    # returns True if a positive integer n 
+    # is a prime number and False otherwise.
+    if isinstance(n,int):
+        if n == 2 or n == 3:
+            return True
+        if n == 4 or n == 1:
+            return False
+        if n &gt; 4:
+            b = int( n / 2)
+            for i in range(2,b):
+                if (n % i) == 0:
+                    return False
+            return True
+
+    else:
+        return False
+# print(is_prime(10))
+</code></pre>
+<h4 id="q5-fizzbuzz">Q5: Fizzbuzz<a class="headerlink" href="#q5-fizzbuzz" title="Permanent link">#</a></h4>
+<p>Implement the fizzbuzz sequence, which prints out a <em>single statement</em> for each number from 1 to <code>n</code>. For a number <code>i</code>,</p>
+<ul>
+<li>If <code>i</code> is divisible by 3 only, then we print "fizz".</li>
+<li>If <code>i</code> is divisible by 5 only, then we print "buzz".</li>
+<li>If <code>i</code> is divisible by both 3 and 5, then we print "fizzbuzz".</li>
+<li>Otherwise, we print the number <code>i</code> by itself.</li>
+</ul>
+<p>Implement <code>fizzbuzz(n)</code> here:</p>
+<pre><code class="language-py">def fizzbuzz(n):
+    i = 1
+    while i &lt;= n:
+        if i % 3 == 0 and i % 5 == 0:
+            print('fizzbuzz')
+        elif i % 3 == 0:
+            print('fizz')
+        elif i % 5 == 0:
+            print('buzz')
+        else:
+            print(i)
+        i += 1
+result = fizzbuzz(16)
+</code></pre>
+<h4 id="q6-unique-digits">Q6: Unique Digits<a class="headerlink" href="#q6-unique-digits" title="Permanent link">#</a></h4>
+<p>Write a function that returns the number of unique digits in a positive integer.</p>
+<blockquote>
+<p><strong>Hints:</strong> You can use <code>//</code> and <code>%</code> to separate a positive integer into its one's digit and the rest of its digits.</p>
+<p>You may find it helpful to first define a function <code>has_digit(n, k)</code>, which determines whether a number <code>n</code> has digit <code>k</code>.</p>
+</blockquote>
+<pre><code class="language-py">def has_digit(n, k):
+    &quot;&quot;&quot;Returns whether K is a digit in N.
+    &gt;&gt;&gt; has_digit(10, 1)
+    True
+    &gt;&gt;&gt; has_digit(12, 7)
+    False
+    &quot;&quot;&quot;
+    while n &gt; 0:
+        last = n % 10
+        n = n // 10
+        if last == k:
+            return True
+    return False
+# print(has_digit(12, 7))
+
+def unique_digits(n):
+    &quot;&quot;&quot;Return the number of unique digits in positive integer n.
+
+    &gt;&gt;&gt; unique_digits(8675309) # All are unique
+    7
+    &gt;&gt;&gt; unique_digits(1313131) # 1 and 3
+    2
+    &gt;&gt;&gt; unique_digits(13173131) # 1, 3, and 7
+    3
+    &gt;&gt;&gt; unique_digits(10000) # 0 and 1
+    2
+    &gt;&gt;&gt; unique_digits(101) # 0 and 1
+    2
+    &gt;&gt;&gt; unique_digits(10) # 0 and 1
+    2
+    &quot;&quot;&quot;
+    unique = 0
+    while n &gt; 0:
+        last = n % 10
+        n = n // 10
+        if not has_digit(n, last):
+            unique =  unique + 1
+    return unique
+# print(unique_digits(13173131))
+</code></pre>
+<h2 id="project-1-the-game-of-hog">Project 1: The Game of Hog<a class="headerlink" href="#project-1-the-game-of-hog" title="Permanent link">#</a></h2>
+<p>https://inst.eecs.berkeley.edu/~cs61a/fa22/proj/hog/</p>
+<h3 id="problem-1-roll_dice">Problem 1 roll_dice()<a class="headerlink" href="#problem-1-roll_dice" title="Permanent link">#</a></h3>
+<pre><code class="language-py">def roll_dice(num_rolls, dice=six_sided):  
+    &quot;&quot;&quot;Simulate rolling the DICE exactly NUM_ROLLS &gt; 0 times. Return the sum of  
+    the outcomes unless any of the outcomes is 1. In that case, return 1.  
+    num_rolls:  The number of dice rolls that will be made.    dice:       A function that simulates a single dice roll outcome.    &quot;&quot;&quot;    # These assert statements ensure that num_rolls is a positive integer.  
+    assert type(num_rolls) == int, 'num_rolls must be an integer.'  
+    assert num_rolls &gt; 0, 'Must roll at least once.'  
+    # BEGIN PROBLEM 1  
+    &quot;*** YOUR CODE HERE ***&quot;  
+    sow_sad = False  
+    sum_pts = 0  
+    for i in range(num_rolls):  
+        roll_pts = dice()  
+        if roll_pts == 1:  
+            sow_sad = True  
+        sum_pts = sum_pts + roll_pts  
+    if sow_sad:  
+        sum_pts = 1  
+    return sum_pts  
+    # print(num_rolls)  
+    # END PROBLEM 1
+</code></pre>
+<h3 id="problem-2-tail_points">problem 2 tail_points()<a class="headerlink" href="#problem-2-tail_points" title="Permanent link">#</a></h3>
+<pre><code class="language-py">def tail_points(opponent_score):  
+    &quot;&quot;&quot;Return the points scored by rolling 0 dice according to Pig Tail.  
+
+    opponent_score:   The total score of the other player.  
+    &quot;&quot;&quot;    # BEGIN PROBLEM 2  
+    &quot;*** YOUR CODE HERE ***&quot;  
+    a = opponent_score % 10  
+    b = (opponent_score//10) % 10  
+    pts = 0  
+    if a &gt; b:  
+        pts = 2 * (a - b) + 1  
+    else:  
+        pts = 2 * (b - a) + 1  
+    return pts  
+    # END PROBLEM 2
+</code></pre>
+<h3 id="problem-3-take_turn">problem 3 take_turn()<a class="headerlink" href="#problem-3-take_turn" title="Permanent link">#</a></h3>
+<pre><code class="language-py">def take_turn(num_rolls, opponent_score, dice=six_sided):  
+    &quot;&quot;&quot;Return the points scored on a turn rolling NUM_ROLLS dice when the  
+    opponent has OPPONENT_SCORE points.  
+    num_rolls:       The number of dice rolls that will be made.    opponent_score:  The total score of the other player.    dice:            A function that simulates a single dice roll outcome.    &quot;&quot;&quot;    # Leave these assert statements here; they help check for errors.  
+    assert type(num_rolls) == int, 'num_rolls must be an integer.'  
+    assert num_rolls &gt;= 0, 'Cannot roll a negative number of dice in take_turn.'  
+    assert num_rolls &lt;= 10, 'Cannot roll more than 10 dice.'  
+    # BEGIN PROBLEM 3  
+    &quot;*** YOUR CODE HERE ***&quot;  
+    if num_rolls == 0:  
+        return tail_points(opponent_score)  
+    else:  
+        return roll_dice(num_rolls,dice)  
+    # END PROBLEM 3
+</code></pre>
+<h3 id="problem-4">problem 4<a class="headerlink" href="#problem-4" title="Permanent link">#</a></h3>
+<pre><code class="language-py">def perfect_square(score):  
+    n = 0  
+    for n in range(1,score):  
+        if n * n == score:  
+            return True  
+    return False  
+
+def next_perfect_square(score):  
+    n = 0  
+    for n in range(1, score):  
+        if n * n == score:  
+            break  
+    return (n + 1) * (n + 1)
+</code></pre>
+<p>## problem 5  </p>
+<pre><code class="language-py"> def play(strategy0, strategy1, update,  
+         score0=0, score1=0, dice=six_sided, goal=GOAL):  
+    &quot;&quot;&quot;Simulate a game and return the final scores of both players, with  
+    Player 0's score first and Player 1's score second.  
+    E.g., play(always_roll_5, always_roll_5, square_update) simulates a game in    which both players always choose to roll 5 dice on every turn and the Square    Swine rule is in effect.  
+    A strategy function, such as always_roll_5, takes the current player's    score and their opponent's score and returns the number of dice the current    player chooses to roll.  
+    An update function, such as square_update or simple_update, takes the number    of dice to roll, the current player's score, the opponent's score, and the    dice function used to simulate rolling dice. It returns the updated score    of the current player after they take their turn.  
+    strategy0: The strategy for player0.    strategy1: The strategy for player1.    update:    The update function (used for both players).    score0:    Starting score for Player 0    score1:    Starting score for Player 1    dice:      A function of zero arguments that simulates a dice roll.    goal:      The game ends and someone wins when this score is reached.    &quot;&quot;&quot;    
+    who = 0  # Who is about to take a turn, 0 (first) or 1 (second)  
+    # BEGIN PROBLEM 5    
+    &quot;*** YOUR CODE HERE ***&quot;  
+    while score0 &lt; goal and score1 &lt; goal:  # check if someone win  
+        if who == 0:  # player 0 turn  
+            num_dice = strategy0(score0, score1)  
+            score0 = update(num_dice, score0, score1)  
+        else:  
+            num_dice = strategy0(score1, score0)  
+            score1 = update(num_dice, score1, score0)  
+
+    # END PROBLEM 5  
+    return score0, score1
+</code></pre>
+<h3 id="assert">assert()<a class="headerlink" href="#assert" title="Permanent link">#</a></h3>
+<p>The <code>assert</code> keyword lets you test if a condition in your code returns True, if not, the program will raise an AssertionError.</p>
+<pre><code class="language-py">x = &quot;hello&quot;
+
+#if condition returns True, then nothing happens:
+assert x == &quot;hello&quot;
+
+#if condition returns False, AssertionError is raised:
+assert x == &quot;goodbye&quot;
+</code></pre>
+<h3 id="problem-6">problem 6<a class="headerlink" href="#problem-6" title="Permanent link">#</a></h3>
+<pre><code class="language-py">def always_roll(n):  
+    &quot;&quot;&quot;Return a player strategy that always rolls N dice.  
+
+    A player strategy is a function that takes two total scores as arguments    (the current player's score, and the opponent's score), and returns a    number of dice that the current player will roll this turn.  
+    # &gt;&gt;&gt; strategy = always_roll(3)    # &gt;&gt;&gt; strategy(0, 0)    # 3    # &gt;&gt;&gt; strategy(99, 99)    # 3    &quot;&quot;&quot;    assert n &gt;= 0 and n &lt;= 10  
+    # BEGIN PROBLEM 6  
+    &quot;*** YOUR CODE HERE ***&quot;  
+    return n  
+    # END PROBLEM 6
+</code></pre>
+<h3 id="problem-7">problem 7<a class="headerlink" href="#problem-7" title="Permanent link">#</a></h3>
+<pre><code class="language-py">def is_always_roll(strategy, goal=GOAL):  
+    &quot;&quot;&quot;Return whether strategy always chooses the same number of dice to roll.  
+
+    # &gt;&gt;&gt; is_always_roll(always_roll_5)    # True    # &gt;&gt;&gt; is_always_roll(always_roll(3))    # True    # &gt;&gt;&gt; is_always_roll(catch_up)    # False    &quot;&quot;&quot;    # BEGIN PROBLEM 7  
+    &quot;*** YOUR CODE HERE ***&quot;  
+    dice_num = strategy(0, 0)  
+    for score in range(goal):  
+        for oppo_score in range(goal):  
+            curr_num = strategy(score, oppo_score)  
+            if curr_num != dice_num:  
+                return False  
+    return True    # END PROBLEM 7
+</code></pre>
+<h3 id="args">*args<a class="headerlink" href="#args" title="Permanent link">#</a></h3>
+<p>https://realpython.com/python-kwargs-and-args/
+it allows you to pass a varying number of positional arguments.</p>
+<pre><code class="language-py"># sum_integers_args.py
+def my_sum(*args):
+    result = 0
+    # Iterating over the Python args tuple
+    for x in args:
+        result += x
+    return result
+
+print(my_sum(1, 2, 3))
+</code></pre>
+<h3 id="problem-8">problem 8<a class="headerlink" href="#problem-8" title="Permanent link">#</a></h3>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      2023-01-11
+    
+  </small>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+<footer class="md-footer">
+    <div class="md-footer-meta md-typeset">
+        <div class="md-footer-meta__inner md-grid">
+            <!-- Copyright and theme information -->
+            <div class="md-footer-copyright">
+                
+                <div class="md-footer-copyright__highlight">
+                    Copyright &copy; 2021 - present GreenH47
+                </div>
+                
+                powered by
+                <a href="https://www.mkdocs.org" title="MkDocs">MkDocs</a>
+                and
+                <a href="https://squidfunk.github.io/mkdocs-material/"
+                   title="Material for MkDocs">
+                    Material for MkDocs</a>
+            </div>
+            
+            <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://github.com/GreenH47" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    <a href="mailto:greenhuang47@gmail.com" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6l-126.3-52.5-40.1 74.5c-5.2 9.7-16.3 14.6-27 11.9S192 499 192 488v-96c0-5.3 1.8-10.5 5.1-14.7l165.3-212.6c2.5-7.1-6.5-14.3-13-8.4l-179 161.9-32 28.9c-9.2 8.3-22.3 10.6-33.8 5.8l-85-35.4C8.4 312.8.8 302.2.1 290s5.5-23.7 16.1-29.8l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+    </a>
+  
+</div>
+            
+        </div>
+    </div>
+</footer>
+
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.top", "toc.follow"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
+      
+    
+  </body>
+</html>
