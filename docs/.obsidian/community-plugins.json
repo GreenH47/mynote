@@ -14,5 +14,6 @@
   "obsidian-text-format",
   "highlightr-plugin",
   "cm-editor-syntax-highlight-obsidian",
-  "copy-url-in-preview"
+  "copy-url-in-preview",
+  "obsidian-auto-link-title"
 ]

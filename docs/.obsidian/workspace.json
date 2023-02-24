@@ -4,60 +4,52 @@
     "type": "split",
     "children": [
       {
-        "id": "df9f0f89c742c0c0",
+        "id": "12a73b55561534eb",
         "type": "tabs",
-        "dimension": 16.181229773462782,
         "children": [
           {
-            "id": "a9613abf68162e18",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "course_notes/cs61a.md"
-              }
-            },
-            "group": "d355ca8a116f56b6"
-          }
-        ]
-      },
-      {
-        "id": "637516cde87f5a98",
-        "type": "tabs",
-        "dimension": 48.05825242718447,
-        "children": [
-          {
-            "id": "9e15d557fb7ea3e7",
+            "id": "cfc0d1576b7d942c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "course_notes/cs61a.md",
+                "file": "course_notes/course_note_menu.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "32883ade1e07b628",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "course_notes/fit5046.md",
                 "mode": "source",
                 "source": true
               }
             },
-            "group": "d355ca8a116f56b6"
+            "group": "a063c3046b42612a"
           }
         ]
       },
       {
-        "id": "467232199ff49359",
+        "id": "96d049fccfb179fb",
         "type": "tabs",
-        "dimension": 35.760517799352755,
         "children": [
           {
-            "id": "0256a2fed9793e47",
+            "id": "f0fe932b183fdd77",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "course_notes/cs61a.md",
+                "file": "course_notes/fit5046.md",
                 "mode": "preview",
                 "source": true
               }
             },
-            "group": "d355ca8a116f56b6"
+            "group": "a063c3046b42612a"
           }
         ]
       }
@@ -109,8 +101,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "bb6e2c06669023ce",
@@ -120,35 +111,6 @@
         "id": "a5c0e9f187bd3efe",
         "type": "tabs",
         "children": [
-          {
-            "id": "dc06837fc0f05a98",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "course_notes/cs61a.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "9deaeb137a41214a",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "course_notes/cs61a.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
           {
             "id": "cd96aa95aa2f01c5",
             "type": "leaf",
@@ -166,7 +128,36 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "course_notes/cs61a.md"
+                "file": "course_notes/course_note_menu.md"
+              }
+            }
+          },
+          {
+            "id": "1bee321b680c70d1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "course_notes/course_note_menu.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ffd0590d0c352934",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "course_notes/course_note_menu.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
               }
             }
           }
@@ -179,28 +170,29 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "canvas:新建白板": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "oz-clear-unused-images:Clear Unused Images": false,
       "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
-      "canvas:Create new canvas": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false
     }
   },
-  "active": "0256a2fed9793e47",
+  "active": "cfc0d1576b7d942c",
   "lastOpenFiles": [
-    "course_notes/fit5057.md",
-    "course_notes/cs61a.md",
+    "course_notes/fit5046.md",
+    "course_notes/fit5225.md",
     "course_notes/course_note_menu.md",
+    "course_notes/fit5147.md",
+    "course_notes/fit5125.md",
     "course_notes/fit5136.md",
+    "course_notes/cs61a.md",
+    "未命名.canvas",
+    "course_notes/fit5057.md",
     "CSS/CSS_note_menu.md",
-    "Git/Git.md",
-    "career/career_note_menu.md",
-    "career/career_23summer.md",
-    "HTML/HTML_started.md",
-    "course_notes/fit9132.md"
+    "Git/Git.md"
   ]
 }
