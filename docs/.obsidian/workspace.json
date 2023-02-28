@@ -6,50 +6,40 @@
       {
         "id": "12a73b55561534eb",
         "type": "tabs",
+        "dimension": 44.01294498381877,
         "children": [
           {
-            "id": "cfc0d1576b7d942c",
+            "id": "77bdf2bad8f0f706",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "course_notes/course_note_menu.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "32883ade1e07b628",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "course_notes/fit5046.md",
+                "file": "course_notes/fit5171.md",
                 "mode": "source",
                 "source": true
               }
             },
-            "group": "a063c3046b42612a"
+            "group": "9ffffb0bcd74cf12"
           }
         ]
       },
       {
-        "id": "96d049fccfb179fb",
+        "id": "b24fcd828458e4bd",
         "type": "tabs",
+        "dimension": 55.98705501618123,
         "children": [
           {
-            "id": "f0fe932b183fdd77",
+            "id": "2938e7757a3cc2f5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "course_notes/fit5046.md",
+                "file": "course_notes/fit5171.md",
                 "mode": "preview",
                 "source": true
               }
             },
-            "group": "a063c3046b42612a"
+            "group": "9ffffb0bcd74cf12"
           }
         ]
       }
@@ -128,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "course_notes/course_note_menu.md"
+                "file": "course_notes/fit5171.md"
               }
             }
           },
@@ -138,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "course_notes/course_note_menu.md",
+                "file": "course_notes/fit5171.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "course_notes/course_note_menu.md",
+                "file": "course_notes/fit5171.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,12 +171,23 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cfc0d1576b7d942c",
+  "active": "77bdf2bad8f0f706",
   "lastOpenFiles": [
     "course_notes/fit5046.md",
+    "img/fit5046-20230228-9.png",
+    "img/fit5046-20230228-8.png",
+    "img/fit5046-20230228-7.png",
+    "img/fit5046-20230228-6.png",
+    "img/fit5046-20230228-5.png",
+    "img/fit5046-20230228-4.png",
+    "img/fit5046-20230228-3.png",
+    "img/Pasted image 20230228212521.png",
+    "img/fit5046-20230228-2.png",
+    "img/fit5046-20230228-1.png",
+    "course_notes/fit5147.md",
+    "course_notes/fit5171.md",
     "course_notes/fit5225.md",
     "course_notes/course_note_menu.md",
-    "course_notes/fit5147.md",
     "course_notes/fit5125.md",
     "course_notes/fit5136.md",
     "course_notes/cs61a.md",
