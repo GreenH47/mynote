@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "course_notes/fit5171.md",
+                "file": "course_notes/fit5225.md",
                 "mode": "source",
                 "source": true
               }
@@ -34,7 +34,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "course_notes/fit5171.md",
+                "file": "course_notes/fit5225.md",
                 "mode": "preview",
                 "source": true
               }
@@ -91,7 +91,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "bb6e2c06669023ce",
@@ -118,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "course_notes/fit5171.md"
+                "file": "course_notes/fit5225.md"
               }
             }
           },
@@ -128,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "course_notes/fit5171.md",
+                "file": "course_notes/fit5225.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +146,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "course_notes/fit5171.md",
+                "file": "course_notes/fit5225.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,18 +175,18 @@
   "active": "77bdf2bad8f0f706",
   "lastOpenFiles": [
     "course_notes/fit5046.md",
+    "img/fit5046-20230301-3.png",
+    "img/fit5046-20230301-2.png",
+    "img/fit5046-20230301-1.png",
+    "img/fit5046-20230301.png",
+    "course_notes/fit5171.md",
     "img/fit5046-20230228-9.png",
     "img/fit5046-20230228-8.png",
     "img/fit5046-20230228-7.png",
     "img/fit5046-20230228-6.png",
     "img/fit5046-20230228-5.png",
     "img/fit5046-20230228-4.png",
-    "img/fit5046-20230228-3.png",
-    "img/Pasted image 20230228212521.png",
-    "img/fit5046-20230228-2.png",
-    "img/fit5046-20230228-1.png",
     "course_notes/fit5147.md",
-    "course_notes/fit5171.md",
     "course_notes/fit5225.md",
     "course_notes/course_note_menu.md",
     "course_notes/fit5125.md",
