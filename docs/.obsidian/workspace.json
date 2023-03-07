@@ -6,40 +6,18 @@
       {
         "id": "12a73b55561534eb",
         "type": "tabs",
-        "dimension": 52.394366197183096,
         "children": [
           {
-            "id": "77bdf2bad8f0f706",
+            "id": "939c4c64cbc6dd07",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "course_notes/fit5147.md",
+                "file": "course_notes/fit5046.md",
                 "mode": "source",
-                "source": true
+                "source": false
               }
-            },
-            "group": "9ffffb0bcd74cf12"
-          }
-        ]
-      },
-      {
-        "id": "b24fcd828458e4bd",
-        "type": "tabs",
-        "dimension": 47.605633802816904,
-        "children": [
-          {
-            "id": "2938e7757a3cc2f5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "course_notes/fit5147.md",
-                "mode": "preview",
-                "source": true
-              }
-            },
-            "group": "9ffffb0bcd74cf12"
+            }
           }
         ]
       }
@@ -119,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "course_notes/fit5147.md"
+                "file": "course_notes/fit5046.md"
               }
             }
           },
@@ -129,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "course_notes/fit5147.md",
+                "file": "course_notes/fit5046.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,13 +124,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "course_notes/fit5147.md",
+                "file": "course_notes/fit5046.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -172,12 +151,15 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "77bdf2bad8f0f706",
+  "active": "939c4c64cbc6dd07",
   "lastOpenFiles": [
+    "img/fit5046-20230307-1.png",
+    "img/fit5046-20230307.png",
+    "course_notes/fit5147.md",
+    "course_notes/fit5046.md",
+    "course_notes/Rintro.md",
     "course_notes/fit5225.md",
     "course_notes/fit5171.md",
-    "course_notes/fit5046.md",
-    "course_notes/fit5147.md",
     "course_notes/fit5136.md",
     "course_notes/fit5125.md",
     "img/fit5046-20230302-2.png",
@@ -189,7 +171,6 @@
     "img/fit5046-20230301.png",
     "img/fit5046-20230228-9.png",
     "img/fit5046-20230228-8.png",
-    "img/fit5046-20230228-7.png",
     "course_notes/course_note_menu.md",
     "course_notes/cs61a.md",
     "未命名.canvas",

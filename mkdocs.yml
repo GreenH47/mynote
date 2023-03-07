@@ -61,6 +61,7 @@ theme:
 
   
 markdown_extensions:
+    - def_list
     - toc:
         permalink: "#"
         baselevel: 2
