@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "course_notes/fit5046.md",
+                "file": "course_notes/fit5147.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "course_notes/fit5046.md"
+                "file": "course_notes/fit5147.md"
               }
             }
           },
@@ -107,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "course_notes/fit5046.md",
+                "file": "course_notes/fit5147.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "course_notes/fit5046.md",
+                "file": "course_notes/fit5147.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,24 +153,23 @@
   },
   "active": "939c4c64cbc6dd07",
   "lastOpenFiles": [
-    "img/fit5046-20230307-1.png",
-    "img/fit5046-20230307.png",
-    "course_notes/fit5147.md",
-    "course_notes/fit5046.md",
-    "course_notes/Rintro.md",
-    "course_notes/fit5225.md",
     "course_notes/fit5171.md",
+    "img/fit5171-20230310-2.png",
+    "img/fit5171-20230310-1.png",
+    "course_notes/fit5225.md",
+    "img/screencapture-flux-qa-2023-02-27-11_41_18.png",
+    "img/Pasted image 20230310140622.png",
+    "img/fit5171-20230310.png",
+    "course_notes/fit5046.md",
+    "img/fit5046-20230309-3.png",
+    "img/fit5046-20230309-2.png",
+    "img/fit5046-20230309-1.png",
+    "img/fit5046-20230309.png",
+    "course_notes/fit5147.md",
+    "img/fit5046-20230308-5.png",
+    "course_notes/Rintro.md",
     "course_notes/fit5136.md",
     "course_notes/fit5125.md",
-    "img/fit5046-20230302-2.png",
-    "img/fit5046-20230302-1.png",
-    "img/fit5046-20230302.png",
-    "img/fit5046-20230301-3.png",
-    "img/fit5046-20230301-2.png",
-    "img/fit5046-20230301-1.png",
-    "img/fit5046-20230301.png",
-    "img/fit5046-20230228-9.png",
-    "img/fit5046-20230228-8.png",
     "course_notes/course_note_menu.md",
     "course_notes/cs61a.md",
     "未命名.canvas",
