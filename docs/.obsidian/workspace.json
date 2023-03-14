@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "12a73b55561534eb",
+        "id": "16160eb916fdfce7",
         "type": "tabs",
         "children": [
           {
-            "id": "939c4c64cbc6dd07",
+            "id": "cad6437630bcf5fe",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "course_notes/fit5225.md",
+                "file": "course_notes/fit5046.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "course_notes/fit5225.md"
+                "file": "course_notes/fit5046.md"
               }
             }
           },
@@ -107,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "course_notes/fit5225.md",
+                "file": "course_notes/fit5046.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "course_notes/fit5225.md",
+                "file": "course_notes/fit5046.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,23 +151,23 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "939c4c64cbc6dd07",
+  "active": "cad6437630bcf5fe",
   "lastOpenFiles": [
-    "course_notes/fit5046.md",
-    "course_notes/fit5225.md",
-    "img/Pasted image 20230313103907.png",
-    "img/fit5225-20230313.png",
-    "img/fit5225-20230312-47.png",
-    "img/fit5225-20230312-46.png",
-    "img/fit5225-20230312-45.png",
-    "img/fit5225-20230312-44.png",
-    "img/fit5225-20230312-43.png",
-    "img/fit5225-20230312-42.png",
-    "img/fit5225-20230312-41.png",
-    "img/fit5225-20230312-40.png",
-    "chat/221206_ChatGPT.md",
-    "course_notes/fit5147.md",
     "course_notes/fit5171.md",
+    "course_notes/fit5147.md",
+    "img/fit5171-20230314-8.png",
+    "img/fit5171-20230314-7.png",
+    "img/fit5171-20230314-6.png",
+    "img/fit5171-20230314-5.png",
+    "img/fit5171-20230314-4.png",
+    "img/Pasted image 20230314144109.png",
+    "img/fit5171-20230314-3.png",
+    "img/fit5171-20230314-2.png",
+    "img/fit5171-20230314-1.png",
+    "img/fit5171-20230314.png",
+    "course_notes/fit5225.md",
+    "course_notes/fit5046.md",
+    "chat/221206_ChatGPT.md",
     "course_notes/Rintro.md",
     "course_notes/fit5136.md",
     "course_notes/fit5125.md",
