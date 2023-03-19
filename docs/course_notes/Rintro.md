@@ -413,3 +413,31 @@ cars[1:2]
 cars<-rbind(cars,new1)
 cars<-rbind(cars,new2)
 ```
+
+## Read data 
+na.strings converts all missing data to na.  
+```r
+ti_train<- read.csv("titanic_train_week1.csv",na.strings=c("NA","NaN", ""), header = TRUE, sep=",")
+ti_test<- read.csv("titanic_test_week1.csv",na.strings=c("NA","NaN", ""), header = TRUE, sep = ",")
+```
+how much missing data are we dealing with? Using the column sums and the is.na() function, we get the amount of NAs we have in for each variable.  
+```r
+colSums(is.na(ti_train))
+# There are 177 missing 'Age' observations, 687 missing 'Cabin' observations and 2 missing 'Embarked' observations. 
+colSums(is.na(ti_test))
+# There is 1 missing 'Fair' observation, 327 missing 'Cabin' observations.
+```
+Knowing what you are dealing with is important. NA means 'not available' and NAN means 'not a number', handle those value before further operation `mean(ti_train$Age) # NA`   
+
+### 1 Remove all the rows with missing data
++ We can use the complete.cases function. This will return a vector that has no missing values `ti_train[!complete.cases(ti_train),]`  
++ To create a new data set with no missing data we use na.omit() `ti_train_full<-na.omit(ti_train)`  
++ there are no rows with na's. `ti_train_full[!complete.cases(ti_train_full),]`  
++ omitting all na's and the cabin data which is largly missing
+### 2 Remove the variables with missing data
+We could choose to exclude the variables with the most amount of missing data. Then we would move forward more sophisticated methods. Since ~68% of the Cabin data is missing. It is a good idea at this level to exclude it. We simple make a new dataframe excluding the cabin data.  
+```r
+train_sml<-data.frame(ti_train$PassengerId, ti_train$Survived, ti_train$Pclass, ti_train$Name, ti_train$Sex, ti_train$Age, ti_train$SibSp, ti_train$Ticket, ti_train$Fare, ti_train$Embarked)
+test_sml<-data.frame(ti_test$PassengerId, ti_test$Pclass, ti_test$Name, ti_test$Sex, ti_test$Age, ti_test$SibSp, ti_test$SibSp, ti_test$Parch, ti_test$Ticket, ti_test$Fare, ti_test$Embarked)
+```
+
