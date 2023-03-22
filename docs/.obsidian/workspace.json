@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "course_notes/fit5225.md",
+                "file": "course_notes/fit5046.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "course_notes/fit5225.md"
+                "file": "course_notes/fit5046.md"
               }
             }
           },
@@ -107,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "course_notes/fit5225.md",
+                "file": "course_notes/fit5046.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "course_notes/fit5225.md",
+                "file": "course_notes/fit5046.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,11 +161,11 @@
   },
   "active": "cad6437630bcf5fe",
   "lastOpenFiles": [
+    "course_notes/fit5225.md",
     "img/fit5225-20230321-1.png",
     "img/fit5225-20230321.png",
     "course_notes/fit5046.md",
     "img/fit5046-20230321.png",
-    "course_notes/fit5225.md",
     "img/fit5225-20230320-4.png",
     "img/fit5225-20230320-3.png",
     "img/fit5225-20230320-2.png",
@@ -174,7 +174,6 @@
     "course_notes/fit5147.md",
     "img/fit5147-20230319-2.png",
     "img/fit5147-20230319-1.png",
-    "img/fit5147-20230319.png",
     "course_notes/Rintro.md",
     "course_notes/fit5171.md",
     "chat/221206_ChatGPT.md",
