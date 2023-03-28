@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "course_notes/fit5046.md",
+                "file": "course_notes/fit5147.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "bb6e2c06669023ce",
@@ -97,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "course_notes/fit5046.md"
+                "file": "course_notes/fit5147.md"
               }
             }
           },
@@ -107,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "course_notes/fit5046.md",
+                "file": "course_notes/fit5147.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "course_notes/fit5046.md",
+                "file": "course_notes/fit5147.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,21 +160,21 @@
   },
   "active": "cad6437630bcf5fe",
   "lastOpenFiles": [
+    "course_notes/fit5046.md",
+    "img/fit5046-20230327-10.png",
+    "img/fit5046-20230327-9.png",
+    "img/fit5046-20230327-8.png",
+    "img/fit5046-20230327-7.png",
+    "img/fit5046-20230327-6.png",
+    "img/fit5046-20230327-5.png",
+    "img/fit5046-20230327-4.png",
+    "img/fit5046-20230327-3.png",
+    "img/fit5046-20230327-2.png",
+    "img/fit5046-20230327-1.png",
+    "course_notes/fit5225.md",
     "course_notes/fit5147.md",
     "course_notes/Rintro.md",
     "course_notes/fit5171.md",
-    "img/fit5171-20230323.png",
-    "course_notes/fit5046.md",
-    "course_notes/fit5225.md",
-    "img/fit5225-20230321-1.png",
-    "img/fit5225-20230321.png",
-    "img/fit5046-20230321.png",
-    "img/fit5225-20230320-4.png",
-    "img/fit5225-20230320-3.png",
-    "img/fit5225-20230320-2.png",
-    "img/fit5225-20230320-1.png",
-    "img/fit5225-20230320.png",
-    "img/fit5147-20230319-2.png",
     "chat/221206_ChatGPT.md",
     "course_notes/fit5136.md",
     "course_notes/fit5125.md",

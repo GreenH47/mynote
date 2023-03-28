@@ -15,5 +15,7 @@
   "highlightr-plugin",
   "cm-editor-syntax-highlight-obsidian",
   "copy-url-in-preview",
-  "obsidian-auto-link-title"
+  "obsidian-auto-link-title",
+  "obsidian-emoji-toolbar",
+  "url-into-selection"
 ]
