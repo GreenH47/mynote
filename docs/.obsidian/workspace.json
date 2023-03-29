@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "course_notes/fit5147.md",
+                "file": "course_notes/fit5225.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "bb6e2c06669023ce",
@@ -96,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "course_notes/fit5147.md"
+                "file": "course_notes/fit5225.md"
               }
             }
           },
@@ -106,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "course_notes/fit5147.md",
+                "file": "course_notes/fit5225.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "course_notes/fit5147.md",
+                "file": "course_notes/fit5225.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,13 +154,14 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "oz-clear-unused-images:Clear Unused Images": false,
-      "obsidian-excalidraw-plugin:New Excalidraw drawing": false
+      "obsidian-excalidraw-plugin:New Excalidraw drawing": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
   "active": "cad6437630bcf5fe",
   "lastOpenFiles": [
+    "course_notes/fit5147.md",
     "course_notes/fit5046.md",
     "img/fit5046-20230327-10.png",
     "img/fit5046-20230327-9.png",
@@ -172,7 +174,6 @@
     "img/fit5046-20230327-2.png",
     "img/fit5046-20230327-1.png",
     "course_notes/fit5225.md",
-    "course_notes/fit5147.md",
     "course_notes/Rintro.md",
     "course_notes/fit5171.md",
     "chat/221206_ChatGPT.md",
