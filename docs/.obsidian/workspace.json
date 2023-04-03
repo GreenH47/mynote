@@ -4,8 +4,27 @@
     "type": "split",
     "children": [
       {
+        "id": "c23b744b539980fb",
+        "type": "tabs",
+        "dimension": 21.13095238095238,
+        "children": [
+          {
+            "id": "dc17491e09911957",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "course_notes/fit5046.md"
+              }
+            },
+            "group": "e577340f1d32a6d9"
+          }
+        ]
+      },
+      {
         "id": "16160eb916fdfce7",
         "type": "tabs",
+        "dimension": 78.86904761904762,
         "children": [
           {
             "id": "cad6437630bcf5fe",
@@ -13,11 +32,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "course_notes/fit5225.md",
+                "file": "course_notes/fit5046.md",
                 "mode": "source",
                 "source": false
               }
-            }
+            },
+            "group": "e577340f1d32a6d9"
           }
         ]
       }
@@ -97,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "course_notes/fit5225.md"
+                "file": "course_notes/fit5046.md"
               }
             }
           },
@@ -107,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "course_notes/fit5225.md",
+                "file": "course_notes/fit5046.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "course_notes/fit5225.md",
+                "file": "course_notes/fit5046.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,6 +168,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-excalidraw-plugin:Create new drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -155,27 +176,27 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "oz-clear-unused-images:Clear Unused Images": false,
-      "obsidian-excalidraw-plugin:New Excalidraw drawing": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
   "active": "cad6437630bcf5fe",
   "lastOpenFiles": [
-    "course_notes/fit5147.md",
-    "course_notes/fit5046.md",
-    "img/fit5046-20230327-10.png",
-    "img/fit5046-20230327-9.png",
-    "img/fit5046-20230327-8.png",
-    "img/fit5046-20230327-7.png",
-    "img/fit5046-20230327-6.png",
-    "img/fit5046-20230327-5.png",
-    "img/fit5046-20230327-4.png",
-    "img/fit5046-20230327-3.png",
-    "img/fit5046-20230327-2.png",
-    "img/fit5046-20230327-1.png",
+    "img/fit5046-20230403-11.png",
+    "img/fit5046-20230403-10.png",
+    "img/fit5046-20230403-9.png",
+    "img/fit5046-20230403-8.png",
+    "img/fit5046-20230403-8.png",
+    "img/fit5046-20230403-7.png",
+    "img/Pasted image 20230403181943.png",
+    "img/fit5046-20230403-6.png",
+    "img/fit5046-20230403-5.png",
+    "img/fit5046-20230403-4.png",
+    "img/fit5046-20230403-3.png",
     "course_notes/fit5225.md",
-    "course_notes/Rintro.md",
+    "course_notes/fit5046.md",
+    "course_notes/fit5147.md",
     "course_notes/fit5171.md",
+    "course_notes/Rintro.md",
     "chat/221206_ChatGPT.md",
     "course_notes/fit5136.md",
     "course_notes/fit5125.md",
