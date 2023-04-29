@@ -1,3 +1,7 @@
+# git reset to removed from the staging area
+![](../img/Git-20230428.png)
+![](../img/Git-20230428-1.png)
+![](../img/Git-20230428-2.png)
 # Git branching learning  
 https://learngitbranching.js.org/?demo=&locale=zh_CN  
 

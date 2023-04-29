@@ -4,35 +4,40 @@
     "type": "split",
     "children": [
       {
-        "id": "c48c36b4ec86a47e",
+        "id": "a9c57f75f4f61eea",
         "type": "tabs",
+        "dimension": 25.866336633663366,
         "children": [
           {
-            "id": "1d24b35d8fb724b0",
+            "id": "af09b7bb3bea2a86",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "outline",
               "state": {
-                "file": "course_notes/fit5147.md",
-                "mode": "source",
-                "source": false
+                "file": "course_notes/fit5171_note.md"
               }
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "23909f4a1679bb9f",
+        "type": "tabs",
+        "dimension": 74.13366336633663,
+        "children": [
           {
-            "id": "48769e069d877e0b",
+            "id": "dc6ca122805be454",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "course_notes/fit5046.md",
-                "mode": "preview",
+                "file": "course_notes/fit5171_note.md",
+                "mode": "source",
                 "source": true
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "course_notes/fit5046.md"
+                "file": "course_notes/fit5171_note.md"
               }
             }
           },
@@ -119,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "course_notes/fit5046.md",
+                "file": "course_notes/fit5171_note.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "course_notes/fit5046.md",
+                "file": "course_notes/fit5171_note.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,23 +176,25 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "48769e069d877e0b",
+  "active": "dc6ca122805be454",
   "lastOpenFiles": [
-    "course_notes/fit5046.md",
-    "course_notes/fit5147.md",
+    "Git/Git.md",
+    "img/Git-20230428-2.png",
+    "img/Git-20230428-1.png",
+    "img/Git-20230428.png",
     "course_notes/fit5171.md",
+    "course_notes/fit5171_note.md",
     "course_notes/fit5225.md",
+    "course_notes/fit5147.md",
+    "img/fit5171-20230425-5.png",
+    "img/fit5171-20230425-4.png",
+    "img/fit5171-20230425-3.png",
+    "img/fit5171-20230425-2.png",
+    "img/fit5171-20230425-1.png",
+    "img/fit5171-20230425.png",
+    "course_notes/fit5046.md",
     "course_notes/fit5225_note.md",
     "img/fit5225_note-20230418-2.png",
-    "img/fit5225_note-20230418-1.png",
-    "img/fit5225_note-20230418.png",
-    "img/fit5225_note-20230417-3.png",
-    "img/Pasted image 20230417192934.png",
-    "img/fit5225_note-20230417-2.png",
-    "img/fit5225_note-20230417-1.png",
-    "img/fit5225_note-20230417.png",
-    "img/fit5225_note-20230416-3.png",
-    "img/fit5225_note-20230416-2.png",
     "course_notes/fit5046_assignment.md",
     "RackMultipart20230405-1-jtzm4j_html_8ab6d196b993af89.png.md",
     "img/fit5171-20230404-28.png.~tmp",
@@ -199,7 +206,6 @@
     "course_notes/cs61a.md",
     "未命名.canvas",
     "course_notes/fit5057.md",
-    "CSS/CSS_note_menu.md",
-    "Git/Git.md"
+    "CSS/CSS_note_menu.md"
   ]
 }

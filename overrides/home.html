@@ -215,6 +215,43 @@
     .md-footer-social {
         padding-top: 20px;
     }
+
+    .music-player {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        background-color: #f5f5f5;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+        padding: 0 20px;
+    }
+
+    #play-pause-button {
+        background-color: #2196F3;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+    }
+
+    #play-pause-button:hover {
+        background-color: #0D47A1;
+    }
+
+    #play-pause-button.playing {
+        background-color: #F44336;
+    }
+
+    #play-pause-button.playing:hover {
+        background-color: #B71C1C;
+    }
+
+
 </style>
 
 <!-- Main site Entry button descriptions -->
@@ -239,6 +276,26 @@
       </div>
     </div>
 </section>
+<div class="music-player">
+    <audio id="audio-player" src="http://mysound.ge/uploads/tracks/2070716937_1632637049_1568229802.mp3" autoplay></audio>
+    <button id="play-pause-button">Pause</button>
+</div>
+<script>
+    var audioPlayer = document.getElementById("audio-player");
+    var playPauseButton = document.getElementById("play-pause-button");
+
+    playPauseButton.addEventListener("click", function() {
+      if (audioPlayer.paused) {
+        audioPlayer.play();
+        playPauseButton.classList.add("playing");
+        playPauseButton.innerHTML = "Pause";
+      } else {
+        audioPlayer.pause();
+        playPauseButton.classList.remove("playing");
+        playPauseButton.innerHTML = "Play";
+      }
+    });
+</script>
 
 <!-- Main site box descriptions -->
 <div class="top-hr">
