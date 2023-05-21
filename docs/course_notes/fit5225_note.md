@@ -463,3 +463,71 @@ plt.savefig('Local_avg_res_time.png')
 
 ```
 and here is one of the result (not complete version) ![](../img/fit5225_note-20230418-2.png)
+
+# Assignment 2 designing an AWS Cloud-Based Solution for a Toll Management Application
+## Background
+INKED, a toll road operator company, has decided to migrate its on-premise toll management application to Amazon Web Services (AWS) and has hired you as a Cloud Solution Architect/Consultant to design their cloud solution. As an AWS solution architect, you will be responsible for designing a cloud-based solution that captures images of vehicle plates and automatically charges driver accounts based on factors such as vehicle type and distance travelled. This solution will leverage AWS services and your knowledge gained in the FIT5225 unit to enable LINKED to collect fees from drivers using their toll system. You may spend some time reading about how automatic toll systems work  
+INKED 是一家收费公路运营公司，已决定将其本地收费管理应用程序迁移到 Amazon Web Services (AWS)，并聘请您作为云解决方案架构师/顾问来设计他们的云解决方案。作为 AWS 解决方案架构师，您将负责设计一个基于云的解决方案，该解决方案可捕获车牌图像并根据车辆类型和行驶距离等因素自动向驾驶员账户收费。该解决方案将利用 AWS 服务和您在 FIT5225 单元中获得的知识，使 LINKED 能够向使用其收费系统的司机收取费用。您可能会花一些时间阅读自动收费系统的工作原理
+## Report
+### requirement
++ The report must be in PDF format.  
++ The report should not exceed 1500 words.  
++ Only ONE diagram should be included in the report apart from the text.  
++ A cover sheet must be included in the report, containing all necessary information such as student name, ID, unit, etc
+
+###  architectural diagram of your solution 
+Include an architectural diagram of your solution using AWS Architecture Icons. You can find more information and download the icons from the official AWS website: [AWS Architecture Icons](https://aws.amazon.com/architecture/icons/) Your architecture diagram should illustrate the various components of your solution, including the AWS services used, and how they interact with each other. You can use Microsoft PowerPoint or any other tools like this: [Flowchart Maker & Online Diagram Software](https://www.draw.io/index.html).    
+使用 AWS 架构图标包括您的解决方案的架构图。您可以从 AWS 官方网站找到更多信息并下载图标：。您的架构图应说明解决方案的各个组件，包括使用的 AWS 服务，以及它们如何相互交互。您可以使用 Microsoft PowerPoint 或任何其他工具，例如。
+
+### address key aspects
+In your design explanation, ensure to consider and address key aspects such as <mark style="background: #ff0000;">Scalability, Security, Failure Handling (including availability and reliability) and cost-effectiveness</mark>. To do so, you may need to make <mark style="background: #3CB371;">reasonable assumptions</mark> about the system’s <mark style="background: #0000CD;">requirements,</mark> <mark style="background: #D2691E;">constraints</mark>, and<span style="background:#d3f8b6"> limitations</span>, but ensure that each assumption is justifiable based on the information provided. E<span style="background:#9254de">xplain how each assumption influenced</span> your design decisions, with a particular focus on these key aspects  
+在您的设计说明中，确保考虑并解决关键方面，例如可扩展性、安全性、故障处理（包括可用性和可靠性）和成本效益。为此，您可能需要对系统的要求、约束和限制做出合理的假设，但要确保根据所提供的信息，每个假设都是合理的。解释每个假设如何影响您的设计决策，并特别关注这些关键方面
+
+### understanding of AWS services
+Provide clear and concise explanations that <mark style="background: #ff0000;">demonstrate your understanding of AWS services</mark>, including <mark style="background: #3CB371;">why you selected specific AWS service</mark>s, <mark style="background: #D2691E;">what specific type of that service was used</mark>, and  <mark style="background: #0000CD;">which settings were considered</mark>. Your explanation should emphasize on h<mark style="background: #ff0000;">ow your application works</mark> and <mark style="background: #3CB371;">how various components of the architecture interact </mark>with each other.  
+提供清晰简洁的解释，证明您对 AWS 服务的理解，包括您选择特定 AWS 服务的原因、使用了哪种特定类型的服务以及考虑了哪些设置。您的解释应强调您的应用程序如何工作以及架构的各个组件如何相互交互。
+
+### The quality of your design
+The quality of your design will be evaluated based on its <mark style="background: #0000CD;">completeness</mark>, <mark style="background: #ff0000;">correctness</mark>, and <mark style="background: #3CB371;">clarity</mark>. Make sure to i<mark style="background: #D2691E;">nclude all the relevant components and AWS services</mark> required to implement your solution. Use <mark style="background: #0000CD;">clear and consistent labelling and notation</mark> in your architecture diagram. Finally, make sure your d<mark style="background: #D2691E;">esign is easy to read and understand</mark>  
+您的设计质量将根据其完整性、正确性和清晰度进行评估。确保包括实施您的解决方案所需的所有相关组件和 AWS 服务。在架构图中使用清晰一致的标签和符号。最后，确保您的设计易于阅读和理解
+
+### solution focus
+Your solution should focus solely on the task of <mark style="background: #0000CD;">reading and storing vehicles’ plates</mark> and <mark style="background: #ff0000;">issuing charging bills for drivers</mark>. It is not necessary to consider other aspects of the system, such as user registration portals or user databases. You may assume that your system has access to a relational  database (such as Aurora RDS) that contains all necessary information regarding drivers and their  vehicles  
+您的解决方案应该只专注于读取和存储车牌以及为司机开具收费单的任务。没有必要考虑系统的其他方面，例如用户注册门户或用户数据库。您可以假设您的系统可以访问关系数据库（例如 Aurora RDS），其中包含有关驾驶员及其车辆的所有必要信息
+
+## Note
+### storage
+![](../img/fit5225_note-20230509.png)  
+[What is Amazon S3? - Amazon Simple Storage Service](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)  
+
+
+![](../img/fit5225_note-20230509-1.png)  [Object Storage Classes – Amazon S3](https://aws.amazon.com/s3/storage-classes/)  
+
+![](../img/fit5225_note-20230509-2.png)  
+
+### EC2 Amazon Elastic Compute Cloud
+[Amazon EC2](https://aws.amazon.com/pm/ec2/)  
+[Amazon EC2 Instance Types - Amazon Web Services](https://aws.amazon.com/ec2/instance-types/)  
+### EBS Amazon Elastic Block Store
+[Amazon Elastic Block Store (Amazon EBS) - Amazon Elastic Compute Cloud](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEBS.html)  
+
+### Amazon Virtual Private Cloud (Amazon VPC)
+[What is Amazon VPC? - Amazon Virtual Private Cloud](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)  
+![](../img/fit5225_note-20230509-4.png)
+
+### architect
+[Reference Architecture Examples and Best Practices](https://aws.amazon.com/architecture/?cards-all.sort-by=item.additionalFields.sortDate&cards-all.sort-order=desc&awsf.content-type=*all&awsf.methodology=*all&awsf.tech-category=*all&awsf.industries=*all&awsf.business-category=*all) 
+[AWS Well-Architected - Build secure, efficient cloud applications](https://aws.amazon.com/architecture/well-architected/?achp_expl1&wa-lens-whitepapers.sort-by=item.additionalFields.sortDate&wa-lens-whitepapers.sort-order=desc&wa-guidance-whitepapers.sort-by=item.additionalFields.sortDate&wa-guidance-whitepapers.sort-order=desc)  
+[Overview of Amazon Web Services - Overview of Amazon Web Services](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html?achp_expl3)  
+[Establishing your Cloud Foundation on AWS](https://aws.amazon.com/architecture/cloud-foundations/)  
+
+### diagram
+[AWS Diagram - Learn What is a AWS Architecture Diagram and More](https://www.smartdraw.com/aws-diagram/)  
+[Free AWS Architecture Diagram Examples | EdrawMax Online](https://www.edrawmax.com/article/aws-architecture-diagram-examples.html)  
+[IoT | AWS Architecture Center](https://aws.amazon.com/architecture/iot/?cards-all.sort-by=item.additionalFields.sortDate&cards-all.sort-order=desc&awsf.content-type=*all&awsf.methodology=*all)  
+
+![](../img/fit5225_note-20230509-8.png)
+![](../img/fit5225_note-20230509-9.png)  
+
+![](../img/fit5225_note-20230509-7.png)  
+![](../img/fit5225_note-20230509-10.png)  

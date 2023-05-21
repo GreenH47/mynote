@@ -1,7 +1,8 @@
-# requirement
+# assignment 1
+## requirement
 This is a small software implemented in Java and your team has been contracted to validate the functional requirements and prove the quality of the Software. Using TDD approach, you can extend the codebase where needed
-# main function code
-## Airplane.java
+## main function code
+### Airplane.java
 here is the code inside Airplane.java
 ```java
 package fit5171.monash.edu;  
@@ -85,7 +86,7 @@ public class Airplane
    }  
 }
 ```
-## Flight.java
+### Flight.java
 here is the code inside Flight.java:  
 ```java
 package fit5171.monash.edu;  
@@ -222,7 +223,7 @@ public class Flight {
     }  
 }
 ```
-## Person.java
+### Person.java
 here is the code inside Person.java:  
 ```java
 package fit5171.monash.edu;  
@@ -297,7 +298,7 @@ public abstract class Person //abstract class Person
     }  
 }
 ```
-## Passenger.java
+### Passenger.java
 here is the code inside Passenger.java:  
 ```java
 package fit5171.monash.edu;  
@@ -435,7 +436,7 @@ public class Passenger extends Person
     }  
 }
 ```
-## Ticket.java
+### Ticket.java
 here is the code inside Ticket.java:  
 ```java
 package fit5171.monash.edu;  
@@ -562,7 +563,7 @@ public class Ticket
 ```
 
 
-## TicketSystem.java
+### TicketSystem.java
 here is the code inside TicketSystem.java:  
 ```java
 package fit5171.monash.edu;  
@@ -933,7 +934,7 @@ public class TicketSystem <T>
 ```
 
 
-## TicketCollection.java
+### TicketCollection.java
 here is the code inside TicketCollection.java:  
 ```java
 package fit5171.monash.edu;  
@@ -970,7 +971,7 @@ public class TicketCollection {
 }
 
 ```
-## FlightCollection.java
+### FlightCollection.java
 here is the code inside FlightCollection.java:  
 ```java
 package fit5171.monash.edu;  
@@ -1017,9 +1018,9 @@ public class FlightCollection {
 }
 
 ```
-# unit test
+## unit test
 You will mock the external objects/functionalities, using a Java mocking library called mockito. The requirement of testing every class is under the validation chapter below.
-## Validation
+### Validation
 ### Airplane.java
 When some attribute of the airplane is being set, the following unit testing conditions need to be satisfied.
 1. Ensure all fields/details for an airplane like Airplane ID, Airplane businessSitsNumber, crewSitsNumber, etc. are tested
@@ -1066,6 +1067,22 @@ When a ticket is being created, it needs to satisfy the following conditions.
 2. Valid city names must be used.  
 3. When trying to get flight information, a valid flight is returned.
 
-# pipeline
+## pipeline
 [tutorials / Java Maven Junit CI Helloworld · GitLab](https://gitlab.bio.di.uminho.pt/tutorials/java-maven-junit-ci-helloworld)  
 [Tutorial: Create and run your first GitLab CI/CD pipeline | GitLab](https://docs.gitlab.com/ee/ci/quick_start/#ensure-you-have-runners-available)  
+
+# assignment 2
+## dependcy
+[Java Downloads | Oracle](https://www.oracle.com/java/technologies/downloads/#java11-windows)  
+[Download | SonarQube | Sonar](https://www.sonarsource.com/products/sonarqube/downloads/)  
+[PostgreSQL Community DL Page](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)  
+[Quickstart for maven users](https://pitest.org/quickstart/maven/)  
+
+## setup 
+1. install and set environment path for jdk17 to build up sonar server
+2. install PostgreSQL and setup Create User from PgAdmin username=sonarqube password=12345678 Create table sonarqube
+3. open /sonarqubefolder/conf/sonar.propertiesfiles add `sonar.jdbc.username=sonarqube sonar.jdbc.password=12345678 sonar.jdbc.url=jdbc:postgresql://localhost/sonarqube`  under `# User credentials.`  
+4.  [Try out SonarQube](https://docs.sonarqube.org/latest/try-out-sonarqube/) follow the instruction to execute the analysis report for your project 
+
+
+

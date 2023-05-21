@@ -4,40 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "a9c57f75f4f61eea",
+        "id": "9ddcccf686a93397",
         "type": "tabs",
-        "dimension": 25.866336633663366,
         "children": [
           {
-            "id": "af09b7bb3bea2a86",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "course_notes/fit5171_note.md"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "23909f4a1679bb9f",
-        "type": "tabs",
-        "dimension": 74.13366336633663,
-        "children": [
-          {
-            "id": "dc6ca122805be454",
+            "id": "1723b0a21f30e665",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "course_notes/fit5171_note.md",
+                "file": "course_notes/fit5046.md",
                 "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4f073c785bf2a1ee",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "chat/230521_serverless,microservices,RESTFUL.md",
+                "mode": "preview",
                 "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -82,6 +77,14 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "834b2f5f3af1ad6c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
@@ -114,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "course_notes/fit5171_note.md"
+                "file": "chat/230521_serverless,microservices,RESTFUL.md"
               }
             }
           },
@@ -124,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "course_notes/fit5171_note.md",
+                "file": "chat/230521_serverless,microservices,RESTFUL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "course_notes/fit5171_note.md",
+                "file": "chat/230521_serverless,microservices,RESTFUL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -176,30 +179,37 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "dc6ca122805be454",
+  "active": "4f073c785bf2a1ee",
   "lastOpenFiles": [
-    "Git/Git.md",
-    "img/Git-20230428-2.png",
-    "img/Git-20230428-1.png",
-    "img/Git-20230428.png",
-    "course_notes/fit5171.md",
-    "course_notes/fit5171_note.md",
-    "course_notes/fit5225.md",
-    "course_notes/fit5147.md",
-    "img/fit5171-20230425-5.png",
-    "img/fit5171-20230425-4.png",
-    "img/fit5171-20230425-3.png",
-    "img/fit5171-20230425-2.png",
-    "img/fit5171-20230425-1.png",
-    "img/fit5171-20230425.png",
+    "img/Drawing 2023-05-14 21.02.28.excalidraw.md",
+    "chat/230521_serverless,microservices,RESTFUL.md",
     "course_notes/fit5046.md",
-    "course_notes/fit5225_note.md",
-    "img/fit5225_note-20230418-2.png",
     "course_notes/fit5046_assignment.md",
+    "Untitled.canvas",
+    "course_notes/fit5147.md",
+    "course_notes/fit5171_note.md",
+    "course_notes/fit5171.md",
+    "img/fit5171-20230518.jpg",
+    "img/fit5147-20230515-2.png",
+    "img/fit5147-20230515-1.png",
+    "img/fit5147-20230515.png",
+    "img/fit5147-20230514-4.png",
+    "img/fit5147-20230514-3.png",
+    "img/fit5147-20230514-2.png",
+    "img/77c360c506c1a88adad96b3f658c818.jpg",
+    "img/Drawing 2023-05-01 14.41.34.excalidraw.md",
+    "img/Drawing 2023-05-01 14.41.34_0.excalidraw.md",
+    "img/fit5147-20230514-1.png",
+    "img/fit5147-20230514.png",
+    "course_notes/fit5225_note.md",
+    "course_notes/fit9132.md",
+    "chat/chat_index.md",
+    "chat/221206_ChatGPT.md",
+    "course_notes/fit5225.md",
+    "Git/Git.md",
     "RackMultipart20230405-1-jtzm4j_html_8ab6d196b993af89.png.md",
     "img/fit5171-20230404-28.png.~tmp",
     "course_notes/Rintro.md",
-    "chat/221206_ChatGPT.md",
     "course_notes/fit5136.md",
     "course_notes/fit5125.md",
     "course_notes/course_note_menu.md",

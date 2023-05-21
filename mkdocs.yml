@@ -50,6 +50,7 @@ nav:
     - 'Green chat':
         - 'Green chat navigation': 'chat/chat_index.md'
         - '221206_ChatGPT': 'chat/221206_ChatGPT.md'
+        - '230521_serverless,microservices,RESTFUL': 'chat/230521_serverless,microservices,RESTFUL.md'
         
 theme:
   name: material
