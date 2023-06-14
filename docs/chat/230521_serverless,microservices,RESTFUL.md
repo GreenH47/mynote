@@ -47,3 +47,41 @@ RESTful Web 服务是一种遵循 REST 体系结构的服务。RESTful Web 服�
 
 In summary, REST is an architectural style for building distributed systems based on HTTP and other web standards that promotes scalability, modifiability, and reliability. RESTful APIs and RESTful Web Services are two different forms of REST architecture that use HTTP methods to interact with web resources, while RESTful web services expose data or functionality through a web service, and RESTful APIs provide a standard interface for interacting with resources.
 总之，REST 是一种基于 HTTP 和其他 Web 标准构建分布式系统的架构风格，可提高可伸缩性、可修改性和可靠性。RESTful API 和 RESTful Web Services 是两种不同形式的 REST 架构，它们使用 HTTP 方法与 Web 资源交互，而 RESTful Web 服务通过 Web 服务公开数据或功能，RESTful API 提供与资源交互的标准接口。
+
+## What are the architectural constraints of REST
+1.  Client-server: Separation of concerns between the client and server, allowing for independent development and evolution.  
+    客户端-服务器：客户端和服务器之间的关注点分离，允许独立开发和演变。
+    
+2.  Statelessness: Communication between the client and server is done in a stateless manner, where each request carries the necessary information required to process that request. The server does not store any client context.  
+    无状态：客户端和服务器之间的通信以无状态方式完成，其中每个请求都携带处理该请求所需的必要信息。服务器不存储任何客户端上下文。
+    
+3.  Cacheability: Responses from server-side should be cacheable to improve network efficiency, and reducing server-side workload when a cached response can be used.  
+    可缓存性：来自服务器端的响应应该是可缓存的，以提高网络效率，并在可以使用缓存的响应时减少服务器端工作负载。
+    
+4.  Layered System: System decomposition into a set of connected layers, each of which has a specific role and communicates only with the immediately adjacent layer(s).  
+    分层系统：系统分解为一组连接层，每个层都有特定的角色，并且仅与紧邻的层通信。
+    
+5.  Code on demand (optional): The ability to transfer executable code from the server to the client as a part of the response payload.  
+    按需代码（可选）：将可执行代码作为响应有效负载的一部分从服务器传输到客户端的功能。
+    
+6.  Uniform Interface: Use of a shared and well-defined interface for accessing resources, defined by the following four sub-constraints:  
+    统一接口：使用共享且定义明确的接口来访问资源，
+
+## if The server does not store any client context. how do they use users info to make personalize service  如果服务器不存储任何客户端上下文。以及他们如何使用用户信息来提供个性化服务
+In a RESTful architecture, the server is stateless, which means that it does not store any client context. However, the server can still use user information to provide personalized services by leveraging techniques such as authentication and authorization.
+在 RESTful 体系结构中，服务器是无状态的，这意味着它不存储任何客户端上下文。但是，服务器仍可以通过利用身份验证和授权等技术使用用户信息来提供个性化服务。
+
+Authentication: The server can require authentication before providing personalized services to the user. The user first needs to identify themselves and prove their identity using a username and password, or other authentication means, before accessing the personalized services.
+身份验证：服务器可以在向用户提供个性化服务之前要求身份验证。在访问个性化服务之前，用户首先需要使用用户名和密码或其他身份验证方式来识别自己并证明自己的身份。
+
+Authorization: Once the user is authenticated, the server can use the authorization mechanisms to determine the appropriate level of access for the user. This can be done by assigning roles or permissions to the user, or by using other authorization mechanisms.
+授权：对用户进行身份验证后，服务器可以使用授权机制来确定用户的适当访问级别。这可以通过向用户分配角色或权限或使用其他授权机制来完成。
+
+Cookies and sessions: RESTful web services can also use cookies and sessions to store user-specific data on the client-side. Client applications can then send this data back to the server with each request to provide personalized services. However, this approach is not considered to be pure RESTful architecture as it is stateful.
+Cookie 和会话：RESTful Web 服务还可以使用 Cookie 和会话在客户端存储用户特定的数据。然后，客户端应用程序可以在每次请求时将此数据发送回服务器，以提供个性化服务。但是，这种方法不被认为是纯粹的 RESTful 体系结构，因为它是有状态的。
+
+Use of client-provided data: The server can use the data provided by the client in the request to provide personalized responses. For example, a web application may ask the user to provide information about themselves (like their name, age, location) via an HTML form and then use that data to personalize the response.
+使用客户端提供的数据：服务器可以使用客户端在请求中提供的数据来提供个性化的响应。例如，Web 应用程序可能会要求用户通过 HTML 表单提供有关他们自己的信息（例如他们的姓名、年龄、位置），然后使用该数据来个性化响应。
+
+In summary, while the server in a RESTful architecture is stateless, it can still provide personalized services to the user by using authentication and authorization mechanisms, cookies, sessions, and client-provided data.
+总之，虽然 RESTful 架构中的服务器是无状态的，但它仍然可以通过使用身份验证和授权机制、cookie、会话和客户端提供的数据为用户提供个性化服务。

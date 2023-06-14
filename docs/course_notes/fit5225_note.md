@@ -531,3 +531,90 @@ Your solution should focus solely on the task of <mark style="background: #0000C
 
 ![](../img/fit5225_note-20230509-7.png)  
 ![](../img/fit5225_note-20230509-10.png)  
+
+# assignment 2 CloudSnap: A Serverless Image Storage System with Tagging
+## Synopsis  
+This assignment aims to build a cloud-based online system that allows users to store and retrieve images based on auto-generated tags. The focus of this project is to design a serverless application that enables clients to upload their images to public cloud storage. Upon image upload, the application automatically tags the image with the objects detected in it, such as person, car, etc. Later on, clients can query images based on the objects present in them. To achieve this, the application provides users with a list of image URLs (or tumbnails) that include the specific queried objects 概要 本作业旨在构建一个基于云的在线系统，允许用户根据自动生成的标签存储和检索图像。这个项目的重点是设计一个无服务器应用程序，使客户能够将他们的图像上传到公共云存储。上传图像后，应用程序会自动为图像标记检测到的物体，例如人、车等。稍后，客户端可以根据图像中存在的物体查询图像。为此，该应用程序为用户提供了包含特定查询对象的图像 URL（或缩略图）列表
+
+## Assignment Description  
+Teams should develop an AWS cloud-based solution that leverages services such as S3, Lambda, API Gateway, and database services (e.g., DynamoDB) to build a system for automated object detection tagging and query handling. The teams should produce a solution that enables end-users to upload their images into an S3 bucket. Upon uploading an image to a designated S3 bucket, a lambda function is automatically triggered, which uses the Yolo object detection feature to identify the objects in the image and stores the list of detected objects along with the image’s S3 URL in a database. Furthermore, the end-user should be able to submit queries to an API endpoint using API Gateway to search for tagged images (more details to come). Table 1 provides a glossary of terms used in the assignment description 任务描述 团队应开发一个基于 AWS 云的解决方案，该解决方案利用 S3、Lambda、API 网关和数据库服务（例如 DynamoDB）等服务来构建用于自动对象检测标记和查询处理的系统。团队应该制定一个解决方案，使最终用户能够将他们的图像上传到 S3 存储桶中。将图像上传到指定的 S3 存储桶后，会自动触发 lambda 函数，该函数使用 Yolo 对象检测功能来识别图像中的对象，并将检测到的对象列表与图像的 S3 URL 一起存储在数据库中。此外，最终用户应该能够使用 API 网关向 API 端点提交查询以搜索标记的图像（更多细节即将到来）。表 1 提供了作业描述中使用的术语表![](../img/fit5225_note-20230527.png)  
+## Authentication and Authorisation  
+Security is one of the most crucial aspects of developing cloud-first applications. When your application is publicly exposed, you must ensure that your endpoints and resources are safeguarded against unauthorized access and malicious requests. AWS, through its Cognito service, provides a straightforward, secure, and centralized approach to protect your web application and its various resources from unauthorized access 身份验证和授权安全性是开发云优先应用程序最重要的方面之一。当您的应用程序公开时，您必须确保您的端点和资源受到保护，免受未经授权的访问和恶意请求。 AWS 通过其 Cognito 服务提供了一种直接、安全和集中的方法来保护您的 Web 应用程序及其各种资源免遭未经授权的访问  
+To leverage the AWS Cognito service, first, you need to create a user pool that stores user credentials. Then, you need to create and configure a client app that provides access to your application and/or other AWS services to query and use the user pool. Finally, you have two options to communicate with the AWS Cognito service and perform authentication and/or authorization: 1) Use the AWS Amplify JavaScript Library to initialize the authentication module of your application or 2) Use the AWS JavaScript SDK to access the user pool and identity provider(s) that you have defined earlier 要利用 AWS Cognito 服务，首先，您需要创建一个用户池来存储用户凭证。然后，您需要创建和配置一个客户端应用程序，以提供对您的应用程序和/或其他 AWS 服务的访问，以查询和使用用户池。最后，您有两个选项可以与 AWS Cognito 服务通信并执行身份验证和/或授权：1) 使用 AWS Amplify JavaScript 库初始化应用程序的身份验证模块或 2) 使用 AWS JavaScript SDK 访问用户池和您之前定义的身份提供者  
+## workflow and features
+Detect whether a user is authenticated or not. If the user has not signed in, access to all pages/endpoints except the sign-up service needs to be blocked, and the user should be redirected to the “sign-up.html” page to register a new account. For each new account, you need to record the user’s email address, first name, last name, and password. Cognito will take care of sending an email to new users, asking them to verify their email address and change their temporary password 检测用户是否通过身份验证。如果用户尚未登录，则需要阻止对除注册服务以外的所有页面/端点的访问，并将用户重定向到“sign-up.html”页面以注册新帐户。对于每个新帐户，您需要记录用户的电子邮件地址、名字、姓氏和密码。 Cognito 将负责向新用户发送电子邮件，要求他们验证他们的电子邮件地址并更改他们的临时密码  
+Your application should include a login page that allows users to sign in. After successful authentication, users should be able to upload images, submit queries, view query results, and sign out of the application. All of these services must be protected against unauthorized access. You can implement login and sign-up web pages using either the Hosted UI feature of Cognito or your own version that calls Cognito APIs 您的  应用程序应包含一个允许用户登录的登录页面。成功验证后，用户应该能够上传图片、提交查询、查看查询结果以及退出应用程序。所有这些服务都必须防止未经授权的访问。您可以使用 Cognito 的托管 UI 功能或您自己调用 Cognito API 的版本来实现登录和注册网页  
+Uploading files to an S3 bucket, invoking Lambda functions to execute the business logic of your application, and accessing the database for data storage and retrieval all require fine-grained access control permissions that you need to set up via IAM roles and appropriate policies. It is important to note that IAM roles in AWS Academy have several limitations. Therefore, you should carefully consider how to perform authentication and authorization in your system while taking these limitations into account. 将文件上传到 S3 存储桶、调用 Lambda 函数来执行应用程序的业务逻辑以及访问数据库以进行数据存储和检索都需要细粒度的访问控制权限，您需要通过 IAM 角色和适当的策略来设置这些权限。请务必注意 2 AWS Academy 中的 IAM 角色有一些限制。因此，在考虑这些限制的同时，您应该仔细考虑如何在您的系统中执行身份验证和授权。  
+As an optional feature, you can add federated authentication using AWS Cognito Identity Pools to your application and earn bonus marks (up to 5 points shall be awarded if you add federated authentication to your project). For this purpose, you need to create a Facebook or Google app that serves as an external identity provider and authenticates users on behalf of your application, then forwards authentication  tokens to your application. Note that having external authentication providers in your project is not mandatory. Since federated authentication might be challenging and maybe impossible with your AWS academy account, I strongly recommend that you finish the requirements of the assignment first, and then, if you have extra time, work on this feature 作为一项可选功能，您可以将使用 AWS Cognito 身份池的联合身份验证添加到您的应用程序并获得奖励分数（如果您将联合身份验证添加到您的项目，最多可获得 5 分）。为此，您需要创建一个 Facebook 或 Google 应用程序作为外部身份提供者并代表您的应用程序对用户进行身份验证，然后将身份验证令牌转发到您的应用程序。请注意，在您的项目中拥有外部身份验证提供程序不是强制性的。由于联合身份验证可能具有挑战性，甚至可能无法使用您的 AWS academy 帐户，我强烈建议您先完成作业的要求，然后，如果您有多余的时间，再研究此功能  
+## Image Upload  
+Your solution should provide a mechanism to upload an image to an S3 bucket. Uploading an image to an S3 bucket can be done either through an API Gateway endpoint (using POST REST APIs) or it can be done directly using AWS SDKs (for instance, boto3 if you are using Python). Whenever an image is uploaded to the S3 bucket, your system must trigger an event and invoke a Lambda function 图片上传 您的解决方案应该提供一种将图片上传到 S3 存储桶的机制。可以通过 API 网关端点（使用 POST REST API）将图像上传到 S3 存储桶，也可以直接使用 AWS 开发工具包（例如，如果您使用 Python，则为 boto3）。每当图像上传到 S3 存储桶时，您的系统都必须触发事件并调用 Lambda 函数  
+You are expected to configure the triggers and grant the required Amazon resource permissions (execution roles) for the Lambda function. The Lambda function should read the uploaded image, detect objects in the image, and save the list of detected objects (called tags) along with the S3 URL for that image in an AWS database for future queries. Please note that you should update your Yolo script that you were given in your first assignment to suit the AWS Lambda function. This includes removing any Flask-related code, incorporating the Lambda function and required libraries to read the image from S3 buckets, and storing the S3 URL and tags in the database. You may create a separate S3 bucket to store the Yolo and other config files, which can be referenced in your Lambda function 您需要为 Lambda 函数配置触发器并授予所需的 Amazon 资源权限（执行角色）。 Lambda 函数应该读取上传的图像，检测图像中的对象，并将检测到的对象列表（称为标签）连同该图像的 S3 URL 保存在 AWS 数据库中以供将来查询。请注意，您应该更新您在第一个作业中获得的 Yolo 脚本以适应 AWS Lambda 函数。这包括删除任何与 Flask 相关的代码，合并 Lambda 函数和所需的库以从 S3 存储桶中读取图像，以及将 S3 URL 和标签存储在数据库中。您可以创建一个单独的 S3 存储桶来存储 Yolo 和其他配置文件，这些文件可以在您的 Lambda 函数中引用  
+You may also ignore detected objects with an accuracy of detection below a specific threshold (e.g., 0.6). Please note that Amazon Rekognition is a specialised AWS service for identifying objects in images and can be used instead of Yolo. However, in this assignment, you are not allowed to use the Amazon Rekognition service 您还可以忽略检测精度低于特定阈值（例如 0.6）的检测对象。请注意，Amazon Rekognition 是一种专门用于识别图像中对象的 AWS 服务，可以用来代替 Yolo。但是，在此作业中，您不得使用 Amazon Rekognition 服务
+## Queries  
+Your solution should provide APIs which allow following queries.  
+### Find images based on the tags
+Find images based on the tags: The user can send a text-based query to request URLs of images  that contain specific tags with a minimum repetition number for each tag (e.g., “person, 1”, “person,  2, car, 1”). You are expected to create an API Gateway with a RESTful API that allows users to submit their requests, such as GET or POST requests 查询 您的解决方案应提供允许进行以下查询的 API。 1. 根据标签查找图像：用户可以发送基于文本的查询来请求包含特定标签的图像的 URL，每个标签的最小重复次数（例如，“人，1”，“人，2，车” , 1”）。您应该创建一个带有 RESTful API 的 API 网关，允许用户提交他们的请求，例如 GET 或 POST 请求   
+Your application might send a list of tags via specific GET parameters in the requested URL, for  example:  
+https://jyufwbyv8.execute-api.us-east-1.amazonaws.com/dev/search?tag1=cat&tag1count=1&tag2=car&tag2count=1  
+or it can be a POST request with a JSON object including a list of tags and their counts. A sample JSON object for a query request is given below 或者它可以是带有 JSON 对象的 POST 请求，其中包括标签列表及其计数。下面给出了查询请求的示例 JSON 对象:  
+```json
+{  
+"tags": [  
+	{  
+		"tag": "person",  
+		"count": 1  
+	},  
+	{  
+		"tag": "desk",  
+		"count": 2  
+	},  
+...  
+]  
+}
+```
+A response should include the list of URLs to all images that contain all the requested tags with at least the number in the count value in the query. This can be a JSON message similar to the following 响应应包括所有图像的 URL 列表，这些图像包含所有请求的标签，至少包含查询中计数值中的数字。这可以是类似于以下内容的 JSON 消息  
+```json 
+{  
+	"links": [  
+		"https://cloudsnap.s3.amazonaws.com/image1.png",  
+		"https://cloudsnap.s3.amazonaws.com/image59.png",  
+		"https://cloudsnap.s3.amazonaws.com/image180.png"  
+	]  
+}
+```
+Your query may require to trigger one more Lambda function that receives a list of tags and finds s3-url of images containing all tags in the query with least number of repetition from the database, i.e., logical AND operation, not OR operation between tags. By default, a count of 1 should be considered for each tag if it is not specified in the UI or the query. In your UI instead of showing the s3-urls you can preview the images found as the results 您的查询可能需要触发另一个 Lambda 函数，该函数接收标签列表并从数据库中查找包含查询中所有标签且重复次数最少的图像 s3-url，即逻辑 AND 操作，而不是标签之间的 OR 操作。默认情况下，如果未在 UI 或查询中指定，则每个标记的计数应为 1。在您的用户界面中，您可以预览作为结果找到的图像，而不是显示 s3-url  
+### Find images based on the tags of an image  
+Find images based on the tags of an image: The user can send an image as part of an API call. The list of all objects (tags) and their counts in the sent image is discovered and then all the images in CloudSnap storage containing those set of tags and with at least count numbers are found. Finally, as a response, the list of URLs to matching images (similar to to the previous section) are returned to the user. You should make sure that the image uploaded for the query purpose is not added to the database or stored in s3 根据图像标签查找图像：用户可以将图像作为 API 调用的一部分发送。发现发送图像中所有对象（标签）及其计数的列表，然后找到 CloudSnap 存储中包含这些标签集且至少具有计数的所有图像。最后，作为响应，匹配图像的 URL 列表（类似于上一节）返回给用户。您应该确保为查询目的上传的图像没有添加到数据库或存储在 s3 中  
+### Manual addition or removal of tags  
+Manual addition or removal of tags: Your solution should also provide an API that allow end-user to add or remove tags of an image. You are expected to create a POST API which allow users to submit their requests. A sample JSON message sent to add/remove tags is  手动添加或删除标签：您的解决方案还应提供允许最终用户添加或删除图像标签的 API。您应该创建一个 POST API，允许用户提交他们的请求。发送给添加/删除标签的示例 JSON 消息是
+```json
+{  
+	"url":"https://cloudsnap.s3.amazonaws.com/image1.png",  
+	"type": 1, /* 1 for add and 0 for remove */  
+	"tags": [  
+		{  
+			"tag": "person",  
+			"count": 2  
+		},  
+		{  
+			"tag": "alex",  
+			"count": 1  
+		}  
+	]  
+}
+```
+“type” can be set to 1 or 0 for adding or removing a tag, respectively. The above request adds two "person" tags to the image and one "alex" tag to the tag list of the image in the URL: If “type” is set to 0, the tags are removed from the tag list of the image up to the maximum of either the available tags or the count value. For example, if the count for the tag person is 2 and only one tag of person is in the tag list, we remove the only existing tag. If a tag is not included in the list of tags requested for deletion, you can simply ignore it in the request. Please note that if “count” is not specified in the request, the default value of 1 should be considered. https://cloudsnap.s3.amazonaws.com/image1.png. This can be done through a Lambda function to update the entry in the database “type” 可以设置为 1 或 0，分别用于添加或删除标签。上面的请求在URL中为图片添加了2个“person”标签，为图片的标签列表添加了1个“alex”标签： 如果“type”设置为0，则标签从图片的标签列表中移除到可用标签或计数值的最大值。例如，如果标签 person 的计数为 2，并且标签列表中只有一个 person 标签，我们将删除唯一存在的标签。如果某个标签不在请求删除的标签列表中，您可以在请求中忽略它。请注意，如果请求中未指定“count”，则应考虑默认值 1。 https://cloudsnap.s3.amazonaws.com/image1.png。这可以通过 Lambda 函数更新数据库中的条目来完成  
+### Delete an image
+Delete an image: The user can communicate the URL of an image to an API and the system should remove the image from s3 and relevant entries from the database. 删除图像：用户可以将图像的 URL 传递给 API，系统应该从 s3 中删除图像，并从数据库中删除相关条目。  
+## User Interface
+You can design a simple user interface (UI) (We suggest web-based GUI). But UI can be of any form that includes the following: upload images, submit queries, and view query results. A UI makes your system easier and more enjoyable to use. However, you have the option not to create a UI for application or have UI for some parts and not the others. If you opt to ignore UI or full-fledged UI, you can write scripts (e.g., Python) to handle communications with your application APIs. Please be aware that you might need to manually copy credentials provided by the identity pool to your scripts each time if you choose to work with the later option 您可以设计一个简单的用户界面 (UI)（我们建议使用基于 Web 的 GUI）。但 UI 可以是任何形式，包括以下内容：上传图片、提交查询和查看查询结果。 UI 使您的系统使用起来更轻松、更愉快。但是，您可以选择不为应用程序创建 UI，或者为某些部分创建 UI 而其他部分没有。如果您选择忽略 UI 或成熟的 UI，您可以编写脚本（例如 Python）来处理与应用程序 API 的通信。请注意，如果您选择使用后面的选项，您可能每次都需要手动将身份池提供的凭据复制到您的脚本中  
+## Team Report - 750 words
++ Include an architecture diagram in the team report. For the architecture diagram, you must use AWS Architecture Icons (more info can be found here: https://aws.amazon.com/architecture/icons/) 在团队报告中包含架构图。对于架构图，您必须使用 AWS 架构图标（更多信息可以在这里找到：https://aws.amazon.com/architecture/icons/） 
++ Include a table to describe the role of each team member in your team report, You can provide a three-column table in your report that shows student name and id, percentage of contribution and elements of the project the member contributed (maximum of 100 words per member) 在你的团队报告中包括一个表格来描述每个团队成员的角色，你可以在你的报告中提供一个三列的表格，显示学生姓名和 ID、贡献百分比和成员贡献的项目元素（最多 100 字每个成员）  
++ Report includes a simple user guide for testing your application (you should keep your application up and running for two weeks after the submission deadline) 报告包括用于测试您的应用程序的简单用户指南（您应该在提交截止日期后的两周内保持您的应用程序正常运行）  
++ Your report should include a link to the source code (GitHub or Bitbucket). All students must commit their code to a private code repository rather than delegate this to a single team member. This can also provide an evidence base if teams run into “issues” and how you contributed to the project. You should share your private repository with the whole teaching team. Please do not use a public repository to avoid any plagiarism 您的报告应包含指向源代码（GitHub 或 Bitbucket）的链接。所有学生都必须将他们的代码提交到私有代码存储库，而不是将其委托给单个团队成员。如果团队遇到“问题”以及您如何为项目做出贡献，这也可以提供证据基础。您应该与整个教学团队共享您的私人存储库。请不要使用公共存储库以避免任何窃  
+
+## Individual report - 750 words  
++ In your individual report, you should describe your role in the project, and how you contributed to the delivery of the system (150 words) 在你的个人报告中，你应该描述你在项目中的角色，以及你如何为系统的交付做出贡献（150 字）  
++ Include a personal reflection on the team work your experience in working with other individual team members in your group. Comment on your teammates’ work, challenges the entire team faced, and how well the team worked (150 words) 包括对团队工作的个人反思，你与团队中其他个人团队成员合作的经验。评论队友的工作、整个团队面临的挑战以及团队的工作情况（150 字）  
++ You should answer the following questions (a paragraph with 100 word each): 1. What are the updates you will perform to your application if you have users from all over the world? 2. What sort of design changes you will make to reduce chance of failures in your application? 3. What are the design changes you will make to increase the performance of your applications in terms of response time, query handling, and loading images?  您应该回答以下问题（每段 100 字）： 1. 如果您的用户来自世界各地，您将对您的应用程序执行哪些更新？ 2. 您将进行哪些设计更改以减少应用程序失败的可能性？ 3. 为了提高应用程序在响应时间、查询处理和加载图像方面的性能，您将进行哪些设计更改？
