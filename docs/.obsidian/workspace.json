@@ -187,7 +187,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -195,11 +194,14 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "oz-clear-unused-images:Clear Unused Images": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "a30db3aa9b38bc14",
   "lastOpenFiles": [
+    "img/fit5171-20230616-1.png",
+    "img/fit5171-20230616.png",
     "img/fit5171-20230615-16.png",
     "img/fit5171-20230615-15.png",
     "img/fit5171-20230615-14.png",
@@ -209,8 +211,6 @@
     "img/fit5171-20230615-10.png",
     "img/fit5171-20230615-9.png",
     "img/fit5171-20230615-8.png",
-    "img/fit5171-20230615-7.png",
-    "img/fit5171-20230615-6.png",
     "course_notes/fit5171_note.md",
     "course_notes/fit5171.md",
     "course_notes/fit5225_note.md",

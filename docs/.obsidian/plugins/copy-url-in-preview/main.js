@@ -91,22 +91,88 @@ var CopyUrlInPreview = class extends import_obsidian.Plugin {
   }
   onload() {
     this.registerDocument(document);
-    app.workspace.on("window-open", (workspaceWindow, window2) => {
-      this.registerDocument(window2.document);
-    });
+    app.workspace.on(
+      "window-open",
+      (workspaceWindow, window2) => {
+        this.registerDocument(window2.document);
+      }
+    );
   }
   registerDocument(document2) {
-    this.register(onElement(document2, "contextmenu", "a.external-link", this.onClick.bind(this)));
-    this.register(onElement(document2, "mouseover", ".pdf-embed iframe, .pdf-embed div.pdf-container, .workspace-leaf-content[data-type=pdf] iframe", this.showOpenPdfMenu.bind(this)));
-    this.register(onElement(document2, "mousemove", ".pdf-canvas", this.showOpenPdfMenu.bind(this)));
+    this.register(
+      onElement(
+        document2,
+        "contextmenu",
+        "a.external-link",
+        this.onClick.bind(this)
+      )
+    );
+    this.register(
+      onElement(
+        document2,
+        "mouseover",
+        ".pdf-embed iframe, .pdf-embed div.pdf-container, .workspace-leaf-content[data-type=pdf]",
+        this.showOpenPdfMenu.bind(this)
+      )
+    );
+    this.register(
+      onElement(
+        document2,
+        "mousemove",
+        ".pdf-canvas",
+        this.showOpenPdfMenu.bind(this)
+      )
+    );
     if (import_obsidian.Platform.isDesktop) {
-      this.register(onElement(document2, "contextmenu", "img", this.onClick.bind(this)));
-      this.register(onElement(document2, "mouseover", ".cm-link, .cm-hmd-internal-link", this.storeLastHoveredLinkInEditor.bind(this)));
-      this.register(onElement(document2, "mouseover", "a.internal-link", this.storeLastHoveredLinkInPreview.bind(this)));
+      this.register(
+        onElement(
+          document2,
+          "contextmenu",
+          "img",
+          this.onClick.bind(this)
+        )
+      );
+      this.register(
+        onElement(
+          document2,
+          "mouseover",
+          ".cm-link, .cm-hmd-internal-link",
+          this.storeLastHoveredLinkInEditor.bind(this)
+        )
+      );
+      this.register(
+        onElement(
+          document2,
+          "mouseover",
+          "a.internal-link",
+          this.storeLastHoveredLinkInPreview.bind(this)
+        )
+      );
     } else {
-      this.register(onElement(document2, "touchstart", "img", this.startWaitingForLongTap.bind(this)));
-      this.register(onElement(document2, "touchend", "img", this.stopWaitingForLongTap.bind(this)));
-      this.register(onElement(document2, "touchmove", "img", this.stopWaitingForLongTap.bind(this)));
+      this.register(
+        onElement(
+          document2,
+          "touchstart",
+          "img",
+          this.startWaitingForLongTap.bind(this)
+        )
+      );
+      this.register(
+        onElement(
+          document2,
+          "touchend",
+          "img",
+          this.stopWaitingForLongTap.bind(this)
+        )
+      );
+      this.register(
+        onElement(
+          document2,
+          "touchmove",
+          "img",
+          this.stopWaitingForLongTap.bind(this)
+        )
+      );
     }
   }
   storeLastHoveredLinkInEditor(event) {
@@ -141,7 +207,7 @@ var CopyUrlInPreview = class extends import_obsidian.Plugin {
       if (pdfEmbed.hasClass("popover")) {
         pdfLink = this.lastHoveredLinkTarget;
       } else {
-        pdfLink = (_a = pdfEmbed.getAttr("src")) != null ? _a : "";
+        pdfLink = (_a = pdfEmbed.getAttr("src")) != null ? _a : this.lastHoveredLinkTarget;
       }
       pdfLink = pdfLink == null ? void 0 : pdfLink.replace(/#page=\d+$/, "");
       const currentNotePath = this.app.workspace.getActiveFile().path;
@@ -152,36 +218,46 @@ var CopyUrlInPreview = class extends import_obsidian.Plugin {
     const menu = new import_obsidian.Menu();
     this.registerEscapeButton(menu);
     menu.onHide(() => this.openPdfMenu = null);
-    menu.addItem((item) => item.setIcon("pdf-file").setTitle("Open PDF externally").onClick(async () => {
-      this.preventReopenPdfMenu = true;
-      setTimeout(() => {
-        this.preventReopenPdfMenu = false;
-      }, OPEN_PDF_MENU_TIMEOUT);
-      this.hideOpenPdfMenu();
-      if (import_obsidian.Platform.isDesktop) {
-        await this.app.openWithDefaultApp(pdfFile.path);
-      } else {
-        await this.app.vault.adapter.open(pdfFile.path);
-      }
-    }));
+    menu.addItem(
+      (item) => item.setIcon("pdf-file").setTitle("Open PDF externally").onClick(async () => {
+        this.preventReopenPdfMenu = true;
+        setTimeout(() => {
+          this.preventReopenPdfMenu = false;
+        }, OPEN_PDF_MENU_TIMEOUT);
+        this.hideOpenPdfMenu();
+        if (import_obsidian.Platform.isDesktop) {
+          await this.app.openWithDefaultApp(pdfFile.path);
+        } else {
+          await this.app.vault.adapter.open(pdfFile.path);
+        }
+      })
+    );
     menu.showAtMouseEvent(event);
     this.openPdfMenu = menu;
     setTimeout(this.hideOpenPdfMenu.bind(this), OPEN_PDF_MENU_TIMEOUT);
   }
   registerEscapeButton(menu, document2 = activeDocument) {
-    menu.register(onElement(document2, "keydown", "*", (e) => {
-      if (e.key === "Escape") {
-        e.preventDefault();
-        e.stopPropagation();
-        menu.hide();
-      }
-    }));
+    menu.register(
+      onElement(
+        document2,
+        "keydown",
+        "*",
+        (e) => {
+          if (e.key === "Escape") {
+            e.preventDefault();
+            e.stopPropagation();
+            menu.hide();
+          }
+        }
+      )
+    );
   }
   hideOpenPdfMenu() {
     if (this.openPdfMenu) {
       this.openPdfMenu.hide();
     }
   }
+  // mobile
   startWaitingForLongTap(event, img) {
     if (this.longTapTimeoutId) {
       clearTimeout(this.longTapTimeoutId);
@@ -192,12 +268,14 @@ var CopyUrlInPreview = class extends import_obsidian.Plugin {
       }
     }
   }
+  // mobile
   stopWaitingForLongTap() {
     if (this.longTapTimeoutId) {
       clearTimeout(this.longTapTimeoutId);
       this.longTapTimeoutId = null;
     }
   }
+  // mobile
   async processLongTap(event, img) {
     event.stopPropagation();
     this.longTapTimeoutId = null;
@@ -230,6 +308,10 @@ var CopyUrlInPreview = class extends import_obsidian.Plugin {
       }
     }
   }
+  // Android gives a PointerEvent, a child to MouseEvent.
+  // Positions are not accurate from PointerEvent.
+  // There's also TouchEvent
+  // The event has target, path, toEvent (null on Android) for finding the link
   onClick(event) {
     event.preventDefault();
     const target = event.target;
@@ -245,16 +327,18 @@ var CopyUrlInPreview = class extends import_obsidian.Plugin {
           case "data:":
           case "http:":
           case "https:":
-            menu.addItem((item) => item.setIcon("image-file").setTitle("Copy image to clipboard").onClick(async () => {
-              try {
-                const blob = await loadImageBlob(image);
-                const data = new ClipboardItem({ [blob.type]: blob });
-                await navigator.clipboard.write([data]);
-                new import_obsidian.Notice("Image copied to the clipboard!", SUCCESS_NOTICE_TIMEOUT);
-              } catch (e) {
-                new import_obsidian.Notice("Error, could not copy the image!");
-              }
-            }));
+            menu.addItem(
+              (item) => item.setIcon("image-file").setTitle("Copy image to clipboard").onClick(async () => {
+                try {
+                  const blob = await loadImageBlob(image);
+                  const data = new ClipboardItem({ [blob.type]: blob });
+                  await navigator.clipboard.write([data]);
+                  new import_obsidian.Notice("Image copied to the clipboard!", SUCCESS_NOTICE_TIMEOUT);
+                } catch (e) {
+                  new import_obsidian.Notice("Error, could not copy the image!");
+                }
+              })
+            );
             if (protocol === "app:" && import_obsidian.Platform.isDesktop) {
               const baseFilePath = app.vault.adapter.getFilePath("");
               const baseFilePathName = baseFilePath.pathname;
@@ -262,7 +346,20 @@ var CopyUrlInPreview = class extends import_obsidian.Plugin {
               if (urlPathName.startsWith(baseFilePathName)) {
                 let relativePath = urlPathName.replace(baseFilePathName, "");
                 relativePath = decodeURI(relativePath);
-                menu.addItem((item) => item.setIcon("arrow-up-right").setTitle("Open in default app").onClick(() => app.openWithDefaultApp(relativePath)));
+                menu.addItem(
+                  (item) => item.setIcon("arrow-up-right").setTitle("Open in default app").onClick(() => app.openWithDefaultApp(relativePath))
+                );
+                menu.addItem(
+                  (item) => item.setIcon("arrow-up-right").setTitle(import_obsidian.Platform.isMacOS ? "Reveal in finder" : "Show in system explorer").onClick(() => {
+                    app.showInFolder(relativePath);
+                  })
+                );
+                menu.addItem(
+                  (item) => item.setIcon("folder").setTitle("Reveal file in navigation").onClick(() => {
+                    const abstractFilePath = app.vault.getAbstractFileByPath(relativePath.substring(1));
+                    app.internalPlugins.getEnabledPluginById("file-explorer").revealInFolder(abstractFilePath);
+                  })
+                );
               }
             }
             break;
@@ -274,10 +371,12 @@ var CopyUrlInPreview = class extends import_obsidian.Plugin {
       }
       case "a": {
         const link = target.href;
-        menu.addItem((item) => item.setIcon("link").setTitle("Copy URL").onClick(() => {
-          navigator.clipboard.writeText(link);
-          new import_obsidian.Notice("URL copied to your clipboard", SUCCESS_NOTICE_TIMEOUT);
-        }));
+        menu.addItem(
+          (item) => item.setIcon("link").setTitle("Copy URL").onClick(() => {
+            navigator.clipboard.writeText(link);
+            new import_obsidian.Notice("URL copied to your clipboard", SUCCESS_NOTICE_TIMEOUT);
+          })
+        );
         break;
       }
       default:

@@ -50,9 +50,9 @@ var __async = (__this, __arguments, generator) => {
   });
 };
 
-// node_modules/regexp-match-indices/config.js
+// node_modules/.pnpm/regexp-match-indices@1.0.2/node_modules/regexp-match-indices/config.js
 var require_config = __commonJS({
-  "node_modules/regexp-match-indices/config.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-match-indices@1.0.2/node_modules/regexp-match-indices/config.js"(exports, module2) {
     "use strict";
     var config = {
       mode: "lazy"
@@ -61,18 +61,18 @@ var require_config = __commonJS({
   }
 });
 
-// node_modules/regexp-match-indices/native.js
+// node_modules/.pnpm/regexp-match-indices@1.0.2/node_modules/regexp-match-indices/native.js
 var require_native = __commonJS({
-  "node_modules/regexp-match-indices/native.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-match-indices@1.0.2/node_modules/regexp-match-indices/native.js"(exports, module2) {
     "use strict";
     var nativeExec = RegExp.prototype.exec;
     module2.exports = nativeExec;
   }
 });
 
-// node_modules/regexp-tree/dist/compat-transpiler/transforms/compat-dotall-s-transform.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/compat-transpiler/transforms/compat-dotall-s-transform.js
 var require_compat_dotall_s_transform = __commonJS({
-  "node_modules/regexp-tree/dist/compat-transpiler/transforms/compat-dotall-s-transform.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/compat-transpiler/transforms/compat-dotall-s-transform.js"(exports, module2) {
     "use strict";
     module2.exports = {
       _hasUFlag: false,
@@ -119,9 +119,9 @@ var require_compat_dotall_s_transform = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/compat-transpiler/transforms/compat-named-capturing-groups-transform.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/compat-transpiler/transforms/compat-named-capturing-groups-transform.js
 var require_compat_named_capturing_groups_transform = __commonJS({
-  "node_modules/regexp-tree/dist/compat-transpiler/transforms/compat-named-capturing-groups-transform.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/compat-transpiler/transforms/compat-named-capturing-groups-transform.js"(exports, module2) {
     "use strict";
     module2.exports = {
       _groupNames: {},
@@ -153,9 +153,9 @@ var require_compat_named_capturing_groups_transform = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/compat-transpiler/transforms/compat-x-flag-transform.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/compat-transpiler/transforms/compat-x-flag-transform.js
 var require_compat_x_flag_transform = __commonJS({
-  "node_modules/regexp-tree/dist/compat-transpiler/transforms/compat-x-flag-transform.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/compat-transpiler/transforms/compat-x-flag-transform.js"(exports, module2) {
     "use strict";
     module2.exports = {
       RegExp: function RegExp2(_ref) {
@@ -168,9 +168,9 @@ var require_compat_x_flag_transform = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/compat-transpiler/transforms/index.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/compat-transpiler/transforms/index.js
 var require_transforms = __commonJS({
-  "node_modules/regexp-tree/dist/compat-transpiler/transforms/index.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/compat-transpiler/transforms/index.js"(exports, module2) {
     "use strict";
     module2.exports = {
       dotAll: require_compat_dotall_s_transform(),
@@ -180,9 +180,9 @@ var require_transforms = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/generator/index.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/generator/index.js
 var require_generator = __commonJS({
-  "node_modules/regexp-tree/dist/generator/index.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/generator/index.js"(exports, module2) {
     "use strict";
     function gen(node) {
       return node ? generator[node.type](node) : "";
@@ -315,9 +315,9 @@ var require_generator = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/parser/unicode/parser-unicode-properties.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/parser/unicode/parser-unicode-properties.js
 var require_parser_unicode_properties = __commonJS({
-  "node_modules/regexp-tree/dist/parser/unicode/parser-unicode-properties.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/parser/unicode/parser-unicode-properties.js"(exports, module2) {
     "use strict";
     var NON_BINARY_PROP_NAMES_TO_ALIASES = {
       General_Category: "gc",
@@ -662,9 +662,9 @@ var require_parser_unicode_properties = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/parser/generated/regexp-tree.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/parser/generated/regexp-tree.js
 var require_regexp_tree = __commonJS({
-  "node_modules/regexp-tree/dist/parser/generated/regexp-tree.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/parser/generated/regexp-tree.js"(exports, module2) {
     "use strict";
     var _slicedToArray = function() {
       function sliceIterator(arr, i) {
@@ -1784,9 +1784,9 @@ var require_regexp_tree = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/parser/index.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/parser/index.js
 var require_parser = __commonJS({
-  "node_modules/regexp-tree/dist/parser/index.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/parser/index.js"(exports, module2) {
     "use strict";
     var regexpTreeParser = require_regexp_tree();
     var generatedParseFn = regexpTreeParser.parse.bind(regexpTreeParser);
@@ -1798,9 +1798,9 @@ var require_parser = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/traverse/node-path.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/traverse/node-path.js
 var require_node_path = __commonJS({
-  "node_modules/regexp-tree/dist/traverse/node-path.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/traverse/node-path.js"(exports, module2) {
     "use strict";
     var _createClass = function() {
       function defineProperties(target, props) {
@@ -2051,9 +2051,9 @@ var require_node_path = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/traverse/index.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/traverse/index.js
 var require_traverse = __commonJS({
-  "node_modules/regexp-tree/dist/traverse/index.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/traverse/index.js"(exports, module2) {
     "use strict";
     var NodePath = require_node_path();
     function astTraverse(root) {
@@ -2239,9 +2239,9 @@ var require_traverse = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/transform/index.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/transform/index.js
 var require_transform = __commonJS({
-  "node_modules/regexp-tree/dist/transform/index.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/transform/index.js"(exports, module2) {
     "use strict";
     var _createClass = function() {
       function defineProperties(target, props) {
@@ -2346,9 +2346,9 @@ var require_transform = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/compat-transpiler/index.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/compat-transpiler/index.js
 var require_compat_transpiler = __commonJS({
-  "node_modules/regexp-tree/dist/compat-transpiler/index.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/compat-transpiler/index.js"(exports, module2) {
     "use strict";
     var compatTransforms = require_transforms();
     var _transform = require_transform();
@@ -2376,9 +2376,9 @@ var require_compat_transpiler = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/utils/clone.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/utils/clone.js
 var require_clone = __commonJS({
-  "node_modules/regexp-tree/dist/utils/clone.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/utils/clone.js"(exports, module2) {
     "use strict";
     module2.exports = function clone(obj) {
       if (obj === null || typeof obj !== "object") {
@@ -2398,9 +2398,9 @@ var require_clone = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/optimizer/transforms/char-surrogate-pair-to-single-unicode-transform.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/char-surrogate-pair-to-single-unicode-transform.js
 var require_char_surrogate_pair_to_single_unicode_transform = __commonJS({
-  "node_modules/regexp-tree/dist/optimizer/transforms/char-surrogate-pair-to-single-unicode-transform.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/char-surrogate-pair-to-single-unicode-transform.js"(exports, module2) {
     "use strict";
     module2.exports = {
       shouldRun: function shouldRun(ast) {
@@ -2418,9 +2418,9 @@ var require_char_surrogate_pair_to_single_unicode_transform = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/optimizer/transforms/char-code-to-simple-char-transform.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/char-code-to-simple-char-transform.js
 var require_char_code_to_simple_char_transform = __commonJS({
-  "node_modules/regexp-tree/dist/optimizer/transforms/char-code-to-simple-char-transform.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/char-code-to-simple-char-transform.js"(exports, module2) {
     "use strict";
     var UPPER_A_CP = "A".codePointAt(0);
     var UPPER_Z_CP = "Z".codePointAt(0);
@@ -2472,9 +2472,9 @@ var require_char_code_to_simple_char_transform = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/optimizer/transforms/char-case-insensitive-lowercase-transform.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/char-case-insensitive-lowercase-transform.js
 var require_char_case_insensitive_lowercase_transform = __commonJS({
-  "node_modules/regexp-tree/dist/optimizer/transforms/char-case-insensitive-lowercase-transform.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/char-case-insensitive-lowercase-transform.js"(exports, module2) {
     "use strict";
     var UPPER_A_CP = "A".codePointAt(0);
     var UPPER_Z_CP = "Z".codePointAt(0);
@@ -2549,9 +2549,9 @@ var require_char_case_insensitive_lowercase_transform = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/optimizer/transforms/char-class-remove-duplicates-transform.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/char-class-remove-duplicates-transform.js
 var require_char_class_remove_duplicates_transform = __commonJS({
-  "node_modules/regexp-tree/dist/optimizer/transforms/char-class-remove-duplicates-transform.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/char-class-remove-duplicates-transform.js"(exports, module2) {
     "use strict";
     module2.exports = {
       CharacterClass: function CharacterClass(path) {
@@ -2571,9 +2571,9 @@ var require_char_class_remove_duplicates_transform = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/transform/utils.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/transform/utils.js
 var require_utils = __commonJS({
-  "node_modules/regexp-tree/dist/transform/utils.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/transform/utils.js"(exports, module2) {
     "use strict";
     function _toConsumableArray(arr) {
       if (Array.isArray(arr)) {
@@ -2632,9 +2632,9 @@ var require_utils = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/optimizer/transforms/quantifiers-merge-transform.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/quantifiers-merge-transform.js
 var require_quantifiers_merge_transform = __commonJS({
-  "node_modules/regexp-tree/dist/optimizer/transforms/quantifiers-merge-transform.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/quantifiers-merge-transform.js"(exports, module2) {
     "use strict";
     var _require = require_utils();
     var increaseQuantifierByOne = _require.increaseQuantifierByOne;
@@ -2700,9 +2700,9 @@ var require_quantifiers_merge_transform = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/optimizer/transforms/quantifier-range-to-symbol-transform.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/quantifier-range-to-symbol-transform.js
 var require_quantifier_range_to_symbol_transform = __commonJS({
-  "node_modules/regexp-tree/dist/optimizer/transforms/quantifier-range-to-symbol-transform.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/quantifier-range-to-symbol-transform.js"(exports, module2) {
     "use strict";
     module2.exports = {
       Quantifier: function Quantifier(path) {
@@ -2741,9 +2741,9 @@ var require_quantifier_range_to_symbol_transform = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/optimizer/transforms/char-class-classranges-to-chars-transform.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/char-class-classranges-to-chars-transform.js
 var require_char_class_classranges_to_chars_transform = __commonJS({
-  "node_modules/regexp-tree/dist/optimizer/transforms/char-class-classranges-to-chars-transform.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/char-class-classranges-to-chars-transform.js"(exports, module2) {
     "use strict";
     module2.exports = {
       ClassRange: function ClassRange(path) {
@@ -2759,9 +2759,9 @@ var require_char_class_classranges_to_chars_transform = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/optimizer/transforms/char-class-to-meta-transform.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/char-class-to-meta-transform.js
 var require_char_class_to_meta_transform = __commonJS({
-  "node_modules/regexp-tree/dist/optimizer/transforms/char-class-to-meta-transform.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/char-class-to-meta-transform.js"(exports, module2) {
     "use strict";
     function _toConsumableArray(arr) {
       if (Array.isArray(arr)) {
@@ -2903,9 +2903,9 @@ var require_char_class_to_meta_transform = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/optimizer/transforms/char-class-to-single-char-transform.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/char-class-to-single-char-transform.js
 var require_char_class_to_single_char_transform = __commonJS({
-  "node_modules/regexp-tree/dist/optimizer/transforms/char-class-to-single-char-transform.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/char-class-to-single-char-transform.js"(exports, module2) {
     "use strict";
     module2.exports = {
       CharacterClass: function CharacterClass(path) {
@@ -2960,9 +2960,9 @@ var require_char_class_to_single_char_transform = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/optimizer/transforms/char-escape-unescape-transform.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/char-escape-unescape-transform.js
 var require_char_escape_unescape_transform = __commonJS({
-  "node_modules/regexp-tree/dist/optimizer/transforms/char-escape-unescape-transform.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/char-escape-unescape-transform.js"(exports, module2) {
     "use strict";
     module2.exports = {
       _hasXFlag: false,
@@ -3060,9 +3060,9 @@ var require_char_escape_unescape_transform = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/optimizer/transforms/char-class-classranges-merge-transform.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/char-class-classranges-merge-transform.js
 var require_char_class_classranges_merge_transform = __commonJS({
-  "node_modules/regexp-tree/dist/optimizer/transforms/char-class-classranges-merge-transform.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/char-class-classranges-merge-transform.js"(exports, module2) {
     "use strict";
     module2.exports = {
       _hasIUFlags: false,
@@ -3257,9 +3257,9 @@ var require_char_class_classranges_merge_transform = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/optimizer/transforms/disjunction-remove-duplicates-transform.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/disjunction-remove-duplicates-transform.js
 var require_disjunction_remove_duplicates_transform = __commonJS({
-  "node_modules/regexp-tree/dist/optimizer/transforms/disjunction-remove-duplicates-transform.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/disjunction-remove-duplicates-transform.js"(exports, module2) {
     "use strict";
     var NodePath = require_node_path();
     var _require = require_utils();
@@ -3283,9 +3283,9 @@ var require_disjunction_remove_duplicates_transform = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/optimizer/transforms/group-single-chars-to-char-class.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/group-single-chars-to-char-class.js
 var require_group_single_chars_to_char_class = __commonJS({
-  "node_modules/regexp-tree/dist/optimizer/transforms/group-single-chars-to-char-class.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/group-single-chars-to-char-class.js"(exports, module2) {
     "use strict";
     module2.exports = {
       Disjunction: function Disjunction(path) {
@@ -3342,9 +3342,9 @@ var require_group_single_chars_to_char_class = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/optimizer/transforms/remove-empty-group-transform.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/remove-empty-group-transform.js
 var require_remove_empty_group_transform = __commonJS({
-  "node_modules/regexp-tree/dist/optimizer/transforms/remove-empty-group-transform.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/remove-empty-group-transform.js"(exports, module2) {
     "use strict";
     module2.exports = {
       Group: function Group(path) {
@@ -3363,9 +3363,9 @@ var require_remove_empty_group_transform = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/optimizer/transforms/ungroup-transform.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/ungroup-transform.js
 var require_ungroup_transform = __commonJS({
-  "node_modules/regexp-tree/dist/optimizer/transforms/ungroup-transform.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/ungroup-transform.js"(exports, module2) {
     "use strict";
     function _toConsumableArray(arr) {
       if (Array.isArray(arr)) {
@@ -3426,9 +3426,9 @@ var require_ungroup_transform = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/optimizer/transforms/combine-repeating-patterns-transform.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/combine-repeating-patterns-transform.js
 var require_combine_repeating_patterns_transform = __commonJS({
-  "node_modules/regexp-tree/dist/optimizer/transforms/combine-repeating-patterns-transform.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/combine-repeating-patterns-transform.js"(exports, module2) {
     "use strict";
     function _toConsumableArray(arr) {
       if (Array.isArray(arr)) {
@@ -3578,9 +3578,9 @@ var require_combine_repeating_patterns_transform = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/optimizer/transforms/index.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/index.js
 var require_transforms2 = __commonJS({
-  "node_modules/regexp-tree/dist/optimizer/transforms/index.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/transforms/index.js"(exports, module2) {
     "use strict";
     module2.exports = new Map([
       ["charSurrogatePairToSingleUnicode", require_char_surrogate_pair_to_single_unicode_transform()],
@@ -3603,9 +3603,9 @@ var require_transforms2 = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/optimizer/index.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/index.js
 var require_optimizer = __commonJS({
-  "node_modules/regexp-tree/dist/optimizer/index.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/optimizer/index.js"(exports, module2) {
     "use strict";
     var clone = require_clone();
     var parser = require_parser();
@@ -3651,9 +3651,9 @@ var require_optimizer = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/interpreter/finite-automaton/special-symbols.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/interpreter/finite-automaton/special-symbols.js
 var require_special_symbols = __commonJS({
-  "node_modules/regexp-tree/dist/interpreter/finite-automaton/special-symbols.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/interpreter/finite-automaton/special-symbols.js"(exports, module2) {
     "use strict";
     var EPSILON = "\u03B5";
     var EPSILON_CLOSURE = EPSILON + "*";
@@ -3664,9 +3664,9 @@ var require_special_symbols = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/interpreter/finite-automaton/nfa/nfa.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/interpreter/finite-automaton/nfa/nfa.js
 var require_nfa = __commonJS({
-  "node_modules/regexp-tree/dist/interpreter/finite-automaton/nfa/nfa.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/interpreter/finite-automaton/nfa/nfa.js"(exports, module2) {
     "use strict";
     var _slicedToArray = function() {
       function sliceIterator(arr, i) {
@@ -3895,9 +3895,9 @@ var require_nfa = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/interpreter/finite-automaton/dfa/dfa-minimizer.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/interpreter/finite-automaton/dfa/dfa-minimizer.js
 var require_dfa_minimizer = __commonJS({
-  "node_modules/regexp-tree/dist/interpreter/finite-automaton/dfa/dfa-minimizer.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/interpreter/finite-automaton/dfa/dfa-minimizer.js"(exports, module2) {
     "use strict";
     var _slicedToArray = function() {
       function sliceIterator(arr, i) {
@@ -4238,9 +4238,9 @@ var require_dfa_minimizer = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/interpreter/finite-automaton/dfa/dfa.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/interpreter/finite-automaton/dfa/dfa.js
 var require_dfa = __commonJS({
-  "node_modules/regexp-tree/dist/interpreter/finite-automaton/dfa/dfa.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/interpreter/finite-automaton/dfa/dfa.js"(exports, module2) {
     "use strict";
     var _createClass = function() {
       function defineProperties(target, props) {
@@ -4529,9 +4529,9 @@ var require_dfa = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/interpreter/finite-automaton/state.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/interpreter/finite-automaton/state.js
 var require_state = __commonJS({
-  "node_modules/regexp-tree/dist/interpreter/finite-automaton/state.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/interpreter/finite-automaton/state.js"(exports, module2) {
     "use strict";
     var _createClass = function() {
       function defineProperties(target, props) {
@@ -4592,9 +4592,9 @@ var require_state = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/interpreter/finite-automaton/nfa/nfa-state.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/interpreter/finite-automaton/nfa/nfa-state.js
 var require_nfa_state = __commonJS({
-  "node_modules/regexp-tree/dist/interpreter/finite-automaton/nfa/nfa-state.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/interpreter/finite-automaton/nfa/nfa-state.js"(exports, module2) {
     "use strict";
     var _createClass = function() {
       function defineProperties(target, props) {
@@ -4782,9 +4782,9 @@ var require_nfa_state = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/interpreter/finite-automaton/nfa/builders.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/interpreter/finite-automaton/nfa/builders.js
 var require_builders = __commonJS({
-  "node_modules/regexp-tree/dist/interpreter/finite-automaton/nfa/builders.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/interpreter/finite-automaton/nfa/builders.js"(exports, module2) {
     "use strict";
     var NFA = require_nfa();
     var NFAState = require_nfa_state();
@@ -4912,9 +4912,9 @@ var require_builders = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/interpreter/finite-automaton/nfa/nfa-from-regexp.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/interpreter/finite-automaton/nfa/nfa-from-regexp.js
 var require_nfa_from_regexp = __commonJS({
-  "node_modules/regexp-tree/dist/interpreter/finite-automaton/nfa/nfa-from-regexp.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/interpreter/finite-automaton/nfa/nfa-from-regexp.js"(exports, module2) {
     "use strict";
     function _toConsumableArray(arr) {
       if (Array.isArray(arr)) {
@@ -4993,9 +4993,9 @@ var require_nfa_from_regexp = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/interpreter/finite-automaton/index.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/interpreter/finite-automaton/index.js
 var require_finite_automaton = __commonJS({
-  "node_modules/regexp-tree/dist/interpreter/finite-automaton/index.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/interpreter/finite-automaton/index.js"(exports, module2) {
     "use strict";
     var NFA = require_nfa();
     var DFA = require_dfa();
@@ -5018,9 +5018,9 @@ var require_finite_automaton = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/compat-transpiler/runtime/index.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/compat-transpiler/runtime/index.js
 var require_runtime = __commonJS({
-  "node_modules/regexp-tree/dist/compat-transpiler/runtime/index.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/compat-transpiler/runtime/index.js"(exports, module2) {
     "use strict";
     var _createClass = function() {
       function defineProperties(target, props) {
@@ -5102,9 +5102,9 @@ var require_runtime = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/dist/regexp-tree.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/regexp-tree.js
 var require_regexp_tree2 = __commonJS({
-  "node_modules/regexp-tree/dist/regexp-tree.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/dist/regexp-tree.js"(exports, module2) {
     "use strict";
     var compatTranspiler = require_compat_transpiler();
     var generator = require_generator();
@@ -5163,17 +5163,17 @@ var require_regexp_tree2 = __commonJS({
   }
 });
 
-// node_modules/regexp-tree/index.js
+// node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/index.js
 var require_regexp_tree3 = __commonJS({
-  "node_modules/regexp-tree/index.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-tree@0.1.24/node_modules/regexp-tree/index.js"(exports, module2) {
     "use strict";
     module2.exports = require_regexp_tree2();
   }
 });
 
-// node_modules/regexp-match-indices/implementation.js
+// node_modules/.pnpm/regexp-match-indices@1.0.2/node_modules/regexp-match-indices/implementation.js
 var require_implementation = __commonJS({
-  "node_modules/regexp-match-indices/implementation.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-match-indices@1.0.2/node_modules/regexp-match-indices/implementation.js"(exports, module2) {
     "use strict";
     var config = require_config();
     var nativeExec = require_native();
@@ -5425,9 +5425,9 @@ var require_implementation = __commonJS({
   }
 });
 
-// node_modules/regexp-match-indices/polyfill.js
+// node_modules/.pnpm/regexp-match-indices@1.0.2/node_modules/regexp-match-indices/polyfill.js
 var require_polyfill = __commonJS({
-  "node_modules/regexp-match-indices/polyfill.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-match-indices@1.0.2/node_modules/regexp-match-indices/polyfill.js"(exports, module2) {
     "use strict";
     var nativeExec = require_native();
     var implementation = require_implementation();
@@ -5443,9 +5443,9 @@ var require_polyfill = __commonJS({
   }
 });
 
-// node_modules/regexp-match-indices/shim.js
+// node_modules/.pnpm/regexp-match-indices@1.0.2/node_modules/regexp-match-indices/shim.js
 var require_shim = __commonJS({
-  "node_modules/regexp-match-indices/shim.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-match-indices@1.0.2/node_modules/regexp-match-indices/shim.js"(exports, module2) {
     "use strict";
     var getPolyfill = require_polyfill();
     function shim() {
@@ -5458,9 +5458,9 @@ var require_shim = __commonJS({
   }
 });
 
-// node_modules/regexp-match-indices/index.js
+// node_modules/.pnpm/regexp-match-indices@1.0.2/node_modules/regexp-match-indices/index.js
 var require_regexp_match_indices = __commonJS({
-  "node_modules/regexp-match-indices/index.js"(exports, module2) {
+  "node_modules/.pnpm/regexp-match-indices@1.0.2/node_modules/regexp-match-indices/index.js"(exports, module2) {
     "use strict";
     var implementation = require_implementation();
     var native = require_native();
@@ -5585,7 +5585,7 @@ function betterReadingExtension(app2, plugin) {
       for (let part of view.visibleRanges) {
         let betterReadingCursor;
         try {
-          betterReadingCursor = new RegExpCursor(state.doc, "[a-zA-Z]+", {}, part.from, part.to);
+          betterReadingCursor = new RegExpCursor(state.doc, "[a-zA-Z\\u0400-\\u04FF]+", {}, part.from, part.to);
         } catch (err) {
           console.debug(err);
           continue;
