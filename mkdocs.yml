@@ -3,6 +3,7 @@ site_url: https://example.com/
 repo_url: https://github.com/GreenH47/mynote
 site_description: greenh47 personal website
 site_author: greenh47
+google-site-verification: o_487p41W1wQ8MM8Y0yTzKrMSkrgTjDL9sVoqW9XTLs
 nav:
     - Home: index.md
     - 'About': 

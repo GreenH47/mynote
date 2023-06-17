@@ -9,6 +9,11 @@
     </a>
 {% endblock %}
 
+{% block extrahead %}
+  <meta name="google-site-verification" content="o_487p41W1wQ8MM8Y0yTzKrMSkrgTjDL9sVoqW9XTLs" />
+  {{ super() }}
+{% endblock %}
+
 <!-- More minimal footer -->
 {% block footer %}
 <footer class="md-footer">
