@@ -1,0 +1,1925 @@
+<!-- Elements added to main will be displayed on all pages -->
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="greenh47 personal website">
+      
+      
+        <meta name="author" content="greenh47">
+      
+      
+        <link rel="canonical" href="https://greenh47.github.io/mynote/course_notes/Rintro/">
+      
+      
+        <link rel="prev" href="../fit5147/">
+      
+      
+        <link rel="next" href="../fit5046/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.1">
+    
+    
+      
+        <title>FIT5147 R intro 2023 s1 - greenh47</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.402914a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  <meta name="google-site-verification" content="o_487p41W1wQ8MM8Y0yTzKrMSkrgTjDL9sVoqW9XTLs" />
+  
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#r-intro" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+  <style>.md-announce a,.md-announce a:focus,.md-announce a:hover{color:currentColor}.md-announce strong{white-space:nowrap}.md-announce .twitter{margin-left:.2em;color:#00acee}</style>
+    <a href="mailto:greenhuang47@gmail.com"><strong>Email me for more detail greenhuang47@gmail.com</strong>
+    </a>
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="greenh47" class="md-header__button md-logo" aria-label="greenh47" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            greenh47
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              FIT5147 R intro 2023 s1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/GreenH47/mynote" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/about_index/" class="md-tabs__link">
+        About
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../course_note_menu/" class="md-tabs__link md-tabs__link--active">
+        Course Study Note
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../CSS/CSS_note_menu/" class="md-tabs__link">
+        Programming Note
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../career/career_note_menu/" class="md-tabs__link">
+        Career Note
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../chat/chat_index/" class="md-tabs__link">
+        Green chat
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="greenh47" class="md-nav__button md-logo" aria-label="greenh47" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    greenh47
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/GreenH47/mynote" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          About
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          About
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/about_index/" class="md-nav__link">
+        blog index
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/about_me/" class="md-nav__link">
+        about me
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/about_site_building/" class="md-nav__link">
+        How to build this site
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/about_copyright/" class="md-nav__link">
+        Power by and copyright
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Course Study Note
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Course Study Note
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../course_note_menu/" class="md-nav__link">
+        Course study note navigation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fit9132/" class="md-nav__link">
+        FIT9132 Introduction to databases 2022 s1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fit5032/" class="md-nav__link">
+        FIT5032 Asp .net develop 2022 s2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fit5057/" class="md-nav__link">
+        FIT5057 project management 2022 s2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fit5125/" class="md-nav__link">
+        FIT5125 IT research methods 2022 s2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fit5136/" class="md-nav__link">
+        FIT5136 software engineering 2022 s2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cs61a/" class="md-nav__link">
+        CS 61A: Structure and Interpretation of Computer Programs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fit5225/" class="md-nav__link">
+        FIT5225 Cloud computing and security 2023 s1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fit5225_note/" class="md-nav__link">
+        FIT5225 assignment 2023 s1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fit5147/" class="md-nav__link">
+        FIT5147 Data exploration and visualisation 2023 s1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          FIT5147 R intro 2023 s1
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        FIT5147 R intro 2023 s1
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#r-intro" class="md-nav__link">
+    R intro
+  </a>
+  
+    <nav class="md-nav" aria-label="R intro">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variables-and-assignments" class="md-nav__link">
+    Variables and Assignments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-your-environment" class="md-nav__link">
+    Managing your environment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#r-packages" class="md-nav__link">
+    R Packages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-types-and-data-structures" class="md-nav__link">
+    Data Types and data structures
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vectors" class="md-nav__link">
+    Vectors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    challenge
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#factors" class="md-nav__link">
+    Factors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrix" class="md-nav__link">
+    Matrix
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list" class="md-nav__link">
+    List
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-frame" class="md-nav__link">
+    Data Frame
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-frame-index" class="md-nav__link">
+    Data frame index
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-columns-and-rows-in-data-frame" class="md-nav__link">
+    Adding columns and rows in data frame
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#read-data" class="md-nav__link">
+    Read data
+  </a>
+  
+    <nav class="md-nav" aria-label="Read data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-remove-all-the-rows-with-missing-data" class="md-nav__link">
+    1 Remove all the rows with missing data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-remove-the-variables-with-missing-data" class="md-nav__link">
+    2 Remove the variables with missing data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fit5046/" class="md-nav__link">
+        FIT5046 Mobile and distributed computing systems 2023 s1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fit5046_assignment/" class="md-nav__link">
+        FIT5046 assignment 2023 s1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fit5171/" class="md-nav__link">
+        FIT5171 System validation and verification, quality and standards 2023 s1
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          Programming Note
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Programming Note
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+          CSS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          CSS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/CSS_note_menu/" class="md-nav__link">
+        CSS  note navigation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+          HTML
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          HTML
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../HTML/HTML_note_menu/" class="md-nav__link">
+        HTML note navigation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../HTML/HTML_started/" class="md-nav__link">
+        HTML get started
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Git/Git/" class="md-nav__link">
+         Git branching learning
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+          LeetCode
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_4">
+          <span class="md-nav__icon md-icon"></span>
+          LeetCode
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LeetCode/LeetCode_note_menu/" class="md-nav__link">
+        LeetCode note navigation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+          Javascript 
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_5">
+          <span class="md-nav__icon md-icon"></span>
+          Javascript 
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Javascript/Javascript_note_menu/" class="md-nav__link">
+        javascript  note navigation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
+          reactJS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_6">
+          <span class="md-nav__icon md-icon"></span>
+          reactJS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reactJS/react_note_menu/" class="md-nav__link">
+        reactJS note navigation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Career Note
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Career Note
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../career/career_note_menu/" class="md-nav__link">
+        career note navigation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../career/career_23summer/" class="md-nav__link">
+        2023 summer casual
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          Green chat
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Green chat
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chat/chat_index/" class="md-nav__link">
+        Green chat navigation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chat/221206_ChatGPT/" class="md-nav__link">
+        221206_ChatGPT
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chat/230521_serverless%2Cmicroservices%2CRESTFUL/" class="md-nav__link">
+        230521_serverless,microservices,RESTFUL
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#r-intro" class="md-nav__link">
+    R intro
+  </a>
+  
+    <nav class="md-nav" aria-label="R intro">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variables-and-assignments" class="md-nav__link">
+    Variables and Assignments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-your-environment" class="md-nav__link">
+    Managing your environment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#r-packages" class="md-nav__link">
+    R Packages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-types-and-data-structures" class="md-nav__link">
+    Data Types and data structures
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vectors" class="md-nav__link">
+    Vectors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    challenge
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#factors" class="md-nav__link">
+    Factors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrix" class="md-nav__link">
+    Matrix
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list" class="md-nav__link">
+    List
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-frame" class="md-nav__link">
+    Data Frame
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-frame-index" class="md-nav__link">
+    Data frame index
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-columns-and-rows-in-data-frame" class="md-nav__link">
+    Adding columns and rows in data frame
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#read-data" class="md-nav__link">
+    Read data
+  </a>
+  
+    <nav class="md-nav" aria-label="Read data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-remove-all-the-rows-with-missing-data" class="md-nav__link">
+    1 Remove all the rows with missing data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-remove-the-variables-with-missing-data" class="md-nav__link">
+    2 Remove the variables with missing data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>FIT5147 R intro 2023 s1</h1>
+
+<h2 id="r-intro">R intro<a class="headerlink" href="#r-intro" title="Permanent link">#</a></h2>
+<h3 id="variables-and-assignments">Variables and Assignments<a class="headerlink" href="#variables-and-assignments" title="Permanent link">#</a></h3>
+<p>Variables are stored using the assignment operator &lt;-, : </p>
+<pre><code class="language-r">a&lt;- 1
+b&lt;- 2
+c&lt;- a+b
+c # 3
+</code></pre>
+<p>Please do no use the '=' sign to assign values to variables. It is considered bad practice by the R community.  </p>
+<h3 id="managing-your-environment">Managing your environment<a class="headerlink" href="#managing-your-environment" title="Permanent link">#</a></h3>
+<p>You can use rm to delete objects you no longer need <code>rm(x)</code><br />
+If you have lots of things in your environment and want to delete all of them, you can pass the results of ls to the rm function <code>rm(list = ls())</code><br />
+Clean up your working environment by deleting the mass and age variables.<code>rm(age,mass)</code>  </p>
+<h3 id="r-packages">R Packages<a class="headerlink" href="#r-packages" title="Permanent link">#</a></h3>
+<p>what packages are installed by typing <code>installed.packages()</code> <br />
+ install packages by typing <code>install.packages("packagename")</code><br />
+ update installed packages by typing <code>update.packages()</code><br />
+ remove a package with <code>remove.packages("packagename")</code><br />
+ make a package available for use with <code>library(packagename)</code>    </p>
+<h3 id="data-types-and-data-structures">Data Types and data structures<a class="headerlink" href="#data-types-and-data-structures" title="Permanent link">#</a></h3>
+<p>Everything in R is an object. <br />
+ <mark style="background: #0000CD;">R has six atomic (data of a single type) vector types</mark>.
+ + character: "a", "swc"<br />
+ + numeric: 2, 15.5<br />
+ + integer: 2<br />
+ + logical: TRUE, FALSE<br />
+ + complex: 1+4i (complex numbers with real and imaginary parts)</p>
+<p>R has many data structures. These include : atomic vector; list; matrix; data frame; factors<br />
+class() - what kind of object is it (high-level)?<br />
+typeof() - what is the object's data type (low-level)?<br />
+length() - how long is it? What about two dimensional objects?<br />
+attributes() - does it have any metadata?  </p>
+<pre><code class="language-r">x &lt;- &quot;dataset&quot;
+y &lt;- 555.55
+z &lt;- as.integer(y)
+typeof(x) # character
+typeof(y) # double
+typeof(z) # integer
+
+attributes(x) # NULL
+attributes(y) # NULL
+attributes(z) # NULL
+</code></pre>
+<h3 id="vectors">Vectors<a class="headerlink" href="#vectors" title="Permanent link">#</a></h3>
+<p>A vector is a collection of elements that are most commonly of mode character, logical, integer or numeric.<br />
+You can create an empty vector with vector().<br />
+By default the mode is logical. You can be more explicit as shown in the examples below. <br />
+It is more common to use direct constructors such as character(), numeric(), etc.</p>
+<pre><code class="language-r">vector() # an empty 'logical' (the default) vector
+vector(&quot;character&quot;, length = 5) # a vector of mode 'character' with 5 elements
+</code></pre>
+<p>Using TRUE and FALSE will create a vector of mode logical. and using quoted text will create a vector of mode character.  </p>
+<pre><code class="language-r">poke &lt;- c(&quot;Squirtle&quot;, &quot;Charmander&quot;, &quot;Bulbasaur&quot;)
+typeof(poke) # character
+length(poke) # 3
+class(poke)  # character
+str(poke)    # &quot;Squirtle&quot; &quot;Charmander&quot; &quot;Bulbasaur&quot;
+</code></pre>
+<p>Adding Elements<br />
+The function c() (for combine) can also be used to add elements to a vector.  </p>
+<pre><code class="language-r">poke&lt;-c(poke, &quot;Pikachu&quot;)
+poke # &quot;Squirtle&quot;   &quot;Charmander&quot; &quot;Bulbasaur&quot;  &quot;Pikachu&quot;
+</code></pre>
+<p>Vectors from a sequence of numbers. <br />
+You can create vectors as a series of numbers.  </p>
+<pre><code class="language-r">series &lt;- 1:10
+series #  1  2  3  4  5  6  7  8  9 10
+seq(10) # 1  2  3  4  5  6  7  8  9 10
+seq(from = 1, to = 10, by = 0.1)
+#  [1]  1.0  1.1  1.2  1.3  1.4  1.5  1.6  1.7  1.8  1.9  2.0  2.1  2.2  2.3  2.4  2.5  2.6  2.7  2.8
+# [20]  2.9  3.0  3.1  3.2  3.3  3.4  3.5  3.6  3.7  3.8  3.9  4.0  4.1  4.2  4.3  4.4  4.5  4.6  4.7
+# [39]  4.8  4.9  5.0  5.1  5.2  5.3  5.4  5.5  5.6  5.7  5.8  5.9  6.0  6.1  6.2  6.3  6.4  6.5  6.6
+# [58]  6.7  6.8  6.9  7.0  7.1  7.2  7.3  7.4  7.5  7.6  7.7  7.8  7.9  8.0  8.1  8.2  8.3  8.4  8.5
+# [77]  8.6  8.7  8.8  8.9  9.0  9.1  9.2  9.3  9.4  9.5  9.6  9.7  9.8  9.9 10.0
+</code></pre>
+<p>Naming a vector. <br />
+The elements of a vector can be given names using, names()  </p>
+<pre><code class="language-r">temperature &lt;- c(30, 29, 20, 15, 40)
+names(temperature) &lt;- c(&quot;Monday&quot;, &quot;Tuesday&quot;, &quot;Wednesday&quot;, &quot;Thursday&quot;, &quot;Friday&quot;)
+</code></pre>
+<p>Vector index 
+The values in a vector can be extracted via declaring an index inside a single square bracket "[]" operator.  </p>
+<pre><code class="language-r">temperature[1] # The first value in the temperature vector.
+# Monday
+# 30
+</code></pre>
+<p>Unlike Python, R index starts from 1 rather than 0. Also the square bracket operator returns another vector rather than just individual members. <code>temperature[1]</code> returned a vector slice containing a single member.  </p>
+<pre><code class="language-r">temperature[1:3] #  Monday   Tuesday Wednesday 
+# 30        29        20 
+
+temperature[&quot;Wednesday&quot;] # Wednesday 20
+
+temperature[c(&quot;Wednesday&quot;,&quot;Friday&quot;)] # Wednesday 20 Friday 40
+
+temperature[11] # &lt;NA&gt; NA
+</code></pre>
+<h3 id="challenge">challenge<a class="headerlink" href="#challenge" title="Permanent link">#</a></h3>
+<pre><code class="language-r"> Challenge 9: Create a vector for average temperature in Melbourne for each month.
+# Jan    Feb    Mar    Apr    May    Jun    Jul    Aug    Sep    Oct    Nov    Dec
+# °C    21    21    19    17    14    11    10    11    13    15    17    19
+
+temp_month&lt;-c(21, 21, 19, 17, 14, 11, 10, 11, 13, 15, 17, 19)
+names(temp_month)&lt;-month.abb
+temp_month
+
+# Challenge 10: Find out which month has the maximum temperature.
+temp_month[which.max(temp_month)] # Jan 21
+
+
+#Challenge 11: Find out the temperature difference between the month with maximum 
+# temperature and the month with minimum temperature.
+temp_month[[which.max(temp_month)]]- temp_month[[which.min(temp_month)]] # 11
+</code></pre>
+<h3 id="factors">Factors<a class="headerlink" href="#factors" title="Permanent link">#</a></h3>
+<p>Factors usually look like character data, but are typically used to represent categorical information.</p>
+<pre><code class="language-r"># create ses variable
+ses &lt;- c(&quot;low&quot;, &quot;middle&quot;, &quot;low&quot;, &quot;high&quot;, &quot;low&quot;, &quot;low&quot;, &quot;low&quot;, &quot;middle&quot;, &quot;low&quot;, &quot;middle&quot;, &quot;middle&quot;, &quot;middle&quot;, &quot;middle&quot;, &quot;middle&quot;)
+ses.f&lt;-factor(ses)
+
+# Check levels
+levels(ses.f) # &quot;high&quot;   &quot;low&quot;    &quot;middle&quot;
+</code></pre>
+<p>The problem is that the levels are ordered according to the alphabetical order of the categories of <code>ses</code>. Thus, "high" is the lowest level of <code>ses.f</code>, "low" is the middle level and  "middle" is the highest level. To fix the ordering we need to use the levels argument <br />
+to indicate the correct ordering of the categories. Let's create <code>ses.f</code> with the correct order of categories.  </p>
+<pre><code class="language-r">ses.f &lt;- factor(ses, levels = c(&quot;low&quot;, &quot;middle&quot;, &quot;high&quot;)) # &quot;high&quot;   &quot;low&quot;    &quot;middle&quot;
+</code></pre>
+<p>We can also generate factor variable from numeric data by specifying labels using the labels argument.  </p>
+<pre><code class="language-r"># Challenge 1: Create a factor variable for type as type.f and label 0 as &quot;private&quot; and one as &quot;public&quot;.
+
+# from a numaric vector
+type&lt;-c(1,0,0,0,1,1,0,1)
+
+type.f&lt;-factor(type, levels = c (&quot;1&quot;,&quot;0&quot;), labels = c(&quot;private&quot;, &quot;public&quot;))
+type.f 
+
+# [1] private public  public  public  private private public  private
+# Levels: private public
+</code></pre>
+<p><strong>Ordered</strong> factor variables <br />
+can be created by using the function 'ordered'. This function has the same arguments as the factor function. To create an ordered factor variable called <code>ses.order</code> based on the variable <code>ses.</code>  <code>ses.order &lt;- ordered(ses, levels = c("low", "middle", "high"))</code>  </p>
+<p>Adding and dropping levels <br />
+Below we will add an element from a new level ("very.high") to <code>ses.f</code> our existing factor variable,   </p>
+<pre><code class="language-r"># first add the new level, &quot;very.high&quot;, to the factor variable ses.f)
+ses.f &lt;- factor(ses.f, levels = c(levels(ses.f), &quot;very.high&quot;))
+ses.f[15] &lt;- &quot;very.high&quot;
+ses.f
+#  [1] low    middle low    high   low    low    low    middle low    middle middle middle middle middle &lt;NA&gt;  
+# Levels: high low middle
+</code></pre>
+<p>Dropping a level of a factor variable<br />
+The simplest way is to first remove all the elements within the level. to be removed and then to re-declare the variable to be a factor variable.  </p>
+<pre><code class="language-r"># removing the level of &quot;very.high&quot; from the ses.f variable.
+ses.f.new &lt;- ses.f[ses.f != &quot;very.high&quot;]
+ses.f.new
+# [1] low    middle low    high   low    low    low    middle low    middle middle middle middle middle &lt;NA&gt;  
+# Levels: high low middle
+ses.f.new &lt;- factor(ses.f.new)
+ses.f.new
+# [1] low    middle low    high   low    low    low    middle low    middle middle middle middle middle &lt;NA&gt;  
+# Levels: high low middle
+</code></pre>
+<h3 id="matrix">Matrix<a class="headerlink" href="#matrix" title="Permanent link">#</a></h3>
+<p>In R matrices are an extension of the numeric or character vectors. They are not a separate type of object but merely an atomic vector with dimensions; the number of rows and columns  </p>
+<pre><code class="language-r">m &lt;- matrix(1:6, nrow = 2, ncol = 2)
+m
+# [,1] [,2]
+# [1,]    1    3
+# [2,]    2    4
+dim(m) # 22
+typeof(m) # integer
+class(m) # matrix
+</code></pre>
+<p>Matrices in R are filled column-wise. You can also fill data by row with argument by row. Another way is to bind vectors using <code>cbind()</code> and <code>rbind()</code>.  </p>
+<pre><code class="language-r">matrix_example &lt;- matrix(0, ncol=6, nrow=3)
+length(matrix_example) # 18
+</code></pre>
+<pre><code class="language-r"># Challenge 4: Consider the R output of the matrix below:
+
+# [,1] [,2]
+# [1,]    4    1
+# [2,]    9    5
+# [3,]   10    7
+
+matrix(c(4, 9, 10, 1, 5, 7), nrow = 3)
+#[,1] [,2]
+#[1,]    4    1
+#[2,]    9    5
+#[3,]   10    7
+
+matrix(c(4, 1, 9, 5, 10, 7), ncol = 2, byrow = TRUE)
+#[,1] [,2]
+#[1,]    4    1
+#[2,]    9    5
+#[3,]   10    7
+
+matrix(c(4, 1, 9, 5, 10, 7), nrow = 3)
+#[,1] [,2]
+#[1,]    4    5
+#[2,]    1   10
+#[3,]    9    7
+
+matrix(c(4, 9, 10, 1, 5, 7), ncol = 2, byrow = TRUE)
+#[,1] [,2]
+#[1,]    4    9
+#[2,]   10    1
+#[3,]    5    7
+</code></pre>
+<p>What is the difference between <code>cbind()</code> and <code>rbind()</code>.  </p>
+<pre><code class="language-r">x &lt;- 1:3
+y &lt;- 10:12
+
+cbind(x,y)
+#   x  y
+# [1,] 1 10
+# [2,] 2 11
+# [3,] 3 12
+# Binds by column
+rbind(x,y)
+# [,1] [,2] [,3]
+# x    1    2    3
+# y   10   11   12
+# Binds by row
+</code></pre>
+<h3 id="list">List<a class="headerlink" href="#list" title="Permanent link">#</a></h3>
+<p>the contents of a list are not restricted to a single mode and can encompass any mixture of data types. Lists are sometimes called generic vectors, because the elements of a list can by of any R object, even lists containing further lists. This property makes them fundamentally different from atomic vectors.<br />
+A list is a special type of vector. Each element can be a different type. Create lists using <code>list()</code> or coerce other objects using <code>as.list()</code>.  </p>
+<pre><code class="language-r">x &lt;- list(1, &quot;a&quot;, TRUE, 1+4i)
+x
+# [[1]]
+# [1] 1
+
+# [[2]]
+# [1] &quot;a&quot;
+
+# [[3]]
+# [1] TRUE
+
+# [[4]]
+# [1] 1+4i
+
+x &lt;- 1:10
+x &lt;- as.list(x)
+x
+# [[1]]
+# [1] 1
+
+# [[2]]
+# [1] 2
+
+# [[3]]
+# [1] 3
+
+# [[4]]
+# [1] 4
+
+# [[5]]
+# [1] 5
+
+# [[6]]
+# [1] 6
+
+# [[7]]
+# [1] 7
+
+# [[8]]
+# [1] 8
+
+# [[9]]
+# [1] 9
+
+# [[10]]
+# [1] 10
+
+# Elements of lists can have names. 
+
+xlist &lt;- list(a = &quot;Karthik Ram&quot;, b = 1:10, data = head(iris))
+xlist
+# $a
+# [1] &quot;Karthik Ram&quot;
+
+# $b
+# [1]  1  2  3  4  5  6  7  8  9 10
+
+# $data
+# Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+# 1          5.1         3.5          1.4         0.2  setosa
+# 2          4.9         3.0          1.4         0.2  setosa
+# 3          4.7         3.2          1.3         0.2  setosa
+# 4          4.6         3.1          1.5         0.2  setosa
+# 5          5.0         3.6          1.4         0.2  setosa
+# 6          5.4         3.9          1.7         0.4  setosa
+
+length(xlist) # 3
+str(xlist)
+# List of 3
+# $ a   : chr &quot;Karthik Ram&quot;
+# $ b   : int [1:10] 1 2 3 4 5 6 7 8 9 10
+# $ data:'data.frame':    6 obs. of  5 variables:
+#   ..$ Sepal.Length: num [1:6] 5.1 4.9 4.7 4.6 5 5.4
+# ..$ Sepal.Width : num [1:6] 3.5 3 3.2 3.1 3.6 3.9
+# ..$ Petal.Length: num [1:6] 1.4 1.4 1.3 1.5 1.4 1.7
+# ..$ Petal.Width : num [1:6] 0.2 0.2 0.2 0.2 0.2 0.4
+# ..$ Species     : Factor w/ 3 levels &quot;setosa&quot;,&quot;versicolor&quot;,..: 1 1 1 1 1 1
+</code></pre>
+<p>You can extract an element of a list using <code>$</code> operator with the element's name. <code>xlist$b #  [1]  1  2  3  4  5  6  7  8  9 10</code>   The $ operator is used to extract elements of a list or data frame by literal name. It's semantics are similar to that of <code>[[</code> 
+The <code>[</code> operator always returns an object of the same class as the original. It can be used to select multiple elements of an object<br />
+The <code>[[</code> operator is used to extract elements of a list or a data frame. It can only be used to extract a single element, and the class of the returned object will not necessarily be a list or data frame</p>
+<pre><code class="language-r">class(xlist[2])# list
+class(xlist[[2]]) # integer
+class(xlist$b) # integer
+</code></pre>
+<h3 id="data-frame">Data Frame<a class="headerlink" href="#data-frame" title="Permanent link">#</a></h3>
+<p>A data frame is a very important data type in R. Its pretty much the de facto data structure for most tabular data and what we use for statistics. Data frames can have additional attributes such as <code>rownames()</code>, which can be useful for annotating data, like <code>subject_id</code> or <code>sample_id</code>. But most of the time they are not used. Some additional information on data frames:
++ Rownames are usually 1, 2,...
++ Can convert to a matrix with <code>data.matrix()</code> (preferred) or <code>as.matrix()</code><br />
++ Can also create with <code>data.frame()</code> function<br />
++ Find the number of rows and columns with <code>nrow(dat)</code> and <code>ncol(dat)</code>, respectively.</p>
+<pre><code class="language-r"># To create data frames by hand
+dat &lt;- data.frame(id = letters[1:10], x = 1:10, y = 11:20)
+dat
+#     id x  y
+# 1   a  1 11
+# 2   b  2 12
+# 3   c  3 13
+# 4   d  4 14
+# 5   e  5 15
+# 6   f  6 16
+# 7   g  7 17
+# 8   h  8 18
+# 9   i  9 19
+# 10  j 10 20
+</code></pre>
+<pre><code class="language-r"># * head() - shown first 6 rows
+# * tail() - show last 6 rows
+# * dim() - returns the dimensions
+# * nrow() - number of rows
+# * ncol() - number of columns
+# * str() - structure of each column
+# * names() - shows the names attribute for a data frame, which gives the column names.
+</code></pre>
+<h3 id="data-frame-index">Data frame index<a class="headerlink" href="#data-frame-index" title="Permanent link">#</a></h3>
+<p>A data frame, much like a matrix, has two dimensions, rows and columns. To index a data frame (or a matrix), we use brackets in R next to the object, like so, <code>iris[i, j]</code>, where i denotes the rows that you want, and j is the columns.</p>
+<pre><code class="language-r"># Extract the first ten rows of the iris dataset.
+iris[1:10,]
+##    Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+## 1           5.1         3.5          1.4         0.2  setosa
+## 2           4.9         3.0          1.4         0.2  setosa
+## 3           4.7         3.2          1.3         0.2  setosa
+## 4           4.6         3.1          1.5         0.2  setosa
+## 5           5.0         3.6          1.4         0.2  setosa
+## 6           5.4         3.9          1.7         0.4  setosa
+## 7           4.6         3.4          1.4         0.3  setosa
+## 8           5.0         3.4          1.5         0.2  setosa
+## 9           4.4         2.9          1.4         0.2  setosa
+## 10          4.9         3.1          1.5         0.1  setosa
+
+# We can also extract individual columns of a data frame with the $ operator using column name. 
+iris$Species
+
+# Challenge 8: Find out how many rows of data in iris dataset where Species is setosa.
+
+
+nrow(iris[iris$Species==&quot;setosa&quot;,]) # 50
+</code></pre>
+<h3 id="adding-columns-and-rows-in-data-frame">Adding columns and rows in data frame<a class="headerlink" href="#adding-columns-and-rows-in-data-frame" title="Permanent link">#</a></h3>
+<p>We learned that the columns in a data frame were vectors,  so that our data are consistent in type throughout the column. As such, if we want to add a new column, we need to start by making a new vector:</p>
+<pre><code class="language-r">new1&lt;-c(1:3)
+new2&lt;-1 
+cars[1:2]
+cars&lt;-rbind(cars,new1)
+cars&lt;-rbind(cars,new2)
+</code></pre>
+<h3 id="read-data">Read data<a class="headerlink" href="#read-data" title="Permanent link">#</a></h3>
+<p>na.strings converts all missing data to na.  </p>
+<pre><code class="language-r">ti_train&lt;- read.csv(&quot;titanic_train_week1.csv&quot;,na.strings=c(&quot;NA&quot;,&quot;NaN&quot;, &quot;&quot;), header = TRUE, sep=&quot;,&quot;)
+ti_test&lt;- read.csv(&quot;titanic_test_week1.csv&quot;,na.strings=c(&quot;NA&quot;,&quot;NaN&quot;, &quot;&quot;), header = TRUE, sep = &quot;,&quot;)
+</code></pre>
+<p>how much missing data are we dealing with? Using the column sums and the is.na() function, we get the amount of NAs we have in for each variable.  </p>
+<pre><code class="language-r">colSums(is.na(ti_train))
+# There are 177 missing 'Age' observations, 687 missing 'Cabin' observations and 2 missing 'Embarked' observations. 
+colSums(is.na(ti_test))
+# There is 1 missing 'Fair' observation, 327 missing 'Cabin' observations.
+</code></pre>
+<p>Knowing what you are dealing with is important. NA means 'not available' and NAN means 'not a number', handle those value before further operation <code>mean(ti_train$Age) # NA</code>   </p>
+<h4 id="1-remove-all-the-rows-with-missing-data">1 Remove all the rows with missing data<a class="headerlink" href="#1-remove-all-the-rows-with-missing-data" title="Permanent link">#</a></h4>
+<ul>
+<li>We can use the complete.cases function. This will return a vector that has no missing values <code>ti_train[!complete.cases(ti_train),]</code>  </li>
+<li>To create a new data set with no missing data we use na.omit() <code>ti_train_full&lt;-na.omit(ti_train)</code>  </li>
+<li>there are no rows with na's. <code>ti_train_full[!complete.cases(ti_train_full),]</code>  </li>
+<li>omitting all na's and the cabin data which is largly missing</li>
+</ul>
+<h4 id="2-remove-the-variables-with-missing-data">2 Remove the variables with missing data<a class="headerlink" href="#2-remove-the-variables-with-missing-data" title="Permanent link">#</a></h4>
+<p>We could choose to exclude the variables with the most amount of missing data. Then we would move forward more sophisticated methods. Since ~68% of the Cabin data is missing. It is a good idea at this level to exclude it. We simple make a new dataframe excluding the cabin data.  </p>
+<pre><code class="language-r">train_sml&lt;-data.frame(ti_train$PassengerId, ti_train$Survived, ti_train$Pclass, ti_train$Name, ti_train$Sex, ti_train$Age, ti_train$SibSp, ti_train$Ticket, ti_train$Fare, ti_train$Embarked)
+test_sml&lt;-data.frame(ti_test$PassengerId, ti_test$Pclass, ti_test$Name, ti_test$Sex, ti_test$Age, ti_test$SibSp, ti_test$SibSp, ti_test$Parch, ti_test$Ticket, ti_test$Fare, ti_test$Embarked)
+</code></pre>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      2023-03-19
+    
+  </small>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+<footer class="md-footer">
+    <div class="md-footer-meta md-typeset">
+        <div class="md-footer-meta__inner md-grid">
+            <!-- Copyright and theme information -->
+            <div class="md-footer-copyright">
+                
+                <div class="md-footer-copyright__highlight">
+                    Copyright &copy; 2021 - present GreenH47
+                </div>
+                
+                powered by
+                <a href="https://www.mkdocs.org" title="MkDocs">MkDocs</a>
+                and
+                <a href="https://squidfunk.github.io/mkdocs-material/"
+                   title="Material for MkDocs">
+                    Material for MkDocs</a>
+            </div>
+            
+            <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/GreenH47" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:greenhuang47@gmail.com" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.7l167.6-182.9c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+    </a>
+  
+</div>
+            
+        </div>
+    </div>
+</footer>
+
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.top", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.b78d2936.min.js"></script>
+      
+    
+  </body>
+</html>

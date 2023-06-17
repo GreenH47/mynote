@@ -1,0 +1,1523 @@
+<!-- Elements added to main will be displayed on all pages -->
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="greenh47 personal website">
+      
+      
+        <meta name="author" content="greenh47">
+      
+      
+        <link rel="canonical" href="https://greenh47.github.io/mynote/chat/230521_serverless%2Cmicroservices%2CRESTFUL/">
+      
+      
+        <link rel="prev" href="../221206_ChatGPT/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.1">
+    
+    
+      
+        <title>230521_serverless,microservices,RESTFUL - greenh47</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.402914a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  <meta name="google-site-verification" content="o_487p41W1wQ8MM8Y0yTzKrMSkrgTjDL9sVoqW9XTLs" />
+  
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#what-is-serverless-and-microservices" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+  <style>.md-announce a,.md-announce a:focus,.md-announce a:hover{color:currentColor}.md-announce strong{white-space:nowrap}.md-announce .twitter{margin-left:.2em;color:#00acee}</style>
+    <a href="mailto:greenhuang47@gmail.com"><strong>Email me for more detail greenhuang47@gmail.com</strong>
+    </a>
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="greenh47" class="md-header__button md-logo" aria-label="greenh47" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            greenh47
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              230521_serverless,microservices,RESTFUL
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/GreenH47/mynote" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/about_index/" class="md-tabs__link">
+        About
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../course_notes/course_note_menu/" class="md-tabs__link">
+        Course Study Note
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../CSS/CSS_note_menu/" class="md-tabs__link">
+        Programming Note
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../career/career_note_menu/" class="md-tabs__link">
+        Career Note
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../chat_index/" class="md-tabs__link md-tabs__link--active">
+        Green chat
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="greenh47" class="md-nav__button md-logo" aria-label="greenh47" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    greenh47
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/GreenH47/mynote" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          About
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          About
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/about_index/" class="md-nav__link">
+        blog index
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/about_me/" class="md-nav__link">
+        about me
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/about_site_building/" class="md-nav__link">
+        How to build this site
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/about_copyright/" class="md-nav__link">
+        Power by and copyright
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Course Study Note
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Course Study Note
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course_notes/course_note_menu/" class="md-nav__link">
+        Course study note navigation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course_notes/fit9132/" class="md-nav__link">
+        FIT9132 Introduction to databases 2022 s1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course_notes/fit5032/" class="md-nav__link">
+        FIT5032 Asp .net develop 2022 s2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course_notes/fit5057/" class="md-nav__link">
+        FIT5057 project management 2022 s2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course_notes/fit5125/" class="md-nav__link">
+        FIT5125 IT research methods 2022 s2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course_notes/fit5136/" class="md-nav__link">
+        FIT5136 software engineering 2022 s2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course_notes/cs61a/" class="md-nav__link">
+        CS 61A: Structure and Interpretation of Computer Programs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course_notes/fit5225/" class="md-nav__link">
+        FIT5225 Cloud computing and security 2023 s1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course_notes/fit5225_note/" class="md-nav__link">
+        FIT5225 assignment 2023 s1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course_notes/fit5147/" class="md-nav__link">
+        FIT5147 Data exploration and visualisation 2023 s1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course_notes/Rintro/" class="md-nav__link">
+        FIT5147 R intro 2023 s1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course_notes/fit5046/" class="md-nav__link">
+        FIT5046 Mobile and distributed computing systems 2023 s1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course_notes/fit5046_assignment/" class="md-nav__link">
+        FIT5046 assignment 2023 s1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course_notes/fit5171/" class="md-nav__link">
+        FIT5171 System validation and verification, quality and standards 2023 s1
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          Programming Note
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Programming Note
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+          CSS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          CSS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/CSS_note_menu/" class="md-nav__link">
+        CSS  note navigation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+          HTML
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          HTML
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../HTML/HTML_note_menu/" class="md-nav__link">
+        HTML note navigation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../HTML/HTML_started/" class="md-nav__link">
+        HTML get started
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Git/Git/" class="md-nav__link">
+         Git branching learning
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+          LeetCode
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_4">
+          <span class="md-nav__icon md-icon"></span>
+          LeetCode
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LeetCode/LeetCode_note_menu/" class="md-nav__link">
+        LeetCode note navigation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+          Javascript 
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_5">
+          <span class="md-nav__icon md-icon"></span>
+          Javascript 
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Javascript/Javascript_note_menu/" class="md-nav__link">
+        javascript  note navigation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
+          reactJS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_6">
+          <span class="md-nav__icon md-icon"></span>
+          reactJS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reactJS/react_note_menu/" class="md-nav__link">
+        reactJS note navigation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Career Note
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Career Note
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../career/career_note_menu/" class="md-nav__link">
+        career note navigation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../career/career_23summer/" class="md-nav__link">
+        2023 summer casual
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          Green chat
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Green chat
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chat_index/" class="md-nav__link">
+        Green chat navigation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../221206_ChatGPT/" class="md-nav__link">
+        221206_ChatGPT
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          230521_serverless,microservices,RESTFUL
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        230521_serverless,microservices,RESTFUL
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-serverless-and-microservices" class="md-nav__link">
+    what is serverless and microservices
+  </a>
+  
+    <nav class="md-nav" aria-label="what is serverless and microservices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#serverless" class="md-nav__link">
+    Serverless:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microservices" class="md-nav__link">
+    Microservices:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#similarities" class="md-nav__link">
+    Similarities:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#differences" class="md-nav__link">
+    Differences:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-rest-what-is-restful-api-what-is-restful-web-service" class="md-nav__link">
+    what is REST, what is restful api, what is restful web service
+  </a>
+  
+    <nav class="md-nav" aria-label="what is REST, what is restful api, what is restful web service">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#restful-api" class="md-nav__link">
+    RESTful API:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restful-web-service-restful-web-service" class="md-nav__link">
+    RESTful Web Service: RESTful Web Service：
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-are-the-architectural-constraints-of-rest" class="md-nav__link">
+    What are the architectural constraints of REST
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-the-server-does-not-store-any-client-context-how-do-they-use-users-info-to-make-personalize-service" class="md-nav__link">
+    if The server does not store any client context. how do they use users info to make personalize service  如果服务器不存储任何客户端上下文。以及他们如何使用用户信息来提供个性化服务
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-serverless-and-microservices" class="md-nav__link">
+    what is serverless and microservices
+  </a>
+  
+    <nav class="md-nav" aria-label="what is serverless and microservices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#serverless" class="md-nav__link">
+    Serverless:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microservices" class="md-nav__link">
+    Microservices:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#similarities" class="md-nav__link">
+    Similarities:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#differences" class="md-nav__link">
+    Differences:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-rest-what-is-restful-api-what-is-restful-web-service" class="md-nav__link">
+    what is REST, what is restful api, what is restful web service
+  </a>
+  
+    <nav class="md-nav" aria-label="what is REST, what is restful api, what is restful web service">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#restful-api" class="md-nav__link">
+    RESTful API:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restful-web-service-restful-web-service" class="md-nav__link">
+    RESTful Web Service: RESTful Web Service：
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-are-the-architectural-constraints-of-rest" class="md-nav__link">
+    What are the architectural constraints of REST
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-the-server-does-not-store-any-client-context-how-do-they-use-users-info-to-make-personalize-service" class="md-nav__link">
+    if The server does not store any client context. how do they use users info to make personalize service  如果服务器不存储任何客户端上下文。以及他们如何使用用户信息来提供个性化服务
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>230521_serverless,microservices,RESTFUL</h1>
+
+<h2 id="what-is-serverless-and-microservices">what is serverless and microservices<a class="headerlink" href="#what-is-serverless-and-microservices" title="Permanent link">#</a></h2>
+<p>Serverless and microservices are two architectural styles for building modern applications, but they have some differences and similarities.<br />
+无服务器和微服务是用于构建现代应用程序的两种体系结构样式，但它们有一些差异和相似之处。</p>
+<h3 id="serverless">Serverless:<a class="headerlink" href="#serverless" title="Permanent link">#</a></h3>
+<p>Serverless computing is a model of cloud computing that abstracts away the infrastructure layer, allowing developers to focus on writing code without worrying about managing the infrastructure. Instead of dealing with servers and operating systems, developers write functions using a serverless platform such as AWS Lambda, Google Cloud Functions, or Azure Functions. The code runs in response to events, and the platform automatically scales the compute resources, managing the infrastructure and automatically allocating resources as needed. Therefore, serverless refers to the idea that you don't have to manage servers or infrastructure yourself.<br />
+无服务器计算是一种云计算模型，它抽象出基础架构层，使开发人员能够专注于编写代码，而无需担心管理基础架构。开发人员不使用服务器和操作系统，而是使用无服务器平台（如AWS Lambda，Google Cloud Functions或Azure Functions）编写函数。代码运行以响应事件，平台会自动缩放计算资源，管理基础结构并根据需要自动分配资源。因此，无服务器是指您不必自己管理服务器或基础结构的想法。</p>
+<h3 id="microservices">Microservices:<a class="headerlink" href="#microservices" title="Permanent link">#</a></h3>
+<p>Microservices is an architectural style that structures applications as a collection of small, independent services that communicate with each other through APIs. Each service is loosely coupled and can be independently developed and deployed. This architecture helps to promote the modularity of applications, enabling developers to build complex applications by composing small reusable services. Each service does one thing well and can be scaled independently, which makes applications more agile and maintainable.<br />
+微服务是一种架构风格，它将应用程序构建为通过 API 相互通信的小型独立服务的集合。每个服务都是松散耦合的，可以独立开发和部署。此体系结构有助于促进应用程序的模块化，使开发人员能够通过组合小型可重用服务来构建复杂的应用程序。每个服务都做好一件事，并且可以独立扩展，这使得应用程序更加敏捷和可维护。</p>
+<h3 id="similarities">Similarities:<a class="headerlink" href="#similarities" title="Permanent link">#</a></h3>
+<p>Both serverless and microservices aim to promote the modularity and composability of applications. The two architectures are designed to make applications more agile, flexible, and responsive to changing business needs. Both architectures are often used with cloud-based technologies to enable scalability and high availability.<br />
+无服务器和微服务都旨在促进应用程序的模块化和可组合性。这两种体系结构旨在使应用程序更加敏捷、灵活，并能响应不断变化的业务需求。这两种体系结构通常与基于云的技术一起使用，以实现可伸缩性和高可用性。</p>
+<h3 id="differences">Differences:<a class="headerlink" href="#differences" title="Permanent link">#</a></h3>
+<ul>
+<li>
+<p>Serverless refers to the idea that you don't have to manage servers or infrastructure yourself, while microservices refer to an architectural style that structures applications as a collection of independent services.<br />
+    无服务器是指您不必自己管理服务器或基础结构的想法，而微服务是指将应用程序构建为独立服务集合的体系结构样式。</p>
+</li>
+<li>
+<p>In the case of serverless, the infrastructure layer is abstracted away, and the developer cannot directly manage it. On the contrary, in the case of microservices, developers have more control over deploying and managing the infrastructure that is running the services.<br />
+    在无服务器的情况下，基础结构层被抽象出来，开发人员无法直接管理它。相反，对于微服务，开发人员可以更好地控制部署和管理运行服务的基础结构。</p>
+</li>
+<li>
+<p>Serverless typically refers to the use of Functions as a Service (FaaS), while microservices are not limited to a specific technology or platform.<br />
+    无服务器通常是指使用功能即服务 （FaaS），而微服务不限于特定的技术或平台。</p>
+</li>
+</ul>
+<p>In summary, while both serverless and microservices promote application modularity and scalability, they differ in their approach to architecture and infrastructure management.<br />
+总之，虽然无服务器和微服务都促进了应用程序的模块化和可伸缩性，但它们在架构和基础架构管理方法上有所不同。</p>
+<h2 id="what-is-rest-what-is-restful-api-what-is-restful-web-service">what is REST, what is restful api, what is restful web service<a class="headerlink" href="#what-is-rest-what-is-restful-api-what-is-restful-web-service" title="Permanent link">#</a></h2>
+<p>REST, or Representational State Transfer, is an architectural style for building distributed systems based on HTTP and other web standards. RESTful APIs and RESTful web services are two common methods of implementing REST.
+REST或具象状态传输是一种基于HTTP和其他Web标准构建分布式系统的架构风格。RESTful API 和 RESTful Web 服务是实现 REST 的两种常用方法。</p>
+<h3 id="restful-api">RESTful API:<a class="headerlink" href="#restful-api" title="Permanent link">#</a></h3>
+<p>A RESTful API is an application programming interface (API) that follows REST principles. A RESTful API provides a uniform interface for interacting with resources or data elements, using HTTP methods such as GET, POST, PUT, DELETE, and PATCH. These methods allow clients to perform operations on a web server by sending a request to a specific URL and receiving a response. Many applications use RESTful APIs as a way to interact with other services, such as social media networks or cloud services.
+RESTful API 是遵循 REST 原则的应用程序编程接口 （API）。RESTful API 提供了一个统一的接口，用于使用 GET、POST、PUT、DELETE 和 PATCH 等 HTTP 方法与资源或数据元素进行交互。这些方法允许客户端通过向特定 URL 发送请求并接收响应来在 Web 服务器上执行操作。许多应用程序使用 RESTful API 作为与其他服务（如社交媒体网络或云服务）交互的一种方式。</p>
+<h3 id="restful-web-service-restful-web-service">RESTful Web Service: RESTful Web Service：<a class="headerlink" href="#restful-web-service-restful-web-service" title="Permanent link">#</a></h3>
+<p>A RESTful Web Service is a service that adheres to the REST architecture. A RESTful Web Service is a way to expose data or functionality as a web service, in which operations are performed on a set of resources through HTTP methods, like GET, POST, PUT, DELETE, and other web standards. RESTful Web Services use HTTP requests to GET, PUT, POST, and DELETE data typically in JSON or XML format. These services are designed to provide interoperability between different systems, languages, and platforms. RESTful Web Services are stateless, meaning that the client maintains no session information with the server and all required information must be included in each request.
+RESTful Web 服务是一种遵循 REST 体系结构的服务。RESTful Web 服务是一种将数据或功能公开为 Web 服务的方法，其中通过 HTTP 方法（如 GET、POST、PUT、DELETE 和其他 Web 标准）对一组资源执行操作。RESTful Web Services 使用 HTTP 请求来获取、放置、发布和删除数据，通常采用 JSON 或 XML 格式。这些服务旨在提供不同系统、语言和平台之间的互操作性。RESTful Web 服务是无状态的，这意味着客户端不维护与服务器的会话信息，并且每个请求中必须包含所有必需的信息。</p>
+<p>In summary, REST is an architectural style for building distributed systems based on HTTP and other web standards that promotes scalability, modifiability, and reliability. RESTful APIs and RESTful Web Services are two different forms of REST architecture that use HTTP methods to interact with web resources, while RESTful web services expose data or functionality through a web service, and RESTful APIs provide a standard interface for interacting with resources.
+总之，REST 是一种基于 HTTP 和其他 Web 标准构建分布式系统的架构风格，可提高可伸缩性、可修改性和可靠性。RESTful API 和 RESTful Web Services 是两种不同形式的 REST 架构，它们使用 HTTP 方法与 Web 资源交互，而 RESTful Web 服务通过 Web 服务公开数据或功能，RESTful API 提供与资源交互的标准接口。</p>
+<h3 id="what-are-the-architectural-constraints-of-rest">What are the architectural constraints of REST<a class="headerlink" href="#what-are-the-architectural-constraints-of-rest" title="Permanent link">#</a></h3>
+<ol>
+<li>
+<p>Client-server: Separation of concerns between the client and server, allowing for independent development and evolution.<br />
+    客户端-服务器：客户端和服务器之间的关注点分离，允许独立开发和演变。</p>
+</li>
+<li>
+<p>Statelessness: Communication between the client and server is done in a stateless manner, where each request carries the necessary information required to process that request. The server does not store any client context.<br />
+    无状态：客户端和服务器之间的通信以无状态方式完成，其中每个请求都携带处理该请求所需的必要信息。服务器不存储任何客户端上下文。</p>
+</li>
+<li>
+<p>Cacheability: Responses from server-side should be cacheable to improve network efficiency, and reducing server-side workload when a cached response can be used.<br />
+    可缓存性：来自服务器端的响应应该是可缓存的，以提高网络效率，并在可以使用缓存的响应时减少服务器端工作负载。</p>
+</li>
+<li>
+<p>Layered System: System decomposition into a set of connected layers, each of which has a specific role and communicates only with the immediately adjacent layer(s).<br />
+    分层系统：系统分解为一组连接层，每个层都有特定的角色，并且仅与紧邻的层通信。</p>
+</li>
+<li>
+<p>Code on demand (optional): The ability to transfer executable code from the server to the client as a part of the response payload.<br />
+    按需代码（可选）：将可执行代码作为响应有效负载的一部分从服务器传输到客户端的功能。</p>
+</li>
+<li>
+<p>Uniform Interface: Use of a shared and well-defined interface for accessing resources, defined by the following four sub-constraints:<br />
+    统一接口：使用共享且定义明确的接口来访问资源，</p>
+</li>
+</ol>
+<h3 id="if-the-server-does-not-store-any-client-context-how-do-they-use-users-info-to-make-personalize-service">if The server does not store any client context. how do they use users info to make personalize service  如果服务器不存储任何客户端上下文。以及他们如何使用用户信息来提供个性化服务<a class="headerlink" href="#if-the-server-does-not-store-any-client-context-how-do-they-use-users-info-to-make-personalize-service" title="Permanent link">#</a></h3>
+<p>In a RESTful architecture, the server is stateless, which means that it does not store any client context. However, the server can still use user information to provide personalized services by leveraging techniques such as authentication and authorization.
+在 RESTful 体系结构中，服务器是无状态的，这意味着它不存储任何客户端上下文。但是，服务器仍可以通过利用身份验证和授权等技术使用用户信息来提供个性化服务。</p>
+<p>Authentication: The server can require authentication before providing personalized services to the user. The user first needs to identify themselves and prove their identity using a username and password, or other authentication means, before accessing the personalized services.
+身份验证：服务器可以在向用户提供个性化服务之前要求身份验证。在访问个性化服务之前，用户首先需要使用用户名和密码或其他身份验证方式来识别自己并证明自己的身份。</p>
+<p>Authorization: Once the user is authenticated, the server can use the authorization mechanisms to determine the appropriate level of access for the user. This can be done by assigning roles or permissions to the user, or by using other authorization mechanisms.
+授权：对用户进行身份验证后，服务器可以使用授权机制来确定用户的适当访问级别。这可以通过向用户分配角色或权限或使用其他授权机制来完成。</p>
+<p>Cookies and sessions: RESTful web services can also use cookies and sessions to store user-specific data on the client-side. Client applications can then send this data back to the server with each request to provide personalized services. However, this approach is not considered to be pure RESTful architecture as it is stateful.
+Cookie 和会话：RESTful Web 服务还可以使用 Cookie 和会话在客户端存储用户特定的数据。然后，客户端应用程序可以在每次请求时将此数据发送回服务器，以提供个性化服务。但是，这种方法不被认为是纯粹的 RESTful 体系结构，因为它是有状态的。</p>
+<p>Use of client-provided data: The server can use the data provided by the client in the request to provide personalized responses. For example, a web application may ask the user to provide information about themselves (like their name, age, location) via an HTML form and then use that data to personalize the response.
+使用客户端提供的数据：服务器可以使用客户端在请求中提供的数据来提供个性化的响应。例如，Web 应用程序可能会要求用户通过 HTML 表单提供有关他们自己的信息（例如他们的姓名、年龄、位置），然后使用该数据来个性化响应。</p>
+<p>In summary, while the server in a RESTful architecture is stateless, it can still provide personalized services to the user by using authentication and authorization mechanisms, cookies, sessions, and client-provided data.
+总之，虽然 RESTful 架构中的服务器是无状态的，但它仍然可以通过使用身份验证和授权机制、cookie、会话和客户端提供的数据为用户提供个性化服务。</p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      2023-06-14
+    
+  </small>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+<footer class="md-footer">
+    <div class="md-footer-meta md-typeset">
+        <div class="md-footer-meta__inner md-grid">
+            <!-- Copyright and theme information -->
+            <div class="md-footer-copyright">
+                
+                <div class="md-footer-copyright__highlight">
+                    Copyright &copy; 2021 - present GreenH47
+                </div>
+                
+                powered by
+                <a href="https://www.mkdocs.org" title="MkDocs">MkDocs</a>
+                and
+                <a href="https://squidfunk.github.io/mkdocs-material/"
+                   title="Material for MkDocs">
+                    Material for MkDocs</a>
+            </div>
+            
+            <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/GreenH47" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:greenhuang47@gmail.com" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.7l167.6-182.9c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+    </a>
+  
+</div>
+            
+        </div>
+    </div>
+</footer>
+
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.top", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.b78d2936.min.js"></script>
+      
+    
+  </body>
+</html>

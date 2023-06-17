@@ -1,0 +1,2519 @@
+<!-- Elements added to main will be displayed on all pages -->
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="greenh47 personal website">
+      
+      
+        <meta name="author" content="greenh47">
+      
+      
+        <link rel="canonical" href="https://greenh47.github.io/mynote/course_notes/fit5171_note/">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.1">
+    
+    
+      
+        <title>assignment 1 - greenh47</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.402914a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  <meta name="google-site-verification" content="o_487p41W1wQ8MM8Y0yTzKrMSkrgTjDL9sVoqW9XTLs" />
+  
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#assignment-1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+  <style>.md-announce a,.md-announce a:focus,.md-announce a:hover{color:currentColor}.md-announce strong{white-space:nowrap}.md-announce .twitter{margin-left:.2em;color:#00acee}</style>
+    <a href="mailto:greenhuang47@gmail.com"><strong>Email me for more detail greenhuang47@gmail.com</strong>
+    </a>
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="greenh47" class="md-header__button md-logo" aria-label="greenh47" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            greenh47
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              assignment 1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/GreenH47/mynote" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/about_index/" class="md-tabs__link">
+        About
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../course_note_menu/" class="md-tabs__link">
+        Course Study Note
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../CSS/CSS_note_menu/" class="md-tabs__link">
+        Programming Note
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../career/career_note_menu/" class="md-tabs__link">
+        Career Note
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../chat/chat_index/" class="md-tabs__link">
+        Green chat
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="greenh47" class="md-nav__button md-logo" aria-label="greenh47" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    greenh47
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/GreenH47/mynote" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          About
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          About
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/about_index/" class="md-nav__link">
+        blog index
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/about_me/" class="md-nav__link">
+        about me
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/about_site_building/" class="md-nav__link">
+        How to build this site
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/about_copyright/" class="md-nav__link">
+        Power by and copyright
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Course Study Note
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Course Study Note
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../course_note_menu/" class="md-nav__link">
+        Course study note navigation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fit9132/" class="md-nav__link">
+        FIT9132 Introduction to databases 2022 s1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fit5032/" class="md-nav__link">
+        FIT5032 Asp .net develop 2022 s2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fit5057/" class="md-nav__link">
+        FIT5057 project management 2022 s2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fit5125/" class="md-nav__link">
+        FIT5125 IT research methods 2022 s2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fit5136/" class="md-nav__link">
+        FIT5136 software engineering 2022 s2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cs61a/" class="md-nav__link">
+        CS 61A: Structure and Interpretation of Computer Programs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fit5225/" class="md-nav__link">
+        FIT5225 Cloud computing and security 2023 s1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fit5225_note/" class="md-nav__link">
+        FIT5225 assignment 2023 s1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fit5147/" class="md-nav__link">
+        FIT5147 Data exploration and visualisation 2023 s1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Rintro/" class="md-nav__link">
+        FIT5147 R intro 2023 s1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fit5046/" class="md-nav__link">
+        FIT5046 Mobile and distributed computing systems 2023 s1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fit5046_assignment/" class="md-nav__link">
+        FIT5046 assignment 2023 s1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fit5171/" class="md-nav__link">
+        FIT5171 System validation and verification, quality and standards 2023 s1
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          Programming Note
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Programming Note
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+          CSS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          CSS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/CSS_note_menu/" class="md-nav__link">
+        CSS  note navigation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+          HTML
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          HTML
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../HTML/HTML_note_menu/" class="md-nav__link">
+        HTML note navigation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../HTML/HTML_started/" class="md-nav__link">
+        HTML get started
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Git/Git/" class="md-nav__link">
+         Git branching learning
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+          LeetCode
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_4">
+          <span class="md-nav__icon md-icon"></span>
+          LeetCode
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LeetCode/LeetCode_note_menu/" class="md-nav__link">
+        LeetCode note navigation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+          Javascript 
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_5">
+          <span class="md-nav__icon md-icon"></span>
+          Javascript 
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Javascript/Javascript_note_menu/" class="md-nav__link">
+        javascript  note navigation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
+          reactJS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_6">
+          <span class="md-nav__icon md-icon"></span>
+          reactJS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reactJS/react_note_menu/" class="md-nav__link">
+        reactJS note navigation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Career Note
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Career Note
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../career/career_note_menu/" class="md-nav__link">
+        career note navigation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../career/career_23summer/" class="md-nav__link">
+        2023 summer casual
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          Green chat
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Green chat
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chat/chat_index/" class="md-nav__link">
+        Green chat navigation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chat/221206_ChatGPT/" class="md-nav__link">
+        221206_ChatGPT
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chat/230521_serverless%2Cmicroservices%2CRESTFUL/" class="md-nav__link">
+        230521_serverless,microservices,RESTFUL
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#assignment-1" class="md-nav__link">
+    assignment 1
+  </a>
+  
+    <nav class="md-nav" aria-label="assignment 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirement" class="md-nav__link">
+    requirement
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#main-function-code" class="md-nav__link">
+    main function code
+  </a>
+  
+    <nav class="md-nav" aria-label="main function code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#airplanejava" class="md-nav__link">
+    Airplane.java
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flightjava" class="md-nav__link">
+    Flight.java
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#personjava" class="md-nav__link">
+    Person.java
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#passengerjava" class="md-nav__link">
+    Passenger.java
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ticketjava" class="md-nav__link">
+    Ticket.java
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ticketsystemjava" class="md-nav__link">
+    TicketSystem.java
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ticketcollectionjava" class="md-nav__link">
+    TicketCollection.java
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flightcollectionjava" class="md-nav__link">
+    FlightCollection.java
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unit-test" class="md-nav__link">
+    unit test
+  </a>
+  
+    <nav class="md-nav" aria-label="unit test">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validation" class="md-nav__link">
+    Validation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#airplanejava_1" class="md-nav__link">
+    Airplane.java
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flightjava_1" class="md-nav__link">
+    Flight.java
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#personjava_1" class="md-nav__link">
+    Person.java
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#passenger" class="md-nav__link">
+    Passenger
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ticketjava_1" class="md-nav__link">
+    Ticket.java
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ticketsystemjava_1" class="md-nav__link">
+    TicketSystem.java
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ticketcollectionjava_1" class="md-nav__link">
+    TicketCollection.java
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flightcollectionjava_1" class="md-nav__link">
+    FlightCollection.java
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pipeline" class="md-nav__link">
+    pipeline
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assignment-2" class="md-nav__link">
+    assignment 2
+  </a>
+  
+    <nav class="md-nav" aria-label="assignment 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dependcy" class="md-nav__link">
+    dependcy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    setup
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>assignment 1</h1>
+
+<h2 id="assignment-1">assignment 1<a class="headerlink" href="#assignment-1" title="Permanent link">#</a></h2>
+<h3 id="requirement">requirement<a class="headerlink" href="#requirement" title="Permanent link">#</a></h3>
+<p>This is a small software implemented in Java and your team has been contracted to validate the functional requirements and prove the quality of the Software. Using TDD approach, you can extend the codebase where needed</p>
+<h3 id="main-function-code">main function code<a class="headerlink" href="#main-function-code" title="Permanent link">#</a></h3>
+<h4 id="airplanejava">Airplane.java<a class="headerlink" href="#airplanejava" title="Permanent link">#</a></h4>
+<p>here is the code inside Airplane.java</p>
+<pre><code class="language-java">package fit5171.monash.edu;  
+
+/*  
+* When some attribute of the airplane is being set, the following unit testing conditions need to be satisfied.  
+1. Ensure all fields/details for an airplane like Airplane ID,  
+* Airplane businessSitsNumber, crewSitsNumber, etc. are tested  
+* 2. Seat number must be in the range [1, 300].  
+* */  
+public class Airplane  
+{  
+    private int airplaneID;  
+    private String airplaneModel;  
+    private int businessSitsNumber;  
+    private int economySitsNumber;  
+    private int crewSitsNumber;  
+
+    public Airplane(int airplaneID, String airplaneModel, int businessSitsNumber, int economySitsNumber, int crewSitsNumber)  
+    {  
+        this.airplaneID=airplaneID;  
+        this.airplaneModel = airplaneModel;  
+        this.businessSitsNumber = businessSitsNumber;  
+        this.economySitsNumber = economySitsNumber;  
+        this.crewSitsNumber = crewSitsNumber;  
+    }  
+
+    public int getAirplaneID() {  
+        return airplaneID;  
+    }  
+
+    public void setAirplaneID(int airplaneID) {  
+        this.airplaneID = airplaneID;  
+    }  
+
+    public String getAirplaneModel() {  
+        return airplaneModel;  
+    }  
+
+    public void setAirplaneModel(String airplaneModel) {  
+        this.airplaneModel = airplaneModel;  
+    }  
+
+    public int getBusinessSitsNumber() {  
+        return businessSitsNumber;  
+    }  
+
+    public void setBusinessSitsNumber(int businessSitsNumber) {  
+        this.businessSitsNumber = businessSitsNumber;  
+    }  
+
+    public int getEconomySitsNumber() {  
+        return economySitsNumber;  
+    }  
+
+    public void setEconomySitsNumber(int economSitsNumber) {  
+        this.economySitsNumber = economSitsNumber;  
+    }  
+
+    public int getCrewSitsNumber() {  
+        return crewSitsNumber;  
+    }  
+
+    public void setCrewSitsNumber(int crewSitsNumber) {  
+        this.crewSitsNumber = crewSitsNumber;  
+    }  
+
+    public String toString()  
+    {  
+        return &quot;Airplane{&quot; +  
+                &quot;model=&quot; + getAirplaneModel() + '\'' +  
+                &quot;, business sits=&quot; + getBusinessSitsNumber() + '\'' +  
+                &quot;, economy sits=&quot; + getEconomySitsNumber() + '\'' +  
+                &quot;, crew sits=&quot; + getCrewSitsNumber() + '\'' +  
+                '}';  
+    }  
+
+   public static Airplane getAirPlaneInfo(int airplane_id) {  
+      // TODO Auto-generated method stub  
+      return null;  
+   }  
+}
+</code></pre>
+<h4 id="flightjava">Flight.java<a class="headerlink" href="#flightjava" title="Permanent link">#</a></h4>
+<p>here is the code inside Flight.java:  </p>
+<pre><code class="language-java">package fit5171.monash.edu;  
+
+import java.sql.Timestamp;  
+import java.util.Calendar;  
+/*  
+* When a flight is being added to the system, following conditions must be met.  
+1. All fields are required. Note: Mock the behaviour of the Airplane * class while creating objects of the Flight class for unit testing.  
+* 2. Date must be in DD/MM/YY format.  
+* 3. Time must be in HH:MM:SS format.  
+* 4. Ensure the same flight is not already in the system  
+* */  
+public class Flight {  
+    private int flightID;  
+    private String departTo;  
+    private String departFrom;  
+    private String code;  
+    private String company;  
+    private Timestamp dateFrom;  
+    private Timestamp dateTo;  
+    Airplane airplane;  
+    public Flight(){}  
+
+    public Flight(int flight_id, String departTo, String departFrom, String code, String company, Timestamp dateFrom,Timestamp dateTo, Airplane airplane)  
+    {  
+            this.flightID=flight_id;  
+            this.departTo = departTo;  
+            this.departFrom = departFrom;  
+            this.code = code;  
+            this.company = company;  
+            this.airplane = airplane;  
+            this.dateTo = dateTo;  
+            this.dateFrom = dateFrom;  
+    }  
+
+    public int getFlightID() {  
+        return flightID;  
+    }  
+
+    public void setFlightID(int flightid) {  
+        this.flightID = flightid;  
+    }  
+
+    public String getDepartTo() {  
+        return departTo;  
+    }  
+
+    public void setDepartTo(String departTo) {  
+        //departTo and departFrom should not same  
+        if (departFrom != null &amp;&amp; departTo.equals(departFrom)) {  
+            throw new IllegalArgumentException(&quot;Departure and Destination cities cannot be the same.&quot;);  
+        }  
+        this.departTo = departTo;  
+    }  
+
+    public String getDepartFrom() {  
+        return departFrom;  
+    }  
+
+    public void setDepartFrom(String departFrom) {  
+        //departTo and departFrom should not same  
+        if (departTo != null &amp;&amp; departFrom.equals(departTo)) {  
+            throw new IllegalArgumentException(&quot;Departure and Destination cities cannot be the same.&quot;);  
+        }  
+        this.departFrom = departFrom;  
+    }  
+
+    public String getCode() {  
+        return code;  
+    }  
+
+    public void setCode(String code) {  
+        if (code == null || code.trim().length() == 0) {  
+            throw new IllegalArgumentException(&quot;Flight code cannot be null.&quot;);  
+        }  
+        this.code = code;  
+    }  
+
+    public String getCompany() {  
+        return company;  
+    }  
+
+    public void setCompany(String company) {  
+        if (company == null || company.trim().length() == 0) {  
+            throw new IllegalArgumentException(&quot;Company name cannot be null.&quot;);  
+        }  
+        this.company = company;  
+    }  
+
+    public Timestamp getDateFrom() {  
+        return dateFrom;  
+    }  
+
+    public void setDateFrom(Timestamp dateFrom) {  
+        //dateTo should later than dateFrom  
+        if (dateTo != null &amp;&amp; dateFrom.after(dateTo)) {  
+            throw new IllegalArgumentException(&quot;Departure date cannot be after Arrival date.&quot;);  
+        }  
+        this.dateFrom = dateFrom;  
+    }  
+
+    public Timestamp getDateTo() {  
+        return dateTo;  
+    }  
+
+    public void setDateTo(Timestamp dateTo) {  
+        //dateTo should later than dateFrom  
+        if (dateFrom != null &amp;&amp; dateTo.before(dateFrom)) {  
+            throw new IllegalArgumentException(&quot;Arrival date cannot be before Departure date.&quot;);  
+        }  
+        this.dateTo = dateTo;  
+    }  
+
+    public void setAirplane(Airplane airplane) {  
+        this.airplane = airplane;  
+    }  
+
+    public Airplane getAirplane() {  
+        return airplane;  
+    }  
+
+    public String toString()  
+    {  
+            return &quot;Flight{&quot; + airplane.toString() +  
+                    &quot;, date to=&quot; +  getDateTo() + &quot;, &quot; + '\'' +  
+                    &quot;, date from='&quot; + getDateFrom() + '\'' +  
+                    &quot;, depart from='&quot; + getDepartFrom() + '\'' +  
+                    &quot;, depart to='&quot; + getDepartTo() + '\'' +  
+                    &quot;, code=&quot; + getCode() + '\'' +  
+                    &quot;, company=&quot; + getCompany() + '\'' +  
+                    &quot;, code=&quot; + getCode() + '\'' +  
+                    '}';  
+    }  
+}
+</code></pre>
+<h4 id="personjava">Person.java<a class="headerlink" href="#personjava" title="Permanent link">#</a></h4>
+<p>here is the code inside Person.java:  </p>
+<pre><code class="language-java">package fit5171.monash.edu;  
+/*  
+* Person When a person is being created or returned, test following:  
+*  
+1. All fields of a Person class are required to create a person.  
+*  
+2. The gender field has following options ‘Woman’, ‘Man’,’Non-binary|gender diverse’,  
+* ‘Prefer not to say’ and ‘Other’.  
+*  
+3. The first name and last name should not start with a number or symbol and  
+* can contain only small case and upper-case alphabet letters.  
+* */  
+public abstract class Person //abstract class Person  
+{  
+    private String firstName;  
+    private String secondName;  
+    private int age;  
+    private String gender;  
+
+    public Person(){}  
+
+    public Person(String firstName, String secondName, int age, String gender){  
+        this.age=age;  
+        this.firstName=firstName;  
+        this.secondName=secondName;  
+        this.gender=gender;  
+    }  
+
+    public int getAge() {  
+        return age;  
+    }  
+
+    public void setAge(int age) {  
+        this.age = age;  
+    }  
+
+    public String getGender() {  
+        return gender;  
+    }  
+
+    public void setGender(String gender) {  
+        this.gender = gender;  
+    }  
+
+    public String getFirstName() {  
+        return firstName;  
+    }  
+
+    public String getSecondName() {  
+        return secondName;  
+    }  
+
+    public void setFirstName(String firstName) {  
+        this.firstName = firstName;  
+    }  
+
+    public void setSecondName(String secondName) {  
+        this.secondName = secondName;  
+    }  
+
+    @Override  
+    public String toString()  
+    {  
+        return &quot;Person{&quot; +  
+                &quot;firstName='&quot; + firstName + '\'' +  
+                &quot;, secondName='&quot; + secondName + '\'' +  
+                &quot;, age=&quot; + age +  
+                &quot;, gender='&quot; + gender + '\'' +  
+                '}';  
+    }  
+}
+</code></pre>
+<h4 id="passengerjava">Passenger.java<a class="headerlink" href="#passengerjava" title="Permanent link">#</a></h4>
+<p>here is the code inside Passenger.java:  </p>
+<pre><code class="language-java">package fit5171.monash.edu;  
+
+/*  
+* When a passenger is being created or returned, test following:  
+*  
+1. All fields of a passenger are required.Note: Mock the behavior of  
+* the Person class while creating objects of the Passenger class for unit testing.  
+*  
+2. Phone number follows a pattern. Within Australia, mobile phone numbers begin  
+* with 04 or 05 – the Australian national trunk code&quot; 0, plus the mobile indicator 4 or 5,  
+* then followed by eight digits. This is generally written as 04XX XXX XXX within Australia  
+* or as +61 4XX XXX XXX for aninternational audience.  
+*  
+3. The email follows a valid pattern “abc@domain.com”.  
+*  
+4. The passport number should not be more than 9 characters long.  
+*  
+5. When a passenger is being added, it must include the passenger’s First name,  
+* Last Name, age,and gender following the person who is becoming a passenger  
+* */  
+public class Passenger extends Person  
+{  
+    private String email;  
+    private String phoneNumber;  
+    private String cardNumber;  
+    private int securityCode;  
+    private String passport;  
+
+    public Passenger(){}  
+
+    public Passenger(String firstName, String secondName, int age, String gender,String email, String phoneNumber, String passport, String cardNumber,int securityCode)  
+    {  
+        super();  
+        this.securityCode=securityCode;  
+        this.cardNumber=cardNumber;  
+        this.passport=passport;  
+        this.email=email;  
+        this.phoneNumber=phoneNumber;  
+    }  
+
+    public String getEmail() {  
+
+        return email;  
+    }  
+
+    public void setEmail(String email) {  
+        //set email validation  
+        if (email == null || !email.matches(&quot;[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,}&quot;)) {  
+            throw new IllegalArgumentException(&quot;Invalid email address format&quot;);  
+        }  
+        this.email = email;  
+    }  
+
+    public String getFirstName() {  
+        return super.getFirstName();  
+    }  
+
+    public String getSecondName() {  
+        return super.getSecondName();  
+    }  
+
+    public void setSecondName(String secondName) {  
+        super.setSecondName(secondName);  
+    }  
+
+    public void setFirstName(String firstName) {  
+        super.setFirstName(firstName);  
+    }  
+
+    public String getPassport() {  
+        return passport;  
+    }  
+
+    public void setGender(String gender) {  
+        super.setGender(gender);  
+    }  
+
+    public String getPhoneNumber() {  
+        return phoneNumber;  
+    }  
+
+    public int getSecurityCode() {  
+        return securityCode;  
+    }  
+
+    public String getCardNumber() {  
+        return cardNumber;  
+    }  
+
+    public void setCardNumber(String cardNumber) {  
+        this.cardNumber = cardNumber;  
+    }  
+
+    public void setSecurityCode(int securityCode) {  
+        this.securityCode = securityCode;  
+    }  
+
+    @Override  
+    public void setAge(int age) {  
+        super.setAge(age);  
+    }  
+
+    public void setPassport(String passport) {  
+        this.passport = passport;  
+    }  
+
+    @Override  
+    public String getGender() {  
+        return super.getGender();  
+    }  
+
+    public void setPhoneNumber(String phoneNumber) {  
+        //set phonenumber validation  
+        if (phoneNumber == null || !phoneNumber.matches(&quot;^\\+(?:[0-9] ?){6,14}[0-9]$&quot;)) {  
+            throw new IllegalArgumentException(&quot;Invalid phone number format&quot;);  
+        }  
+        this.phoneNumber = phoneNumber;  
+    }  
+
+    @Override  
+    public int getAge() {  
+        return super.getAge();  
+    }  
+
+    @Override  
+    public String toString()  
+    {  
+        return &quot;Passenger{&quot; + &quot; Fullname= &quot;+ super.getFirstName()+&quot; &quot;+super.getSecondName()+  
+                &quot; ,email='&quot; + email + '\'' +  
+                &quot;, phoneNumber='&quot; + phoneNumber + '\'' +  
+                &quot;, passport='&quot; + passport +  
+                '}';  
+    }  
+}
+</code></pre>
+<h4 id="ticketjava">Ticket.java<a class="headerlink" href="#ticketjava" title="Permanent link">#</a></h4>
+<p>here is the code inside Ticket.java:  </p>
+<pre><code class="language-java">package fit5171.monash.edu;  
+/*  
+* 1. Values for the ticket status must be ‘True’ or ‘False’ for  
+* the booked and available ticketsrespectively.  
+*  
+2. Discount is always applied based on the age category of the passenger.  
+*  
+3. Price is always applied to a ticket.  
+*  
+4. The price and service tax is a valid value (Integer or real numbers etc.)  
+*  
+5. The service tax is always applied when a ticket is sold. Note: Mock the behavior  
+* of the Flight and Passenger class, while creating objects of the Ticket class  
+* for unit testing.  
+*  
+6. Test that Ticker class received valid information of flight and passenger.  
+* */  
+public class Ticket  
+{  
+    private int ticket_id;  
+    private int price;  
+    Flight flight;  
+    private boolean classVip; //indicates if this is bussiness class ticket or not  
+    private boolean status; //indicates status of ticket: if it is bought by someone or not  
+    Passenger passenger;  
+
+    public Ticket(int ticket_id,int price, Flight flight, boolean classVip, Passenger passenger)  
+    {  
+        this.ticket_id=ticket_id;  
+        this.price = price;  
+        this.flight = flight;  
+        this.classVip = classVip;  
+        this.status = false;  
+        this.passenger=passenger;  
+    }  
+
+    public Ticket() {  
+
+    }  
+
+    public int getTicket_id() {  
+        return ticket_id;  
+    }  
+
+    public void setTicket_id(int ticket_id) {  
+        this.ticket_id = ticket_id;  
+    }  
+
+    public int getPrice() { return price; }  
+
+    public void setPrice(int price)  
+    {  
+        if (price &lt; 0) {  
+            throw new IllegalArgumentException(&quot;Ticket price cannot be less than zero.&quot;);  
+        }  
+        this.price = price;  
+        int age = passenger.getAge();  
+        saleByAge(age); //changes price of the ticket according to the age category of passenger  
+        serviceTax( ); //changes price by adding service tax to the ticket  
+    }  
+
+    public void saleByAge(int age)  
+    {  
+        int price = getPrice();  
+        if(age &lt; 15)  
+        {  
+
+            price-=(int)price*0.5;//50% sale for children under 15  
+            this.price=price;  
+
+        } else if(age&gt;=60){  
+            this.price=0; //100% sale for elder people  
+        }  
+    }  
+
+    public Flight getFlight() {  
+        return flight;  
+    }  
+
+    public void setFlight(Flight flight) {  
+        this.flight = flight;  
+    }  
+
+    public boolean getClassVip() {  
+        return classVip;  
+    }  
+
+    public void setClassVip(boolean classVip) {  
+        this.classVip = classVip;  
+    }  
+
+    public boolean ticketStatus()  
+    {  
+        return status;  
+    }  
+
+    public void setTicketStatus(boolean status)  
+    {  
+        this.status = status;  
+    }  
+
+    public void serviceTax(){  
+        this.price *= 1.12;  
+    } //12% service tax  
+
+    public Passenger getPassenger() {  
+        return passenger;  
+    }  
+
+    public void setPassenger(Passenger passenger) {  
+        this.passenger = passenger;  
+    }  
+
+    public String toString()  
+    {  
+        return&quot;Ticket{&quot; +'\n'+  
+                &quot;Price=&quot; + getPrice() + &quot;KZT, &quot; + '\n' +  
+                getFlight() +'\n'+ &quot;Vip status=&quot; + getClassVip() + '\n' +  
+                getPassenger()+'\n'+ &quot;Ticket was purchased=&quot; + ticketStatus() + &quot;\n}&quot;;  
+    }  
+}
+</code></pre>
+<h4 id="ticketsystemjava">TicketSystem.java<a class="headerlink" href="#ticketsystemjava" title="Permanent link">#</a></h4>
+<p>here is the code inside TicketSystem.java:  </p>
+<pre><code class="language-java">package fit5171.monash.edu;  
+import java.sql.*;  
+import java.util.*;  
+import java.util.regex.Matcher;  
+import java.util.regex.Pattern;  
+import java.util.regex.PatternSyntaxException;  
+
+/*  
+* 1. When choosing a ticket, a valid city is used.  
+*  
+2. If a passenger chooses an already booked ticket it should display an error message.  
+*  
+3. Appropriate checks have been implemented to validate passenger information  
+*  
+4. Appropriate checks have been implemented to validate flight information  
+*  
+5. Appropriate checks have been implemented to validate ticket information  
+*  
+6. A correct value is displayed to the passenger when buying a ticket  
+* */  
+public class TicketSystem &lt;T&gt;  
+{  
+    Passenger passenger = new Passenger();  
+    Ticket ticket = new Ticket();  
+    Flight flight = new Flight();  
+    Scanner in = new Scanner(System.in);  
+
+    public TicketSystem()  
+    {  
+        passenger = new Passenger();  
+        ticket = new Ticket();  
+        flight = new Flight();  
+    }  
+
+
+    public void showTicket()  
+    {  
+        try  
+        {  
+            System.out.println(&quot;You have bought a ticket for flight &quot; + ticket.flight.getDepartFrom() + &quot; - &quot; + ticket.flight.getDepartTo() + &quot;\n\nDetails:&quot;);  
+            System.out.println(this.ticket.toString());  
+        }  
+        catch (NullPointerException e)  
+        {  
+            return;  
+        }  
+    }  
+
+    /**  
+     *     * @param ticket_id  
+     * @throws Exception  
+     */    public void buyTicket(int ticket_id) throws Exception  
+    //method for buying one ticket with direct flight  
+    {  
+        int flight_id = 0;  
+
+        //select ticket where ticket_id=&quot;+ticket_id&quot;  
+        Ticket validTicket = TicketCollection.getTicketInfo(ticket_id);  
+
+        //if there is a valid ticket id was input then we buy it, otherwise show message  
+        if(validTicket != null)  
+        {  
+            System.out.println(&quot;This ticket does not exist.&quot;);  
+            return;        }  
+        else{  
+            //select flight_id from ticket where ticket_id=&quot; + ticket_id  
+
+            flight_id = validTicket.getFlight().getFlightID();  
+
+            try            {  
+                System.out.println(&quot;Enter your First Name: &quot;);  
+                String firstName = &quot;&quot;;  
+                passenger.setFirstName(firstName);  
+
+
+                System.out.println(&quot;Enter your Second name:&quot;);  
+                String secondName = &quot;&quot;;  
+                passenger.setSecondName(secondName); //setting passengers info  
+
+                System.out.println(&quot;Enter your age:&quot;);  
+                Integer age = 0;  
+                in.nextLine();  
+                passenger.setAge(age);  
+
+                System.out.println(&quot;Enter your gender: &quot;);  
+                String gender = &quot;&quot;;  
+                passenger.setGender(gender);  
+
+                System.out.println(&quot;Enter your e-mail address&quot;);  
+                String email = &quot;&quot;;  
+                passenger.setEmail(email);  
+
+                System.out.println(&quot;Enter your phone number (+7):&quot;);  
+                String phoneNumber = &quot;&quot;;  
+                passenger.setPhoneNumber(phoneNumber);  
+
+                System.out.println(&quot;Enter your passport number:&quot;);  
+                String passportNumber = &quot;&quot;;  
+                passenger.setPassport(passportNumber);  
+
+                System.out.println(&quot;Do you want to purchase?\n 1-YES 0-NO&quot;);  
+                int purch = in.nextInt();  
+                if (purch == 0)  
+                {  
+                    return;  
+                } else  
+                {  
+
+                    flight = FlightCollection.getFlightInfo(flight_id);  
+
+                    int airplane_id = flight.getAirplane().getAirplaneID();  
+
+                    Airplane airplane = Airplane.getAirPlaneInfo(airplane_id);  
+
+                    ticket = TicketCollection.getTicketInfo(ticket_id);  
+
+                    ticket.setPassenger(passenger);  
+                    ticket.setTicket_id(ticket_id);  
+                    ticket.setFlight(flight);  
+                    ticket.setPrice(ticket.getPrice());  
+                    ticket.setClassVip(ticket.getClassVip());  
+                    ticket.setTicketStatus(true);  
+                    if (ticket.getClassVip() == true)  
+                    {  
+                        airplane.setBusinessSitsNumber(airplane.getBusinessSitsNumber() - 1);  
+                    } else  
+                    {  
+                        airplane.setEconomySitsNumber(airplane.getEconomySitsNumber() - 1);  
+                    }  
+
+                }  
+                System.out.println(&quot;Your bill: &quot; + ticket.getPrice() + &quot;\n&quot;);  
+
+                System.out.println(&quot;Enter your card number:&quot;);  
+                String cardNumber = &quot;&quot;;  
+                passenger.setCardNumber(cardNumber);  
+
+                System.out.println(&quot;Enter your security code:&quot;);  
+                Integer securityCode = 0;  
+                passenger.setSecurityCode(securityCode);  
+
+
+            } catch (PatternSyntaxException patternException)  
+            {  
+                patternException.printStackTrace();  
+            }  
+        }  
+    }  
+
+    /**  
+     *     * @param ticket_id_first  
+     * @param ticket_id_second  
+     * @throws Exception  
+     */    @SuppressWarnings(&quot;null&quot;)  
+    public void buyTicket(int ticket_id_first, int ticket_id_second) throws Exception{  
+        //method for buying two tickets with transfer flight  
+        int flight_id_first = 0;  
+
+        int flight_id_second = 0;  
+
+
+        System.out.println(ticket_id_first + &quot; &quot; + ticket_id_second);  
+
+        Ticket validTicketfirst = TicketCollection.getTicketInfo(ticket_id_first);  
+
+        Ticket validTicketSecond = TicketCollection.getTicketInfo(ticket_id_first);  
+
+
+        System.out.println(&quot;Processing...&quot;);  
+
+        //if there is a valid ticket id was input then we buy it, otherwise show message  
+
+        if(validTicketfirst!=null || validTicketSecond!=null)  
+        {  
+            System.out.println(&quot;This ticket does not exist.&quot;);  
+            return;        }  
+
+        else  
+        {  
+            flight_id_first = validTicketfirst.getFlight().getFlightID();  
+
+            flight_id_second = validTicketfirst.getFlight().getFlightID();  
+
+
+            try            {  
+                System.out.println(&quot;Enter your First Name: &quot;);  
+                String firstName = &quot;&quot;;  
+                passenger.setFirstName(firstName);  
+
+
+                System.out.println(&quot;Enter your Second name:&quot;);  
+                String secondName = &quot;&quot;;  
+                passenger.setSecondName(secondName); //setting passengers info  
+
+                System.out.println(&quot;Enter your age:&quot;);  
+                Integer age = 0;  
+                in.nextLine();  
+                passenger.setAge(age);  
+
+                System.out.println(&quot;Enter your gender: &quot;);  
+                String gender = &quot;&quot;;  
+                //passenger.setGender(gender));  
+
+                System.out.println(&quot;Enter your e-mail address&quot;);  
+                String email = &quot;&quot;;  
+                passenger.setEmail(email);  
+
+                System.out.println(&quot;Enter your phone number (+7):&quot;);  
+                String phoneNumber = &quot;&quot;;  
+                passenger.setPhoneNumber(phoneNumber);  
+
+                System.out.println(&quot;Enter your passport number:&quot;);  
+                String passportNumber = &quot;&quot;;  
+                passenger.setPassport(passportNumber);  
+
+                System.out.println(&quot;Do you want to purchase?\n 1-YES 0-NO&quot;);  
+                int purch = in.nextInt();  
+                if (purch == 0)  
+                {  
+                    return;  
+                }  
+                else  
+                {  
+
+                    //  &quot;select * from flight, airplane where flight_id=&quot; + flight_id_first + &quot; and flight.airplane_id=airplane.airplane_id&quot;);  
+                    Flight flight_first = FlightCollection.getFlightInfo(flight_id_first);  
+
+                    int airplane_id_first = flight_first.getAirplane().getAirplaneID();  
+
+                    Airplane airplane_first = Airplane.getAirPlaneInfo(airplane_id_first);  
+
+                    Flight flight_second = FlightCollection.getFlightInfo(flight_id_second);  
+
+                    int airplane_id_second = flight_second.getAirplane().getAirplaneID();  
+
+                    Airplane airpairplane_second  = Airplane.getAirPlaneInfo(airplane_id_second);  
+
+                    Ticket ticket_first = TicketCollection.getTicketInfo(ticket_id_first);  
+
+                    Ticket ticket_second = TicketCollection.getTicketInfo(ticket_id_second);  
+
+                    ticket_first.setPassenger(passenger);  
+                    ticket_first.setTicket_id(ticket_id_first);  
+                    ticket_first.setFlight(flight_first);  
+                    ticket_first.setPrice(ticket_first.getPrice());  
+                    ticket_first.setClassVip(ticket_first.getClassVip());  
+                    ticket_first.setTicketStatus(true);  
+
+                    if (ticket_first.getClassVip() == true)  
+                    {  
+                        airplane_first.setBusinessSitsNumber(airplane_first.getBusinessSitsNumber() - 1);  
+                    } else  
+                    {  
+                        airplane_first.setEconomySitsNumber(airplane_first.getEconomySitsNumber() - 1);  
+                    }  
+
+                    System.out.println(&quot;--*-*-&quot;);  
+
+                    ticket_second.setPassenger(passenger);  
+                    ticket_second.setTicket_id(ticket_id_second);  
+                    ticket_second.setFlight(flight_first);  
+                    ticket_second.setPrice(ticket_second.getPrice());  
+                    ticket_second.setClassVip(ticket_second.getClassVip());  
+                    ticket_second.setTicketStatus(true);  
+                    if (ticket_second.getClassVip() == true)  
+                    {  
+                        airpairplane_second.setBusinessSitsNumber(airpairplane_second.getBusinessSitsNumber() - 1);  
+                    } else  
+                    {  
+                        airpairplane_second.setEconomySitsNumber(airpairplane_second.getEconomySitsNumber() - 1);  
+                    }  
+
+                    System.out.println(&quot;--*-*-&quot;);  
+
+                    ticket.setPrice(ticket_first.getPrice() + ticket_second.getPrice());  
+
+                    System.out.println(&quot;Your bill: &quot; + ticket.getPrice() + &quot;\n&quot;);  
+
+                    System.out.println(&quot;Enter your card number:&quot;);  
+
+                    String cardNumber = &quot;&quot;;  
+                    passenger.setCardNumber(cardNumber);  
+
+                    System.out.println(&quot;Enter your security code:&quot;);  
+                    Integer securityCode = 0;  
+                    passenger.setSecurityCode(securityCode);  
+
+                }  
+            } catch (PatternSyntaxException patternException)  
+            {  
+                patternException.printStackTrace();  
+            }  
+        }  
+
+    }  
+
+    /**  
+     *     * @param city1  
+     * @param city2  
+     * @throws Exception  
+     */    public void chooseTicket(String city1, String city2) throws Exception  
+    {  
+        int counter = 1;  
+        int idFirst = 0;  
+        int idSecond = 0;  
+
+        Flight flight = new Flight();  
+
+        //search for direct flight from city1 to city2  
+
+        flight = FlightCollection.getFlightInfo(city1, city2);  
+
+
+        if(flight != null) {  
+
+            TicketCollection.getAllTickets();  
+
+            System.out.println(&quot;\nEnter ID of ticket you want to choose:&quot;);  
+
+            int ticket_id = in.nextInt();  
+
+            //validate ticker here  
+
+            //buy ticket here            buyTicket(ticket_id);  
+        }  
+        else  
+        //in case there is no direct ticket from city1 to city2  
+        {  
+            //SELECT a flight where depart_to = city2  
+
+            Flight depart_to = FlightCollection.getFlightInfo(city2);  
+
+            //and search for city with depart_from as connector city  
+
+            String connectCity = depart_to.getDepartFrom();  
+
+            //SELECT * from flight where depart_to = '&quot; + connectCity + &quot;' and depart_from = '&quot; + city1+&quot;'&quot;  
+
+            Flight flightConnectingTwoCities = FlightCollection.getFlightInfo(city1, connectCity);  
+
+            if(flightConnectingTwoCities != null){  
+
+                System.out.println(&quot;There is special way to go there. And it is transfer way, like above. Way №&quot; + counter);  
+
+                idFirst = depart_to.getFlightID();  
+
+                idSecond = flightConnectingTwoCities.getFlightID();  
+
+
+            }  
+
+            counter++;  
+
+            buyTicket(idFirst, idSecond); //pass two tickets and buy them  
+
+            if(counter == 1)  
+            {  
+                System.out.println(&quot;There is no possible variants.&quot;);  
+            }  
+            return;  
+        }  
+
+    }  
+}
+
+</code></pre>
+<h4 id="ticketcollectionjava">TicketCollection.java<a class="headerlink" href="#ticketcollectionjava" title="Permanent link">#</a></h4>
+<p>here is the code inside TicketCollection.java:  </p>
+<pre><code class="language-java">package fit5171.monash.edu;  
+
+import java.util.ArrayList;  
+
+/*  
+* 1. Whenever a ticket is being added to the TicketCollection, it must be validated.  
+*  
+2. When trying to get a ticket, the correct ticket is returned  
+* */  
+public class TicketCollection {  
+
+   public static ArrayList&lt;Ticket&gt; tickets;  
+
+   public static ArrayList&lt;Ticket&gt; getTickets() {  
+      return tickets;  
+   }  
+
+   public static void addTickets(ArrayList&lt;Ticket&gt; tickets_db) {  
+      TicketCollection.tickets.addAll(tickets_db);  
+   }  
+
+   public static void getAllTickets() {  
+       //display all available tickets from the Ticket collection  
+    }  
+   public static Ticket getTicketInfo(int ticket_id) {  
+       //SELECT a ticket where ticket id = ticket_id  
+       return null;  
+
+    }  
+
+
+}
+
+</code></pre>
+<h4 id="flightcollectionjava">FlightCollection.java<a class="headerlink" href="#flightcollectionjava" title="Permanent link">#</a></h4>
+<p>here is the code inside FlightCollection.java:  </p>
+<pre><code class="language-java">package fit5171.monash.edu;  
+
+import java.util.ArrayList;  
+
+/*  
+* 1. When adding a flight into the system, test if  
+* it conforms with the requirement as a flight and Flight Collection.  
+*  
+2. Valid city names must be used.  
+*  
+3. When trying to get flight information, a valid flight is returned  
+* */  
+public class FlightCollection {  
+
+   public static ArrayList&lt;Flight&gt; flights;  
+
+   public static ArrayList&lt;Flight&gt; getFlights() {  
+      return flights;  
+   }  
+
+   public static void addFlights(ArrayList&lt;Flight&gt; flights) {  
+      FlightCollection.flights.addAll(flights);  
+   }  
+
+   public static Flight getFlightInfo(String city1, String city2) {  
+       //display the flights where there is a direct flight from city 1 to city2  
+       return null;  
+    }  
+
+    public static Flight getFlightInfo(String city) {  
+       //SELECT a flight where depart_to = city  
+       return null;  
+
+    }  
+    public static Flight getFlightInfo(int flight_id) {  
+       //SELECT a flight with a particular flight id  
+       return null;  
+
+    }  
+
+
+}
+
+</code></pre>
+<h3 id="unit-test">unit test<a class="headerlink" href="#unit-test" title="Permanent link">#</a></h3>
+<p>You will mock the external objects/functionalities, using a Java mocking library called mockito. The requirement of testing every class is under the validation chapter below.</p>
+<h4 id="validation">Validation<a class="headerlink" href="#validation" title="Permanent link">#</a></h4>
+<h4 id="airplanejava_1">Airplane.java<a class="headerlink" href="#airplanejava_1" title="Permanent link">#</a></h4>
+<p>When some attribute of the airplane is being set, the following unit testing conditions need to be satisfied.
+1. Ensure all fields/details for an airplane like Airplane ID, Airplane businessSitsNumber, crewSitsNumber, etc. are tested
+2. Seat number must be in the range <code>[1, 300]</code>.</p>
+<h4 id="flightjava_1">Flight.java<a class="headerlink" href="#flightjava_1" title="Permanent link">#</a></h4>
+<p>When a flight is being added to the system, following conditions must be met.<br />
+1. All fields are required.  Note: Mock the behaviour of the Airplane class while creating objects of the Flight class for unit testing.<br />
+2. Date must be in DD/MM/YY format.<br />
+3. Time must be in HH:MM:SS format.<br />
+4. Ensure the same flight is not already in the system</p>
+<h4 id="personjava_1">Person.java<a class="headerlink" href="#personjava_1" title="Permanent link">#</a></h4>
+<p>When a person is being created or returned, test following:<br />
+1. All fields of a Person class are required to create a person.<br />
+2. The gender field has following options ‘Woman’, ‘Man’,’Non-binary|gender diverse’, ‘Prefer not to  say’ and ‘Other’.<br />
+3. The first name and last name should not start with a number or symbol and can contain only small case and upper-case alphabet letters.</p>
+<h4 id="passenger">Passenger<a class="headerlink" href="#passenger" title="Permanent link">#</a></h4>
+<p>When a passenger is being created or returned, test following:<br />
+1. All fields of a passenger are required.  Note: Mock the behavior of the Person class while creating objects of the Passenger class for  unit testing.<br />
+2. Phone number follows a pattern. Within Australia, mobile phone numbers begin with 04 or 05 – the Australian national trunk code" 0, plus the mobile indicator 4 or 5, then followed by eight  digits. This is generally written as 04XX XXX XXX within Australia or as +61 4XX XXX XXX for an  international audience.<br />
+3. The email follows a valid pattern “abc@domain.com”.<br />
+4. The passport number should not be more than 9 characters long.<br />
+5. When a passenger is being added, it must include the passenger’s First name, Last Name, age, and gender following the person who is becoming a passenger</p>
+<h4 id="ticketjava_1">Ticket.java<a class="headerlink" href="#ticketjava_1" title="Permanent link">#</a></h4>
+<p>When a ticket is being created, it needs to satisfy the following conditions.<br />
+1. Values for the ticket status must be ‘True’ or ‘False’ for the booked and available tickets respectively.<br />
+2. Discount is always applied based on the age category of the passenger.<br />
+3. Price is always applied to a ticket.<br />
+4. The price and service tax is a valid value (Integer or real numbers etc.)<br />
+5. The service tax is always applied when a ticket is sold. Note: Mock the behavior of the Flight and Passenger class, while creating objects of the Ticket  class for unit testing.<br />
+6. Test that Ticker class received valid information of flight and passenger.</p>
+<h4 id="ticketsystemjava_1">TicketSystem.java<a class="headerlink" href="#ticketsystemjava_1" title="Permanent link">#</a></h4>
+<ol>
+<li>When choosing a ticket, a valid city is used.  </li>
+<li>If a passenger chooses an already booked ticket it should display an error message.  </li>
+<li>Appropriate checks have been implemented to validate passenger information  </li>
+<li>Appropriate checks have been implemented to validate flight information  </li>
+<li>Appropriate checks have been implemented to validate ticket information  </li>
+<li>A correct value is displayed to the passenger when buying a ticket.</li>
+</ol>
+<h4 id="ticketcollectionjava_1">TicketCollection.java<a class="headerlink" href="#ticketcollectionjava_1" title="Permanent link">#</a></h4>
+<ol>
+<li>Whenever a ticket is being added to the TicketCollection, it must be validated.  </li>
+<li>When trying to get a ticket, the correct ticket is returned</li>
+</ol>
+<h4 id="flightcollectionjava_1">FlightCollection.java<a class="headerlink" href="#flightcollectionjava_1" title="Permanent link">#</a></h4>
+<ol>
+<li>When adding a flight into the system, test if it conforms with the requirement as a flight and Flight Collection.  </li>
+<li>Valid city names must be used.  </li>
+<li>When trying to get flight information, a valid flight is returned.</li>
+</ol>
+<h3 id="pipeline">pipeline<a class="headerlink" href="#pipeline" title="Permanent link">#</a></h3>
+<p><a href="https://gitlab.bio.di.uminho.pt/tutorials/java-maven-junit-ci-helloworld">tutorials / Java Maven Junit CI Helloworld · GitLab</a><br />
+<a href="https://docs.gitlab.com/ee/ci/quick_start/#ensure-you-have-runners-available">Tutorial: Create and run your first GitLab CI/CD pipeline | GitLab</a>  </p>
+<h2 id="assignment-2">assignment 2<a class="headerlink" href="#assignment-2" title="Permanent link">#</a></h2>
+<h3 id="dependcy">dependcy<a class="headerlink" href="#dependcy" title="Permanent link">#</a></h3>
+<p><a href="https://www.oracle.com/java/technologies/downloads/#java11-windows">Java Downloads | Oracle</a><br />
+<a href="https://www.sonarsource.com/products/sonarqube/downloads/">Download | SonarQube | Sonar</a><br />
+<a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads">PostgreSQL Community DL Page</a><br />
+<a href="https://pitest.org/quickstart/maven/">Quickstart for maven users</a>  </p>
+<h3 id="setup">setup<a class="headerlink" href="#setup" title="Permanent link">#</a></h3>
+<ol>
+<li>install and set environment path for jdk17 to build up sonar server</li>
+<li>install PostgreSQL and setup Create User from PgAdmin username=sonarqube password=12345678 Create table sonarqube</li>
+<li>open /sonarqubefolder/conf/sonar.propertiesfiles add <code>sonar.jdbc.username=sonarqube sonar.jdbc.password=12345678 sonar.jdbc.url=jdbc:postgresql://localhost/sonarqube</code>  under <code># User credentials.</code>  </li>
+<li><a href="https://docs.sonarqube.org/latest/try-out-sonarqube/">Try out SonarQube</a> follow the instruction to execute the analysis report for your project </li>
+</ol>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      2023-05-21
+    
+  </small>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+<footer class="md-footer">
+    <div class="md-footer-meta md-typeset">
+        <div class="md-footer-meta__inner md-grid">
+            <!-- Copyright and theme information -->
+            <div class="md-footer-copyright">
+                
+                <div class="md-footer-copyright__highlight">
+                    Copyright &copy; 2021 - present GreenH47
+                </div>
+                
+                powered by
+                <a href="https://www.mkdocs.org" title="MkDocs">MkDocs</a>
+                and
+                <a href="https://squidfunk.github.io/mkdocs-material/"
+                   title="Material for MkDocs">
+                    Material for MkDocs</a>
+            </div>
+            
+            <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/GreenH47" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:greenhuang47@gmail.com" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.7l167.6-182.9c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+    </a>
+  
+</div>
+            
+        </div>
+    </div>
+</footer>
+
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.top", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.b78d2936.min.js"></script>
+      
+    
+  </body>
+</html>

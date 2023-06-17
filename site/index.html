@@ -15,10 +15,14 @@
         <meta name="author" content="greenh47">
       
       
-        <link rel="canonical" href="https://example.com/">
+        <link rel="canonical" href="https://greenh47.github.io/mynote/">
+      
+      
+      
+        <link rel="next" href="about/about_index/">
       
       <link rel="icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.1">
     
     
       
@@ -26,11 +30,10 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.472b142f.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.402914a4.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.08040f6c.min.css">
-        
+        <link rel="stylesheet" href="assets/stylesheets/palette.a0c5b2b5.min.css">
       
       
 
@@ -53,6 +56,9 @@
     
     
     
+  <meta name="google-site-verification" content="o_487p41W1wQ8MM8Y0yTzKrMSkrgTjDL9sVoqW9XTLs" />
+  
+
   </head>
   
   
@@ -61,7 +67,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
   
     
     
@@ -146,7 +152,7 @@
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -158,7 +164,7 @@
         <a href="https://github.com/GreenH47/mynote" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -178,7 +184,7 @@
           
             
 <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-tabs__inner md-grid">
+  <div class="md-grid">
     <ul class="md-tabs__list">
       
         
@@ -289,7 +295,9 @@
         
       
 <style>
-
+    img {
+        border-radius: 20%;
+    }
     .md-main {
         flex-grow: 0
     }
@@ -500,20 +508,61 @@
     .md-footer-social {
         padding-top: 20px;
     }
-</style>
 
+    .music-player {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        background-color: #f5f5f5;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+        padding: 0 20px;
+    }
+
+    #play-pause-button {
+        background-color: #2196F3;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+    }
+
+    #play-pause-button:hover {
+        background-color: #0D47A1;
+    }
+
+    #play-pause-button.playing {
+        background-color: #F44336;
+    }
+
+    #play-pause-button.playing:hover {
+        background-color: #B71C1C;
+    }
+
+
+</style>
+<head>
+    <meta name="google-site-verification" content="o_487p41W1wQ8MM8Y0yTzKrMSkrgTjDL9sVoqW9XTLs" />
+</head>
 <!-- Main site Entry button descriptions -->
 <section class="tx-container">
     <div class="md-grid md-typeset">
       <div class="tx-hero">
         <div class="tx-hero__image">
-            <a href="https://www.youtube.com/watch?v=HXQIE5p4vkY">
-                <img src="https://img-9gag-fun.9cache.com/photo/aR7KgxB_700bwp.webp" width= 300px height = 280px >
+            <a href="https://www.youtube.com/watch?v=wLChD9qHa9k">
+                <img src="https://github.com/GreenH47/mynote/blob/main/overrides/avatar.png?raw=true" width= 300px height = 300px >
             </a>
         </div>
         <div class="tx-hero__content">
           <h1> Greenh47's Blog  </h1>
           <p>My personal blog welcome everyone!</p>
+          <p>We never go out of style!</p>
+          <p>Everyone should watch how gorgeous she is →→!</p>
           <a href="https://greenh47.github.io/mynote/about/about_index/" class="md-button md-button--primary">
             Get started
           </a>
@@ -524,6 +573,26 @@
       </div>
     </div>
 </section>
+<div class="music-player">
+    <audio id="audio-player" src="https://github.com/GreenH47/mynote/blob/main/overrides/style%20(mp3cut.net).mp3?raw=true" autoplay></audio>
+    <button id="play-pause-button">Pause</button>
+</div>
+<script>
+    var audioPlayer = document.getElementById("audio-player");
+    var playPauseButton = document.getElementById("play-pause-button");
+
+    playPauseButton.addEventListener("click", function() {
+      if (audioPlayer.paused) {
+        audioPlayer.play();
+        playPauseButton.classList.add("playing");
+        playPauseButton.innerHTML = "Pause";
+      } else {
+        audioPlayer.pause();
+        playPauseButton.classList.remove("playing");
+        playPauseButton.innerHTML = "Play";
+      }
+    });
+</script>
 
 <!-- Main site box descriptions -->
 <div class="top-hr">
@@ -608,7 +677,7 @@
       <a href="https://github.com/GreenH47/mynote" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -629,7 +698,7 @@
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
       
@@ -652,17 +721,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_2">
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
           About
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="About" data-md-level="1">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           About
@@ -742,17 +812,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_3">
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
           Course Study Note
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Course Study Note" data-md-level="1">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           Course Study Note
@@ -877,6 +948,20 @@
   
   
     <li class="md-nav__item">
+      <a href="course_notes/fit5225_note/" class="md-nav__link">
+        FIT5225 assignment 2023 s1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="course_notes/fit5147/" class="md-nav__link">
         FIT5147 Data exploration and visualisation 2023 s1
       </a>
@@ -891,8 +976,36 @@
   
   
     <li class="md-nav__item">
+      <a href="course_notes/Rintro/" class="md-nav__link">
+        FIT5147 R intro 2023 s1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="course_notes/fit5046/" class="md-nav__link">
         FIT5046 Mobile and distributed computing systems 2023 s1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="course_notes/fit5046_assignment/" class="md-nav__link">
+        FIT5046 assignment 2023 s1
       </a>
     </li>
   
@@ -930,17 +1043,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_4">
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
           Programming Note
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Programming Note" data-md-level="1">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
           Programming Note
@@ -956,17 +1070,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_4_1">
+        <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
           CSS
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="CSS" data-md-level="2">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_4_1">
           <span class="md-nav__icon md-icon"></span>
           CSS
@@ -1003,17 +1118,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_4_2">
+        <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
           HTML
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="HTML" data-md-level="2">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_4_2">
           <span class="md-nav__icon md-icon"></span>
           HTML
@@ -1078,17 +1194,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_4_4">
+        <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
           LeetCode
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="LeetCode" data-md-level="2">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_4_4">
           <span class="md-nav__icon md-icon"></span>
           LeetCode
@@ -1125,17 +1242,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" type="checkbox" id="__nav_4_5" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_4_5">
+        <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
           Javascript 
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Javascript " data-md-level="2">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_4_5">
           <span class="md-nav__icon md-icon"></span>
           Javascript 
@@ -1172,17 +1290,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" type="checkbox" id="__nav_4_6" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_4_6">
+        <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
           reactJS
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="reactJS" data-md-level="2">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_4_6">
           <span class="md-nav__icon md-icon"></span>
           reactJS
@@ -1227,17 +1346,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_5">
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
           Career Note
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Career Note" data-md-level="1">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           Career Note
@@ -1289,17 +1409,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_6">
+        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
           Green chat
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Green chat" data-md-level="1">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
           Green chat
@@ -1328,6 +1449,20 @@
     <li class="md-nav__item">
       <a href="chat/221206_ChatGPT/" class="md-nav__link">
         221206_ChatGPT
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="chat/230521_serverless%2Cmicroservices%2CRESTFUL/" class="md-nav__link">
+        230521_serverless,microservices,RESTFUL
       </a>
     </li>
   
@@ -1386,10 +1521,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.top", "toc.follow"], "search": "assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.top", "toc.follow"], "search": "assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.d6c3db9e.min.js"></script>
+      <script src="assets/javascripts/bundle.b78d2936.min.js"></script>
       
     
   </body>
