@@ -14,9 +14,9 @@
     "en-AU"
   ],
   "pdfExportSettings": {
-    "includeName": true,
+    "includeName": false,
     "pageSize": "A4",
-    "landscape": true,
+    "landscape": false,
     "margin": "2",
     "downscalePercent": 100
   }

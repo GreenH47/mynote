@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "38e6a780eb25bb91",
+        "id": "11b076d4a1a2a281",
         "type": "tabs",
-        "dimension": 19.841269841269842,
+        "dimension": 20.634920634920633,
         "children": [
           {
-            "id": "ba253ff06092de3a",
+            "id": "3273ec157ff38aea",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "course_notes/fit5171.md"
+                "file": "course_notes/fit5171_note.md"
               }
             }
           }
@@ -23,10 +23,10 @@
       {
         "id": "4c4205afe01baeff",
         "type": "tabs",
-        "dimension": 80.15873015873017,
+        "dimension": 79.36507936507937,
         "children": [
           {
-            "id": "7f3dce12f7f86a98",
+            "id": "7a5270ff51a5d71f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -38,12 +38,12 @@
             }
           },
           {
-            "id": "a30db3aa9b38bc14",
+            "id": "46d8cd5165fd5078",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "course_notes/fit5171.md",
+                "file": "course_notes/fit5171_note.md",
                 "mode": "source",
                 "source": false
               }
@@ -131,22 +131,12 @@
             }
           },
           {
-            "id": "739b0acf33b1d029",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "course_notes/fit5171.md"
-              }
-            }
-          },
-          {
-            "id": "1bee321b680c70d1",
+            "id": "dc678a259caade89",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "course_notes/fit5171.md",
+                "file": "course_notes/fit5171_note.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,27 +148,18 @@
             }
           },
           {
-            "id": "ffd0590d0c352934",
+            "id": "17a44dd001bde343",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "course_notes/fit5171.md",
+                "file": "course_notes/fit5171_note.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
-          },
-          {
-            "id": "806cebcbf59902e8",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -198,21 +179,22 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a30db3aa9b38bc14",
+  "active": "46d8cd5165fd5078",
   "lastOpenFiles": [
+    "img/fit5171_note-20230618.png",
+    "course_notes/fit5171.md",
+    "course_notes/fit5171_note.md",
+    "img/fit5171-20230618-7.png",
+    "img/fit5171-20230618-6.png",
+    "img/fit5171-20230618-5.png",
+    "img/fit5171-20230618-4.png",
+    "img/fit5171-20230618-3.png",
+    "img/fit5171-20230618-2.png",
+    "img/fit5171-20230618-1.png",
+    "img/fit5171-20230618.png",
     "googleb19ee7ecc0ffed43.html",
     "img/fit5171-20230616-1.png",
     "img/fit5171-20230616.png",
-    "img/fit5171-20230615-16.png",
-    "img/fit5171-20230615-15.png",
-    "img/fit5171-20230615-14.png",
-    "img/fit5171-20230615-13.png",
-    "img/fit5171-20230615-12.png",
-    "img/fit5171-20230615-11.png",
-    "img/fit5171-20230615-10.png",
-    "img/fit5171-20230615-9.png",
-    "course_notes/fit5171_note.md",
-    "course_notes/fit5171.md",
     "course_notes/fit5225_note.md",
     "course_notes/fit5046.md",
     "chat/230521_serverless,microservices,RESTFUL.md",
