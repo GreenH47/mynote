@@ -6,6 +6,8 @@ site_author: greenh47
 google-site-verification: o_487p41W1wQ8MM8Y0yTzKrMSkrgTjDL9sVoqW9XTLs
 nav:
     - Home: index.md
+    - 'house':
+        - 'house': house.md
     - 'About': 
         - 'blog index': 'about/about_index.md'
         - 'about me': 'about/about_me.md'
