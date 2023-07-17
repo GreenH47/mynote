@@ -1,3 +1,8 @@
+---
+title: FIT5032 Week 1 Notes
+description: In-depth notes and walkthroughs for Week 1 of FIT5032 at Monash IT
+---
+
 Create time: 2022-10-29  
 Last update: {{ git_revision_date }}
 
