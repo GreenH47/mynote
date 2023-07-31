@@ -13,7 +13,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "course_notes/fit5120.md"
+                "file": "course_notes/fit5137.md"
               }
             }
           },
@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "course_notes/fit5120.md",
+                "file": "course_notes/fit5137.md",
                 "mode": "source",
                 "source": false
               }
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "course_notes/fit5120.md",
+                "file": "course_notes/fit5137.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "course_notes/fit5120.md",
+                "file": "course_notes/fit5137.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,8 +160,21 @@
   },
   "active": "0b3d056a53f9a8ac",
   "lastOpenFiles": [
-    "about/about_me.md",
+    "img/fit5137-20230731-9.png",
+    "img/Pasted image 20230731152707.png",
+    "img/fit5137-20230731-8.png",
+    "img/fit5137-20230731-7.png",
+    "img/fit5137-20230731-6.png",
+    "img/fit5137-20230731-5.png",
+    "img/fit5137-20230731-4.png",
+    "img/fit5137-20230731-3.png",
+    "img/fit5137-20230731-2.png",
+    "img/fit5137-20230731-1.png",
+    "img/fit5137-20230731.png",
     "course_notes/fit5120.md",
+    "course_notes/fit5137.md",
+    "course_notes/fit5122.md",
+    "about/about_me.md",
     "about/about_copyright.md",
     "taylor/outfit.md",
     "about/about_site_building.md",
@@ -175,16 +188,6 @@
     "course_notes/fit5225.md",
     "index.md",
     "house.md",
-    "img/house-20230701.jpg",
-    "img/house-20230625-9.png",
-    "img/house-20230625-8.png",
-    "img/house-20230625-7.png",
-    "img/house-20230625-6.png",
-    "img/house-20230625-5.png",
-    "img/house-20230625-4.png",
-    "img/house-20230625-3.png",
-    "img/house-20230625-2.png",
-    "img/house-20230625-1.png",
     "course_notes/fit5171.md",
     "course_notes/fit5171_note.md",
     "googleb19ee7ecc0ffed43.html",
@@ -196,9 +199,6 @@
     "course_notes/fit5147.md",
     "img/Drawing 2023-05-01 14.41.34.excalidraw.md",
     "img/Drawing 2023-05-01 14.41.34_0.excalidraw.md",
-    "course_notes/fit9132.md",
-    "chat/221206_ChatGPT.md",
-    "Git/Git.md",
     "img/fit5171-20230404-28.png.~tmp",
     "未命名.canvas"
   ]
