@@ -9,10 +9,7 @@
   "defaultViewMode": "preview",
   "showLineNumber": true,
   "spellcheck": true,
-  "spellcheckLanguages": [
-    "zh-CN",
-    "en-AU"
-  ],
+  "spellcheckLanguages": null,
   "pdfExportSettings": {
     "includeName": false,
     "pageSize": "A4",
