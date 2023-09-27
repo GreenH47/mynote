@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LeetCode/combinations.md",
+                "file": "redis/redis_initial.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LeetCode/combinations.md",
+                "file": "redis/redis_initial.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LeetCode/combinations.md",
+                "file": "redis/redis_initial.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LeetCode/combinations.md"
+                "file": "redis/redis_initial.md"
               }
             }
           }
@@ -160,9 +160,12 @@
   },
   "active": "155f0b39e20d2ad8",
   "lastOpenFiles": [
+    "img/redis_initial-20230927-2.png",
+    "img/redis_initial-20230927-1.png",
+    "img/redis_initial-20230927.png",
+    "LeetCode/combinations.md",
     "LeetCode/add-two-numbers.md",
     "LeetCode/two-sum.md",
-    "LeetCode/combinations.md",
     "LeetCode/LeetCode_note_menu.md",
     "redis/redis_initial.md",
     "course_notes/course_note_menu.md",
@@ -182,8 +185,6 @@
     "img/fit5120-20230806-1.png",
     "img/fit5120-20230806.png",
     "img/Pasted image 20230806211429.png",
-    "img/fit5137-20230731-9.png",
-    "img/Pasted image 20230731152707.png",
     "about/about_me.md",
     "about/about_copyright.md",
     "taylor/outfit.md",
@@ -197,7 +198,6 @@
     "chat/chat_index.md",
     "course_notes/fit5225.md",
     "index.md",
-    "house.md",
     "googleb19ee7ecc0ffed43.html",
     "Untitled.canvas",
     "img/fit5171-20230404-28.png.~tmp",

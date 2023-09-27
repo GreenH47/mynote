@@ -13,3 +13,20 @@ redis-cli INFO server
 ```
 
 # test
+```bash
+redis-cli --scan --pattern '*'
+systemctl status redis
+
+redis-cli monitor
+
+redis-cli
+config set requirepass pwd
+save
+exit
+
+redis-cli -a pwd --scan --pattern '*'
+
+```
+![](../img/redis_initial-20230927.png)
+![](../img/redis_initial-20230927-1.png)
+![](../img/redis_initial-20230927-2.png)
