@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "5272dcd559b03175",
+        "id": "2937b015b90dc01d",
         "type": "tabs",
         "children": [
           {
-            "id": "155f0b39e20d2ad8",
+            "id": "5d93f12e17b29565",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "redis/redis_initial.md",
+                "file": "data_structure/array.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "bb6e2c06669023ce",
@@ -104,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "redis/redis_initial.md",
+                "file": "data_structure/array.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "redis/redis_initial.md",
+                "file": "data_structure/array.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "redis/redis_initial.md"
+                "file": "data_structure/array.md"
               }
             }
           }
@@ -158,46 +159,48 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "155f0b39e20d2ad8",
+  "active": "5d93f12e17b29565",
   "lastOpenFiles": [
+    "data_structure/linked-list.md",
+    "data_structure/array.md",
+    "img/linked-list-20231012-1.png",
+    "img/linked-list-20231012.png",
+    "LeetCode/4sum.md",
+    "data_structure/HashSet.md",
+    "LeetCode/reverse-linked-list.md",
+    "data_structure",
+    "LeetCode/maximum-average-subarray-i.md",
+    "LeetCode/container-with-most-water.md",
+    "LeetCode/kth-largest-element-in-an-array.md",
+    "LeetCode/best-time-to-buy-and-sell-stock-with-transaction-fee.md",
+    "LeetCode/is-subsequence.md",
+    "LeetCode/search-suggestions-system.md",
+    "LeetCode/string-compression.md",
+    "LeetCode/removing-stars-from-a-string.md",
+    "LeetCode/path-sum-ii.md",
+    "LeetCode/factorial-trailing-zeroes.md",
+    "LeetCode/zigzag-conversion.md",
+    "LeetCode/koko-eating-bananas.md",
+    "LeetCode/counting-bits.md",
+    "LeetCode/single-number.md",
+    "LeetCode/reorder-routes-to-make-all-paths-lead-to-the-city-zero.md",
+    "LeetCode/determine-if-two-strings-are-close.md",
+    "LeetCode/count-good-nodes-in-binary-tree.md",
+    "LeetCode/reverse-words-in-a-string.md",
+    "LeetCode/FizzBuzz.md",
+    "LeetCode/kids-with-the-greatest-number-of-candies.md",
+    "LeetCode/greatest-common-divisor-of-strings.md",
+    "img/kubernetes-20231001-2.png",
+    "img/kubernetes-20231001-1.png",
+    "img/kubernetes-20231001.png",
+    "kubernetes",
     "img/redis_initial-20230927-2.png",
     "img/redis_initial-20230927-1.png",
     "img/redis_initial-20230927.png",
-    "LeetCode/combinations.md",
-    "LeetCode/add-two-numbers.md",
-    "LeetCode/two-sum.md",
-    "LeetCode/LeetCode_note_menu.md",
-    "redis/redis_initial.md",
-    "course_notes/course_note_menu.md",
     "redis",
-    "course_notes/fit9132.md",
-    "course_notes/Rintro.md",
-    "course_notes/fit5225_note.md",
-    "course_notes/fit5120.md",
-    "course_notes/fit5122.md",
     "img/fit5122-20230828-1.png",
     "img/fit5122-20230828.png",
-    "img/fit5120-20230821.png",
-    "course_notes/fit5137.md",
-    "img/fit5120-20230820.png",
-    "img/fit5122-20230816.png",
-    "chat/20230809_AWSProduct.md",
-    "img/fit5120-20230806-1.png",
-    "img/fit5120-20230806.png",
-    "img/Pasted image 20230806211429.png",
-    "about/about_me.md",
-    "about/about_copyright.md",
-    "taylor/outfit.md",
-    "about/about_site_building.md",
     "taylor",
-    "about/about_index.md",
-    "career/career_23summer.md",
-    "career/career_note_menu.md",
-    "chat/230521_serverless,microservices,RESTFUL.md",
-    "chat/230522_SaaS+PaaS+IaaS.md",
-    "chat/chat_index.md",
-    "course_notes/fit5225.md",
-    "index.md",
     "googleb19ee7ecc0ffed43.html",
     "Untitled.canvas",
     "img/fit5171-20230404-28.png.~tmp",

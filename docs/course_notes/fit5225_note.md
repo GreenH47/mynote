@@ -393,6 +393,7 @@ while True:
 ```
 
 here is the the script that print the result and the sample table format looks like that  
+
 | Number of pods | Number of threads | Average Response Time 1st (second) | Average Response Time 2rd (Second) |
 | -------------- | ----------------- | ---------------------------------- | ---------------------------------- |
 | 1              | 1                 | 1.041416535                        | 0.983136018                        |
