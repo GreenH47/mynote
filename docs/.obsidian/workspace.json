@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "data_structure/array.md",
+                "file": "house.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "bb6e2c06669023ce",
@@ -105,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "data_structure/array.md",
+                "file": "house.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "data_structure/array.md",
+                "file": "house.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "data_structure/array.md"
+                "file": "house.md"
               }
             }
           }
@@ -161,12 +160,14 @@
   },
   "active": "5d93f12e17b29565",
   "lastOpenFiles": [
+    "collection/collection.md",
     "data_structure/linked-list.md",
+    "collection",
+    "data_structure/HashSet.md",
     "data_structure/array.md",
     "img/linked-list-20231012-1.png",
     "img/linked-list-20231012.png",
     "LeetCode/4sum.md",
-    "data_structure/HashSet.md",
     "LeetCode/reverse-linked-list.md",
     "data_structure",
     "LeetCode/maximum-average-subarray-i.md",
@@ -189,7 +190,6 @@
     "LeetCode/reverse-words-in-a-string.md",
     "LeetCode/FizzBuzz.md",
     "LeetCode/kids-with-the-greatest-number-of-candies.md",
-    "LeetCode/greatest-common-divisor-of-strings.md",
     "img/kubernetes-20231001-2.png",
     "img/kubernetes-20231001-1.png",
     "img/kubernetes-20231001.png",

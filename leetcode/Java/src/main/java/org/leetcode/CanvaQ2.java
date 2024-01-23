@@ -12,7 +12,6 @@ public class CanvaQ2 {
 
     public static int findMinCost(List<Integer> efficiency) {
         // Sort the efficiency ratings in ascending order
-        // Sort the efficiency ratings in ascending order
         Collections.sort(efficiency);
         System.out.println("Sorted efficiency: ");
         System.out.println(efficiency);

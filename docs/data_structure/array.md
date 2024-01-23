@@ -60,3 +60,5 @@ We iterate through the original array nums and calculate the new index for each 
 我们遍历原始数组并使用公式 (i + k) % n 计算每个元素的新索引，其中 i 是当前索引， n 是数组 nums 的长度。
 We assign each element to its corresponding new index in the result array.
 我们将每个元素分配给 result 数组中相应的新索引。
+
+

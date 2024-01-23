@@ -584,3 +584,223 @@ class Solution {
 }
 
 ```
+
+## First Unique Character in a String 字符串中的第一个唯一字符
+
+Solution
+
+Given a string `s`, _find the first non-repeating character in it and return its index_. If it does not exist, return `-1`.  
+给定一个字符串 `s` ，找到其中的第一个非重复字符并返回其索引。如果不存在，则返回 `-1` 。
+
+**Example 1: 示例 1：**
+
+**Input:** s = "leetcode"
+**Output:** 0
+
+```run-java
+import java.util.*;
+class Solution {
+    public int firstUniqChar(String s) {
+        // Create a hash map to store character count
+        HashMap<Character, Integer> charCount = new HashMap<>();
+        
+        // Calculate count for each character in the string
+        for (char c : s.toCharArray()) {
+            charCount.put(c, charCount.getOrDefault(c, 0) + 1);
+        }
+        
+        // Find the first non-repeating character
+        for (int i = 0; i < s.length(); i++) {
+            if (charCount.get(s.charAt(i)) == 1) {
+                return i;
+            }
+        }
+
+        // If no non-repeating character found, return -1
+        return -1;
+    }
+    public static void main(String[] args) {
+    Solution solution = new Solution();
+    
+    String s = "leetcode";
+    int result = solution.firstUniqChar(s);
+    System.out.println("First non-repeating character index: " + result);
+}
+
+}
+
+```
+
+## intersection of Two Arrays II  两个阵列的交集 II
+
+Given two integer arrays `nums1` and `nums2`, return _an array of their intersection_. Each element in the result must appear as many times as it shows in both arrays and you may return the result in **any order**.  
+给定两个整数数组 `nums1` 和 `nums2` ，返回它们交集的数组。结果中的每个元素必须与它在两个数组中显示的次数一样多，并且您可以按任何顺序返回结果。
+
+**Example 1: 示例 1：**
+
+**Input:** nums1 = [1,2,2,1], nums2 = [2,2]
+**Output:** [2,2]
+
+**Example 2: 示例 2：**
+
+**Input:** nums1 = [4,9,5], nums2 = [9,4,9,8,4]
+**Output:** [4,9]
+**Explanation:** [9,4] is also accepted.
+
+```run-java
+import java.util.*;
+import java.util.*;
+
+class Solution {
+    public int[] intersect(int[] nums1, int[] nums2) {
+        // Create a hash map to store element count of nums1
+        HashMap<Integer, Integer> elementCount = new HashMap<>();
+        
+        // Calculate count for each element in nums1
+        for (int num : nums1) {
+            elementCount.put(num, elementCount.getOrDefault(num, 0) + 1);
+        }
+        
+        // Create a list to store common elements
+        List<Integer> resultList = new ArrayList<>();
+        
+        // Find the common elements in nums2 and add them to the list
+        for (int num : nums2) {
+            if (elementCount.containsKey(num) && elementCount.get(num) > 0) {
+                resultList.add(num);
+                elementCount.put(num, elementCount.get(num) - 1);
+            }
+        }
+        
+        // Convert the list to an array and return
+        int[] result = new int[resultList.size()];
+        for (int i = 0; i < resultList.size(); i++) {
+            result[i] = resultList.get(i);
+        }
+        return result;
+    }
+    public static void main(String[] args) {
+    Solution solution = new Solution();
+    
+    int[] nums1 = {1, 2, 2, 1};
+    int[] nums2 = {2, 2};
+    int[] result1 = solution.intersect(nums1, nums2);
+    System.out.println("Intersection: " + Arrays.toString(result1));
+    
+    int[] nums3 = {4, 9, 5};
+    int[] nums4 = {9, 4, 9, 8, 4};
+    int[] result2 = solution.intersect(nums3, nums4);
+    System.out.println("Intersection: " + Arrays.toString(result2));
+}
+
+}
+
+```
+
+
+```run-java
+
+  
+public class ContainsNearbyDuplicate {  
+    public boolean containsNearbyDuplicate(int[] nums, int k) {  
+        boolean result = false;  
+        int index = nums.length;  
+        if(index == 0){  
+            return result;  
+        } else if (k== 0){  
+            return result;  
+        } else if (k >= index){  
+            k = index;  
+        }  
+  
+        for(int i=0;i<index-1;i++){  
+            for(int j=i+1;j<=i+k && j<index;j++){  
+                if(nums[i] == nums[j]){  
+                    result = true;  
+                    return result;  
+                }  
+            }  
+        }  
+  
+        return result;  
+  
+    }  
+  
+    public static void main(String[] args){  
+        ContainsNearbyDuplicate obj = new ContainsNearbyDuplicate();  
+        int[] nums1 = {1,2,3,1};  
+        int k1 = 3;  
+        boolean result1 = obj.containsNearbyDuplicate(nums1, k1);  
+        System.out.println(result1);//true  
+    }  
+  
+  
+}
+```
+
+## Group Anagrams 组字谜
+
+Solution
+
+Given an array of strings `strs`, group **the anagrams** together. You can return the answer in **any order**.  
+给定一个字符串 `strs` 数组，将字谜组合在一起。您可以按任意顺序返回答案。
+
+An **Anagram** is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.  
+字谜是通过重新排列不同单词或短语的字母而形成的单词或短语，通常只使用一次所有原始字母。
+
+**Example 1: 示例 1：**
+
+**Input:** strs = ["eat","tea","tan","ate","nat","bat"]
+**Output:** [["bat"],["nat","tan"],["ate","eat","tea"]]
+
+**Example 2: 示例 2：**
+
+**Input:** strs = [""]
+**Output:** [[""]]
+
+**Example 3: 例3：**
+
+**Input:** strs = ["a"]
+**Output:** [["a"]]
+
+```run-java
+
+import java.util.*;  
+public class GroupAnagrams {  
+    public List<List<String>> groupAnagrams(String[] strs) {  
+  
+        HashMap<String, List<String>> map = new HashMap<>();  
+  
+        for(String s : strs){  
+            char[] c = s.toCharArray();  
+            Arrays.sort(c);  
+            String key = String.valueOf(c);  
+            if(!map.containsKey(key)){  
+                map.put(key, new ArrayList<>());  
+            }  
+            map.get(key).add(s);  
+        }  
+  
+        List<List<String>> result = new ArrayList<>(map.values());  
+        return result;  
+  
+    }  
+  
+    public static void main(String[] args) {  
+        GroupAnagrams solution = new GroupAnagrams();  
+  
+        String[] strs1 = {"eat", "tea", "tan", "ate", "nat", "bat"};  
+        List<List<String>> result1 = solution.groupAnagrams(strs1);  
+        System.out.println("Anagram Groups: " + result1);  
+  
+        String[] strs2 = {""};  
+        List<List<String>> result2 = solution.groupAnagrams(strs2);  
+        System.out.println("Anagram Groups: " + result2);  
+  
+        String[] strs3 = {"a"};  
+        List<List<String>> result3 = solution.groupAnagrams(strs3);  
+        System.out.println("Anagram Groups: " + result3);  
+    }  
+  
+}
+```

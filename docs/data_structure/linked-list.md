@@ -217,7 +217,82 @@ node.next.next = 2nd node from current node
 node.next.next = 当前节点中的第二个节点
 ![](../img/linked-list-20231012.png)
 ![](../img/linked-list-20231012-1.png)
+## how to use node
+```java
+public ListNode reverseList(ListNode head) {
+        ListNode prev = null;
+        ListNode curr = head;
+        ListNode next = null;
+        while(curr != null) {
+            // save next
+            next = curr.next;
+            // reverse
+            curr.next = prev;
+            // move prev and curr
+            prev = curr;
+            curr = next;
+        }
+        return prev;
+    }
+```
 
+
+```java
+ListNode prev = null;
+ListNode curr = head;
+ListNode next = null;
+```
+
+- `prev`, `curr`, and `next` are three pointers that will be used to reverse the linked list.  
+    `prev` 、 `curr` 和 `next` 是将用于反转链表的三个指针。
+- `prev` points to the previous node in the reversed list (initially null).  
+    `prev` 指向反向列表中的上一个节点（最初为 null）。
+- `curr` points to the current node in the original list (initially the head of the list).  
+    `curr` 指向原始列表中的当前节点（最初是列表的头部）。
+- `next` is a temporary pointer to hold the next node in the original list before we reverse the pointers.  
+    `next` 是一个临时指针，用于在我们反转指针之前保持原始列表中的下一个节点。
+
+```java
+while(curr != null) {
+    next = curr.next;
+    curr.next = prev;
+    prev = curr;
+    curr = next;
+}
+```
+
+1. `prev` is initially set to `null`, as there is no previous node for the first node in the original list.  
+    `prev` 最初设置为 `null` ，因为原始列表中的第一个节点没有上一个节点。
+    
+2. `curr` is initially set to the `head` of the original list. This is the current node that we are considering for reversal.  
+    `curr` 最初设置为原始列表 `head` 的 。这是我们正在考虑反转的当前节点。
+    
+3. `next` is initially set to `null` because we have not traversed to the next node yet.  
+    `next` 最初设置为 ， `null` 因为我们尚未遍历到下一个节点。
+    
+4. Inside the `while` loop, we save the reference to the next node in the original list by assigning it to the `next` pointer. This step is essential because we will modify the `curr.next` pointer in the next step.  
+    在循环中 `while` ，我们通过将其分配给 `next` 指针来保存对原始列表中下一个节点的引用。此步骤是必不可少的，因为我们将在下一步中修改 `curr.next` 指针。
+    
+5. Then, we reverse the direction of `curr`'s `next` pointer to point to the previous node (`prev`). This effectively reverses the link between `curr` and its next node in the reversed list.  
+    然后，我们反转 `curr` 的 `next` 指针方向，指向前一个节点 （ `prev` ）。这有效地反转了反向列表中与其下一个节点之间的 `curr` 链接。
+    
+6. After reversing the `next` pointer, we move the `prev` and `curr` pointers one step forward in the list. Now, `prev` becomes the current node, and `curr` becomes the next node in the original list.  
+    反转 `next` 指针后，我们将 `prev` and `curr` 指针在列表中向前移动一步。现在，成为当前节点， `prev` 并 `curr` 成为原始列表中的下一个节点。
+    
+7. We repeat steps 4-6 until we reach the end of the original list (`curr != null`).  
+    我们重复步骤 4-6，直到到达原始列表的末尾 （ `curr != null` ）。
+    
+8. Finally, we return the `prev` pointer, which now points to the new head of the reversed list.  
+    最后，我们返回 `prev` 指针，它现在指向反向列表的新头。
+
+```
+return prev;
+```
+
+Copy Code
+
+- Once we have reversed the linked list, we return the `prev` pointer, which now points to the new head of the reversed list.  
+    一旦我们反转了链表，我们返回 `prev` 指针，它现在指向反转列表的新头。
 ## Two-Pointer in Linked List  
 链表中的双指针
 Given a linked list, determine if it has a cycle in it.  
@@ -229,17 +304,21 @@ If there is a cycle in the linked list, eventually the fast pointer will catch u
 如果链表中有一个循环，最终指针 fast 将赶上 slow 指针。这表明存在一个循环，我们返回 true .
 If the fast pointer reaches the end of the linked list (i.e., it becomes null), it means there is no cycle, and we return false.
 如果 fast 指针到达链表的末尾（即它变成 null ），则表示没有循环，我们返回 false 。
-```run-java
+```java
 class Solution {
     public static boolean hasCycle(ListNode head) {
         if (head == null || head.next == null) {
             return false;
         }
-
+		// Initialize slow & fast pointers
         ListNode slow = head;
         ListNode fast = head.next;
 
         while (slow != fast) {
+        /**
+ * Change this condition to fit specific problem.
+ * Attention: remember to avoid null-pointer error
+ **/
             if (fast == null || fast.next == null) {
                 return false;
             }
@@ -492,3 +571,47 @@ When we reach the end of the linked list (i.e., even becomes null or even.next b
 当我们到达链表的末尾（即成为 even null 或 even.next 成为 null ）时，我们将最后一个奇数节点（）连接到偶数节点（ odd ）的头部 evenHead 。
 Finally, we return the original head of the linked list, which has been rearranged according to the problem's requirement.
 最后，我们返回链表的原始 head 文件，该链表已根据问题的要求重新排列。
+
+### Remove Nth Node From End of List  从列表末尾删除第 N 个节点
+
+Solution
+
+Given the `head` of a linked list, remove the `nth` node from the end of the list and return its head.  
+给定链表的 ， `head` 从列表末尾删除 `nth` 节点并返回其头部。
+
+**Example 1: 示例 1：**
+
+![](https://assets.leetcode.com/uploads/2020/10/03/remove_ex1.jpg)
+
+**Input:** head = [1,2,3,4,5], n = 2
+**Output:** [1,2,3,5]
+
+**Example 2: 示例 2：**
+
+**Input:** head = [1], n = 1
+**Output:** []
+
+**Example 3: 例3：**
+
+**Input:** head = [1,2], n = 1
+**Output:** [1]
+
+```java
+public ListNode removeNthFromEnd(ListNode head, int n) {  
+    ListNode dummy = new ListNode(0,head);  
+    ListNode first = dummy;  
+    ListNode second = dummy;  
+    for(int i=1;i<=n+1;i++){  
+        first = first.next;  
+    }  
+    while(first!=null){  
+        first = first.next;  
+        second = second.next;  
+    }  
+    second.next = second.next.next;  
+    return dummy.next;  
+  
+}
+```
+
+
