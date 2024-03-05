@@ -1,5 +1,5 @@
 site_name: greenh47
-site_url: https://greenh47.github.io/mynote/
+site_url: https://note.greenhuang.com
 repo_url: https://github.com/GreenH47/mynote
 site_description: greenh47 personal website
 site_author: greenh47
@@ -77,7 +77,6 @@ plugins:
   - search:
         indexing: 'full'
         separator: '[\s\-,:!=\[\]()"/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-  - git-revision-date
 
 extra:
   social:
