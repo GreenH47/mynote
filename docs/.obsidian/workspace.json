@@ -4,29 +4,32 @@
     "type": "split",
     "children": [
       {
-        "id": "89c4ffc60b9937ff",
+        "id": "e21543f1a91e6d87",
         "type": "tabs",
-        "dimension": 19.841269841269842,
+        "dimension": 23.991935483870964,
         "children": [
           {
-            "id": "e84d26fa89319130",
+            "id": "85ca618ebaad75af",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "K8s/CKA learning note.md"
+                "file": "K8s/CKA_learning_note.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of CKA learning note"
+              "title": "Outline of CKA_learning_note"
             },
-            "group": "290c715eac2060ca"
+            "group": "62c21f6a98e4cc20"
           }
         ]
       },
       {
         "id": "f4d5d2bf6ac9084e",
         "type": "tabs",
-        "dimension": 80.15873015873017,
+        "dimension": 76.00806451612904,
         "children": [
           {
             "id": "82a95b47613b6b44",
@@ -34,14 +37,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/CKA learning note.md",
+                "file": "K8s/CKA_learning_note.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CKA learning note"
+              "title": "CKA_learning_note"
             },
-            "group": "290c715eac2060ca"
+            "group": "62c21f6a98e4cc20"
           }
         ]
       }
@@ -62,7 +65,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -109,8 +113,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "bb6e2c06669023ce",
@@ -195,20 +198,23 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e84d26fa89319130",
+  "active": "82a95b47613b6b44",
   "lastOpenFiles": [
+    "img/CKA_learning_note-20250104-1.png",
     "K8s/KubernetesForBeginners-MumshadMannambeth.pdf",
+    "K8s/CKA_learning_note.md",
+    "K8s/Core+concepts+-2.pdf",
+    "kubernetes/kubernetes.md",
+    "img/CKA_learning_note-20250104.png",
+    "img/Pasted image 20250104180820.png",
     "K8s/KubernetesForBeginners-MumshadMannambeth.pdf.crdownload",
     "K8s/Docker+vs+Containerd+resource.pdf",
     "K8s/Docker+vs+Containerd+resource.pdf.crdownload",
-    "K8s/Core+concepts+-2.pdf",
     "K8s/Core+concepts+-2.pdf.crdownload",
     "K8s/kubernetes-services-updated.pdf",
     "K8s/kubernetes-services-updated.pdf.crdownload",
     "K8s/Kubernetes+-CKA-+0100+-+Core+Concepts.pdf",
     "K8s/Kubernetes+-CKA-+0100+-+Core+Concepts.pdf.crdownload",
-    "attachment",
-    "K8s/CKA learning note.md",
     "reactJS/react_note_menu.md",
     "redis/redis_initial.md",
     "index.md",
@@ -234,15 +240,12 @@
     "LeetCode/zigzag-conversion.md",
     "LeetCode/koko-eating-bananas.md",
     "LeetCode/counting-bits.md",
-    "LeetCode/single-number.md",
     "img/kubernetes-20231001-2.png",
     "img/kubernetes-20231001-1.png",
     "img/kubernetes-20231001.png",
     "img/redis_initial-20230927-2.png",
     "img/redis_initial-20230927-1.png",
     "img/redis_initial-20230927.png",
-    "img/fit5122-20230828-1.png",
-    "img/fit5122-20230828.png",
     "Untitled.canvas",
     "未命名.canvas"
   ]

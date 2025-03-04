@@ -20,5 +20,6 @@
   "url-into-selection",
   "better-reading-mode",
   "editing-toolbar",
-  "execute-code"
+  "execute-code",
+  "code-styler"
 ]
