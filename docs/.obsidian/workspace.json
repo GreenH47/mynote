@@ -6,7 +6,7 @@
       {
         "id": "e21543f1a91e6d87",
         "type": "tabs",
-        "dimension": 23.991935483870964,
+        "dimension": 21.141649048625794,
         "children": [
           {
             "id": "85ca618ebaad75af",
@@ -29,7 +29,7 @@
       {
         "id": "f4d5d2bf6ac9084e",
         "type": "tabs",
-        "dimension": 76.00806451612904,
+        "dimension": 78.8583509513742,
         "children": [
           {
             "id": "82a95b47613b6b44",
@@ -113,7 +113,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "bb6e2c06669023ce",
@@ -142,6 +143,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "K8s/CKA_learning_note.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +153,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for CKA_learning_note"
             }
           },
           {
@@ -200,13 +202,22 @@
   },
   "active": "82a95b47613b6b44",
   "lastOpenFiles": [
-    "img/CKA_learning_note-20250104-1.png",
+    "img/CKA_learning_note-20250408.png",
+    "img/CKA_learning_note-20250406-5.png",
+    "img/CKA_learning_note-20250406-4.png",
+    "img/CKA_learning_note-20250406-3.png",
+    "img/CKA_learning_note-20250406-2.png",
+    "img/CKA_learning_note-20250406-1.png",
+    "img/CKA_learning_note-20250406.png",
+    "K8s/kubernetes-certs-checker.xlsx",
+    "img/CKA_learning_note-20250401.png",
+    "img/CKA_learning_note-20250327-2.png",
+    "img/admission-control-phases.svg",
+    "img/CKA_learning_note-20250327-1.png",
     "K8s/KubernetesForBeginners-MumshadMannambeth.pdf",
     "K8s/CKA_learning_note.md",
     "K8s/Core+concepts+-2.pdf",
     "kubernetes/kubernetes.md",
-    "img/CKA_learning_note-20250104.png",
-    "img/Pasted image 20250104180820.png",
     "K8s/KubernetesForBeginners-MumshadMannambeth.pdf.crdownload",
     "K8s/Docker+vs+Containerd+resource.pdf",
     "K8s/Docker+vs+Containerd+resource.pdf.crdownload",
@@ -214,7 +225,6 @@
     "K8s/kubernetes-services-updated.pdf",
     "K8s/kubernetes-services-updated.pdf.crdownload",
     "K8s/Kubernetes+-CKA-+0100+-+Core+Concepts.pdf",
-    "K8s/Kubernetes+-CKA-+0100+-+Core+Concepts.pdf.crdownload",
     "reactJS/react_note_menu.md",
     "redis/redis_initial.md",
     "index.md",
@@ -223,8 +233,6 @@
     "data_structure/linked-list.md",
     "data_structure/HashSet.md",
     "data_structure/array.md",
-    "img/linked-list-20231012-1.png",
-    "img/linked-list-20231012.png",
     "LeetCode/4sum.md",
     "LeetCode/reverse-linked-list.md",
     "LeetCode/maximum-average-subarray-i.md",
@@ -240,12 +248,6 @@
     "LeetCode/zigzag-conversion.md",
     "LeetCode/koko-eating-bananas.md",
     "LeetCode/counting-bits.md",
-    "img/kubernetes-20231001-2.png",
-    "img/kubernetes-20231001-1.png",
-    "img/kubernetes-20231001.png",
-    "img/redis_initial-20230927-2.png",
-    "img/redis_initial-20230927-1.png",
-    "img/redis_initial-20230927.png",
     "Untitled.canvas",
     "未命名.canvas"
   ]
