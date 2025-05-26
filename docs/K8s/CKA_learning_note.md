@@ -1890,6 +1890,31 @@ spec:
     app: nginx
 ```
 
+```shell
+$ kubectl create -f clusterIP.yaml
+service/local-cluster created
+
+$ kubectl create -f nodeportIP.yaml
+service/nodeport-wide created
+
+$ kubectl get service
+NAME            TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE
+kubernetes      ClusterIP   10.96.0.1       <none>        443/TCP        5m22s
+local-cluster   ClusterIP   10.101.67.139   <none>        80/TCP         3m
+nodeport-wide   NodePort    10.102.29.204   <none>        80:30016/TCP   2m
+```
+
+
+
+### Ingress 
+[Ingress | Kubernetes](https://kubernetes.io/docs/concepts/services-networking/ingress/)  
+[Ingress Controllers | Kubernetes](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)  
+Make your HTTP (or HTTPS) network service available using a protocol-aware configuration mechanism, that understands web concepts like URIs, hostnames, paths, and more. The Ingress concept lets you map traffic to different backends based on rules you define via the Kubernetes API.
+使用协议感知的配置机制，使您的 HTTP（或 HTTPS）网络服务可用，该机制能够理解 URI、主机名、路径等 Web 概念。Ingress 概念允许您根据通过 Kubernetes API 定义的规则将流量映射到不同的后端。
+
+
+
+
 
 ## Install kubernetes
 ### set up VMs

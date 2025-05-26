@@ -4,47 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "e21543f1a91e6d87",
+        "id": "de772a9976e65f4d",
         "type": "tabs",
-        "dimension": 21.141649048625794,
         "children": [
           {
-            "id": "85ca618ebaad75af",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "K8s/CKA_learning_note.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline of CKA_learning_note"
-            },
-            "group": "62c21f6a98e4cc20"
-          }
-        ]
-      },
-      {
-        "id": "f4d5d2bf6ac9084e",
-        "type": "tabs",
-        "dimension": 78.8583509513742,
-        "children": [
-          {
-            "id": "82a95b47613b6b44",
+            "id": "7019c221975f74f9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/CKA_learning_note.md",
+                "file": "homelab/windows_lab.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CKA_learning_note"
-            },
-            "group": "62c21f6a98e4cc20"
+              "title": "windows_lab"
+            }
           }
         ]
       }
@@ -113,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "bb6e2c06669023ce",
@@ -200,22 +174,27 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "82a95b47613b6b44",
+  "active": "7019c221975f74f9",
   "lastOpenFiles": [
-    "img/CKA_learning_note-20250408.png",
-    "img/CKA_learning_note-20250406-5.png",
-    "img/CKA_learning_note-20250406-4.png",
-    "img/CKA_learning_note-20250406-3.png",
-    "img/CKA_learning_note-20250406-2.png",
-    "img/CKA_learning_note-20250406-1.png",
-    "img/CKA_learning_note-20250406.png",
-    "K8s/kubernetes-certs-checker.xlsx",
-    "img/CKA_learning_note-20250401.png",
-    "img/CKA_learning_note-20250327-2.png",
-    "img/admission-control-phases.svg",
-    "img/CKA_learning_note-20250327-1.png",
-    "K8s/KubernetesForBeginners-MumshadMannambeth.pdf",
+    "img/windows_lab-20250526-6.png",
+    "img/windows_lab-20250526-5.png",
+    "img/windows_lab-20250526-4.png",
+    "img/windows_lab-20250526-3.png",
+    "img/windows_lab-20250526-2.png",
+    "img/windows_lab-20250526-1.png",
+    "img/windows_lab-20250526.png",
+    "img/windows_lab-20250525-5.png",
+    "img/windows_lab-20250525-4.png",
+    "img/windows_lab-20250525-3.png",
+    "img/windows_lab-20250525-2.png",
+    "Untitled.md",
+    "homelab/windows_lab.md",
+    "ccna/CCNA.md",
+    "homelab",
+    "ccna",
     "K8s/CKA_learning_note.md",
+    "K8s/kubernetes-certs-checker.xlsx",
+    "K8s/KubernetesForBeginners-MumshadMannambeth.pdf",
     "K8s/Core+concepts+-2.pdf",
     "kubernetes/kubernetes.md",
     "K8s/KubernetesForBeginners-MumshadMannambeth.pdf.crdownload",
@@ -223,8 +202,6 @@
     "K8s/Docker+vs+Containerd+resource.pdf.crdownload",
     "K8s/Core+concepts+-2.pdf.crdownload",
     "K8s/kubernetes-services-updated.pdf",
-    "K8s/kubernetes-services-updated.pdf.crdownload",
-    "K8s/Kubernetes+-CKA-+0100+-+Core+Concepts.pdf",
     "reactJS/react_note_menu.md",
     "redis/redis_initial.md",
     "index.md",
@@ -245,9 +222,6 @@
     "LeetCode/removing-stars-from-a-string.md",
     "LeetCode/path-sum-ii.md",
     "LeetCode/factorial-trailing-zeroes.md",
-    "LeetCode/zigzag-conversion.md",
-    "LeetCode/koko-eating-bananas.md",
-    "LeetCode/counting-bits.md",
     "Untitled.canvas",
     "未命名.canvas"
   ]
