@@ -207,3 +207,7 @@ Remote Procedure Call (RPC) Locator
 ![](../img/windows_lab-20250526-4.png)
 ![](../img/windows_lab-20250526-5.png)
 ![](../img/windows_lab-20250526-6.png)
+
+# set up printer server
+[Install Print and Document Services | Microsoft Learn](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj134159(v=ws.11)) 
+![](../img/windows_lab-20250527.png)
